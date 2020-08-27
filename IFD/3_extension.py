@@ -4,7 +4,7 @@ from parameters import *
 import os
 import subprocess 
 
-os.chdir(direct)
+os.chdir(work_dir)
 
 subprocess.run(["obabel", receptor + "_prep.pdb", "-O ", receptor + "_prep.mol2", "-h"])
 

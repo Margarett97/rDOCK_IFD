@@ -1,7 +1,7 @@
 from parameters import *
 import os
 
-os.chdir(direct)
+os.chdir(work_dir)
 
 with open(receptor + ".pdb", "r") as f:        # ligand selection from receptor file
     line = f.readlines()
