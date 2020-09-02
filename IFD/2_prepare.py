@@ -19,5 +19,5 @@ with open(receptor + ".pdb", "r") as f:        # receptor selection
         for i, lines in enumerate(line):
             if lines.startswith("ATOM"):
                 n.write(lines)
-n.close()
-                
+    n.close()
+f.close()               

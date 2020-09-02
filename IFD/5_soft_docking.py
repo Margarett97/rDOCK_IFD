@@ -1,14 +1,15 @@
+# soft docking protocole
 from parameters import *
 import os, subprocess
 
-#os.chdir(work_dir)
+os.chdir(work_dir)
+
+os.environ["RBT_ROOT"] = dock_dir
+os.environ["LD_LIBRARY_PATH"] = dock_dir+ "/lib"
+os.environ["PATH"] = dock_dir + "/bin"
+
+subprocess.run(["rbcavity", "-was", "-d", "-r", "cavity.prm"])
+subprocess.run(["rbdock", "-i",ligand + ".sd", "-o", "soft_dock", "-r", "cavity.prm", "-p", "soft_docking.prm", "-n", "10"])
 
 
 
-subprocess.run(["export", "RBT_ROOT=" + dock_dir ], shell = True)
-subprocess.run(["export", "LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$RBT_ROOT/lib"], shell = True)
-subprocess.run(["export", "PATH=$PATH:$RBT_ROOT/bin"], shell = True)
-
-subprocess.run(["rbcavity", "-was", "-d", "-r", "cavity.prm"], cwd = work_dir, shell = True)
-
-subprocess.run(["rbdock", "-i", ligand + ".sd", "-o", "DOCK.sd", "-r", "cavity.prm", "-p", "soft_docking.prm", "-n", "10"], cwd = work_dir, shell = True)
