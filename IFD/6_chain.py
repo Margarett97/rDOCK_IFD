@@ -1,5 +1,8 @@
+# select receptor chain ID
 from parameters import *
 import os
+
+path = os.getcwd()
 
 os.chdir(work_dir)
 
@@ -11,15 +14,8 @@ with open(receptor + "_prep.pdb") as f:
 f.close()
 
 
-
-with open("soft_dock.pdb", "a+") as n:
-    line = n.readlines()
-    for i,lines in enumerate(line):
-        if lines.startswith("HETATM"):
-            a = lines.split()
-            a.insert(4,rec_chain)
-            
-            
-            
-n.close()
-        
+os.chdir(path)
+with open("parameters.py","a") as p:
+    name1 = "rec_chain = '"
+    p.write(name1 + rec_chain + "'\n")
+p.close()
