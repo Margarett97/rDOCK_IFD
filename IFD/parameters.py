@@ -1,15 +1,26 @@
-work_dir = "/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/1_aldose_rductase"
-
-receptor = "2acr"
-
-rec_ligand = "NAP"
-
-ligand = "TOL"
-
-dock_dir = "/home/malgorzata/Desktop/rDock_2013.1_src"
-
-soft = "soft_docking.prm"
-
-hard = "hard_docking.prm"
+soft = 'soft_docking.prm' 
+hard = 'hard_docking.prm' 
+work_dir = '/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/1_aldose_rductase'
+dock_dir = '/home/malgorzata/Desktop/rDock_2013.1_src'
+receptor = '2acr'
+ligand = 'TOL'
+rec_ligand = 'NAP'
 rec_chain = 'A'
-lig_chain = 'LIG'
+soft = 'soft_docking.prm' 
+hard = 'hard_docking.prm' 
+work_dir = '/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/1_aldose_rductase'
+dock_dir = '/home/malgorzata/Desktop/rDock_2013.1_src'
+receptor = '2acr'
+ligand = 'TOL'
+rec_ligand = 'NAP'
+rec_chain = 'A'
+soft = 'soft_docking.prm' 
+hard = 'hard_docking.prm' 
+work_dir = '/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/1_aldose_rductase'
+dock_dir = '/home/malgorzata/Desktop/rDock_2013.1_src'
+receptor = '2acr'
+ligand = 'TOL'
+rec_ligand = 'NAP'
+rec_chain = 'A'
+best_pose= 'model1_opt'
+best_pose= 'model1_opt'

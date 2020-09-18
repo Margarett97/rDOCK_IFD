@@ -1,5 +1,4 @@
-# align_models & optimize_loop
-
+# models optimization
 import os
 from modeller import *
 from modeller.automodel import *
@@ -14,7 +13,7 @@ os.chdir(work_dir)
 
 #PARAMETRY:
 
-model_name = 'pose'
+model_name = 'model'
 
 #DEF-OPTIMIZE:
 
@@ -58,6 +57,8 @@ def make_restraints(mdl1, aln):
 
 
 #ALIGNMENT:
+
+receptor = receptor + "_prep"
 
 env = environ()
 env.io.atom_files_directory = [work_dir]
@@ -105,8 +106,8 @@ for i in range(0,10):
 	env.libs.parameters.read(file='$(LIB)/par.lib')
 	env.libs.topology.read(file='$(LIB)/top_heav.lib')
 
-	mdl1= complete_pdb(env, '../'+model_name+str(i)+'.pdb')
-	mdl=complete_pdb(env, '../'+receptor+'.pdb')
+	mdl1= complete_pdb(env, './' + model_name + str(i) +'.pdb')
+	mdl=complete_pdb(env, './' + receptor + '.pdb')
 	print(mdl1.residues[0])
 	ali = alignment(env)
 	ali.append(file=alig,align_codes='all')
@@ -150,7 +151,7 @@ for i in range(0,10):
 	atmsel2=selection(mdl1) 
 	score2=atmsel2.assess_dope()
 	
-	mdl1.write(file=model_name+'_docked_opt'+str(i)+'.pdb')
+	mdl1.write(file=model_name+str(i)+'_opt_.pdb')
 
 
 

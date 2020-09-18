@@ -4,7 +4,7 @@ import os, subprocess
 
 os.chdir(work_dir)
 
-subprocess.run(["obabel", "soft_dock.sd", "-O", "soft_dock.pdb"])
+subprocess.call(["obabel", "soft_dock.sd", "-O", "soft_dock.pdb"])
 
 num = 0
 

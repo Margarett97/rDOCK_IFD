@@ -16,6 +16,6 @@ f.close()
 
 os.chdir(path)
 with open("parameters.py","a") as p:
-    name1 = "rec_chain = '"
-    p.write(name1 + rec_chain + "'\n")
+    name = "rec_chain = '"
+    p.write(name + rec_chain + "'\n")
 p.close()
