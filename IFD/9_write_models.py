@@ -12,7 +12,7 @@ os.chdir(work_dir)
 
 
 for i in range(0,10):
-    rc("open #0 " + receptor + "_prep.pdb")
+    rc("open #0 " + receptor + ".pdb")
     rc("delete H")
     rc("open #1 pose" + str(i) + ".pdb")
     rc("delete H")

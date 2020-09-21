@@ -5,11 +5,11 @@ import os, subprocess, shutil
 with open("parameters.py","a") as f:
     name1 = "soft = '"
     name2 = "hard = '"
-    name3 = "work_dir = '/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/1_aldose_rductase'" ##DO USUNIĘCIA
+    name3 = "work_dir = '/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/2_CDK2'" ##DO USUNIĘCIA
     name4 = "dock_dir = '/home/malgorzata/Desktop/rDock_2013.1_src'" ## DO USUNIĘCIA
-    name5 = "receptor = '2acr'" ## DO USUNIĘCIA
-    name6 = "ligand = 'TOL'" ## DO USUNIĘCIA
-    name7 = ("rec_ligand = 'NAP'")## DO USUNIĘCIA
+    name5 = "receptor = '1aq1'" ## DO USUNIĘCIA
+    name6 = "ligand = 'HMD'" ## DO USUNIĘCIA
+    name7 = ("rec_ligand = 'STU'")## DO USUNIĘCIA
     f.write(name1 + "soft_docking.prm' \n")
     f.write(name2 + "hard_docking.prm' \n")
     f.write(name3 + "\n")## DO USUNIĘCIA
@@ -32,27 +32,57 @@ if not os.path.exists(new_dir):
 
 ## SOFT DOCKING:
 
-os.system("alias python=python3")
 
-subprocess.run(["python", "1_path_change.py"])
+subprocess.run(["python3", "1_path_change.py"])
 
-subprocess.run(["python", "2_prepare.py"])
+subprocess.run(["python3", "2_prepare.py"])
 
-subprocess.run(["python", "3_extension.py"])
+subprocess.run(["python3", "3_extension.py"])
 
-subprocess.run(["python", "4_cavity_prep.py"])
+subprocess.run(["python3", "4_cavity_prep.py"])
 
-subprocess.run(["python", "5_soft_docking.py"])
+subprocess.run(["python3", "5_soft_docking.py"])
 
-subprocess.run(["python", "6_chain.py"])
+subprocess.run(["python3", "6_chain.py"])
 
-subprocess.run(["python", "7_poses.py"])
+subprocess.run(["python3", "7_poses.py"])
 
-subprocess.run(["python", "8_poses_chain.py"])
+subprocess.run(["python3", "8_poses_chain.py"])
 
 subprocess.run([chimera_dir, "--nogui", "--script", "9_write_models.py"])
 
-with open(work_dir + "/dope.log", "w") as out:
-    subprocess.run(["python", "10_MODELLER.py"], stdout = out)
+subprocess.run(["python3", "10_MODELLER.py"])
 
-subprocess.run(["python", "11_DISTANCE.py"])
+with open(work_dir + "/dope.log", "w") as out:
+    subprocess.run(["python3", "11_DOPE.py"], stdout = out)
+
+subprocess.run(["python3", "12_DISTANCE.py"])
+
+
+import parameters
+from six.moves import reload_module
+reload_module(parameters)
+
+from parameters import *
+
+##HARD DOCKING
+
+subprocess.run([chimera_dir, "--nogui", "--script", "13_prep_sec_docking.py"])
+
+subprocess.run(["python3", "3_extension.py"])
+
+subprocess.run(["python3", "4_cavity_prep.py"])
+
+subprocess.run(["python3", "14_hard_docking.py"])
+
+subprocess.run(["python3", "6_chain.py"])
+
+subprocess.run(["python3", "7_poses.py"])
+
+subprocess.run(["python3", "8_poses_chain.py"])
+
+subprocess.run([chimera_dir, "--nogui", "--script", "9_write_models.py"])
+
+subprocess.run(["python3", "15_SCORE.py"])
+
+

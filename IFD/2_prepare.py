@@ -15,7 +15,7 @@ n.close()
 
 with open(receptor + ".pdb", "r") as f:        # receptor selection
     line = f.readlines()              
-    with open(receptor+ "_prep.pdb" , "w") as n:
+    with open(receptor+ ".pdb" , "w") as n:
         for i, lines in enumerate(line):
             if lines.startswith("ATOM"):
                 n.write(lines)

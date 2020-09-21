@@ -6,7 +6,7 @@ path = os.getcwd()
 
 os.chdir(work_dir)
 
-with open(receptor + "_prep.pdb") as f:
+with open(receptor + ".pdb") as f:
     line = f.readlines()
     for i,lines in enumerate(line):
         indx = lines.split()

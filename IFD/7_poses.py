@@ -4,11 +4,11 @@ import os, subprocess
 
 os.chdir(work_dir)
 
-subprocess.call(["obabel", "soft_dock.sd", "-O", "soft_dock.pdb"])
+subprocess.call(["obabel", "DOCK.sd", "-O", "DOCK.pdb"])
 
 num = 0
 
-with open("soft_dock.pdb") as f:
+with open("DOCK.pdb") as f:
     for line in f:
         with open("pose" + str(num) + ".pdb", "a+") as n:
             n.write(line)

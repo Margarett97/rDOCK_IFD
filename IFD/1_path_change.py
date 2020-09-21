@@ -10,3 +10,5 @@ shutil.copy(path + "/docking_files/" + hard, dock_dir + "/data/scripts/" + hard)
 
     
 shutil.copy(path + "/docking_files/cavity.prm", work_dir + "/cavity.prm")
+
+shutil.copy(path + "/docking_files/cavity.prm", work_dir + "/IFD/cavity.prm")

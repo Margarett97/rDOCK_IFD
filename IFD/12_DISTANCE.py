@@ -12,22 +12,29 @@ os.chdir(work_dir)
 #DOPE
 
 num = 0
+dope_valu = []
 with open("dope.log") as f:
     line = f.readlines()
-    with open("DOPE.txt", "w") as n:
-        for i,lines in enumerate(line):
-            if lines.startswith("DOPE score               :"):
-                value = lines.split(":")[1]
-                n.write(str(num) + "   " + value)
-    n.close()
+    for i,lines in enumerate(line):
+        if lines.startswith("DOPE score               :"):
+            value = lines.split(":")[1] 
+            dope_valu.append(value)
 f.close()
+
+with open("DOPE.txt", "w") as n:
+    for i in range(0,len(dope_valu)):
+        if i % 2 == 1:
+            n.write(str(num) + "   " + dope_valu[i])
+            num += 1
+n.close()
+
 
     
 
 #SCORE
 
 num = 0
-with open("soft_dock.sd") as f:
+with open("DOCK.sd") as f:
     line = f.readlines()
     with open("SOFT_SCORE.txt","w") as n:
         for i,lines in enumerate(line):
@@ -87,6 +94,20 @@ with open("parameters.py", "a") as p:
     name = "best_pose= '"
     p.write(name + pose + "'\n")
 p.close()
+
+
+shutil.copy(work_dir + "/" + pose + ".pdb", work_dir + "/IFD/" + pose + ".pdb") 
+shutil.copy(work_dir + "/" + ligand + ".pdb", work_dir + "/IFD/" + ligand + ".pdb")
+shutil.copy(work_dir + "/" + rec_ligand + ".pdb", work_dir + "/IFD/" + rec_ligand + ".pdb") 
+
+with open("parameters.py", "a") as p:
+    name1 = "work_dir='"
+    name2 = "receptor ='ligand_remove'\n"
+    p.write(name1 + work_dir+ "/IFD'\n")
+    p.write(name2)
+    
+
+
 
 
 

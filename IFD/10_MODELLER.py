@@ -58,7 +58,6 @@ def make_restraints(mdl1, aln):
 
 #ALIGNMENT:
 
-receptor = receptor + "_prep"
 
 env = environ()
 env.io.atom_files_directory = [work_dir]
@@ -151,7 +150,7 @@ for i in range(0,10):
 	atmsel2=selection(mdl1) 
 	score2=atmsel2.assess_dope()
 	
-	mdl1.write(file=model_name+str(i)+'_opt_.pdb')
+	mdl1.write(file=model_name+str(i)+'_opt.pdb')
 
 
 
