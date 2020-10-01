@@ -90,7 +90,7 @@ alig='myAlignment.ali'
 #OPTIMIZATION:
 
 
-for i in range(0,10):
+for i in range(0,int(no_poses)):
 	env = environ(rand_seed=-49837)
 	env.io.hetatm = True
 	#soft sphere potential

@@ -11,7 +11,7 @@ from parameters import *
 os.chdir(work_dir)
 
 
-for i in range(0,10):
+for i in range(0,int(no_poses)):
     rc("open #0 " + receptor + ".pdb")
     rc("delete H")
     rc("open #1 pose" + str(i) + ".pdb")

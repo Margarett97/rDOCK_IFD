@@ -10,7 +10,7 @@ from parameters import *
 os.chdir(work_dir)
 
 #DOPE
-for i in range(0,10):
+for i in range(0,int(no_poses)):
 
         env = environ()
         env.io.hetatm = True

@@ -34,18 +34,20 @@ n.close()
 #SCORE
 
 num = 0
+VALUES = []
 with open("DOCK.sd") as f:
     line = f.readlines()
     with open("SOFT_SCORE.txt","w") as n:
         for i,lines in enumerate(line):
             if lines.startswith(">  <SCORE.INTER>"):
                 n.write(str(num) + "  " + line[i+1])
+                VALUES.append(line[i+1])
                 num += 1
             
     n.close()        
 f.close()
 
-
+minimum = VALUES.index(min(VALUES))
 
 
 #DISTANCE
@@ -69,10 +71,22 @@ DISTANCE = np.sqrt((pow(score_norm,2) + pow(dope_norm,2)))
     
 ## Wykres
 
+
+
+POSES = []
+NUM = []
+
+for i in range(0,int(no_poses)):
+    poses = "pose" + str(i)
+    POSES.append(poses)
+    num = i
+    NUM.append(num)
+
+
 data = pd.DataFrame(
     {
-    "POSES" : ['pose0','pose1','pose2','pose3','pose4','pose5','pose6','pose7','pose8','pose9'],   
-    "col1" : [0,1,2,3,4,5,6,7,8,9],
+    "POSES" : POSES,   
+    "col1" : NUM,
     "col2" : DISTANCE
     }
     )
@@ -99,13 +113,15 @@ p.close()
 shutil.copy(work_dir + "/" + pose + ".pdb", work_dir + "/IFD/" + pose + ".pdb") 
 shutil.copy(work_dir + "/" + ligand + ".pdb", work_dir + "/IFD/" + ligand + ".pdb")
 shutil.copy(work_dir + "/" + rec_ligand + ".pdb", work_dir + "/IFD/" + rec_ligand + ".pdb") 
+shutil.copy(work_dir + "/" + apo + ".pdb", work_dir + "/IFD/" + apo + ".pdb")
 
 with open("parameters.py", "a") as p:
     name1 = "work_dir='"
-    name2 = "receptor ='ligand_remove'\n"
+    name2 = "receptor ='ligand_remove'\n" 
+    name3 = "best_score ='"
     p.write(name1 + work_dir+ "/IFD'\n")
     p.write(name2)
-    
+    p.write(name + "model" + str(minimum) + "'\n")
 
 
 
