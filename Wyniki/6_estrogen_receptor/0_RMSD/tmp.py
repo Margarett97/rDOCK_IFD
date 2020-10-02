@@ -1,0 +1,6 @@
+chimera_dir ='/home/malgorzata/chimera/bin'
+ref = '1err'
+best_score = 'model7'
+best_score2 = 'model0'
+ligand = 'RAL'
+act_chain = 'A'

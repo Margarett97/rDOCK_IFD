@@ -56,6 +56,7 @@ from parameters import *
 
 ##HARD DOCKING
 
+
 subprocess.run([chimera_dir + "/chimera", "--nogui", "--script", "13_prep_sec_docking.py"])
 
 subprocess.run(["python3", "3_extension.py"])
@@ -73,6 +74,13 @@ subprocess.run(["python3", "8_poses_chain.py"])
 subprocess.run([chimera_dir + "/chimera", "--nogui", "--script", "9_write_models.py"])
 
 subprocess.run(["python3", "15_SCORE.py"])
+
+
+import parameters
+from six.moves import reload_module
+reload_module(parameters)
+
+from parameters import *
 
 subprocess.run([chimera_dir + "/chimera", "--gui", "--silent", "--script", "16_visualization.py"])
 

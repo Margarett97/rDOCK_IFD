@@ -18,6 +18,12 @@ SECTION SETSLOPE_5
 	DR12MAX@SCORE.INTER.POLAR	0.9
 END_SECTION
 
+SECTION RANDOM_POP
+        TRANSFORM                       RbtRandPopTransform
+        POP_SIZE                        50
+	SCALE_CHROM_LENGTH		TRUE
+END_SECTION
+
 SECTION GA_SLOPE5
 	TRANSFORM			RbtGATransform	
 	PCROSSOVER			0.4	# Prob. of crossover

@@ -1,0 +1,132 @@
+#0, chain A: prostaglandin synthase-2
+#0, chain B: prostaglandin synthase-2
+#0, chain C: prostaglandin synthase-2
+#0, chain D: prostaglandin synthase-2
+Wrote /home/malgorzata/Desktop/rDOCK_IFD/Wyniki/3_COX2/0_RMSD/1cx2.pdb
+The following problems occurred while reading PDB file for 1dm2.pdb
+warning:  CONECT record for nonexistent atom: 2244
+#0, chain A: cyclin-dependent kinase 2
+1dm2.pdb opened
+model7.pdb opened
+Computing secondary structure assignments for model(s) #0, #1
+using ksdssp (Kabsch and Sander Define Secondary Structure
+of Proteins) with the parameters:
+  energy cutoff -0.5
+  minimum helix length 3
+  minimum strand length 3
+
+Matchmaker 1dm2.pdb, chain A (#0) with model7.pdb, chain A (#1), sequence alignment score = 1369.4
+with these parameters:
+	chain pairing: bb
+	Needleman-Wunsch using BLOSUM-62
+	ss fraction: 0.3
+	gap open (HH/SS/other) 18/18/6, extend 1
+	ss matrix:  (H, O): -6 (S, S): 6 (H, H): 6 (O, S): -6 (O, O): 4 (H, S): -9
+	iteration cutoff: 2
+RMSD between 268 pruned atom pairs is 0.543 angstroms; (across all 274 pairs: 0.834)
+
+Executing rmsd ['#1:LIG', '#0:HMD']
+RMSD between 19 atom pairs is 8.527 angstroms
+The following problems occurred while reading PDB file for 1cx2.pdb
+warning: cannot find LINK/SSBOND residue CYS (36 )
+warning: cannot find LINK/SSBOND residue CYS (37 )
+warning: cannot find LINK/SSBOND residue CYS (41 )
+warning: cannot find LINK/SSBOND residue CYS (59 )
+warning: cannot find LINK/SSBOND residue CYS (569 )
+warning: cannot find LINK/SSBOND residue CYS (36 )
+warning: cannot find LINK/SSBOND residue CYS (37 )
+warning: cannot find LINK/SSBOND residue CYS (41 )
+warning: cannot find LINK/SSBOND residue CYS (59 )
+warning: cannot find LINK/SSBOND residue CYS (569 )
+warning: cannot find LINK/SSBOND residue CYS (36 )
+warning: cannot find LINK/SSBOND residue CYS (37 )
+warning: cannot find LINK/SSBOND residue CYS (41 )
+warning: cannot find LINK/SSBOND residue CYS (59 )
+warning: cannot find LINK/SSBOND residue CYS (569 )
+warning: cannot find LINK/SSBOND residue ASN (68 )
+warning: cannot find LINK/SSBOND residue ASN (144 )
+warning: cannot find LINK/SSBOND residue ASN (410 )
+warning: cannot find LINK/SSBOND residue ASN (68 )
+warning: cannot find LINK/SSBOND residue ASN (144 )
+warning: cannot find LINK/SSBOND residue ASN (410 )
+warning: cannot find LINK/SSBOND residue ASN (68 )
+warning: cannot find LINK/SSBOND residue ASN (144 )
+warning: cannot find LINK/SSBOND residue ASN (410 )
+warning: cannot find LINK/SSBOND residue HIS (388 )
+warning: cannot find LINK/SSBOND residue HIS (388 )
+warning: cannot find LINK/SSBOND residue HIS (388 )
+#0, chain A: prostaglandin synthase-2
+1cx2.pdb opened
+model2.pdb opened
+Computing secondary structure assignments for model(s) #0, #1
+using ksdssp (Kabsch and Sander Define Secondary Structure
+of Proteins) with the parameters:
+  energy cutoff -0.5
+  minimum helix length 3
+  minimum strand length 3
+
+Matchmaker 1cx2.pdb, chain A (#0) with model2.pdb, chain A (#1), sequence alignment score = 2829.2
+with these parameters:
+	chain pairing: bb
+	Needleman-Wunsch using BLOSUM-62
+	ss fraction: 0.3
+	gap open (HH/SS/other) 18/18/6, extend 1
+	ss matrix:  (H, O): -6 (S, S): 6 (H, H): 6 (O, S): -6 (O, O): 4 (H, S): -9
+	iteration cutoff: 2
+RMSD between 551 pruned atom pairs is 0.444 angstroms; (across all 552 pairs: 0.457)
+
+Executing rmsd ['#1:LIG', '#0:s%*']
+Traceback (most recent call last):
+  File "/home/malgorzata/chimera/share/chimera/tkgui.py", line 354, in openPath
+    mols = chimera.openModels.open(path, type=ftype, ignore_cache=ignore_cache)
+  File "/home/malgorzata/chimera/share/chimera/__init__.py", line 1955, in open
+    models = func(filename, *args, **kw)
+  File "/home/malgorzata/chimera/share/chimera/__init__.py", line 1325, in _openPython
+    loadFunc(sandboxName, fileName, f)
+  File "18_RMSD.py", line 18, in <module>
+  File "/home/malgorzata/chimera/share/chimera/__init__.py", line 2791, in runCommand
+    makeCommand(*args, **kw)
+  File "/home/malgorzata/chimera/share/Midas/midas_text.py", line 69, in makeCommand
+    f(c, args)
+  File "/home/malgorzata/chimera/share/Midas/midas_text.py", line 3001, in doRMSD
+    exec 'Midas.rmsd(%s, %s)' % ( repr(getSpecs(spec1)), repr(getSpecs(spec2)))
+  File "<string>", line 1, in <module>
+  File "/home/malgorzata/chimera/share/Midas/__init__.py", line 2839, in rmsd
+    fAtoms, tAtoms = _atomSpecErrorCheck(f, t)
+  File "/home/malgorzata/chimera/share/Midas/__init__.py", line 4437, in _atomSpecErrorCheck
+    raise MidasError, "Unequal numbers of atoms chosen for evaluation"
+MidasError: Unequal numbers of atoms chosen for evaluation
+Error reading 18_RMSD.py:
+MidasError: Unequal numbers of atoms chosen for evaluation
+
+  File "/home/malgorzata/chimera/share/Midas/__init__.py", line 4437, in _atomSpecErrorCheck
+    raise MidasError, "Unequal numbers of atoms chosen for evaluation"
+
+See reply log for Python traceback.
+
+
+The following problems occurred while reading PDB file for 1dm2.pdb
+warning:  CONECT record for nonexistent atom: 2244
+#0, chain A: cyclin-dependent kinase 2
+1dm2.pdb opened
+model7.pdb opened
+Computing secondary structure assignments for model(s) #0, #1
+using ksdssp (Kabsch and Sander Define Secondary Structure
+of Proteins) with the parameters:
+  energy cutoff -0.5
+  minimum helix length 3
+  minimum strand length 3
+
+Matchmaker 1dm2.pdb, chain A (#0) with model7.pdb, chain A (#1), sequence alignment score = 1369.4
+with these parameters:
+	chain pairing: bb
+	Needleman-Wunsch using BLOSUM-62
+	ss fraction: 0.3
+	gap open (HH/SS/other) 18/18/6, extend 1
+	ss matrix:  (H, O): -6 (S, S): 6 (H, H): 6 (O, S): -6 (O, O): 4 (H, S): -9
+	iteration cutoff: 2
+RMSD between 268 pruned atom pairs is 0.543 angstroms; (across all 274 pairs: 0.834)
+
+Executing rmsd ['#1:LIG', '#0:HMD']
+RMSD between 19 atom pairs is 8.527 angstroms
+

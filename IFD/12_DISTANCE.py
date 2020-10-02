@@ -41,7 +41,7 @@ with open("DOCK.sd") as f:
         for i,lines in enumerate(line):
             if lines.startswith(">  <SCORE.INTER>"):
                 n.write(str(num) + "  " + line[i+1])
-                VALUES.append(line[i+1])
+                VALUES.append(float(line[i+1].strip()))
                 num += 1
             
     n.close()        
@@ -121,7 +121,7 @@ with open("parameters.py", "a") as p:
     name3 = "best_score ='"
     p.write(name1 + work_dir+ "/IFD'\n")
     p.write(name2)
-    p.write(name + "model" + str(minimum) + "'\n")
+    p.write(name3 + "model" + str(minimum) + "'\n")
 
 
 

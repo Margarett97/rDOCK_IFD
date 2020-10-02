@@ -17,13 +17,10 @@ from taskthread import *
 
 
 class Ui_Second(object):
+    
     def setupUi(self, Second):
         Second.setObjectName("Second")
         Second.resize(543, 306)
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../../image.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        icon.addPixmap(QtGui.QPixmap("../../image.png"), QtGui.QIcon.Disabled, QtGui.QIcon.Off)
-        Second.setWindowIcon(icon)
         self.gridLayout = QtWidgets.QGridLayout(Second)
         self.gridLayout.setObjectName("gridLayout")
         self.ligand_value = QtWidgets.QLineEdit(Second)
@@ -237,7 +234,7 @@ class Ui_Second(object):
 
     def retranslateUi(self, Second):
         _translate = QtCore.QCoreApplication.translate
-        Second.setWindowTitle(_translate("Second", "Form"))
+        Second.setWindowTitle(_translate("Second", "FitDock"))
         self.api_name.setText(_translate("Second", "               FitDock"))
         self.LigandButton.setText(_translate("Second", "..."))
         self.ligand_name.setText(_translate("Second", "Ligand file:"))
@@ -323,6 +320,7 @@ class Ui_Second(object):
              
 
     def Exit2(self):
+        Second = QtWidgets.QWidget()
         Second.close()
         exit(subprocess.run(["python3","0_RUN.py"]))
         

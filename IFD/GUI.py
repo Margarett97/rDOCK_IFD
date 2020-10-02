@@ -15,8 +15,8 @@ class Ui_First(object):
 
     def openWindow(self):
         
-        self.window=QtWidgets.QWidget()
-        self.ui=Ui_Second()
+        self.window = QtWidgets.QWidget()
+        self.ui = Ui_Second()
         self.ui.setupUi(self.window)
         First.close()
         self.window.show()
@@ -28,11 +28,6 @@ class Ui_First(object):
         font = QtGui.QFont()
         font.setPointSize(28)
         First.setFont(font)
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../../image.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        icon.addPixmap(QtGui.QPixmap("../../image.png"), QtGui.QIcon.Disabled, QtGui.QIcon.Off)
-        icon.addPixmap(QtGui.QPixmap("../../image.png"), QtGui.QIcon.Disabled, QtGui.QIcon.On)
-        First.setWindowIcon(icon)
         self.gridLayout = QtWidgets.QGridLayout(First)
         self.gridLayout.setObjectName("gridLayout")
         self.rD_path = QtWidgets.QLineEdit(First)
