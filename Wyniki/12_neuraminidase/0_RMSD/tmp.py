@@ -1,6 +1,6 @@
 chimera_dir ='/home/malgorzata/chimera/bin'
-ref = '1a4q'
-best_score = 'model2'
+ref = '1nsc'
+best_score = 'model4'
 best_score2 = 'model8'
-ligand = 'DPC'
-act_chain = 'A'
+ligand = 'SIA'
+

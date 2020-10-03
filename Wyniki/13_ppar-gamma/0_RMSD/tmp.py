@@ -1,0 +1,6 @@
+chimera_dir ='/home/malgorzata/chimera/bin'
+ref = '2prg'
+best_score = 'model7'
+best_score2 = 'model3'
+ligand = 'BRL'
+act_chain = 'A'
