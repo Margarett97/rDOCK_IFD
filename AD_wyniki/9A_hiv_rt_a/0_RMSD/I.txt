@@ -1,0 +1,119 @@
+#0, chain A: hiv-1 reverse transcriptase (A-chain)
+1c1c.pdb opened
+pose0.pdb opened
+Computing secondary structure assignments for model(s) #0, #1
+using ksdssp (Kabsch and Sander Define Secondary Structure
+of Proteins) with the parameters:
+  energy cutoff -0.5
+  minimum helix length 3
+  minimum strand length 3
+
+Matchmaker 1c1c.pdb, chain A (#0) with pose0.pdb, chain A (#1), sequence alignment score = 2713.8
+with these parameters:
+	chain pairing: bb
+	Needleman-Wunsch using BLOSUM-62
+	ss fraction: 0.3
+	gap open (HH/SS/other) 18/18/6, extend 1
+	ss matrix:  (H, O): -6 (S, S): 6 (H, H): 6 (O, S): -6 (O, O): 4 (H, S): -9
+	iteration cutoff: 2
+RMSD between 521 pruned atom pairs is 0.794 angstroms; (across all 536 pairs: 0.923)
+
+Executing rmsd ['#1:UNK', '#0:UNK']
+Traceback (most recent call last):
+  File "C:\Program Files\Chimera 1.13.1\share\chimera\tkgui.py", line 354, in openPath
+    mols = chimera.openModels.open(path, type=ftype, ignore_cache=ignore_cache)
+  File "C:\Program Files\Chimera 1.13.1\share\chimera\__init__.py", line 1955, in open
+    models = func(filename, *args, **kw)
+  File "C:\Program Files\Chimera 1.13.1\share\chimera\__init__.py", line 1325, in _openPython
+    loadFunc(sandboxName, fileName, f)
+  File "RMSD.py", line 22, in <module>
+  File "C:\Program Files\Chimera 1.13.1\share\chimera\__init__.py", line 2791, in runCommand
+    makeCommand(*args, **kw)
+  File "C:\Program Files\Chimera 1.13.1\share\Midas\midas_text.py", line 69, in makeCommand
+    f(c, args)
+  File "C:\Program Files\Chimera 1.13.1\share\Midas\midas_text.py", line 3001, in doRMSD
+    exec 'Midas.rmsd(%s, %s)' % ( repr(getSpecs(spec1)), repr(getSpecs(spec2)))
+  File "<string>", line 1, in <module>
+  File "C:\Program Files\Chimera 1.13.1\share\Midas\__init__.py", line 2839, in rmsd
+    fAtoms, tAtoms = _atomSpecErrorCheck(f, t)
+  File "C:\Program Files\Chimera 1.13.1\share\Midas\__init__.py", line 4437, in _atomSpecErrorCheck
+    raise MidasError, "Unequal numbers of atoms chosen for evaluation"
+MidasError: Unequal numbers of atoms chosen for evaluation
+Error reading RMSD.py:
+MidasError: Unequal numbers of atoms chosen for evaluation
+
+  File "C:\Program Files\Chimera 1.13.1\share\Midas\__init__.py", line 4437, in _atomSpecErrorCheck
+    raise MidasError, "Unequal numbers of atoms chosen for evaluation"
+
+See reply log for Python traceback.
+
+
+#0, chain A: hiv-1 reverse transcriptase (A-chain)
+1c1c.pdb opened
+The following problems occurred while reading PDB file for pose0.pdb
+warning:  Ignored bad PDB record found on line 148
+warning:  Ignored bad PDB record found on line 273
+warning:  Ignored bad PDB record found on line 411
+warning:  Ignored bad PDB record found on line 441
+warning:  Ignored bad PDB record found on line 678
+warning:  Ignored bad PDB record found on line 764
+warning:  Ignored bad PDB record found on line 868
+warning:  Ignored bad PDB record found on line 1006
+warning:  Ignored bad PDB record found on line 1782
+warning:  Ignored bad PDB record found on line 2298
+Suppressed 6 warnings about bad PDB records
+pose0.pdb opened
+Computing secondary structure assignments for model(s) #0, #1
+using ksdssp (Kabsch and Sander Define Secondary Structure
+of Proteins) with the parameters:
+  energy cutoff -0.5
+  minimum helix length 3
+  minimum strand length 3
+
+Matchmaker 1c1c.pdb, chain A (#0) with pose0.pdb, chain A (#1), sequence alignment score = 2697
+with these parameters:
+	chain pairing: bb
+	Needleman-Wunsch using BLOSUM-62
+	ss fraction: 0.3
+	gap open (HH/SS/other) 18/18/6, extend 1
+	ss matrix:  (H, O): -6 (S, S): 6 (H, H): 6 (O, S): -6 (O, O): 4 (H, S): -9
+	iteration cutoff: 2
+RMSD between 517 pruned atom pairs is 0.795 angstroms; (across all 532 pairs: 0.925)
+
+Executing rmsd ['#1:UNK', '#0:UNK']
+RMSD between 22 atom pairs is 1.710 angstroms
+#0, chain A: hiv-1 reverse transcriptase (A-chain)
+1c1c.pdb opened
+The following problems occurred while reading PDB file for pose4.pdb
+warning:  Ignored bad PDB record found on line 146
+warning:  Ignored bad PDB record found on line 271
+warning:  Ignored bad PDB record found on line 409
+warning:  Ignored bad PDB record found on line 444
+warning:  Ignored bad PDB record found on line 674
+warning:  Ignored bad PDB record found on line 760
+warning:  Ignored bad PDB record found on line 1004
+warning:  Ignored bad PDB record found on line 1778
+warning:  Ignored bad PDB record found on line 2294
+warning:  Ignored bad PDB record found on line 2904
+Suppressed 5 warnings about bad PDB records
+pose4.pdb opened
+Computing secondary structure assignments for model(s) #0, #1
+using ksdssp (Kabsch and Sander Define Secondary Structure
+of Proteins) with the parameters:
+  energy cutoff -0.5
+  minimum helix length 3
+  minimum strand length 3
+
+Matchmaker 1c1c.pdb, chain A (#0) with pose4.pdb, chain A (#1), sequence alignment score = 2703
+with these parameters:
+	chain pairing: bb
+	Needleman-Wunsch using BLOSUM-62
+	ss fraction: 0.3
+	gap open (HH/SS/other) 18/18/6, extend 1
+	ss matrix:  (H, O): -6 (S, S): 6 (H, H): 6 (O, S): -6 (O, O): 4 (H, S): -9
+	iteration cutoff: 2
+RMSD between 516 pruned atom pairs is 0.793 angstroms; (across all 532 pairs: 0.927)
+
+Executing rmsd ['#1:UNK', '#0:UNK']
+RMSD between 22 atom pairs is 4.234 angstroms
+

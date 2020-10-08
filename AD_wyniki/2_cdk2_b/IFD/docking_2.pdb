@@ -1,0 +1,27 @@
+REMARK   4 XXXX COMPLIES WITH FORMAT V. 2.0
+ATOM      4  H1  HMD A 400      -0.856  29.080   8.048  1.00  0.00      dock H  
+ATOM      6  H2  HMD A 400       3.207  27.190   6.987  1.00  0.00      dock H  
+ATOM     18  H4  HMD A 400       0.474  22.509   9.457  1.00  0.00      dock H  
+ATOM     21  H3  HMD A 400      -0.441  22.489  13.509  1.00  0.00      dock H  
+ATOM     24  H52 HMD A 400       0.515  20.164  11.273  1.00  0.00      dock H  
+ATOM     25  H51 HMD A 400      -1.174  20.396  11.360  1.00  0.00      dock H  
+TER      26      HMD A 400 
+HETATM    1 Br   HMD A 400      -3.342  28.637   9.583  1.00 63.13      dockBr  
+HETATM    2  O1  HMD A 400       1.571  28.989   7.482  1.00 45.50      dock O  
+HETATM    3  N1  HMD A 400      -0.759  28.264   8.653  1.00 48.35      dock N  
+HETATM    5  N2  HMD A 400       2.442  26.873   7.581  1.00 41.03      dock N  
+HETATM    7  C1  HMD A 400      -1.696  27.797   9.481  1.00 51.52      dock C  
+HETATM    8  C2  HMD A 400      -1.254  26.697  10.156  1.00 49.23      dock C  
+HETATM    9  C3  HMD A 400       0.069  26.453   9.698  1.00 46.03      dock C  
+HETATM   10  C4  HMD A 400       0.339  27.484   8.745  1.00 45.99      dock C  
+HETATM   11  C5  HMD A 400       1.490  27.825   7.897  1.00 42.91      dock C  
+HETATM   12  C6  HMD A 400       2.492  25.459   7.991  1.00 39.71      dock C  
+HETATM   13  C7  HMD A 400       2.426  25.264   9.495  1.00 41.24      dock C  
+HETATM   14  C8  HMD A 400       0.999  25.264  10.036  1.00 44.36      dock C  
+HETATM   15  C9  HMD A 400       0.554  24.189  10.813  1.00 44.10      dock C  
+HETATM   16  N4  HMD A 400       0.352  22.862  10.407  1.00 45.11      dock N  
+HETATM   17  C11 HMD A 400      -0.027  22.127  11.468  1.00 46.60      dock C  
+HETATM   19  N3  HMD A 400      -0.154  22.838  12.594  1.00 47.18      dock N  
+HETATM   20  C10 HMD A 400       0.174  24.115  12.281  1.00 45.33      dock C  
+HETATM   22  O2  HMD A 400       0.166  25.063  13.081  1.00 43.12      dock O  
+HETATM   23  N5  HMD A 400      -0.251  20.831  11.365  1.00 49.07      dock N  

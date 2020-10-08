@@ -1,0 +1,32 @@
+REMARK   4 XXXX COMPLIES WITH FORMAT V. 2.0
+ATOM     10  H4  OHT A 600      63.956  28.679  71.493  1.00  0.00      dock H  
+TER      11      OHT A 600 
+HETATM    1  C8  OHT A 600      67.792  34.428  71.502  1.00 25.22      dock C  
+HETATM    2  C7  OHT A 600      67.482  33.643  72.575  1.00 24.63      dock C  
+HETATM    3  C1  OHT A 600      66.568  32.445  72.505  1.00 24.14      dock C  
+HETATM    4  C2  OHT A 600      66.673  31.478  71.457  1.00 26.17      dock C  
+HETATM    5  C3  OHT A 600      65.777  30.402  71.385  1.00 26.36      dock C  
+HETATM    6  C4  OHT A 600      64.768  30.282  72.360  1.00 29.58      dock C  
+HETATM    7  C5  OHT A 600      64.657  31.230  73.402  1.00 27.04      dock C  
+HETATM    8  C6  OHT A 600      65.554  32.289  73.454  1.00 25.11      dock C  
+HETATM    9  O4  OHT A 600      63.897  29.239  72.257  1.00 28.95      dock O  
+HETATM   11  C17 OHT A 600      68.004  33.906  73.920  1.00 26.54      dock C  
+HETATM   12  C18 OHT A 600      69.018  33.129  74.475  1.00 26.76      dock C  
+HETATM   13  C19 OHT A 600      69.533  33.374  75.717  1.00 28.12      dock C  
+HETATM   14  C20 OHT A 600      69.040  34.433  76.462  1.00 28.11      dock C  
+HETATM   15  C21 OHT A 600      68.015  35.237  75.935  1.00 26.98      dock C  
+HETATM   16  C22 OHT A 600      67.517  34.970  74.691  1.00 27.89      dock C  
+HETATM   17  O20 OHT A 600      69.524  34.769  77.694  1.00 31.97      dock O  
+HETATM   18  C23 OHT A 600      69.330  36.087  78.198  1.00 40.10      dock C  
+HETATM   19  C24 OHT A 600      68.204  36.005  79.192  1.00 45.21      dock C  
+HETATM   20  N24 OHT A 600      67.965  37.233  79.899  1.00 50.11      dock N  
+HETATM   21  C25 OHT A 600      68.779  37.327  81.112  1.00 52.05      dock C  
+HETATM   22  C26 OHT A 600      68.303  38.370  79.034  1.00 52.76      dock C  
+HETATM   23  C9  OHT A 600      67.018  34.377  70.201  1.00 23.31      dock C  
+HETATM   24  C10 OHT A 600      66.165  35.599  69.999  1.00 26.22      dock C  
+HETATM   25  C11 OHT A 600      68.917  35.412  71.492  1.00 27.85      dock C  
+HETATM   26  C16 OHT A 600      68.661  36.799  71.540  1.00 28.59      dock C  
+HETATM   27  C15 OHT A 600      69.713  37.714  71.580  1.00 30.60      dock C  
+HETATM   28  C14 OHT A 600      71.027  37.289  71.570  1.00 30.44      dock C  
+HETATM   29  C13 OHT A 600      71.295  35.942  71.521  1.00 31.30      dock C  
+HETATM   30  C12 OHT A 600      70.248  35.013  71.483  1.00 28.04      dock C  

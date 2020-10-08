@@ -1,0 +1,46 @@
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_1  and  S_7 
+REMARK    2  A    between atoms: S_7  and  C7_8 
+REMARK    3  A    between atoms: C12_9  and  CF_10 
+REMARK    4  A    between atoms: N8_15  and  CA_20 
+REMARK    5  A    between atoms: CA_20  and  OB_21 
+REMARK    6  A    between atoms: OB_21  and  CC_22 
+ROOT
+HETATM    1  C7  612 A 999       0.724 -35.624  26.267  1.00 18.06     0.090 A 
+HETATM    2  C12 612 A 999       1.442 -34.630  26.917  1.00 14.61     0.047 A 
+HETATM    3  C11 612 A 999       2.818 -34.367  26.530  1.00 18.65     0.258 A 
+HETATM    4  O11 612 A 999       3.501 -33.475  27.014  1.00 19.51    -0.267 OA
+HETATM    5  N8  612 A 999       1.321 -36.395  25.252  1.00 19.76    -0.271 N 
+HETATM    6  C9  612 A 999       2.657 -36.192  24.852  1.00 23.47     0.332 A 
+HETATM    7  O9  612 A 999       3.200 -36.871  23.982  1.00 22.87    -0.246 OA
+HETATM    8  N10 612 A 999       3.331 -35.175  25.512  1.00 16.93    -0.275 N 
+ATOM      9  H10 612 A 999       4.295 -35.000  25.226  1.00  0.00     0.173 HD
+ENDROOT
+BRANCH   1  10
+HETATM   10  S   612 A 999      -1.070 -35.922  26.653  1.00 32.26    -0.106 SA
+BRANCH  10  11
+HETATM   11  C1  612 A 999      -2.027 -34.462  26.110  1.00 32.95     0.054 C 
+HETATM   12  C2  612 A 999      -2.255 -34.662  24.619  1.00 34.65     0.015 C 
+HETATM   13  C3  612 A 999      -3.168 -33.599  24.066  1.00 27.76     0.001 C 
+HETATM   14  C4  612 A 999      -4.498 -33.586  24.814  1.00 29.08     0.000 C 
+HETATM   15  C5  612 A 999      -4.264 -33.370  26.304  1.00 28.74     0.001 C 
+HETATM   16  C6  612 A 999      -3.358 -34.451  26.850  1.00 30.82     0.015 C 
+ENDBRANCH  10  11
+ENDBRANCH   1  10
+BRANCH   2  17
+HETATM   17  CF  612 A 999       0.965 -33.898  28.185  1.00 10.07     0.019 C 
+HETATM   18  CH  612 A 999       0.161 -32.646  27.924  1.00 14.61     0.015 C 
+HETATM   19  CI  612 A 999       2.023 -33.736  29.223  1.00 17.14     0.015 C 
+ENDBRANCH   2  17
+BRANCH   5  20
+HETATM   20  CA  612 A 999       0.602 -37.504  24.574  1.00 21.69     0.304 C 
+BRANCH  20  21
+HETATM   21  OB  612 A 999      -0.651 -37.078  24.051  1.00 29.12    -0.372 OA
+BRANCH  21  22
+HETATM   22  CC  612 A 999      -0.561 -36.757  22.659  1.00 25.28     0.165 C 
+HETATM   23  CD  612 A 999       0.801 -37.112  22.114  1.00 18.82     0.033 C 
+ENDBRANCH  21  22
+ENDBRANCH  20  21
+ENDBRANCH   5  20
+TORSDOF 6

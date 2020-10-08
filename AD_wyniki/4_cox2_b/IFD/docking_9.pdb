@@ -1,0 +1,19 @@
+REMARK   4 XXXX COMPLIES WITH FORMAT V. 2.0
+HETATM    1  C6  FLP A 701      26.318  22.770  14.690  1.00 22.32      dock C  
+HETATM    2  C7  FLP A 701      27.690  22.939  14.995  1.00 24.22      dock C  
+HETATM    3  C8  FLP A 701      28.203  22.478  16.246  1.00 25.16      dock C  
+HETATM    4  C9  FLP A 701      27.313  21.844  17.181  1.00 27.53      dock C  
+HETATM    5  C10 FLP A 701      25.967  21.692  16.867  1.00 25.73      dock C  
+HETATM    6  C11 FLP A 701      25.466  22.140  15.641  1.00 26.42      dock C  
+HETATM    7  F   FLP A 701      24.149  21.952  15.360  1.00 30.59      dock F  
+HETATM    8  C2  FLP A 701      25.734  23.266  13.384  1.00 15.36      dock C  
+HETATM    9  C1  FLP A 701      24.994  22.416  12.568  1.00  9.77      dock C  
+HETATM   10  C   FLP A 701      24.483  22.887  11.338  1.00  8.08      dock C  
+HETATM   11  C5  FLP A 701      24.709  24.190  10.930  1.00 11.48      dock C  
+HETATM   12  C4  FLP A 701      25.448  25.042  11.744  1.00 11.16      dock C  
+HETATM   13  C3  FLP A 701      25.961  24.580  12.971  1.00 13.94      dock C  
+HETATM   14  C12 FLP A 701      27.825  21.248  18.476  1.00 27.44      dock C  
+HETATM   15  C13 FLP A 701      29.290  21.619  18.695  1.00 27.63      dock C  
+HETATM   16  C14 FLP A 701      27.670  19.730  18.390  1.00 27.04      dock C  
+HETATM   17  O   FLP A 701      26.575  19.227  18.438  1.00 30.37      dock O  
+HETATM   18  O1  FLP A 701      28.719  18.957  18.295  1.00 25.86      dock O  

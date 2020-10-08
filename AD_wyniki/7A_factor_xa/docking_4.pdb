@@ -1,0 +1,37 @@
+REMARK   4 XXXX COMPLIES WITH FORMAT V. 2.0
+ATOM     15  H1  4PP C 500       4.277   9.251  21.054  1.00  0.00      dock H  
+ATOM     21  H1P 4PP C 500      10.190   8.839  20.807  1.00  0.00      dock H  
+ATOM     31 2H2A 4PP C 500       9.761   5.095  28.684  1.00  0.00      dock H  
+ATOM     32 1H2A 4PP C 500       8.507   5.612  27.543  1.00  0.00      dock H  
+ATOM     34 2H1A 4PP C 500      12.126   7.439  27.604  1.00  0.00      dock H  
+ATOM     35 1H1A 4PP C 500      11.719   6.259  28.843  1.00  0.00      dock H  
+TER      36      4PP C 500 
+HETATM    1  C1D 4PP C 500       5.457   9.267  25.342  1.00 12.29      dock C  
+HETATM    2  C2D 4PP C 500       4.071   9.231  25.027  1.00 13.77      dock C  
+HETATM    3  C3D 4PP C 500       3.594   8.342  24.029  1.00 14.22      dock C  
+HETATM    4  C4D 4PP C 500       4.498   7.483  23.338  1.00 13.69      dock C  
+HETATM    5  C5D 4PP C 500       5.897   7.515  23.649  1.00 13.12      dock C  
+HETATM    6  C6D 4PP C 500       6.380   8.408  24.654  1.00 11.05      dock C  
+HETATM    7  C1  4PP C 500       3.944   6.535  22.262  1.00 14.14      dock C  
+HETATM    8  C1C 4PP C 500       3.727   5.135  22.870  1.00 16.45      dock C  
+HETATM    9  O2  4PP C 500       4.586   4.669  23.630  1.00 16.98      dock O  
+HETATM   10  O3  4PP C 500       2.597   4.417  22.585  1.00 14.33      dock O  
+HETATM   11  C2  4PP C 500       2.646   7.080  21.661  1.00 11.71      dock C  
+HETATM   12  C3  4PP C 500       2.872   7.243  20.161  1.00 13.55      dock C  
+HETATM   13  C4  4PP C 500       4.364   7.378  19.878  1.00 13.06      dock C  
+HETATM   14  N1  4PP C 500       4.877   8.551  20.620  1.00 11.92      dock N  
+HETATM   16  C4P 4PP C 500       6.363   8.598  20.664  1.00 10.26      dock C  
+HETATM   17  C3P 4PP C 500       6.982   9.814  21.022  1.00 10.63      dock C  
+HETATM   18  C2P 4PP C 500       8.388   9.906  21.075  1.00 10.60      dock C  
+HETATM   19  N1P 4PP C 500       9.172   8.776  20.770  1.00 11.75      dock N  
+HETATM   20  C6P 4PP C 500       8.557   7.554  20.414  1.00 11.13      dock C  
+HETATM   22  C5P 4PP C 500       7.159   7.459  20.359  1.00  9.10      dock C  
+HETATM   23  C3B 4PP C 500       7.893   8.447  25.007  1.00  8.69      dock C  
+HETATM   24  C2B 4PP C 500       8.797   9.317  24.318  1.00  6.81      dock C  
+HETATM   25  C1B 4PP C 500      10.179   9.325  24.666  1.00  6.12      dock C  
+HETATM   26  C6B 4PP C 500      10.659   8.466  25.700  1.00  4.68      dock C  
+HETATM   27  C5B 4PP C 500       9.757   7.603  26.383  1.00  5.27      dock C  
+HETATM   28  C4B 4PP C 500       8.384   7.597  26.032  1.00  7.64      dock C  
+HETATM   29  C1A 4PP C 500      10.243   6.665  27.505  1.00  4.15      dock C  
+HETATM   30  N2A 4PP C 500       9.440   5.716  27.942  1.00  2.00      dock N  
+HETATM   33  N1A 4PP C 500      11.450   6.800  28.021  1.00  3.52      dock N  

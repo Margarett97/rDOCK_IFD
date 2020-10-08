@@ -1,0 +1,63 @@
+REMARK  10 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_1  and  C2_2 
+REMARK    2  A    between atoms: C2_2  and  O2_15 
+REMARK    3  A    between atoms: C4_4  and  O4_16 
+REMARK    4  A    between atoms: C5_5  and  N5_12 
+REMARK    5  A    between atoms: C6_6  and  C7_7 
+REMARK    6  A    between atoms: C7_7  and  C8_8 
+REMARK    7  A    between atoms: C7_7  and  O7_18 
+REMARK    8  A    between atoms: C8_8  and  C9_9 
+REMARK    9  A    between atoms: C8_8  and  O8_19 
+REMARK   10  A    between atoms: C9_9  and  O9_20 
+REMARK       I    between atoms: C10_10  and  N5_12 
+ROOT
+HETATM    1  C2  SIA A 467      -3.771  58.831 -11.773  0.87 14.23     0.256 C 
+HETATM    2  C3  SIA A 467      -3.036  58.034 -12.843  0.87 13.86     0.114 C 
+HETATM    3  C4  SIA A 467      -2.568  56.674 -12.350  0.87 14.98     0.149 C 
+HETATM    4  C5  SIA A 467      -3.400  56.164 -11.177  0.87 13.47     0.145 C 
+HETATM    5  C6  SIA A 467      -3.253  57.145 -10.009  0.87 13.63     0.182 C 
+HETATM    6  O6  SIA A 467      -3.679  58.470 -10.389  0.87 12.73    -0.336 OA
+ENDROOT
+BRANCH   5   7
+HETATM    7  C7  SIA A 467      -4.165  56.762  -8.828  0.87 12.10     0.180 C 
+BRANCH   7   8
+HETATM    8  C8  SIA A 467      -4.355  57.916  -7.842  0.87 13.12     0.173 C 
+BRANCH   8   9
+HETATM    9  C9  SIA A 467      -3.091  58.759  -7.542  0.87 12.36     0.198 C 
+BRANCH   9  10
+HETATM   10  O9  SIA A 467      -3.048  59.920  -8.358  0.87 13.85    -0.398 OA
+HETATM   11  HO9 SIA A 467      -3.473  59.563  -9.162  0.75 15.00     0.209 HD
+ENDBRANCH   9  10
+ENDBRANCH   8   9
+BRANCH   8  12
+HETATM   12  O8  SIA A 467      -5.270  58.776  -8.482  0.87 10.39    -0.391 OA
+HETATM   13  HO8 SIA A 467      -4.864  58.946  -9.343  0.75 15.00     0.210 HD
+ENDBRANCH   8  12
+ENDBRANCH   7   8
+BRANCH   7  14
+HETATM   14  O7  SIA A 467      -5.465  56.402  -9.269  0.87 12.63    -0.390 OA
+HETATM   15  HO7 SIA A 467      -5.407  57.172  -9.875  0.75 15.00     0.210 HD
+ENDBRANCH   7  14
+ENDBRANCH   5   7
+BRANCH   4  16
+HETATM   16  N5  SIA A 467      -2.828  54.871 -10.851  0.87 11.91    -0.352 N 
+HETATM   17  C10 SIA A 467      -1.578  54.516 -10.623  0.87 11.99     0.214 C 
+HETATM   18  C11 SIA A 467      -1.347  53.058 -10.259  0.87  9.35     0.117 C 
+HETATM   19  O10 SIA A 467      -0.674  55.344 -10.740  0.87 15.13    -0.274 OA
+HETATM   20  HN5 SIA A 467      -3.564  54.221 -10.743  0.75 15.00     0.163 HD
+ENDBRANCH   4  16
+BRANCH   3  21
+HETATM   21  O4  SIA A 467      -2.731  55.769 -13.417  0.87 17.69    -0.393 OA
+HETATM   22  HO4 SIA A 467      -1.853  55.373 -13.584  0.75 15.00     0.210 HD
+ENDBRANCH   3  21
+BRANCH   1  23
+HETATM   23  C1  SIA A 467      -3.928  60.352 -11.699  0.87 16.36     0.238 C 
+HETATM   24  O1A SIA A 467      -4.516  60.702 -10.658  0.87 14.01    -0.644 OA
+HETATM   25  O1B SIA A 467      -3.686  61.270 -12.504  0.87  8.98    -0.644 OA
+ENDBRANCH   1  23
+BRANCH   1  26
+HETATM   26  O2  SIA A 467      -5.176  58.689 -11.548  0.87 15.98    -0.357 OA
+HETATM   27  HO2 SIA A 467      -5.330  59.241 -10.757  0.75 15.00     0.213 HD
+ENDBRANCH   1  26
+TORSDOF 10

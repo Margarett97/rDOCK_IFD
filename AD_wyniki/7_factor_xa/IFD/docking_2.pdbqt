@@ -1,0 +1,70 @@
+REMARK  10 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1C_1  and  C1_13 
+REMARK    2  A    between atoms: C4P_8  and  N1_11 
+REMARK    3  A    between atoms: N1_11  and  C4_16 
+REMARK    4  A    between atoms: C1_13  and  C2_14 
+REMARK    5  A    between atoms: C1_13  and  C4D_27 
+REMARK    6  A    between atoms: C2_14  and  C3_15 
+REMARK    7  A    between atoms: C3_15  and  C4_16 
+REMARK    8  A    between atoms: N1A_17  and  C1A_23 
+REMARK    9  A    between atoms: C1A_23  and  C5B_34 
+REMARK   10  A    between atoms: C6D_29  and  C3B_32 
+ROOT
+HETATM    1  C1D 4PP C 500       6.941   8.239  22.236  1.00 12.29     0.012 A 
+HETATM    2  C2D 4PP C 500       7.042   8.119  23.650  1.00 13.77     0.001 A 
+HETATM    3  C3D 4PP C 500       5.889   7.813  24.418  1.00 14.22     0.008 A 
+HETATM    4  C4D 4PP C 500       4.627   7.627  23.782  1.00 13.69    -0.043 A 
+HETATM    5  C5D 4PP C 500       4.518   7.749  22.358  1.00 13.12     0.020 A 
+HETATM    6  C6D 4PP C 500       5.676   8.055  21.581  1.00 11.05    -0.025 A 
+ENDROOT
+BRANCH   4   7
+HETATM    7  C1  4PP C 500       3.400   7.299  24.649  1.00 14.14     0.120 C 
+BRANCH   7   8
+HETATM    8  C1C 4PP C 500       2.114   7.524  23.829  1.00 16.45     0.181 C 
+HETATM    9  O2  4PP C 500       1.881   6.787  22.861  1.00 16.98    -0.647 OA
+HETATM   10  O3  4PP C 500       1.233   8.515  24.169  1.00 14.33    -0.647 OA
+ENDBRANCH   7   8
+BRANCH   7  11
+HETATM   11  C2  4PP C 500       3.467   5.866  25.183  1.00 11.71     0.022 C 
+BRANCH  11  12
+HETATM   12  C3  4PP C 500       4.166   5.018  24.124  1.00 13.55     0.021 C 
+BRANCH  12  13
+HETATM   13  C4  4PP C 500       3.157   4.083  23.468  1.00 13.06     0.120 C 
+BRANCH  13  14
+HETATM   14  N1  4PP C 500       3.065   4.425  22.032  1.00 11.92    -0.390 N 
+ATOM     15  H1  4PP C 500       2.346   5.034  21.641  1.00  0.00     0.159 HD
+BRANCH  14  16
+HETATM   16  C4P 4PP C 500       4.132   3.785  21.218  1.00 10.26     0.030 A 
+HETATM   17  C3P 4PP C 500       3.749   2.895  20.193  1.00 10.63     0.046 A 
+HETATM   18  C2P 4PP C 500       4.728   2.264  19.398  1.00 10.60     0.089 A 
+HETATM   19  N1P 4PP C 500       6.092   2.528  19.631  1.00 11.75    -0.375 N 
+HETATM   20  C6P 4PP C 500       6.481   3.421  20.655  1.00 11.13     0.089 A 
+ATOM     21  H1P 4PP C 500       6.802   2.072  19.058  1.00  0.00     0.164 HD
+HETATM   22  C5P 4PP C 500       5.511   4.050  21.448  1.00  9.10     0.046 A 
+ENDBRANCH  14  16
+ENDBRANCH  13  14
+ENDBRANCH  12  13
+ENDBRANCH  11  12
+ENDBRANCH   7  11
+ENDBRANCH   4   7
+BRANCH   6  23
+HETATM   23  C3B 4PP C 500       5.573   8.181  20.036  1.00  8.69    -0.025 A 
+HETATM   24  C2B 4PP C 500       6.400   9.094  19.306  1.00  6.81     0.012 A 
+HETATM   25  C1B 4PP C 500       6.276   9.186  17.888  1.00  6.12     0.002 A 
+HETATM   26  C6B 4PP C 500       5.329   8.369  17.200  1.00  4.68     0.015 A 
+HETATM   27  C5B 4PP C 500       4.510   7.462  17.930  1.00  5.27     0.008 A 
+HETATM   28  C4B 4PP C 500       4.635   7.376  19.338  1.00  7.64     0.027 A 
+BRANCH  27  29
+HETATM   29  C1A 4PP C 500       3.480   6.565  17.217  1.00  4.15     0.102 C 
+HETATM   30  N2A 4PP C 500       2.293   7.058  16.924  1.00  2.00    -0.385 N 
+ATOM     31 2H2A 4PP C 500       1.611   6.464  16.451  1.00  0.00     0.157 HD
+ATOM     32 1H2A 4PP C 500       2.063   8.019  17.173  1.00  0.00     0.157 HD
+BRANCH  29  33
+HETATM   33  N1A 4PP C 500       3.778   5.320  16.895  1.00  3.52    -0.385 N 
+ATOM     34 2H1A 4PP C 500       3.721   4.575  17.589  1.00  0.00     0.157 HD
+ATOM     35 1H1A 4PP C 500       4.075   5.095  15.945  1.00  0.00     0.157 HD
+ENDBRANCH  29  33
+ENDBRANCH  27  29
+ENDBRANCH   6  23
+TORSDOF 10

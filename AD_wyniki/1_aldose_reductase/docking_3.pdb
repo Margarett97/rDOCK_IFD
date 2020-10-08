@@ -1,0 +1,25 @@
+REMARK   4 XXXX COMPLIES WITH FORMAT V. 2.0
+HETATM    1  C2  TOL A 320      24.625  21.489  76.563  1.00 39.49      dock C  
+HETATM    2  C3  TOL A 320      24.967  20.958  75.292  1.00 37.18      dock C  
+HETATM    3  C5  TOL A 320      25.353  21.837  74.256  1.00 39.03      dock C  
+HETATM    4  C6  TOL A 320      25.399  23.220  74.470  1.00 40.20      dock C  
+HETATM    5  C7  TOL A 320      25.062  23.750  75.731  1.00 39.45      dock C  
+HETATM    6  C8  TOL A 320      25.114  25.149  75.934  1.00 33.89      dock C  
+HETATM    7  C9  TOL A 320      24.777  25.677  77.191  1.00 32.90      dock C  
+HETATM    8  C10 TOL A 320      24.395  24.830  78.234  1.00 29.56      dock C  
+HETATM    9  C11 TOL A 320      24.344  23.446  78.028  1.00 35.57      dock C  
+HETATM   10  C12 TOL A 320      24.676  22.892  76.778  1.00 37.52      dock C  
+HETATM   11  C13 TOL A 320      25.516  26.136  74.864  1.00 34.37      dock C  
+HETATM   12  S1  TOL A 320      27.073  26.850  74.916  1.00 39.07      dock S  
+HETATM   13  N1  TOL A 320      24.659  26.430  73.884  1.00 34.17      dock N  
+HETATM   14  C14 TOL A 320      23.383  25.729  73.802  1.00 23.18      dock C  
+HETATM   15  C15 TOL A 320      24.972  27.429  72.867  1.00 23.15      dock C  
+HETATM   16  C16 TOL A 320      23.936  28.566  72.852  1.00 20.92      dock C  
+HETATM   17  O2  TOL A 320      22.894  28.492  73.448  1.00 16.93      dock O  
+HETATM   18  O3  TOL A 320      24.278  29.644  72.138  1.00 20.68      dock O  
+HETATM   19  C1  TOL A 320      24.194  20.624  77.768  1.00 34.72      dock C  
+HETATM   20  F1  TOL A 320      24.054  19.320  77.422  1.00 37.53      dock F  
+HETATM   21  F2  TOL A 320      23.002  21.026  78.284  1.00 34.37      dock F  
+HETATM   22  F3  TOL A 320      25.113  20.699  78.767  1.00 47.22      dock F  
+HETATM   23  O1  TOL A 320      24.925  19.653  75.095  1.00 37.59      dock O  
+HETATM   24  C4  TOL A 320      24.398  19.302  73.827  1.00 32.52      dock C  

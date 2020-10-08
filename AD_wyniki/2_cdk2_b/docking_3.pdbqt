@@ -1,0 +1,36 @@
+REMARK  2 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N5_12  and  C11_25 
+REMARK    2  A    between atoms: C8_22  and  C9_23 
+ROOT
+HETATM    1 BR1  HMD A 400      -2.315  28.983   8.426  1.00 63.13    -0.031 Br
+HETATM    2  O1  HMD A 400       1.823  30.896   5.617  1.00 45.50    -0.266 OA
+HETATM    3  N1  HMD A 400       0.039  29.440   7.039  1.00 48.35    -0.345 N 
+ATOM      4  H1  HMD A 400      -0.384  30.248   6.582  1.00  0.00     0.167 HD
+HETATM    5  N2  HMD A 400       3.213  29.110   5.264  1.00 41.03    -0.355 N 
+ATOM      6  H2  HMD A 400       3.737  29.684   4.604  1.00  0.00     0.162 HD
+HETATM    7  C1  HMD A 400      -0.562  28.653   7.934  1.00 51.52     0.081 A 
+HETATM    8  C2  HMD A 400       0.274  27.663   8.361  1.00 49.23     0.052 A 
+HETATM    9  C3  HMD A 400       1.497  27.845   7.661  1.00 46.03     0.008 A 
+HETATM   10  C4  HMD A 400       1.298  28.994   6.835  1.00 45.99     0.112 A 
+HETATM   11  C5  HMD A 400       2.129  29.723   5.867  1.00 42.91     0.269 C 
+HETATM   12  C6  HMD A 400       3.708  27.736   5.453  1.00 39.71     0.128 C 
+HETATM   13  C7  HMD A 400       3.994  27.391   6.903  1.00 41.24     0.061 C 
+HETATM   14  C8  HMD A 400       2.752  26.939   7.666  1.00 44.36    -0.011 C 
+ENDROOT
+BRANCH  14  15
+HETATM   15  C9  HMD A 400       2.763  25.715   8.343  1.00 44.10     0.125 A 
+HETATM   16  N4  HMD A 400       2.681  24.428   7.791  1.00 45.11    -0.186 N 
+HETATM   17  C11 HMD A 400       2.782  23.516   8.776  1.00 46.60     0.679 A 
+ATOM     18  H4  HMD A 400       2.565  24.216   6.800  1.00  0.00     0.184 HD
+HETATM   19  N3  HMD A 400       2.886  24.056   9.996  1.00 47.18    -0.155 N 
+HETATM   20  C10 HMD A 400       2.872  25.399   9.824  1.00 45.33     0.287 A 
+ATOM     21  H3  HMD A 400       2.960  23.554  10.881  1.00  0.00     0.187 HD
+HETATM   22  O2  HMD A 400       2.945  26.230  10.743  1.00 43.12    -0.265 OA
+BRANCH  17  23
+HETATM   23  N5  HMD A 400       2.768  22.222   8.521  1.00 49.07    -0.234 N 
+ATOM     24  H52 HMD A 400       2.197  21.833   7.771  1.00  0.00     0.174 HD
+ATOM     25  H51 HMD A 400       3.301  21.520   9.035  1.00  0.00     0.174 HD
+ENDBRANCH  17  23
+ENDBRANCH  14  15
+TORSDOF 2

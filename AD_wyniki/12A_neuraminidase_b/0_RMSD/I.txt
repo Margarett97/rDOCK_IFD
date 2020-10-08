@@ -1,0 +1,107 @@
+#0, chain A: prostaglandin synthase-2
+#0, chain B: prostaglandin synthase-2
+#0, chain C: prostaglandin synthase-2
+#0, chain D: prostaglandin synthase-2
+1cx2.pdb opened
+pose4.pdb opened
+Computing secondary structure assignments for model(s) #0, #1
+using ksdssp (Kabsch and Sander Define Secondary Structure
+of Proteins) with the parameters:
+  energy cutoff -0.5
+  minimum helix length 3
+  minimum strand length 3
+
+Matchmaker 1cx2.pdb, chain A (#0) with pose4.pdb, chain A (#1), sequence alignment score = 2814.8
+with these parameters:
+	chain pairing: bb
+	Needleman-Wunsch using BLOSUM-62
+	ss fraction: 0.3
+	gap open (HH/SS/other) 18/18/6, extend 1
+	ss matrix:  (H, O): -6 (S, S): 6 (H, H): 6 (O, S): -6 (O, O): 4 (H, S): -9
+	iteration cutoff: 2
+RMSD between 551 pruned atom pairs is 0.444 angstroms; (across all 552 pairs: 0.456)
+
+Executing rmsd ['#1:S58', '#0:S58']
+Traceback (most recent call last):
+  File "C:\Program Files\Chimera 1.13.1\share\chimera\tkgui.py", line 354, in openPath
+    mols = chimera.openModels.open(path, type=ftype, ignore_cache=ignore_cache)
+  File "C:\Program Files\Chimera 1.13.1\share\chimera\__init__.py", line 1955, in open
+    models = func(filename, *args, **kw)
+  File "C:\Program Files\Chimera 1.13.1\share\chimera\__init__.py", line 1325, in _openPython
+    loadFunc(sandboxName, fileName, f)
+  File "RMSD.py", line 22, in <module>
+  File "C:\Program Files\Chimera 1.13.1\share\chimera\__init__.py", line 2791, in runCommand
+    makeCommand(*args, **kw)
+  File "C:\Program Files\Chimera 1.13.1\share\Midas\midas_text.py", line 69, in makeCommand
+    f(c, args)
+  File "C:\Program Files\Chimera 1.13.1\share\Midas\midas_text.py", line 3001, in doRMSD
+    exec 'Midas.rmsd(%s, %s)' % ( repr(getSpecs(spec1)), repr(getSpecs(spec2)))
+  File "<string>", line 1, in <module>
+  File "C:\Program Files\Chimera 1.13.1\share\Midas\__init__.py", line 2839, in rmsd
+    fAtoms, tAtoms = _atomSpecErrorCheck(f, t)
+  File "C:\Program Files\Chimera 1.13.1\share\Midas\__init__.py", line 4437, in _atomSpecErrorCheck
+    raise MidasError, "Unequal numbers of atoms chosen for evaluation"
+MidasError: Unequal numbers of atoms chosen for evaluation
+Error reading RMSD.py:
+MidasError: Unequal numbers of atoms chosen for evaluation
+
+  File "C:\Program Files\Chimera 1.13.1\share\Midas\__init__.py", line 4437, in _atomSpecErrorCheck
+    raise MidasError, "Unequal numbers of atoms chosen for evaluation"
+
+See reply log for Python traceback.
+
+
+The following problems occurred while reading PDB file for 1nsc.pdb
+warning:  CONECT record to nonexistent atom: (3777, 3799)
+warning:  CONECT record to nonexistent atom: (3777, 3797)
+warning:  CONECT record to nonexistent atom: (3777, 3798)
+warning:  CONECT record to nonexistent atom: (3769, 3788)
+warning:  CONECT record to nonexistent atom: (3769, 3789)
+warning:  CONECT record to nonexistent atom: (3770, 3790)
+warning:  CONECT record to nonexistent atom: (3771, 3791)
+warning:  CONECT record to nonexistent atom: (3772, 3792)
+warning:  CONECT record to nonexistent atom: (3773, 3793)
+warning:  CONECT record to nonexistent atom: (3774, 3794)
+warning:  CONECT record to nonexistent atom: (3775, 3795)
+warning:  CONECT record to nonexistent atom: (3775, 3796)
+warning:  CONECT record for nonexistent atom: 3797
+warning: cannot find LINK/SSBOND residue CYS (86 )
+warning: cannot find LINK/SSBOND residue CYS (121 )
+warning: cannot find LINK/SSBOND residue CYS (181 )
+warning: cannot find LINK/SSBOND residue CYS (230 )
+warning: cannot find LINK/SSBOND residue CYS (276 )
+warning: cannot find LINK/SSBOND residue CYS (278 )
+warning: cannot find LINK/SSBOND residue CYS (317 )
+warning: cannot find LINK/SSBOND residue CYS (423 )
+warning: cannot find LINK/SSBOND residue ASN (283 )
+warning: cannot find LINK/SSBOND residue GLU (167 )
+warning: cannot find LINK/SSBOND residue HOH (539 )
+warning: cannot find LINK/SSBOND residue  CA (469 )
+warning: cannot find LINK/SSBOND residue  CA (469 )
+warning: cannot find LINK/SSBOND residue  CA (469 )
+warning: cannot find LINK/SSBOND residue  CA (469 )
+warning: cannot find LINK/SSBOND residue  CA (469 )
+warning: cannot find LINK/SSBOND residue  CA (469 )
+#0, chain A: neuraminidase
+1nsc.pdb opened
+pose6.pdb opened
+Computing secondary structure assignments for model(s) #0, #1
+using ksdssp (Kabsch and Sander Define Secondary Structure
+of Proteins) with the parameters:
+  energy cutoff -0.5
+  minimum helix length 3
+  minimum strand length 3
+
+Matchmaker 1nsc.pdb, chain A (#0) with pose6.pdb, chain A (#1), sequence alignment score = 2025.5
+with these parameters:
+	chain pairing: bb
+	Needleman-Wunsch using BLOSUM-62
+	ss fraction: 0.3
+	gap open (HH/SS/other) 18/18/6, extend 1
+	ss matrix:  (H, O): -6 (S, S): 6 (H, H): 6 (O, S): -6 (O, O): 4 (H, S): -9
+	iteration cutoff: 2
+RMSD between 390 pruned atom pairs is 0.227 angstroms; (across all 390 pairs: 0.227)
+
+Executing rmsd ['#1:SIA', '#0:SIA']
+RMSD between 21 atom pairs is 5.928 angstroms
+

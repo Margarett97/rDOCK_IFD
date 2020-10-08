@@ -1,0 +1,5 @@
+chain_del='373,.377,.473,.501'
+lig_chain='A'
+best_pose='pose_docked_opt0'
+best='pose1'
+lig_num='1'

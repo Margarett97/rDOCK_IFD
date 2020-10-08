@@ -1,0 +1,1572 @@
+          AutoDock 4.2 Release 4.2.6   
+         (C) 1989-2012 The Scripps Research Institute
+        AutoDock comes with ABSOLUTELY NO WARRANTY.
+        AutoDock is free software, and you are welcome
+        to redistribute it under certain conditions;
+        for details type 'autodock4 -C'
+
+                     main.cc  $Revision: 1.213 $
+
+                   Compiled on Jul 18 2014 at 15:34:58
+
+
+This file was created at:			7:19 46" p.m., 01/10/2020
+                   on host:		"LAPTOP-E94RFAUT"
+Current Working Directory = "C:\Users\pukma\Desktop\DOCKING\12A_neuraminidase_b"
+
+      ________________________________________________________________
+
+                   SETTING UP DEFAULT PARAMETER LIBRARY
+      ________________________________________________________________
+
+
+Random number generator was seeded with values 5320, 1578680386.
+Docking parameter file (DPF) used for this docking:		1a4q.dpf
+DPF> autodock_parameter_version 4.2       # used by autodock to validate parameter set
+
+	Autodock parameter version 4.2.
+DPF> outlev 1                             # diagnostic output level
+
+Output Level = 1  ADT-COMPATIBLE OUTPUT DURING DOCKING.
+DPF> intelec                              # calculate internal electrostatics
+
+Electrostatic energies will be calculated for all non-bonds between moving atoms.
+DPF> seed pid time                        # seeds for random generator
+
+Random number generator was seeded with values 5320, 1578680386.
+DPF> ligand_types C HD N OA               # atoms types in ligand
+
+DPF> fld 1a4q.maps.fld                    # grid_data_file
+
+Opening Grid Map Dimensions file:		1a4q.maps.fld
+Grid Point Spacing =				0.375 Angstroms
+
+Even Number of User-specified Grid Points =	40 x-points
+						40 y-points
+						40 z-points
+
+Coordinates of Central Grid Point of Maps =	(-3.926, 57.178, -10.092)
+Macromolecule file used to create Grid Maps =	1a4q.pdbqt
+Grid Parameter file used to create Grid Maps =	C:/Users/pukma/Desktop/DOCKING/12A_neuraminidase_b/grid.gpf
+Minimum coordinates in grid = (-11.426, 49.678, -17.592)
+Maximum coordinates in grid = (3.574, 64.678, -2.592)
+
+DPF> map 1a4q.C.map                       # atom-specific affinity map
+
+DPF> map 1a4q.HD.map                      # atom-specific affinity map
+
+DPF> map 1a4q.N.map                       # atom-specific affinity map
+
+DPF> map 1a4q.OA.map                      # atom-specific affinity map
+
+DPF> elecmap 1a4q.e.map                   # electrostatics map
+
+DPF> desolvmap 1a4q.d.map                 # desolvation map
+
+DPF> move SIA.pdbqt                       # small molecule
+
+1,4-interactions will be _ignored_ in the non-bonded internal energy calculation.
+
+Ligand PDBQT file = "SIA.pdbqt"
+
+INPUT LIGAND PDBQT FILE:
+________________________
+
+INPUT-LIGAND-PDBQT: REMARK  10 active torsions:
+INPUT-LIGAND-PDBQT: REMARK  status: ('A' for Active; 'I' for Inactive)
+INPUT-LIGAND-PDBQT: REMARK    1  A    between atoms: C1_1  and  C2_2 
+INPUT-LIGAND-PDBQT: REMARK    2  A    between atoms: C2_2  and  O2_15 
+INPUT-LIGAND-PDBQT: REMARK    3  A    between atoms: C4_4  and  O4_16 
+INPUT-LIGAND-PDBQT: REMARK    4  A    between atoms: C5_5  and  N5_12 
+INPUT-LIGAND-PDBQT: REMARK    5  A    between atoms: C6_6  and  C7_7 
+INPUT-LIGAND-PDBQT: REMARK    6  A    between atoms: C7_7  and  C8_8 
+INPUT-LIGAND-PDBQT: REMARK    7  A    between atoms: C7_7  and  O7_18 
+INPUT-LIGAND-PDBQT: REMARK    8  A    between atoms: C8_8  and  C9_9 
+INPUT-LIGAND-PDBQT: REMARK    9  A    between atoms: C8_8  and  O8_19 
+INPUT-LIGAND-PDBQT: REMARK   10  A    between atoms: C9_9  and  O9_20 
+INPUT-LIGAND-PDBQT: REMARK       I    between atoms: C10_10  and  N5_12 
+INPUT-LIGAND-PDBQT: ROOT
+INPUT-LIGAND-PDBQT: HETATM    1  C2  SIA A 467      -1.870  58.021  -7.211  0.87 14.23     0.256 C 
+INPUT-LIGAND-PDBQT: HETATM    2  C3  SIA A 467      -0.844  56.899  -7.306  0.87 13.86     0.114 C 
+INPUT-LIGAND-PDBQT: HETATM    3  C4  SIA A 467      -1.157  55.904  -8.413  0.87 14.98     0.149 C 
+INPUT-LIGAND-PDBQT: HETATM    4  C5  SIA A 467      -2.015  56.516  -9.517  0.87 13.47     0.145 C 
+INPUT-LIGAND-PDBQT: HETATM    5  C6  SIA A 467      -3.352  56.956  -8.912  0.87 13.63     0.182 C 
+INPUT-LIGAND-PDBQT: HETATM    6  O6  SIA A 467      -3.149  57.908  -7.847  0.87 12.73    -0.336 OA
+INPUT-LIGAND-PDBQT: ENDROOT
+INPUT-LIGAND-PDBQT: BRANCH   5   7
+INPUT-LIGAND-PDBQT: HETATM    7  C7  SIA A 467      -4.224  57.698  -9.942  0.87 12.10     0.180 C 
+INPUT-LIGAND-PDBQT: BRANCH   7   8
+INPUT-LIGAND-PDBQT: HETATM    8  C8  SIA A 467      -5.571  58.131  -9.360  0.87 13.12     0.173 C 
+INPUT-LIGAND-PDBQT: BRANCH   8   9
+INPUT-LIGAND-PDBQT: HETATM    9  C9  SIA A 467      -6.601  58.674 -10.381  0.87 12.36     0.198 C 
+INPUT-LIGAND-PDBQT: BRANCH   9  10
+INPUT-LIGAND-PDBQT: HETATM   10  O9  SIA A 467      -6.931  57.687 -11.346  0.87 13.85    -0.398 OA
+INPUT-LIGAND-PDBQT: HETATM   11  HO9 SIA A 467      -6.783  56.885 -10.808  0.75 15.00     0.209 HD
+INPUT-LIGAND-PDBQT: ENDBRANCH   9  10
+INPUT-LIGAND-PDBQT: ENDBRANCH   8   9
+INPUT-LIGAND-PDBQT: BRANCH   8  12
+INPUT-LIGAND-PDBQT: HETATM   12  O8  SIA A 467      -6.119  56.946  -8.828  0.87 10.39    -0.391 OA
+INPUT-LIGAND-PDBQT: HETATM   13  HO8 SIA A 467      -7.071  57.051  -8.962  0.75 15.00     0.210 HD
+INPUT-LIGAND-PDBQT: ENDBRANCH   8  12
+INPUT-LIGAND-PDBQT: ENDBRANCH   7   8
+INPUT-LIGAND-PDBQT: BRANCH   7  14
+INPUT-LIGAND-PDBQT: HETATM   14  O7  SIA A 467      -3.594  58.883 -10.402  0.87 12.63    -0.390 OA
+INPUT-LIGAND-PDBQT: HETATM   15  HO7 SIA A 467      -3.109  58.884  -9.548  0.75 15.00     0.210 HD
+INPUT-LIGAND-PDBQT: ENDBRANCH   7  14
+INPUT-LIGAND-PDBQT: ENDBRANCH   5   7
+INPUT-LIGAND-PDBQT: BRANCH   4  16
+INPUT-LIGAND-PDBQT: HETATM   16  N5  SIA A 467      -2.202  55.444 -10.478  0.87 11.91    -0.352 N 
+INPUT-LIGAND-PDBQT: HETATM   17  C10 SIA A 467      -1.897  55.374 -11.759  0.87 11.99     0.214 C 
+INPUT-LIGAND-PDBQT: HETATM   18  C11 SIA A 467      -2.200  54.057 -12.454  0.87  9.35     0.117 C 
+INPUT-LIGAND-PDBQT: HETATM   19  O10 SIA A 467      -1.423  56.357 -12.331  0.87 15.13    -0.274 OA
+INPUT-LIGAND-PDBQT: HETATM   20  HN5 SIA A 467      -2.566  54.658 -10.003  0.75 15.00     0.163 HD
+INPUT-LIGAND-PDBQT: ENDBRANCH   4  16
+INPUT-LIGAND-PDBQT: BRANCH   3  21
+INPUT-LIGAND-PDBQT: HETATM   21  O4  SIA A 467       0.072  55.523  -8.986  0.87 17.69    -0.393 OA
+INPUT-LIGAND-PDBQT: HETATM   22  HO4 SIA A 467       0.427  54.801  -8.430  0.75 15.00     0.210 HD
+INPUT-LIGAND-PDBQT: ENDBRANCH   3  21
+INPUT-LIGAND-PDBQT: BRANCH   1  23
+INPUT-LIGAND-PDBQT: HETATM   23  C1  SIA A 467      -2.196  58.872  -5.981  0.87 16.36     0.238 C 
+INPUT-LIGAND-PDBQT: HETATM   24  O1A SIA A 467      -1.289  58.815  -5.130  0.87 14.01    -0.644 OA
+INPUT-LIGAND-PDBQT: HETATM   25  O1B SIA A 467      -3.210  59.504  -5.631  0.87  8.98    -0.644 OA
+INPUT-LIGAND-PDBQT: ENDBRANCH   1  23
+INPUT-LIGAND-PDBQT: BRANCH   1  26
+INPUT-LIGAND-PDBQT: HETATM   26  O2  SIA A 467      -1.768  59.214  -7.992  0.87 15.98    -0.357 OA
+INPUT-LIGAND-PDBQT: HETATM   27  HO2 SIA A 467      -0.905  59.113  -8.438  0.75 15.00     0.213 HD
+INPUT-LIGAND-PDBQT: ENDBRANCH   1  26
+INPUT-LIGAND-PDBQT: TORSDOF 10
+________________________________________________________________________________
+
+Total charge on ligand                               =	-0.998 e
+REMARK  10 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_1  and  C2_2 
+REMARK    2  A    between atoms: C2_2  and  O2_15 
+REMARK    3  A    between atoms: C4_4  and  O4_16 
+REMARK    4  A    between atoms: C5_5  and  N5_12 
+REMARK    5  A    between atoms: C6_6  and  C7_7 
+REMARK    6  A    between atoms: C7_7  and  C8_8 
+REMARK    7  A    between atoms: C7_7  and  O7_18 
+REMARK    8  A    between atoms: C8_8  and  C9_9 
+REMARK    9  A    between atoms: C8_8  and  O8_19 
+REMARK   10  A    between atoms: C9_9  and  O9_20 
+REMARK       I    between atoms: C10_10  and  N5_12 
+
+
+Number of Rotatable Bonds in Small Molecule =	10 torsions
+Number of atoms in ligand:  27
+
+Number of non-hydrogen atoms in ligand:  21
+
+Number of vibrational degrees of freedom of ligand:  75
+
+
+Number of torsional degrees of freedom = 10
+Estimated loss of torsional free energy upon binding = +2.9830 kcal/mol
+
+
+DPF> about -3.0203 57.2139 -9.1258        # small molecule center
+
+Small molecule center of rotation =	(-3.020, +57.214, -9.126)
+
+DPF> tran0 random                         # initial coordinates/A or random
+
+Initial translation =			(-8.849, 63.990, -7.467) Angstroms
+DPF> quaternion0 random                   # initial orientation
+
+Each run will begin with a new, random initial orientation.
+Initial quaternion,  (x,y,z,w) =	( -0.668, -0.401, -0.354, 0.517 ),
+DPF> dihe0 random                         # initial dihedrals (relative) or random
+
+DPF> torsdof 10                            # torsional degrees of freedom
+
+Number of torsional degrees of freedom = 10
+Free energy coefficient for torsional degrees of freedom = 0.2983, the factory default value.
+
+Estimated loss of torsional free energy upon binding = +2.9830 kcal/mol
+
+DPF> rmstol 2.0                           # cluster_tolerance/A
+
+Maximum RMS tolerance for conformational cluster analysis = 2.00 Angstroms
+DPF> extnrg 1000.0                        # external grid energy
+
+External grid energy (beyond grid map walls) = 1000.00
+
+DPF> e0max 0.0 10000                      # max initial energy; max number of retries
+
+Using user-specified maximum number of retries for simanneal initialization, 10000 retries.
+If the simanneal initial energy is greater than e0max, 0.000,
+then a new, random initial state will be created.
+
+DPF> ga_pop_size 150                      # number of individuals in population
+
+A population of 150 individuals will be used
+DPF> ga_num_evals 2500000                 # maximum number of energy evaluations
+
+There will be at most 2500000 function evaluations used.
+DPF> ga_num_generations 27000             # maximum number of generations
+
+The GA will run for at most 27000 generations.
+DPF> ga_elitism 1                         # number of top individuals to survive to next generation
+
+The 1 best will be preserved each GA generation.
+DPF> ga_mutation_rate 0.02                # rate of gene mutation
+
+The mutation rate is 0.020000.
+DPF> ga_crossover_rate 0.8                # rate of crossover
+
+The crossover rate is 0.800000.
+DPF> ga_window_size 10                    # 
+
+The GA's selection window is 10 generations.
+DPF> ga_cauchy_alpha 0.0                  # Alpha parameter of Cauchy distribution
+
+The alpha parameter (for the Cauchy distribution) is being set to 0.000000.
+DPF> ga_cauchy_beta 1.0                   # Beta parameter Cauchy distribution
+
+The beta parameter (for the Cauchy distribution) is being set to 1.000000.
+DPF> set_ga                               # set the above parameters for GA or LGA
+
+DPF> sw_max_its 300                       # iterations of Solis & Wets local search
+
+Solis & Wets algorithms will perform at most 300 iterations.
+DPF> sw_max_succ 4                        # consecutive successes before changing rho
+
+Solis & Wets algorithms expand rho every 4 in a row successes.
+DPF> sw_max_fail 4                        # consecutive failures before changing rho
+
+Solis & Wets algorithms contract rho every 4 in a row failures.
+DPF> sw_rho 1.0                           # size of local search space to sample
+
+rho is set to 1.000000.
+DPF> sw_lb_rho 0.01                       # lower bound on rho
+
+rho will never get smaller than 0.010000.
+DPF> ls_search_freq 0.06                  # probability of performing local search on individual
+
+Local search will be performed with frequency 0.060000.
+DPF> set_psw1                             # set the above pseudo-Solis & Wets parameters
+
+Creating a new Local Search object using the pseudo-Solis-Wets algorithm (pSW1) with the current settings.
+
+DPF> unbound_model bound                  # state of unbound ligand
+
+DPF> ga_run 10                            # do this many hybrid GA-LS runs
+
+centering ligand on specified point: -3.020 57.214 -9.126
+Furthest true ligand atom from "about" center is 4.660 Angstroms (maxrad).
+Number of requested GA dockings = 10 runs
+Unbound model to be used is 'same as bound' [AutoDock 4.2 default].
+
+	BEGINNING GENETIC ALGORITHM DOCKING 1 of 10
+Run: 1 Seed: 406331688 1521339833 [ Run 1 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -16.455
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans -3.195 56.676 -9.320 quatxyzw -0.037968 -0.206025 -0.045316 -0.976759 center -3.020 57.214 -9.126 ntor 10 -49.0481 92.7808 -16.9826 -66.9952 178.6283 36.3991 157.9075 -31.8537 128.5524 20.2777
+State:	 -3.195  56.676  -9.320  -0.177 -0.961 -0.211 -24.754    -49.05   92.78  -16.98  -67.00  178.63   36.40  157.91  -31.85  128.55   20.28
+
+DOCKED: MODEL        1
+DOCKED: USER    Run = 1
+DOCKED: USER    DPF = 1a4q.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -3.85 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =    1.51 mM (millimolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -6.83 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -4.83 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -2.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -9.62 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +2.98 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -9.62 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move SIA.pdbqt
+DOCKED: USER    NEWDPF about -3.020300 57.213900 -9.125800
+DOCKED: USER    NEWDPF tran0 -3.195427 56.676447 -9.319778
+DOCKED: USER    NEWDPF quaternion0 -0.037968 -0.206025 -0.045316 -0.976759
+DOCKED: USER    NEWDPF axisangle0 -0.177142 -0.961209 -0.211420 -24.753528
+DOCKED: USER    NEWDPF quat0 -0.177142 -0.961209 -0.211420 -24.753528
+DOCKED: USER    NEWDPF dihe0 -49.05 92.78 -16.98 -67.00 178.63 36.40 157.91 -31.85 128.55 20.28 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  10 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C1_1  and  C2_2 
+DOCKED: REMARK    2  A    between atoms: C2_2  and  O2_15 
+DOCKED: REMARK    3  A    between atoms: C4_4  and  O4_16 
+DOCKED: REMARK    4  A    between atoms: C5_5  and  N5_12 
+DOCKED: REMARK    5  A    between atoms: C6_6  and  C7_7 
+DOCKED: REMARK    6  A    between atoms: C7_7  and  C8_8 
+DOCKED: REMARK    7  A    between atoms: C7_7  and  O7_18 
+DOCKED: REMARK    8  A    between atoms: C8_8  and  C9_9 
+DOCKED: REMARK    9  A    between atoms: C8_8  and  O8_19 
+DOCKED: REMARK   10  A    between atoms: C9_9  and  O9_20 
+DOCKED: REMARK       I    between atoms: C10_10  and  N5_12 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C2  SIA A 467      -2.827  57.572  -7.151 -0.15 -0.07    +0.256 C 
+DOCKED: ATOM      2  C3  SIA A 467      -1.972  56.374  -6.759 -0.16 -0.09    +0.114 C 
+DOCKED: ATOM      3  C4  SIA A 467      -1.919  55.306  -7.841 -0.28 -0.19    +0.149 C 
+DOCKED: ATOM      4  C5  SIA A 467      -2.196  55.874  -9.230 -0.17 -0.13    +0.145 C 
+DOCKED: ATOM      5  C6  SIA A 467      -3.610  56.464  -9.245 -0.10 -0.12    +0.182 C 
+DOCKED: ATOM      6  O6  SIA A 467      -3.751  57.494  -8.244 -0.09 +0.12    -0.336 OA
+DOCKED: ENDROOT
+DOCKED: BRANCH   5   7
+DOCKED: ATOM      7  C7  SIA A 467      -3.916  57.169 -10.580 -0.09 -0.05    +0.180 C 
+DOCKED: BRANCH   7   8
+DOCKED: ATOM      8  C8  SIA A 467      -5.081  58.154 -10.464 -0.07 -0.02    +0.173 C 
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      9  C9  SIA A 467      -6.291  57.668  -9.628 -0.19 -0.04    +0.198 C 
+DOCKED: BRANCH   9  10
+DOCKED: ATOM     10  O9  SIA A 467      -6.229  58.171  -8.302 -0.13 -0.08    -0.398 OA
+DOCKED: ATOM     11  HO9 SIA A 467      -5.275  58.380  -8.258 +0.09 +0.04    +0.209 HD
+DOCKED: ENDBRANCH   9  10
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8  12
+DOCKED: ATOM     12  O8  SIA A 467      -4.537  59.260  -9.780 +0.01 +0.03    -0.391 OA
+DOCKED: ATOM     13  HO8 SIA A 467      -4.156  58.872  -8.980 +0.08 -0.02    +0.210 HD
+DOCKED: ENDBRANCH   8  12
+DOCKED: ENDBRANCH   7   8
+DOCKED: BRANCH   7  14
+DOCKED: ATOM     14  O7  SIA A 467      -2.806  57.924 -11.038 -0.10 +0.14    -0.390 OA
+DOCKED: ATOM     15  HO7 SIA A 467      -2.698  58.216 -10.107 +0.07 -0.14    +0.210 HD
+DOCKED: ENDBRANCH   7  14
+DOCKED: ENDBRANCH   5   7
+DOCKED: BRANCH   4  16
+DOCKED: ATOM     16  N5  SIA A 467      -2.095  54.734 -10.123 -0.04 +0.29    -0.352 N 
+DOCKED: ATOM     17  C10 SIA A 467      -1.785  54.668 -11.403 -0.31 -0.09    +0.214 C 
+DOCKED: ATOM     18  C11 SIA A 467      -1.730  53.278 -12.014 -0.49 -0.06    +0.117 C 
+DOCKED: ATOM     19  O10 SIA A 467      -1.589  55.705 -12.040 -0.83 -0.03    -0.274 OA
+DOCKED: ATOM     20  HN5 SIA A 467      -2.237  53.910  -9.596 +0.12 -0.20    +0.163 HD
+DOCKED: ENDBRANCH   4  16
+DOCKED: BRANCH   3  21
+DOCKED: ATOM     21  O4  SIA A 467      -0.610  54.785  -7.843 -0.07 +0.67    -0.393 OA
+DOCKED: ATOM     22  HO4 SIA A 467      -0.205  55.043  -6.991 -0.28 -0.53    +0.210 HD
+DOCKED: ENDBRANCH   3  21
+DOCKED: BRANCH   1  23
+DOCKED: ATOM     23  C1  SIA A 467      -3.527  58.555  -6.208 -0.06 +0.21    +0.238 C 
+DOCKED: ATOM     24  O1A SIA A 467      -4.089  59.472  -6.836 -0.25 -0.55    -0.644 OA
+DOCKED: ATOM     25  O1B SIA A 467      -3.550  58.672  -4.969 -1.33 -1.24    -0.644 OA
+DOCKED: ENDBRANCH   1  23
+DOCKED: BRANCH   1  26
+DOCKED: ATOM     26  O2  SIA A 467      -2.299  58.677  -7.888 -0.06 +0.18    -0.357 OA
+DOCKED: ATOM     27  HO2 SIA A 467      -3.092  59.211  -8.085 +0.07 -0.03    +0.213 HD
+DOCKED: ENDBRANCH   1  26
+DOCKED: TORSDOF 10
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 2 of 10
+Run: 2 Seed: 369005217 2049054991 [ Run 2 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -14.764
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans -2.968 56.607 -8.810 quatxyzw -0.062663 -0.008461 -0.073249 0.995307 center -3.020 57.214 -9.126 ntor 10 -161.1084 154.2331 -19.8448 -125.4973 -116.4710 -154.5985 -175.9361 -40.4206 110.9344 -12.9448
+State:	 -2.968  56.607  -8.810  -0.648 -0.087 -0.757 11.106   -161.11  154.23  -19.84 -125.50 -116.47 -154.60 -175.94  -40.42  110.93  -12.94
+
+DOCKED: MODEL        2
+DOCKED: USER    Run = 2
+DOCKED: USER    DPF = 1a4q.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.31 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  128.60 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -8.29 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.83 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -2.46 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -6.47 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +2.98 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -6.47 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move SIA.pdbqt
+DOCKED: USER    NEWDPF about -3.020300 57.213900 -9.125800
+DOCKED: USER    NEWDPF tran0 -2.967899 56.606615 -8.809741
+DOCKED: USER    NEWDPF quaternion0 -0.062663 -0.008461 -0.073249 0.995307
+DOCKED: USER    NEWDPF axisangle0 -0.647572 -0.087435 -0.756971 11.105925
+DOCKED: USER    NEWDPF quat0 -0.647572 -0.087435 -0.756971 11.105925
+DOCKED: USER    NEWDPF dihe0 -161.11 154.23 -19.84 -125.50 -116.47 -154.60 -175.94 -40.42 110.93 -12.94 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  10 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C1_1  and  C2_2 
+DOCKED: REMARK    2  A    between atoms: C2_2  and  O2_15 
+DOCKED: REMARK    3  A    between atoms: C4_4  and  O4_16 
+DOCKED: REMARK    4  A    between atoms: C5_5  and  N5_12 
+DOCKED: REMARK    5  A    between atoms: C6_6  and  C7_7 
+DOCKED: REMARK    6  A    between atoms: C7_7  and  C8_8 
+DOCKED: REMARK    7  A    between atoms: C7_7  and  O7_18 
+DOCKED: REMARK    8  A    between atoms: C8_8  and  C9_9 
+DOCKED: REMARK    9  A    between atoms: C8_8  and  O8_19 
+DOCKED: REMARK   10  A    between atoms: C9_9  and  O9_20 
+DOCKED: REMARK       I    between atoms: C10_10  and  N5_12 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C2  SIA A 467      -1.897  57.331  -6.817 -0.19 -0.11    +0.256 C 
+DOCKED: ATOM      2  C3  SIA A 467      -0.722  56.392  -7.061 -0.24 -0.14    +0.114 C 
+DOCKED: ATOM      3  C4  SIA A 467      -0.917  55.507  -8.282 -0.25 -0.21    +0.149 C 
+DOCKED: ATOM      4  C5  SIA A 467      -1.883  56.118  -9.293 -0.16 -0.14    +0.145 C 
+DOCKED: ATOM      5  C6  SIA A 467      -3.253  56.278  -8.628 -0.14 -0.15    +0.182 C 
+DOCKED: ATOM      6  O6  SIA A 467      -3.162  57.111  -7.453 -0.14 +0.16    -0.336 OA
+DOCKED: ENDROOT
+DOCKED: BRANCH   5   7
+DOCKED: ATOM      7  C7  SIA A 467      -4.250  57.006  -9.549 -0.09 -0.08    +0.180 C 
+DOCKED: BRANCH   7   8
+DOCKED: ATOM      8  C8  SIA A 467      -5.693  56.886  -9.056 -0.21 -0.07    +0.173 C 
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      9  C9  SIA A 467      -6.243  55.444  -8.929 -0.25 -0.19    +0.198 C 
+DOCKED: BRANCH   9  10
+DOCKED: ATOM     10  O9  SIA A 467      -6.926  55.054 -10.110 -0.17 +0.34    -0.398 OA
+DOCKED: ATOM     11  HO9 SIA A 467      -7.736  54.682  -9.708 -0.37 -0.37    +0.209 HD
+DOCKED: ENDBRANCH   9  10
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8  12
+DOCKED: ATOM     12  O8  SIA A 467      -5.662  57.420  -7.751 -0.09 -0.02    -0.391 OA
+DOCKED: ATOM     13  HO8 SIA A 467      -4.770  57.786  -7.672 +0.10 +0.02    +0.210 HD
+DOCKED: ENDBRANCH   8  12
+DOCKED: ENDBRANCH   7   8
+DOCKED: BRANCH   7  14
+DOCKED: ATOM     14  O7  SIA A 467      -3.973  58.395  -9.624 +0.00 +0.10    -0.390 OA
+DOCKED: ATOM     15  HO7 SIA A 467      -3.872  58.366  -8.648 +0.08 -0.04    +0.210 HD
+DOCKED: ENDBRANCH   7  14
+DOCKED: ENDBRANCH   5   7
+DOCKED: BRANCH   4  16
+DOCKED: ATOM     16  N5  SIA A 467      -1.937  55.157 -10.380 -0.06 +0.24    -0.352 N 
+DOCKED: ATOM     17  C10 SIA A 467      -2.349  55.290 -11.626 -0.26 -0.05    +0.214 C 
+DOCKED: ATOM     18  C11 SIA A 467      -2.217  54.064 -12.515 -0.48 -0.02    +0.117 C 
+DOCKED: ATOM     19  O10 SIA A 467      -2.836  56.358 -12.000 -0.38 -0.02    -0.274 OA
+DOCKED: ATOM     20  HN5 SIA A 467      -1.529  54.312 -10.072 +0.13 -0.15    +0.163 HD
+DOCKED: ENDBRANCH   4  16
+DOCKED: BRANCH   3  21
+DOCKED: ATOM     21  O4  SIA A 467       0.339  55.384  -8.908 -0.20 +0.61    -0.393 OA
+DOCKED: ATOM     22  HO4 SIA A 467       0.754  56.269  -8.876 -0.39 -0.50    +0.210 HD
+DOCKED: ENDBRANCH   3  21
+DOCKED: BRANCH   1  23
+DOCKED: ATOM     23  C1  SIA A 467      -2.311  57.967  -5.488 -0.15 +0.17    +0.238 C 
+DOCKED: ATOM     24  O1A SIA A 467      -3.510  58.302  -5.492 -0.91 -0.91    -0.644 OA
+DOCKED: ATOM     25  O1B SIA A 467      -1.673  58.302  -4.472 -1.02 -1.13    -0.644 OA
+DOCKED: ENDBRANCH   1  23
+DOCKED: BRANCH   1  26
+DOCKED: ATOM     26  O2  SIA A 467      -1.989  58.613  -7.443 -0.07 +0.16    -0.357 OA
+DOCKED: ATOM     27  HO2 SIA A 467      -2.053  59.225  -6.684 +0.09 +0.02    +0.213 HD
+DOCKED: ENDBRANCH   1  26
+DOCKED: TORSDOF 10
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 3 of 10
+Run: 3 Seed: 1449587157 1425726617 [ Run 3 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -16.068
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans -2.693 56.324 -8.833 quatxyzw -0.028030 0.014132 -0.131596 0.990806 center -3.020 57.214 -9.126 ntor 10 -96.9856 81.2771 -4.0625 -131.8678 146.9501 -17.8294 173.5799 -28.9959 -130.0404 -7.3099
+State:	 -2.693  56.324  -8.833  -0.207  0.104 -0.973 15.551    -96.99   81.28   -4.06 -131.87  146.95  -17.83  173.58  -29.00 -130.04   -7.31
+
+DOCKED: MODEL        3
+DOCKED: USER    Run = 3
+DOCKED: USER    DPF = 1a4q.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -4.52 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  485.13 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -7.50 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.16 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -2.34 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -8.56 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +2.98 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -8.56 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move SIA.pdbqt
+DOCKED: USER    NEWDPF about -3.020300 57.213900 -9.125800
+DOCKED: USER    NEWDPF tran0 -2.692600 56.324348 -8.832601
+DOCKED: USER    NEWDPF quaternion0 -0.028030 0.014132 -0.131596 0.990806
+DOCKED: USER    NEWDPF axisangle0 -0.207185 0.104459 -0.972709 15.550515
+DOCKED: USER    NEWDPF quat0 -0.207185 0.104459 -0.972709 15.550515
+DOCKED: USER    NEWDPF dihe0 -96.99 81.28 -4.06 -131.87 146.95 -17.83 173.58 -29.00 -130.04 -7.31 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  10 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C1_1  and  C2_2 
+DOCKED: REMARK    2  A    between atoms: C2_2  and  O2_15 
+DOCKED: REMARK    3  A    between atoms: C4_4  and  O4_16 
+DOCKED: REMARK    4  A    between atoms: C5_5  and  N5_12 
+DOCKED: REMARK    5  A    between atoms: C6_6  and  C7_7 
+DOCKED: REMARK    6  A    between atoms: C7_7  and  C8_8 
+DOCKED: REMARK    7  A    between atoms: C7_7  and  O7_18 
+DOCKED: REMARK    8  A    between atoms: C8_8  and  C9_9 
+DOCKED: REMARK    9  A    between atoms: C8_8  and  O8_19 
+DOCKED: REMARK   10  A    between atoms: C9_9  and  O9_20 
+DOCKED: REMARK       I    between atoms: C10_10  and  N5_12 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C2  SIA A 467      -1.833  57.288  -6.839 -0.19 -0.12    +0.256 C 
+DOCKED: ATOM      2  C3  SIA A 467      -0.548  56.479  -6.956 -0.21 -0.14    +0.114 C 
+DOCKED: ATOM      3  C4  SIA A 467      -0.567  55.504  -8.123 -0.16 -0.23    +0.149 C 
+DOCKED: ATOM      4  C5  SIA A 467      -1.532  55.936  -9.224 -0.18 -0.16    +0.145 C 
+DOCKED: ATOM      5  C6  SIA A 467      -2.950  55.977  -8.644 -0.15 -0.17    +0.182 C 
+DOCKED: ATOM      6  O6  SIA A 467      -3.025  56.884  -7.525 -0.14 +0.21    -0.336 OA
+DOCKED: ENDROOT
+DOCKED: BRANCH   5   7
+DOCKED: ATOM      7  C7  SIA A 467      -3.964  56.526  -9.665 -0.10 -0.09    +0.180 C 
+DOCKED: BRANCH   7   8
+DOCKED: ATOM      8  C8  SIA A 467      -5.408  56.394  -9.179 -0.19 -0.10    +0.173 C 
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      9  C9  SIA A 467      -5.742  57.125  -7.855 -0.12 -0.03    +0.198 C 
+DOCKED: BRANCH   9  10
+DOCKED: ATOM     10  O9  SIA A 467      -5.166  58.422  -7.830 -0.05 -0.14    -0.398 OA
+DOCKED: ATOM     11  HO9 SIA A 467      -4.223  58.174  -7.775 +0.09 +0.02    +0.209 HD
+DOCKED: ENDBRANCH   9  10
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8  12
+DOCKED: ATOM     12  O8  SIA A 467      -6.174  57.016 -10.185 -0.07 +0.12    -0.391 OA
+DOCKED: ATOM     13  HO8 SIA A 467      -5.904  57.944 -10.142 +0.11 -0.03    +0.210 HD
+DOCKED: ENDBRANCH   8  12
+DOCKED: ENDBRANCH   7   8
+DOCKED: BRANCH   7  14
+DOCKED: ATOM     14  O7  SIA A 467      -3.757  57.908  -9.914 -0.00 +0.13    -0.390 OA
+DOCKED: ATOM     15  HO7 SIA A 467      -3.415  57.960  -8.995 +0.09 -0.09    +0.210 HD
+DOCKED: ENDBRANCH   7  14
+DOCKED: ENDBRANCH   5   7
+DOCKED: BRANCH   4  16
+DOCKED: ATOM     16  N5  SIA A 467      -1.412  54.911 -10.245 -0.09 +0.28    -0.352 N 
+DOCKED: ATOM     17  C10 SIA A 467      -1.572  54.977 -11.552 -0.32 -0.06    +0.214 C 
+DOCKED: ATOM     18  C11 SIA A 467      -1.317  53.695 -12.328 -0.46 -0.04    +0.117 C 
+DOCKED: ATOM     19  O10 SIA A 467      -1.939  56.031 -12.073 -0.68 -0.06    -0.274 OA
+DOCKED: ATOM     20  HN5 SIA A 467      -1.101  54.078  -9.816 +0.13 -0.18    +0.163 HD
+DOCKED: ENDBRANCH   4  16
+DOCKED: BRANCH   3  21
+DOCKED: ATOM     21  O4  SIA A 467       0.731  55.490  -8.671 -0.19 +0.69    -0.393 OA
+DOCKED: ATOM     22  HO4 SIA A 467       1.000  56.425  -8.773 -0.43 -0.55    +0.210 HD
+DOCKED: ENDBRANCH   3  21
+DOCKED: BRANCH   1  23
+DOCKED: ATOM     23  C1  SIA A 467      -2.396  57.950  -5.579 -0.14 +0.16    +0.238 C 
+DOCKED: ATOM     24  O1A SIA A 467      -3.569  58.333  -5.746 -0.73 -0.80    -0.644 OA
+DOCKED: ATOM     25  O1B SIA A 467      -1.887  58.268  -4.488 -0.98 -1.09    -0.644 OA
+DOCKED: ENDBRANCH   1  23
+DOCKED: BRANCH   1  26
+DOCKED: ATOM     26  O2  SIA A 467      -2.031  58.510  -7.553 -0.07 +0.18    -0.357 OA
+DOCKED: ATOM     27  HO2 SIA A 467      -2.969  58.461  -7.821 +0.08 -0.05    +0.213 HD
+DOCKED: ENDBRANCH   1  26
+DOCKED: TORSDOF 10
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 4 of 10
+Run: 4 Seed: 844156520 1942179131 [ Run 4 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -15.246
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans -2.753 56.730 -9.076 quatxyzw -0.016316 0.139475 0.121404 0.982620 center -3.020 57.214 -9.126 ntor 10 -60.1965 105.2197 -10.8310 -179.9886 -131.6140 34.3214 31.5494 44.8115 135.6611 15.3572
+State:	 -2.753  56.730  -9.076  -0.088  0.751  0.654 21.396    -60.20  105.22  -10.83 -179.99 -131.61   34.32   31.55   44.81  135.66   15.36
+
+DOCKED: MODEL        4
+DOCKED: USER    Run = 4
+DOCKED: USER    DPF = 1a4q.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -3.30 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =    3.83 mM (millimolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -6.28 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -4.55 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -1.73 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -8.97 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +2.98 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -8.97 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move SIA.pdbqt
+DOCKED: USER    NEWDPF about -3.020300 57.213900 -9.125800
+DOCKED: USER    NEWDPF tran0 -2.753454 56.730182 -9.075766
+DOCKED: USER    NEWDPF quaternion0 -0.016316 0.139475 0.121404 0.982620
+DOCKED: USER    NEWDPF axisangle0 -0.087897 0.751361 0.654011 21.395768
+DOCKED: USER    NEWDPF quat0 -0.087897 0.751361 0.654011 21.395768
+DOCKED: USER    NEWDPF dihe0 -60.20 105.22 -10.83 -179.99 -131.61 34.32 31.55 44.81 135.66 15.36 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  10 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C1_1  and  C2_2 
+DOCKED: REMARK    2  A    between atoms: C2_2  and  O2_15 
+DOCKED: REMARK    3  A    between atoms: C4_4  and  O4_16 
+DOCKED: REMARK    4  A    between atoms: C5_5  and  N5_12 
+DOCKED: REMARK    5  A    between atoms: C6_6  and  C7_7 
+DOCKED: REMARK    6  A    between atoms: C7_7  and  C8_8 
+DOCKED: REMARK    7  A    between atoms: C7_7  and  O7_18 
+DOCKED: REMARK    8  A    between atoms: C8_8  and  C9_9 
+DOCKED: REMARK    9  A    between atoms: C8_8  and  O8_19 
+DOCKED: REMARK   10  A    between atoms: C9_9  and  O9_20 
+DOCKED: REMARK       I    between atoms: C10_10  and  N5_12 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C2  SIA A 467      -2.025  57.237  -6.873 -0.18 -0.12    +0.256 C 
+DOCKED: ATOM      2  C3  SIA A 467      -1.306  55.899  -6.761 -0.34 -0.12    +0.114 C 
+DOCKED: ATOM      3  C4  SIA A 467      -1.522  55.008  -7.974 -0.30 -0.20    +0.149 C 
+DOCKED: ATOM      4  C5  SIA A 467      -1.871  55.808  -9.226 -0.18 -0.14    +0.145 C 
+DOCKED: ATOM      5  C6  SIA A 467      -3.182  56.561  -8.977 -0.12 -0.13    +0.182 C 
+DOCKED: ATOM      6  O6  SIA A 467      -3.066  57.437  -7.836 -0.10 +0.15    -0.336 OA
+DOCKED: ENDROOT
+DOCKED: BRANCH   5   7
+DOCKED: ATOM      7  C7  SIA A 467      -3.535  57.491 -10.153 -0.09 -0.07    +0.180 C 
+DOCKED: BRANCH   7   8
+DOCKED: ATOM      8  C8  SIA A 467      -4.621  58.505  -9.788 -0.06 -0.02    +0.173 C 
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      9  C9  SIA A 467      -5.707  58.002  -8.806 -0.17 -0.00    +0.198 C 
+DOCKED: BRANCH   9  10
+DOCKED: ATOM     10  O9  SIA A 467      -5.392  58.362  -7.470 +0.33 -0.24    -0.398 OA
+DOCKED: ATOM     11  HO9 SIA A 467      -4.417  58.332  -7.524 +0.09 +0.06    +0.209 HD
+DOCKED: ENDBRANCH   9  10
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8  12
+DOCKED: ATOM     12  O8  SIA A 467      -3.926  59.537  -9.125 +0.00 +0.04    -0.391 OA
+DOCKED: ATOM     13  HO8 SIA A 467      -3.295  59.068  -8.563 +0.07 -0.05    +0.210 HD
+DOCKED: ENDBRANCH   8  12
+DOCKED: ENDBRANCH   7   8
+DOCKED: BRANCH   7  14
+DOCKED: ATOM     14  O7  SIA A 467      -2.412  58.250 -10.573 -0.09 +0.28    -0.390 OA
+DOCKED: ATOM     15  HO7 SIA A 467      -2.161  58.291  -9.624 +0.06 -0.22    +0.210 HD
+DOCKED: ENDBRANCH   7  14
+DOCKED: ENDBRANCH   5   7
+DOCKED: BRANCH   4  16
+DOCKED: ATOM     16  N5  SIA A 467      -2.029  54.812 -10.270 -0.05 +0.27    -0.352 N 
+DOCKED: ATOM     17  C10 SIA A 467      -1.130  54.133 -10.955 -0.35 -0.15    +0.214 C 
+DOCKED: ATOM     18  C11 SIA A 467      -1.665  53.122 -11.956 -0.49 -0.06    +0.117 C 
+DOCKED: ATOM     19  O10 SIA A 467       0.069  54.360 -10.785 -0.39 +0.19    -0.274 OA
+DOCKED: ATOM     20  HN5 SIA A 467      -2.993  54.628 -10.384 +0.12 -0.12    +0.163 HD
+DOCKED: ENDBRANCH   4  16
+DOCKED: BRANCH   3  21
+DOCKED: ATOM     21  O4  SIA A 467      -0.307  54.338  -8.218 -0.07 +0.68    -0.393 OA
+DOCKED: ATOM     22  HO4 SIA A 467       0.167  54.859  -8.896 +0.13 -0.31    +0.210 HD
+DOCKED: ENDBRANCH   3  21
+DOCKED: BRANCH   1  23
+DOCKED: ATOM     23  C1  SIA A 467      -2.472  58.144  -5.723 -0.18 +0.15    +0.238 C 
+DOCKED: ATOM     24  O1A SIA A 467      -1.549  58.346  -4.912 -1.07 -0.85    -0.644 OA
+DOCKED: ATOM     25  O1B SIA A 467      -3.576  58.616  -5.394 -1.12 -1.01    -0.644 OA
+DOCKED: ENDBRANCH   1  23
+DOCKED: BRANCH   1  26
+DOCKED: ATOM     26  O2  SIA A 467      -1.434  58.368  -7.517 -0.07 +0.30    -0.357 OA
+DOCKED: ATOM     27  HO2 SIA A 467      -1.659  59.106  -6.918 +0.08 -0.04    +0.213 HD
+DOCKED: ENDBRANCH   1  26
+DOCKED: TORSDOF 10
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 5 of 10
+Run: 5 Seed: 761207863 1714870415 [ Run 5 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -14.030
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans -2.207 57.279 -9.082 quatxyzw -0.083270 0.250031 0.279525 0.923264 center -3.020 57.214 -9.126 ntor 10 -69.1740 86.1111 70.9347 179.3780 -125.6647 32.1162 53.8595 35.2160 -115.0017 -59.2644
+State:	 -2.207  57.279  -9.082  -0.217  0.651  0.728 45.184    -69.17   86.11   70.93  179.38 -125.66   32.12   53.86   35.22 -115.00  -59.26
+
+DOCKED: MODEL        5
+DOCKED: USER    Run = 5
+DOCKED: USER    DPF = 1a4q.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -4.30 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  708.41 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -7.28 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.38 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -1.90 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -6.75 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +2.98 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -6.75 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move SIA.pdbqt
+DOCKED: USER    NEWDPF about -3.020300 57.213900 -9.125800
+DOCKED: USER    NEWDPF tran0 -2.206967 57.279119 -9.081793
+DOCKED: USER    NEWDPF quaternion0 -0.083270 0.250031 0.279525 0.923264
+DOCKED: USER    NEWDPF axisangle0 -0.216754 0.650841 0.727615 45.183996
+DOCKED: USER    NEWDPF quat0 -0.216754 0.650841 0.727615 45.183996
+DOCKED: USER    NEWDPF dihe0 -69.17 86.11 70.93 179.38 -125.66 32.12 53.86 35.22 -115.00 -59.26 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  10 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C1_1  and  C2_2 
+DOCKED: REMARK    2  A    between atoms: C2_2  and  O2_15 
+DOCKED: REMARK    3  A    between atoms: C4_4  and  O4_16 
+DOCKED: REMARK    4  A    between atoms: C5_5  and  N5_12 
+DOCKED: REMARK    5  A    between atoms: C6_6  and  C7_7 
+DOCKED: REMARK    6  A    between atoms: C7_7  and  C8_8 
+DOCKED: REMARK    7  A    between atoms: C7_7  and  O7_18 
+DOCKED: REMARK    8  A    between atoms: C8_8  and  C9_9 
+DOCKED: REMARK    9  A    between atoms: C8_8  and  O8_19 
+DOCKED: REMARK   10  A    between atoms: C9_9  and  O9_20 
+DOCKED: REMARK       I    between atoms: C10_10  and  N5_12 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C2  SIA A 467      -1.970  57.281  -6.719 -0.19 -0.10    +0.256 C 
+DOCKED: ATOM      2  C3  SIA A 467      -1.717  55.778  -6.704 -0.24 -0.12    +0.114 C 
+DOCKED: ATOM      3  C4  SIA A 467      -1.852  55.143  -8.079 -0.28 -0.19    +0.149 C 
+DOCKED: ATOM      4  C5  SIA A 467      -1.617  56.145  -9.206 -0.15 -0.16    +0.145 C 
+DOCKED: ATOM      5  C6  SIA A 467      -2.676  57.247  -9.111 -0.10 -0.13    +0.182 C 
+DOCKED: ATOM      6  O6  SIA A 467      -2.620  57.909  -7.830 -0.09 +0.16    -0.336 OA
+DOCKED: ENDROOT
+DOCKED: BRANCH   5   7
+DOCKED: ATOM      7  C7  SIA A 467      -2.428  58.364 -10.142 -0.01 -0.15    +0.180 C 
+DOCKED: BRANCH   7   8
+DOCKED: ATOM      8  C8  SIA A 467      -3.600  58.534 -11.110 -0.11 -0.03    +0.173 C 
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      9  C9  SIA A 467      -4.855  59.232 -10.530 -0.04 -0.01    +0.198 C 
+DOCKED: BRANCH   9  10
+DOCKED: ATOM     10  O9  SIA A 467      -4.822  60.629 -10.778 +0.00 -0.00    -0.398 OA
+DOCKED: ATOM     11  HO9 SIA A 467      -3.876  60.797 -10.605 +0.05 -0.02    +0.209 HD
+DOCKED: ENDBRANCH   9  10
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8  12
+DOCKED: ATOM     12  O8  SIA A 467      -3.100  59.382 -12.119 -0.35 -0.02    -0.391 OA
+DOCKED: ATOM     13  HO8 SIA A 467      -2.864  60.191 -11.646 +0.04 -0.05    +0.210 HD
+DOCKED: ENDBRANCH   8  12
+DOCKED: ENDBRANCH   7   8
+DOCKED: BRANCH   7  14
+DOCKED: ATOM     14  O7  SIA A 467      -2.248  59.623  -9.514 -0.03 +0.36    -0.390 OA
+DOCKED: ATOM     15  HO7 SIA A 467      -1.653  59.158  -8.887 -0.05 -0.29    +0.210 HD
+DOCKED: ENDBRANCH   7  14
+DOCKED: ENDBRANCH   5   7
+DOCKED: BRANCH   4  16
+DOCKED: ATOM     16  N5  SIA A 467      -1.771  55.373 -10.426 -0.07 +0.24    -0.352 N 
+DOCKED: ATOM     17  C10 SIA A 467      -0.901  54.650 -11.103 -0.36 -0.12    +0.214 C 
+DOCKED: ATOM     18  C11 SIA A 467      -1.432  53.929 -12.331 -0.50 -0.03    +0.117 C 
+DOCKED: ATOM     19  O10 SIA A 467       0.278  54.615 -10.744 -0.39 +0.18    -0.274 OA
+DOCKED: ATOM     20  HN5 SIA A 467      -2.722  55.396 -10.692 +0.11 -0.08    +0.163 HD
+DOCKED: ENDBRANCH   4  16
+DOCKED: BRANCH   3  21
+DOCKED: ATOM     21  O4  SIA A 467      -0.858  54.149  -8.174 -0.17 +0.61    -0.393 OA
+DOCKED: ATOM     22  HO4 SIA A 467      -0.098  54.558  -8.635 +0.14 -0.32    +0.210 HD
+DOCKED: ENDBRANCH   3  21
+DOCKED: BRANCH   1  23
+DOCKED: ATOM     23  C1  SIA A 467      -2.426  58.151  -5.545 -0.19 +0.18    +0.238 C 
+DOCKED: ATOM     24  O1A SIA A 467      -1.517  58.307  -4.709 -1.02 -0.99    -0.644 OA
+DOCKED: ATOM     25  O1B SIA A 467      -3.529  58.630  -5.221 -1.35 -1.08    -0.644 OA
+DOCKED: ENDBRANCH   1  23
+DOCKED: BRANCH   1  26
+DOCKED: ATOM     26  O2  SIA A 467      -0.934  58.225  -6.998 -0.14 +0.25    -0.357 OA
+DOCKED: ATOM     27  HO2 SIA A 467      -1.028  58.876  -6.277 +0.09 +0.02    +0.213 HD
+DOCKED: ENDBRANCH   1  26
+DOCKED: TORSDOF 10
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 6 of 10
+Run: 6 Seed: 476367159 1915263652 [ Run 6 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -15.382
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans -2.685 56.932 -9.054 quatxyzw -0.106233 0.048646 -0.030911 0.992669 center -3.020 57.214 -9.126 ntor 10 -41.6383 92.0632 -15.1146 -131.5346 -119.8578 20.8888 -172.7806 -156.4360 139.1714 3.9243
+State:	 -2.685  56.932  -9.054  -0.879  0.402 -0.256 13.884    -41.64   92.06  -15.11 -131.53 -119.86   20.89 -172.78 -156.44  139.17    3.92
+
+DOCKED: MODEL        6
+DOCKED: USER    Run = 6
+DOCKED: USER    DPF = 1a4q.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -3.34 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =    3.59 mM (millimolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -6.32 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -4.55 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -1.77 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -9.06 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +2.98 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -9.06 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move SIA.pdbqt
+DOCKED: USER    NEWDPF about -3.020300 57.213900 -9.125800
+DOCKED: USER    NEWDPF tran0 -2.684744 56.932345 -9.053629
+DOCKED: USER    NEWDPF quaternion0 -0.106233 0.048646 -0.030911 0.992669
+DOCKED: USER    NEWDPF axisangle0 -0.878968 0.402496 -0.255758 13.883561
+DOCKED: USER    NEWDPF quat0 -0.878968 0.402496 -0.255758 13.883561
+DOCKED: USER    NEWDPF dihe0 -41.64 92.06 -15.11 -131.53 -119.86 20.89 -172.78 -156.44 139.17 3.92 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  10 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C1_1  and  C2_2 
+DOCKED: REMARK    2  A    between atoms: C2_2  and  O2_15 
+DOCKED: REMARK    3  A    between atoms: C4_4  and  O4_16 
+DOCKED: REMARK    4  A    between atoms: C5_5  and  N5_12 
+DOCKED: REMARK    5  A    between atoms: C6_6  and  C7_7 
+DOCKED: REMARK    6  A    between atoms: C7_7  and  C8_8 
+DOCKED: REMARK    7  A    between atoms: C7_7  and  O7_18 
+DOCKED: REMARK    8  A    between atoms: C8_8  and  C9_9 
+DOCKED: REMARK    9  A    between atoms: C8_8  and  O8_19 
+DOCKED: REMARK   10  A    between atoms: C9_9  and  O9_20 
+DOCKED: REMARK       I    between atoms: C10_10  and  N5_12 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C2  SIA A 467      -1.772  57.369  -6.905 -0.19 -0.13    +0.256 C 
+DOCKED: ATOM      2  C3  SIA A 467      -0.664  56.347  -7.125 -0.21 -0.15    +0.114 C 
+DOCKED: ATOM      3  C4  SIA A 467      -0.804  55.597  -8.440 -0.23 -0.21    +0.149 C 
+DOCKED: ATOM      4  C5  SIA A 467      -1.601  56.387  -9.476 -0.07 -0.16    +0.145 C 
+DOCKED: ATOM      5  C6  SIA A 467      -3.015  56.618  -8.933 -0.12 -0.13    +0.182 C 
+DOCKED: ATOM      6  O6  SIA A 467      -2.977  57.329  -7.679 -0.11 +0.16    -0.336 OA
+DOCKED: ENDROOT
+DOCKED: BRANCH   5   7
+DOCKED: ATOM      7  C7  SIA A 467      -3.842  57.518  -9.871 -0.07 -0.07    +0.180 C 
+DOCKED: BRANCH   7   8
+DOCKED: ATOM      8  C8  SIA A 467      -5.230  57.825  -9.307 -0.12 -0.03    +0.173 C 
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      9  C9  SIA A 467      -5.857  56.719  -8.423 -0.25 -0.09    +0.198 C 
+DOCKED: BRANCH   9  10
+DOCKED: ATOM     10  O9  SIA A 467      -5.362  56.788  -7.094 +0.21 +0.13    -0.398 OA
+DOCKED: ATOM     11  HO9 SIA A 467      -4.611  57.396  -7.237 +0.08 +0.01    +0.209 HD
+DOCKED: ENDBRANCH   9  10
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8  12
+DOCKED: ATOM     12  O8  SIA A 467      -5.029  58.942  -8.471 -0.05 -0.07    -0.391 OA
+DOCKED: ATOM     13  HO8 SIA A 467      -4.329  58.656  -7.868 +0.09 +0.04    +0.210 HD
+DOCKED: ENDBRANCH   8  12
+DOCKED: ENDBRANCH   7   8
+DOCKED: BRANCH   7  14
+DOCKED: ATOM     14  O7  SIA A 467      -3.213  58.773 -10.078 -0.04 +0.17    -0.390 OA
+DOCKED: ATOM     15  HO7 SIA A 467      -2.991  58.750  -9.122 +0.07 -0.10    +0.210 HD
+DOCKED: ENDBRANCH   7  14
+DOCKED: ENDBRANCH   5   7
+DOCKED: BRANCH   4  16
+DOCKED: ATOM     16  N5  SIA A 467      -1.623  55.537 -10.652 -0.10 +0.21    -0.352 N 
+DOCKED: ATOM     17  C10 SIA A 467      -2.396  54.514 -10.960 -0.23 -0.12    +0.214 C 
+DOCKED: ATOM     18  C11 SIA A 467      -2.164  53.878 -12.321 -0.49 -0.03    +0.117 C 
+DOCKED: ATOM     19  O10 SIA A 467      -3.227  54.107 -10.147 -0.16 +0.25    -0.274 OA
+DOCKED: ATOM     20  HN5 SIA A 467      -0.965  55.884 -11.302 +0.09 -0.05    +0.163 HD
+DOCKED: ENDBRANCH   4  16
+DOCKED: BRANCH   3  21
+DOCKED: ATOM     21  O4  SIA A 467       0.496  55.411  -8.950 -0.20 +0.61    -0.393 OA
+DOCKED: ATOM     22  HO4 SIA A 467       0.949  56.274  -8.880 -0.42 -0.50    +0.210 HD
+DOCKED: ENDBRANCH   3  21
+DOCKED: BRANCH   1  23
+DOCKED: ATOM     23  C1  SIA A 467      -2.268  57.919  -5.565 -0.16 +0.15    +0.238 C 
+DOCKED: ATOM     24  O1A SIA A 467      -3.448  58.310  -5.637 -0.81 -0.80    -0.644 OA
+DOCKED: ATOM     25  O1B SIA A 467      -1.702  58.145  -4.479 -1.07 -1.08    -0.644 OA
+DOCKED: ENDBRANCH   1  23
+DOCKED: BRANCH   1  26
+DOCKED: ATOM     26  O2  SIA A 467      -1.686  58.705  -7.406 -0.08 +0.20    -0.357 OA
+DOCKED: ATOM     27  HO2 SIA A 467      -1.833  59.250  -6.609 +0.09 +0.02    +0.213 HD
+DOCKED: ENDBRANCH   1  26
+DOCKED: TORSDOF 10
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 7 of 10
+Run: 7 Seed: 1678449864 427684600 [ Run 7 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -15.123
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans -3.116 56.487 -8.772 quatxyzw -0.028141 -0.003244 -0.060903 0.997742 center -3.020 57.214 -9.126 ntor 10 53.2029 118.9444 -18.9791 -130.8231 162.6779 156.4413 172.7748 5.9127 126.5176 13.0751
+State:	 -3.116  56.487  -8.772  -0.419 -0.048 -0.907  7.703     53.20  118.94  -18.98 -130.82  162.68  156.44  172.77    5.91  126.52   13.08
+
+DOCKED: MODEL        7
+DOCKED: USER    Run = 7
+DOCKED: USER    DPF = 1a4q.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.31 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  127.12 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -8.30 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.88 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -2.42 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -6.82 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +2.98 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -6.82 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move SIA.pdbqt
+DOCKED: USER    NEWDPF about -3.020300 57.213900 -9.125800
+DOCKED: USER    NEWDPF tran0 -3.116221 56.487225 -8.771809
+DOCKED: USER    NEWDPF quaternion0 -0.028141 -0.003244 -0.060903 0.997742
+DOCKED: USER    NEWDPF axisangle0 -0.418957 -0.048295 -0.906721 7.702793
+DOCKED: USER    NEWDPF quat0 -0.418957 -0.048295 -0.906721 7.702793
+DOCKED: USER    NEWDPF dihe0 53.20 118.94 -18.98 -130.82 162.68 156.44 172.77 5.91 126.52 13.08 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  10 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C1_1  and  C2_2 
+DOCKED: REMARK    2  A    between atoms: C2_2  and  O2_15 
+DOCKED: REMARK    3  A    between atoms: C4_4  and  O4_16 
+DOCKED: REMARK    4  A    between atoms: C5_5  and  N5_12 
+DOCKED: REMARK    5  A    between atoms: C6_6  and  C7_7 
+DOCKED: REMARK    6  A    between atoms: C7_7  and  C8_8 
+DOCKED: REMARK    7  A    between atoms: C7_7  and  O7_18 
+DOCKED: REMARK    8  A    between atoms: C8_8  and  C9_9 
+DOCKED: REMARK    9  A    between atoms: C8_8  and  O8_19 
+DOCKED: REMARK   10  A    between atoms: C9_9  and  O9_20 
+DOCKED: REMARK       I    between atoms: C10_10  and  N5_12 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C2  SIA A 467      -2.053  57.320  -6.818 -0.18 -0.10    +0.256 C 
+DOCKED: ATOM      2  C3  SIA A 467      -0.900  56.339  -6.979 -0.29 -0.13    +0.114 C 
+DOCKED: ATOM      3  C4  SIA A 467      -1.101  55.376  -8.140 -0.26 -0.20    +0.149 C 
+DOCKED: ATOM      4  C5  SIA A 467      -2.038  55.940  -9.205 -0.17 -0.14    +0.145 C 
+DOCKED: ATOM      5  C6  SIA A 467      -3.412  56.179  -8.572 -0.15 -0.16    +0.182 C 
+DOCKED: ATOM      6  O6  SIA A 467      -3.316  57.088  -7.455 -0.15 +0.16    -0.336 OA
+DOCKED: ENDROOT
+DOCKED: BRANCH   5   7
+DOCKED: ATOM      7  C7  SIA A 467      -4.378  56.866  -9.556 -0.10 -0.08    +0.180 C 
+DOCKED: BRANCH   7   8
+DOCKED: ATOM      8  C8  SIA A 467      -5.640  57.386  -8.865 -0.20 -0.04    +0.173 C 
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      9  C9  SIA A 467      -6.291  56.423  -7.841 -0.20 -0.12    +0.198 C 
+DOCKED: BRANCH   9  10
+DOCKED: ATOM     10  O9  SIA A 467      -7.707  56.499  -7.899 -0.33 +0.14    -0.398 OA
+DOCKED: ATOM     11  HO9 SIA A 467      -7.865  55.911  -8.663 +0.02 -0.19    +0.209 HD
+DOCKED: ENDBRANCH   9  10
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8  12
+DOCKED: ATOM     12  O8  SIA A 467      -5.202  58.511  -8.137 -0.07 -0.09    -0.391 OA
+DOCKED: ATOM     13  HO8 SIA A 467      -4.272  58.318  -7.951 +0.09 +0.02    +0.210 HD
+DOCKED: ENDBRANCH   8  12
+DOCKED: ENDBRANCH   7   8
+DOCKED: BRANCH   7  14
+DOCKED: ATOM     14  O7  SIA A 467      -3.777  57.991 -10.177 -0.01 +0.12    -0.390 OA
+DOCKED: ATOM     15  HO7 SIA A 467      -3.443  58.229  -9.285 +0.08 -0.08    +0.210 HD
+DOCKED: ENDBRANCH   7  14
+DOCKED: ENDBRANCH   5   7
+DOCKED: BRANCH   4  16
+DOCKED: ATOM     16  N5  SIA A 467      -2.103  54.908 -10.224 -0.04 +0.27    -0.352 N 
+DOCKED: ATOM     17  C10 SIA A 467      -1.709  54.916 -11.483 -0.31 -0.07    +0.214 C 
+DOCKED: ATOM     18  C11 SIA A 467      -1.895  53.622 -12.257 -0.49 -0.04    +0.117 C 
+DOCKED: ATOM     19  O10 SIA A 467      -1.250  55.949 -11.975 -0.78 -0.04    -0.274 OA
+DOCKED: ATOM     20  HN5 SIA A 467      -2.456  54.083  -9.812 +0.12 -0.17    +0.163 HD
+DOCKED: ENDBRANCH   4  16
+DOCKED: BRANCH   3  21
+DOCKED: ATOM     21  O4  SIA A 467       0.160  55.180  -8.737 -0.20 +0.62    -0.393 OA
+DOCKED: ATOM     22  HO4 SIA A 467       0.561  56.066  -8.839 -0.38 -0.43    +0.210 HD
+DOCKED: ENDBRANCH   3  21
+DOCKED: BRANCH   1  23
+DOCKED: ATOM     23  C1  SIA A 467      -2.468  58.055  -5.541 -0.12 +0.17    +0.238 C 
+DOCKED: ATOM     24  O1A SIA A 467      -3.574  58.613  -5.671 -0.83 -0.86    -0.644 OA
+DOCKED: ATOM     25  O1B SIA A 467      -1.882  58.287  -4.467 -0.97 -1.11    -0.644 OA
+DOCKED: ENDBRANCH   1  23
+DOCKED: BRANCH   1  26
+DOCKED: ATOM     26  O2  SIA A 467      -2.105  58.559  -7.531 -0.07 +0.16    -0.357 OA
+DOCKED: ATOM     27  HO2 SIA A 467      -3.058  58.771  -7.536 +0.08 -0.01    +0.213 HD
+DOCKED: ENDBRANCH   1  26
+DOCKED: TORSDOF 10
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 8 of 10
+Run: 8 Seed: 324692372 186042749 [ Run 8 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -14.459
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans -3.397 56.761 -8.622 quatxyzw -0.024940 -0.039661 -0.052883 0.997501 center -3.020 57.214 -9.126 ntor 10 12.5786 116.7624 -131.9743 180.0000 -119.9158 -174.6093 20.2540 31.0896 -107.3554 42.0244
+State:	 -3.397  56.761  -8.622  -0.353 -0.561 -0.749  8.103     12.58  116.76 -131.97  180.00 -119.92 -174.61   20.25   31.09 -107.36   42.02
+
+DOCKED: MODEL        8
+DOCKED: USER    Run = 8
+DOCKED: USER    DPF = 1a4q.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -4.94 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  240.09 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -7.92 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.73 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -2.19 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -6.54 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +2.98 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -6.54 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move SIA.pdbqt
+DOCKED: USER    NEWDPF about -3.020300 57.213900 -9.125800
+DOCKED: USER    NEWDPF tran0 -3.397299 56.760699 -8.622362
+DOCKED: USER    NEWDPF quaternion0 -0.024940 -0.039661 -0.052883 0.997501
+DOCKED: USER    NEWDPF axisangle0 -0.352998 -0.561363 -0.748508 8.102825
+DOCKED: USER    NEWDPF quat0 -0.352998 -0.561363 -0.748508 8.102825
+DOCKED: USER    NEWDPF dihe0 12.58 116.76 -131.97 180.00 -119.92 -174.61 20.25 31.09 -107.36 42.02 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  10 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C1_1  and  C2_2 
+DOCKED: REMARK    2  A    between atoms: C2_2  and  O2_15 
+DOCKED: REMARK    3  A    between atoms: C4_4  and  O4_16 
+DOCKED: REMARK    4  A    between atoms: C5_5  and  N5_12 
+DOCKED: REMARK    5  A    between atoms: C6_6  and  C7_7 
+DOCKED: REMARK    6  A    between atoms: C7_7  and  C8_8 
+DOCKED: REMARK    7  A    between atoms: C7_7  and  O7_18 
+DOCKED: REMARK    8  A    between atoms: C8_8  and  C9_9 
+DOCKED: REMARK    9  A    between atoms: C8_8  and  O8_19 
+DOCKED: REMARK   10  A    between atoms: C9_9  and  O9_20 
+DOCKED: REMARK       I    between atoms: C10_10  and  N5_12 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C2  SIA A 467      -2.184  57.599  -6.760 -0.18 -0.06    +0.256 C 
+DOCKED: ATOM      2  C3  SIA A 467      -1.059  56.599  -6.994 -0.30 -0.11    +0.114 C 
+DOCKED: ATOM      3  C4  SIA A 467      -1.356  55.628  -8.126 -0.26 -0.19    +0.149 C 
+DOCKED: ATOM      4  C5  SIA A 467      -2.361  56.193  -9.126 -0.16 -0.13    +0.145 C 
+DOCKED: ATOM      5  C6  SIA A 467      -3.682  56.459  -8.398 -0.16 -0.14    +0.182 C 
+DOCKED: ATOM      6  O6  SIA A 467      -3.492  57.378  -7.302 -0.18 +0.08    -0.336 OA
+DOCKED: ENDROOT
+DOCKED: BRANCH   5   7
+DOCKED: ATOM      7  C7  SIA A 467      -4.707  57.149  -9.317 -0.11 -0.07    +0.180 C 
+DOCKED: BRANCH   7   8
+DOCKED: ATOM      8  C8  SIA A 467      -5.482  58.255  -8.597 -0.17 +0.01    +0.173 C 
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      9  C9  SIA A 467      -4.767  59.626  -8.505 -0.09 +0.04    +0.198 C 
+DOCKED: BRANCH   9  10
+DOCKED: ATOM     10  O9  SIA A 467      -4.443  59.942  -7.160 -0.19 -0.30    -0.398 OA
+DOCKED: ATOM     11  HO9 SIA A 467      -4.143  59.063  -6.859 +0.08 +0.17    +0.209 HD
+DOCKED: ENDBRANCH   9  10
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8  12
+DOCKED: ATOM     12  O8  SIA A 467      -6.629  58.453  -9.393 -0.12 +0.00    -0.391 OA
+DOCKED: ATOM     13  HO8 SIA A 467      -6.332  58.230 -10.286 +0.11 -0.02    +0.210 HD
+DOCKED: ENDBRANCH   8  12
+DOCKED: ENDBRANCH   7   8
+DOCKED: BRANCH   7  14
+DOCKED: ATOM     14  O7  SIA A 467      -4.079  57.767 -10.429 +0.00 +0.10    -0.390 OA
+DOCKED: ATOM     15  HO7 SIA A 467      -4.876  58.339 -10.484 +0.09 -0.03    +0.210 HD
+DOCKED: ENDBRANCH   7  14
+DOCKED: ENDBRANCH   5   7
+DOCKED: BRANCH   4  16
+DOCKED: ATOM     16  N5  SIA A 467      -2.513  55.152 -10.127 -0.02 +0.26    -0.352 N 
+DOCKED: ATOM     17  C10 SIA A 467      -1.861  54.939 -11.253 -0.28 -0.09    +0.214 C 
+DOCKED: ATOM     18  C11 SIA A 467      -2.264  53.704 -12.042 -0.48 -0.04    +0.117 C 
+DOCKED: ATOM     19  O10 SIA A 467      -1.000  55.738 -11.624 -0.64 +0.04    -0.274 OA
+DOCKED: ATOM     20  HN5 SIA A 467      -3.193  54.510  -9.808 +0.12 -0.15    +0.163 HD
+DOCKED: ENDBRANCH   4  16
+DOCKED: BRANCH   3  21
+DOCKED: ATOM     21  O4  SIA A 467      -0.146  55.407  -8.811 -0.17 +0.59    -0.393 OA
+DOCKED: ATOM     22  HO4 SIA A 467      -0.138  56.024  -9.570 -0.15 -0.32    +0.210 HD
+DOCKED: ENDBRANCH   3  21
+DOCKED: BRANCH   1  23
+DOCKED: ATOM     23  C1  SIA A 467      -2.495  58.353  -5.465 -0.23 +0.21    +0.238 C 
+DOCKED: ATOM     24  O1A SIA A 467      -1.455  58.709  -4.880 -1.03 -0.89    -0.644 OA
+DOCKED: ATOM     25  O1B SIA A 467      -3.552  58.577  -4.847 -1.24 -1.30    -0.644 OA
+DOCKED: ENDBRANCH   1  23
+DOCKED: BRANCH   1  26
+DOCKED: ATOM     26  O2  SIA A 467      -2.270  58.830  -7.481 -0.06 +0.11    -0.357 OA
+DOCKED: ATOM     27  HO2 SIA A 467      -2.325  59.498  -6.771 +0.09 +0.03    +0.213 HD
+DOCKED: ENDBRANCH   1  26
+DOCKED: TORSDOF 10
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 9 of 10
+Run: 9 Seed: 1766260230 1032475417 [ Run 9 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -15.026
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans -2.965 56.331 -8.605 quatxyzw 0.005370 -0.024635 -0.131331 0.991018 center -3.020 57.214 -9.126 ntor 10 -84.8253 74.9697 -14.8573 -123.1157 -115.6198 61.5895 -9.9885 -4.0166 132.4218 -71.3568
+State:	 -2.965  56.331  -8.605   0.040 -0.184 -0.982 15.370    -84.83   74.97  -14.86 -123.12 -115.62   61.59   -9.99   -4.02  132.42  -71.36
+
+DOCKED: MODEL        9
+DOCKED: USER    Run = 9
+DOCKED: USER    DPF = 1a4q.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -6.75 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   11.35 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -9.73 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -6.97 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -2.76 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -5.30 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +2.98 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -5.30 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move SIA.pdbqt
+DOCKED: USER    NEWDPF about -3.020300 57.213900 -9.125800
+DOCKED: USER    NEWDPF tran0 -2.965116 56.330719 -8.605353
+DOCKED: USER    NEWDPF quaternion0 0.005370 -0.024635 -0.131331 0.991018
+DOCKED: USER    NEWDPF axisangle0 0.040157 -0.184213 -0.982066 15.370297
+DOCKED: USER    NEWDPF quat0 0.040157 -0.184213 -0.982066 15.370297
+DOCKED: USER    NEWDPF dihe0 -84.83 74.97 -14.86 -123.12 -115.62 61.59 -9.99 -4.02 132.42 -71.36 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  10 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C1_1  and  C2_2 
+DOCKED: REMARK    2  A    between atoms: C2_2  and  O2_15 
+DOCKED: REMARK    3  A    between atoms: C4_4  and  O4_16 
+DOCKED: REMARK    4  A    between atoms: C5_5  and  N5_12 
+DOCKED: REMARK    5  A    between atoms: C6_6  and  C7_7 
+DOCKED: REMARK    6  A    between atoms: C7_7  and  C8_8 
+DOCKED: REMARK    7  A    between atoms: C7_7  and  O7_18 
+DOCKED: REMARK    8  A    between atoms: C8_8  and  C9_9 
+DOCKED: REMARK    9  A    between atoms: C8_8  and  O8_19 
+DOCKED: REMARK   10  A    between atoms: C9_9  and  O9_20 
+DOCKED: REMARK       I    between atoms: C10_10  and  N5_12 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C2  SIA A 467      -1.975  57.442  -6.754 -0.19 -0.09    +0.256 C 
+DOCKED: ATOM      2  C3  SIA A 467      -0.698  56.624  -6.896 -0.25 -0.12    +0.114 C 
+DOCKED: ATOM      3  C4  SIA A 467      -0.793  55.563  -7.982 -0.20 -0.22    +0.149 C 
+DOCKED: ATOM      4  C5  SIA A 467      -1.832  55.912  -9.044 -0.19 -0.15    +0.145 C 
+DOCKED: ATOM      5  C6  SIA A 467      -3.208  55.999  -8.374 -0.16 -0.18    +0.182 C 
+DOCKED: ATOM      6  O6  SIA A 467      -3.209  56.989  -7.325 -0.15 +0.17    -0.336 OA
+DOCKED: ENDROOT
+DOCKED: BRANCH   5   7
+DOCKED: ATOM      7  C7  SIA A 467      -4.291  56.471  -9.362 -0.11 -0.10    +0.180 C 
+DOCKED: BRANCH   7   8
+DOCKED: ATOM      8  C8  SIA A 467      -5.247  55.345  -9.759 -0.21 -0.12    +0.173 C 
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      9  C9  SIA A 467      -4.601  53.949  -9.946 -0.25 -0.18    +0.198 C 
+DOCKED: BRANCH   9  10
+DOCKED: ATOM     10  O9  SIA A 467      -5.208  52.989  -9.095 -0.19 +0.54    -0.398 OA
+DOCKED: ATOM     11  HO9 SIA A 467      -5.068  53.430  -8.234 -0.35 -0.52    +0.209 HD
+DOCKED: ENDBRANCH   9  10
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8  12
+DOCKED: ATOM     12  O8  SIA A 467      -6.131  55.236  -8.667 -0.14 +0.46    -0.391 OA
+DOCKED: ATOM     13  HO8 SIA A 467      -5.590  54.841  -7.970 +0.06 -0.55    +0.210 HD
+DOCKED: ENDBRANCH   8  12
+DOCKED: ENDBRANCH   7   8
+DOCKED: BRANCH   7  14
+DOCKED: ATOM     14  O7  SIA A 467      -5.098  57.494  -8.802 -0.06 +0.09    -0.390 OA
+DOCKED: ATOM     15  HO7 SIA A 467      -5.065  56.979  -7.966 +0.10 -0.08    +0.210 HD
+DOCKED: ENDBRANCH   7  14
+DOCKED: ENDBRANCH   5   7
+DOCKED: BRANCH   4  16
+DOCKED: ATOM     16  N5  SIA A 467      -1.779  54.812  -9.990 -0.06 +0.30    -0.352 N 
+DOCKED: ATOM     17  C10 SIA A 467      -1.596  54.808 -11.295 -0.31 -0.09    +0.214 C 
+DOCKED: ATOM     18  C11 SIA A 467      -1.552  53.446 -11.967 -0.50 -0.06    +0.117 C 
+DOCKED: ATOM     19  O10 SIA A 467      -1.503  55.875 -11.905 -0.77 -0.02    -0.274 OA
+DOCKED: ATOM     20  HN5 SIA A 467      -1.837  53.963  -9.487 +0.12 -0.20    +0.163 HD
+DOCKED: ENDBRANCH   4  16
+DOCKED: BRANCH   3  21
+DOCKED: ATOM     21  O4  SIA A 467       0.464  55.505  -8.614 -0.17 +0.70    -0.393 OA
+DOCKED: ATOM     22  HO4 SIA A 467       0.787  56.426  -8.677 -0.41 -0.55    +0.210 HD
+DOCKED: ENDBRANCH   3  21
+DOCKED: BRANCH   1  23
+DOCKED: ATOM     23  C1  SIA A 467      -2.453  58.200  -5.513 -0.19 +0.19    +0.238 C 
+DOCKED: ATOM     24  O1A SIA A 467      -1.581  58.221  -4.624 -1.01 -1.02    -0.644 OA
+DOCKED: ATOM     25  O1B SIA A 467      -3.551  58.690  -5.188 -1.39 -1.11    -0.644 OA
+DOCKED: ENDBRANCH   1  23
+DOCKED: BRANCH   1  26
+DOCKED: ATOM     26  O2  SIA A 467      -2.225  58.607  -7.544 -0.07 +0.14    -0.357 OA
+DOCKED: ATOM     27  HO2 SIA A 467      -2.343  59.307  -6.874 +0.09 +0.02    +0.213 HD
+DOCKED: ENDBRANCH   1  26
+DOCKED: TORSDOF 10
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 10 of 10
+Run: 10 Seed: 1649050258 599895264 [ Run 10 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -15.433
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans -3.107 56.689 -8.823 quatxyzw 0.015630 -0.048705 -0.038306 -0.997956 center -3.020 57.214 -9.126 ntor 10 -75.8941 113.0923 -4.2900 -80.3200 -130.9144 38.1481 16.3458 -5.3969 136.8030 -20.6956
+State:	 -3.107  56.689  -8.823   0.245 -0.762 -0.599 -7.328    -75.89  113.09   -4.29  -80.32 -130.91   38.15   16.35   -5.40  136.80  -20.70
+
+DOCKED: MODEL       10
+DOCKED: USER    Run = 10
+DOCKED: USER    DPF = 1a4q.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.40 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  109.89 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -8.38 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -6.14 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -2.24 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -7.05 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +2.98 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -7.05 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move SIA.pdbqt
+DOCKED: USER    NEWDPF about -3.020300 57.213900 -9.125800
+DOCKED: USER    NEWDPF tran0 -3.106893 56.689344 -8.822540
+DOCKED: USER    NEWDPF quaternion0 0.015630 -0.048705 -0.038306 -0.997956
+DOCKED: USER    NEWDPF axisangle0 0.244583 -0.762153 -0.599418 -7.327934
+DOCKED: USER    NEWDPF quat0 0.244583 -0.762153 -0.599418 -7.327934
+DOCKED: USER    NEWDPF dihe0 -75.89 113.09 -4.29 -80.32 -130.91 38.15 16.35 -5.40 136.80 -20.70 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  10 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C1_1  and  C2_2 
+DOCKED: REMARK    2  A    between atoms: C2_2  and  O2_15 
+DOCKED: REMARK    3  A    between atoms: C4_4  and  O4_16 
+DOCKED: REMARK    4  A    between atoms: C5_5  and  N5_12 
+DOCKED: REMARK    5  A    between atoms: C6_6  and  C7_7 
+DOCKED: REMARK    6  A    between atoms: C7_7  and  C8_8 
+DOCKED: REMARK    7  A    between atoms: C7_7  and  O7_18 
+DOCKED: REMARK    8  A    between atoms: C8_8  and  C9_9 
+DOCKED: REMARK    9  A    between atoms: C8_8  and  O8_19 
+DOCKED: REMARK   10  A    between atoms: C9_9  and  O9_20 
+DOCKED: REMARK       I    between atoms: C10_10  and  N5_12 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C2  SIA A 467      -2.093  57.351  -6.779 -0.18 -0.09    +0.256 C 
+DOCKED: ATOM      2  C3  SIA A 467      -1.150  56.156  -6.814 -0.31 -0.12    +0.114 C 
+DOCKED: ATOM      3  C4  SIA A 467      -1.426  55.219  -7.980 -0.28 -0.19    +0.149 C 
+DOCKED: ATOM      4  C5  SIA A 467      -2.123  55.926  -9.140 -0.17 -0.14    +0.145 C 
+DOCKED: ATOM      5  C6  SIA A 467      -3.476  56.452  -8.651 -0.14 -0.14    +0.182 C 
+DOCKED: ATOM      6  O6  SIA A 467      -3.308  57.356  -7.539 -0.14 +0.12    -0.336 OA
+DOCKED: ENDROOT
+DOCKED: BRANCH   5   7
+DOCKED: ATOM      7  C7  SIA A 467      -4.185  57.288  -9.733 -0.07 -0.07    +0.180 C 
+DOCKED: BRANCH   7   8
+DOCKED: ATOM      8  C8  SIA A 467      -5.694  57.382  -9.501 -0.16 -0.04    +0.173 C 
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      9  C9  SIA A 467      -6.355  56.134  -8.866 -0.29 -0.14    +0.198 C 
+DOCKED: BRANCH   9  10
+DOCKED: ATOM     10  O9  SIA A 467      -6.548  56.314  -7.471 -0.17 +0.24    -0.398 OA
+DOCKED: ATOM     11  HO9 SIA A 467      -5.663  56.652  -7.232 +0.05 -0.10    +0.209 HD
+DOCKED: ENDBRANCH   9  10
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8  12
+DOCKED: ATOM     12  O8  SIA A 467      -5.840  58.431  -8.571 -0.10 -0.06    -0.391 OA
+DOCKED: ATOM     13  HO8 SIA A 467      -5.049  58.363  -8.020 +0.09 +0.05    +0.210 HD
+DOCKED: ENDBRANCH   8  12
+DOCKED: ENDBRANCH   7   8
+DOCKED: BRANCH   7  14
+DOCKED: ATOM     14  O7  SIA A 467      -3.706  58.623  -9.758 -0.01 +0.12    -0.390 OA
+DOCKED: ATOM     15  HO7 SIA A 467      -3.533  58.515  -8.797 +0.08 -0.06    +0.210 HD
+DOCKED: ENDBRANCH   7  14
+DOCKED: ENDBRANCH   5   7
+DOCKED: BRANCH   4  16
+DOCKED: ATOM     16  N5  SIA A 467      -2.294  54.899 -10.151 -0.03 +0.27    -0.352 N 
+DOCKED: ATOM     17  C10 SIA A 467      -1.952  54.880 -11.424 -0.29 -0.08    +0.214 C 
+DOCKED: ATOM     18  C11 SIA A 467      -2.251  53.598 -12.184 -0.50 -0.04    +0.117 C 
+DOCKED: ATOM     19  O10 SIA A 467      -1.450  55.880 -11.939 -0.79 -0.03    -0.274 OA
+DOCKED: ATOM     20  HN5 SIA A 467      -2.682  54.098  -9.721 +0.12 -0.18    +0.163 HD
+DOCKED: ENDBRANCH   4  16
+DOCKED: BRANCH   3  21
+DOCKED: ATOM     21  O4  SIA A 467      -0.179  54.759  -8.446 -0.14 +0.64    -0.393 OA
+DOCKED: ATOM     22  HO4 SIA A 467       0.497  55.125  -7.840 -0.12 -0.53    +0.210 HD
+DOCKED: ENDBRANCH   3  21
+DOCKED: BRANCH   1  23
+DOCKED: ATOM     23  C1  SIA A 467      -2.474  58.191  -5.557 -0.19 +0.18    +0.238 C 
+DOCKED: ATOM     24  O1A SIA A 467      -1.522  58.304  -4.763 -1.05 -0.95    -0.644 OA
+DOCKED: ATOM     25  O1B SIA A 467      -3.551  58.677  -5.164 -1.39 -1.12    -0.644 OA
+DOCKED: ENDBRANCH   1  23
+DOCKED: BRANCH   1  26
+DOCKED: ATOM     26  O2  SIA A 467      -1.826  58.554  -7.505 -0.08 +0.20    -0.357 OA
+DOCKED: ATOM     27  HO2 SIA A 467      -2.051  59.254  -6.862 +0.09 -0.00    +0.213 HD
+DOCKED: ENDBRANCH   1  26
+DOCKED: TORSDOF 10
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+DPF> analysis                             # perform a ranked cluster analysis
+
+
+		CLUSTER ANALYSIS OF CONFORMATIONS
+		_________________________________
+
+Number of conformations = 10
+
+RMSD cluster analysis will be performed using the ligand atoms only (27 / 27 total atoms).
+
+Outputting structurally similar clusters, ranked in order of increasing energy.
+
+
+________________________________________________________________________________
+
+Number of distinct conformational clusters found = 2,  out of 10 runs,
+Using an rmsd-tolerance of 2.0 A
+
+
+	CLUSTERING HISTOGRAM
+	____________________
+
+________________________________________________________________________________
+     |           |     |           |     |                                    
+Clus | Lowest    | Run | Mean      | Num | Histogram                          
+-ter | Binding   |     | Binding   | in  |                                    
+Rank | Energy    |     | Energy    | Clus|    5    10   15   20   25   30   35
+_____|___________|_____|___________|_____|____:____|____:____|____:____|____:___
+   1 |     -6.75 |   9 |     -4.75 |   9 |#########
+   2 |     -4.30 |   5 |     -4.30 |   1 |#
+_____|___________|_____|___________|_____|______________________________________
+
+
+Number of multi-member conformational clusters found = 1, out of 10 runs.
+
+	RMSD TABLE
+	__________
+
+_____________________________________________________________________
+     |      |      |           |         |                 |
+Rank | Sub- | Run  | Binding   | Cluster | Reference       | Grep
+     | Rank |      | Energy    | RMSD    | RMSD            | Pattern
+_____|______|______|___________|_________|_________________|___________
+   1      1      9       -6.75      0.00      1.76           RANKING
+   1      2     10       -5.40      1.06      1.17           RANKING
+   1      3      7       -5.31      1.18      1.18           RANKING
+   1      4      2       -5.31      1.05      1.39           RANKING
+   1      5      8       -4.94      1.48      1.29           RANKING
+   1      6      3       -4.52      1.10      1.28           RANKING
+   1      7      1       -3.85      1.56      1.19           RANKING
+   1      8      6       -3.34      1.36      1.49           RANKING
+   1      9      4       -3.30      1.51      1.23           RANKING
+   2      1      5       -4.30      0.00      1.48           RANKING
+_______________________________________________________________________
+
+
+
+	INFORMATION ENTROPY ANALYSIS FOR THIS CLUSTERING
+	________________________________________________
+
+
+Information entropy for this clustering = 0.14  (rmstol = 2.00 Angstrom)
+
+_______________________________________________________________________
+
+
+	STATISTICAL MECHANICAL ANALYSIS
+	_______________________________
+
+
+Partition function, Q =    10.08            at Temperature, T = 298.15 K
+Free energy,        A ~ -1368.94 kcal/mol   at Temperature, T = 298.15 K
+Internal energy,    U =    -4.70 kcal/mol   at Temperature, T = 298.15 K
+Entropy,            S =     4.58 kcal/mol/K at Temperature, T = 298.15 K
+
+_______________________________________________________________________
+
+
+	LOWEST ENERGY DOCKED CONFORMATION from EACH CLUSTER
+	___________________________________________________
+
+
+
+Keeping original residue number (specified in the input PDBQ file) for outputting.
+
+MODEL        9
+USER    Run = 9
+USER    Cluster Rank = 1
+USER    Number of conformations in this cluster = 9
+USER  
+USER    RMSD from reference structure       = 1.761 A
+USER  
+USER    Estimated Free Energy of Binding    =   -6.75 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =   11.35 uM (micromolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =   -9.73 kcal/mol
+USER        vdW + Hbond + desolv Energy     =   -6.97 kcal/mol
+USER        Electrostatic Energy            =   -2.76 kcal/mol
+USER    (2) Final Total Internal Energy     =   -5.30 kcal/mol
+USER    (3) Torsional Free Energy           =   +2.98 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -5.30 kcal/mol
+USER    
+USER    
+USER  
+USER    DPF = 1a4q.dpf
+USER    NEWDPF move	SIA.pdbqt
+USER    NEWDPF about	-3.020300 57.213900 -9.125800
+USER    NEWDPF tran0	-2.965116 56.330719 -8.605353
+USER    NEWDPF axisangle0	0.040157 -0.184213 -0.982066 15.370297
+USER    NEWDPF quaternion0	0.005370 -0.024635 -0.131331 0.991018
+USER    NEWDPF dihe0	-84.83 74.97 -14.86 -123.12 -115.62 61.59 -9.99 -4.02 132.42 -71.36 
+USER  
+USER                              x       y       z    vdW   Elec        q     RMS 
+ATOM      1  C2  SIA A 467      -1.975  57.442  -6.754 -0.19 -0.09    +0.256     1.761
+ATOM      2  C3  SIA A 467      -0.698  56.624  -6.896 -0.25 -0.12    +0.114     1.761
+ATOM      3  C4  SIA A 467      -0.793  55.563  -7.982 -0.20 -0.22    +0.149     1.761
+ATOM      4  C5  SIA A 467      -1.832  55.912  -9.044 -0.19 -0.15    +0.145     1.761
+ATOM      5  C6  SIA A 467      -3.208  55.999  -8.374 -0.16 -0.18    +0.182     1.761
+ATOM      6  O6  SIA A 467      -3.209  56.989  -7.325 -0.15 +0.17    -0.336     1.761
+ATOM      7  C7  SIA A 467      -4.291  56.471  -9.362 -0.11 -0.10    +0.180     1.761
+ATOM      8  C8  SIA A 467      -5.247  55.345  -9.759 -0.21 -0.12    +0.173     1.761
+ATOM      9  C9  SIA A 467      -4.601  53.949  -9.946 -0.25 -0.18    +0.198     1.761
+ATOM     10  O9  SIA A 467      -5.208  52.989  -9.095 -0.19 +0.54    -0.398     1.761
+ATOM     11  HO9 SIA A 467      -5.068  53.430  -8.234 -0.35 -0.52    +0.209     1.761
+ATOM     12  O8  SIA A 467      -6.131  55.236  -8.667 -0.14 +0.46    -0.391     1.761
+ATOM     13  HO8 SIA A 467      -5.590  54.841  -7.970 +0.06 -0.55    +0.210     1.761
+ATOM     14  O7  SIA A 467      -5.098  57.494  -8.802 -0.06 +0.09    -0.390     1.761
+ATOM     15  HO7 SIA A 467      -5.065  56.979  -7.966 +0.10 -0.08    +0.210     1.761
+ATOM     16  N5  SIA A 467      -1.779  54.812  -9.990 -0.06 +0.30    -0.352     1.761
+ATOM     17  C10 SIA A 467      -1.596  54.808 -11.295 -0.31 -0.09    +0.214     1.761
+ATOM     18  C11 SIA A 467      -1.552  53.446 -11.967 -0.50 -0.06    +0.117     1.761
+ATOM     19  O10 SIA A 467      -1.503  55.875 -11.905 -0.77 -0.02    -0.274     1.761
+ATOM     20  HN5 SIA A 467      -1.837  53.963  -9.487 +0.12 -0.20    +0.163     1.761
+ATOM     21  O4  SIA A 467       0.464  55.505  -8.614 -0.17 +0.70    -0.393     1.761
+ATOM     22  HO4 SIA A 467       0.787  56.426  -8.677 -0.41 -0.55    +0.210     1.761
+ATOM     23  C1  SIA A 467      -2.453  58.200  -5.513 -0.19 +0.19    +0.238     1.761
+ATOM     24  O1A SIA A 467      -1.581  58.221  -4.624 -1.01 -1.02    -0.644     1.761
+ATOM     25  O1B SIA A 467      -3.551  58.690  -5.188 -1.39 -1.11    -0.644     1.761
+ATOM     26  O2  SIA A 467      -2.225  58.607  -7.544 -0.07 +0.14    -0.357     1.761
+ATOM     27  HO2 SIA A 467      -2.343  59.307  -6.874 +0.09 +0.02    +0.213     1.761
+TER
+ENDMDL
+MODEL        5
+USER    Run = 5
+USER    Cluster Rank = 2
+USER    Number of conformations in this cluster = 1
+USER  
+USER    RMSD from reference structure       = 1.481 A
+USER  
+USER    Estimated Free Energy of Binding    =   -4.30 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =  708.41 uM (micromolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =   -7.28 kcal/mol
+USER        vdW + Hbond + desolv Energy     =   -5.38 kcal/mol
+USER        Electrostatic Energy            =   -1.90 kcal/mol
+USER    (2) Final Total Internal Energy     =   -6.75 kcal/mol
+USER    (3) Torsional Free Energy           =   +2.98 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -6.75 kcal/mol
+USER    
+USER    
+USER  
+USER    DPF = 1a4q.dpf
+USER    NEWDPF move	SIA.pdbqt
+USER    NEWDPF about	-3.020300 57.213900 -9.125800
+USER    NEWDPF tran0	-2.206967 57.279119 -9.081793
+USER    NEWDPF axisangle0	-0.216754 0.650841 0.727615 45.183996
+USER    NEWDPF quaternion0	-0.083270 0.250031 0.279525 0.923264
+USER    NEWDPF dihe0	-69.17 86.11 70.93 179.38 -125.66 32.12 53.86 35.22 -115.00 -59.26 
+USER  
+USER                              x       y       z    vdW   Elec        q     RMS 
+ATOM      1  C2  SIA A 467      -1.970  57.281  -6.719 -0.19 -0.10    +0.256     1.481
+ATOM      2  C3  SIA A 467      -1.717  55.778  -6.704 -0.24 -0.12    +0.114     1.481
+ATOM      3  C4  SIA A 467      -1.852  55.143  -8.079 -0.28 -0.19    +0.149     1.481
+ATOM      4  C5  SIA A 467      -1.617  56.145  -9.206 -0.15 -0.16    +0.145     1.481
+ATOM      5  C6  SIA A 467      -2.676  57.247  -9.111 -0.10 -0.13    +0.182     1.481
+ATOM      6  O6  SIA A 467      -2.620  57.909  -7.830 -0.09 +0.16    -0.336     1.481
+ATOM      7  C7  SIA A 467      -2.428  58.364 -10.142 -0.01 -0.15    +0.180     1.481
+ATOM      8  C8  SIA A 467      -3.600  58.534 -11.110 -0.11 -0.03    +0.173     1.481
+ATOM      9  C9  SIA A 467      -4.855  59.232 -10.530 -0.04 -0.01    +0.198     1.481
+ATOM     10  O9  SIA A 467      -4.822  60.629 -10.778 +0.00 -0.00    -0.398     1.481
+ATOM     11  HO9 SIA A 467      -3.876  60.797 -10.605 +0.05 -0.02    +0.209     1.481
+ATOM     12  O8  SIA A 467      -3.100  59.382 -12.119 -0.35 -0.02    -0.391     1.481
+ATOM     13  HO8 SIA A 467      -2.864  60.191 -11.646 +0.04 -0.05    +0.210     1.481
+ATOM     14  O7  SIA A 467      -2.248  59.623  -9.514 -0.03 +0.36    -0.390     1.481
+ATOM     15  HO7 SIA A 467      -1.653  59.158  -8.887 -0.05 -0.29    +0.210     1.481
+ATOM     16  N5  SIA A 467      -1.771  55.373 -10.426 -0.07 +0.24    -0.352     1.481
+ATOM     17  C10 SIA A 467      -0.901  54.650 -11.103 -0.36 -0.12    +0.214     1.481
+ATOM     18  C11 SIA A 467      -1.432  53.929 -12.331 -0.50 -0.03    +0.117     1.481
+ATOM     19  O10 SIA A 467       0.278  54.615 -10.744 -0.39 +0.18    -0.274     1.481
+ATOM     20  HN5 SIA A 467      -2.722  55.396 -10.692 +0.11 -0.08    +0.163     1.481
+ATOM     21  O4  SIA A 467      -0.858  54.149  -8.174 -0.17 +0.61    -0.393     1.481
+ATOM     22  HO4 SIA A 467      -0.098  54.558  -8.635 +0.14 -0.32    +0.210     1.481
+ATOM     23  C1  SIA A 467      -2.426  58.151  -5.545 -0.19 +0.18    +0.238     1.481
+ATOM     24  O1A SIA A 467      -1.517  58.307  -4.709 -1.02 -0.99    -0.644     1.481
+ATOM     25  O1B SIA A 467      -3.529  58.630  -5.221 -1.35 -1.08    -0.644     1.481
+ATOM     26  O2  SIA A 467      -0.934  58.225  -6.998 -0.14 +0.25    -0.357     1.481
+ATOM     27  HO2 SIA A 467      -1.028  58.876  -6.277 +0.09 +0.02    +0.213     1.481
+TER
+ENDMDL
+
+
+AVSFLD: # AVS field file
+AVSFLD: #
+AVSFLD: # Created by AutoDock
+AVSFLD: #
+AVSFLD: ndim=2           # number of dimensions in the field
+AVSFLD: nspace=1         # number of physical coordinates
+AVSFLD: veclen=7         # vector size
+AVSFLD: dim1=27          # atoms
+AVSFLD: dim2=2           # conformations
+AVSFLD: data=Real       # data type (byte,integer,Real,double)
+AVSFLD: field=uniform    # field coordinate layout
+AVSFLD: label= x y z vdW Elec q RMS
+AVSFLD: variable 1 file = 1a4q.dlg.pdb filetype = ascii offset = 5 stride = 12
+AVSFLD: variable 2 file = 1a4q.dlg.pdb filetype = ascii offset = 6 stride = 12
+AVSFLD: variable 3 file = 1a4q.dlg.pdb filetype = ascii offset = 7 stride = 12
+AVSFLD: variable 4 file = 1a4q.dlg.pdb filetype = ascii offset = 8 stride = 12
+AVSFLD: variable 5 file = 1a4q.dlg.pdb filetype = ascii offset = 9 stride = 12
+AVSFLD: variable 6 file = 1a4q.dlg.pdb filetype = ascii offset = 10 stride = 12
+AVSFLD: variable 7 file = 1a4q.dlg.pdb filetype = ascii offset = 11 stride = 12
+AVSFLD: # end of file
+
+>>> Closing the docking parameter file (DPF)...
+This docking finished at:			7:24 43" p.m., 01/10/2020
+
+
+________________________________________________________________________________
+
+C:/Program Files (x86)/The Scripps Research Institute/Autodock/4.2.6/autodock4.exe: Successful Completion on "LAPTOP-E94RFAUT"
+
+Real= 4m 57.27s,  CPU= 4m 56.86s,  System= 0.02s
+________________________________________________________________________________
+

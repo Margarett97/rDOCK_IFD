@@ -1,0 +1,34 @@
+REMARK   4 XXXX COMPLIES WITH FORMAT V. 2.0
+ATOM     25  H5  DPC A 466      -1.844  54.275  -8.670  1.00  0.00      dock H  
+ATOM     27  HE3 DPC A 466       1.662  56.037  -7.295  1.00  0.00      dock H  
+ATOM     28  HE2 DPC A 466       1.185  56.571  -8.659  1.00  0.00      dock H  
+ATOM     29  HE1 DPC A 466       1.419  57.709  -7.424  1.00  0.00      dock H  
+TER      30      DPC A 466 
+HETATM    1  C2  DPC A 466      -1.930  58.475  -6.846  1.00  9.12      dock C  
+HETATM    2  C3  DPC A 466      -0.722  57.958  -6.598  1.00  7.83      dock C  
+HETATM    3  C4  DPC A 466      -0.295  56.663  -7.235  1.00  8.13      dock C  
+HETATM    4  C5  DPC A 466      -1.183  56.287  -8.418  1.00  4.13      dock C  
+HETATM    5  C6  DPC A 466      -2.642  56.550  -8.050  1.00  9.37      dock C  
+HETATM    6  O6  DPC A 466      -2.820  57.880  -7.640  1.00 10.40      dock O  
+HETATM    7  C7  DPC A 466      -3.509  56.417  -9.282  1.00 10.79      dock C  
+HETATM    8  O7  DPC A 466      -4.183  55.726  -9.189  1.00  9.13      dock O  
+HETATM    9  N8  DPC A 466      -3.413  57.305 -10.262  1.00  9.99      dock N  
+HETATM   10  C81 DPC A 466      -4.364  57.147 -11.384  1.00  8.72      dock C  
+HETATM   11  C82 DPC A 466      -3.693  56.603 -12.649  1.00  6.37      dock C  
+HETATM   12  CG  DPC A 466      -2.887  55.372 -12.285  1.00 13.21      dock C  
+HETATM   13  CD1 DPC A 466      -1.503  55.317 -12.563  1.00 12.56      dock C  
+HETATM   14  CE1 DPC A 466      -0.763  54.153 -12.290  1.00 14.24      dock C  
+HETATM   15  CZ  DPC A 466      -1.405  53.035 -11.728  1.00 14.76      dock C  
+HETATM   16  CE2 DPC A 466      -2.772  53.102 -11.425  1.00 12.57      dock C  
+HETATM   17  CD2 DPC A 466      -3.507  54.260 -11.697  1.00 12.80      dock C  
+HETATM   18  C9  DPC A 466      -2.397  58.354 -10.320  1.00 12.20      dock C  
+HETATM   19  C91 DPC A 466      -2.990  59.727 -10.678  1.00 11.35      dock C  
+HETATM   20  C92 DPC A 466      -2.637  60.866  -9.702  1.00 10.72      dock C  
+HETATM   21  N5  DPC A 466      -1.016  54.869  -8.713  1.00  8.66      dock N  
+HETATM   22  C10 DPC A 466       0.150  54.289  -9.038  1.00  8.96      dock C  
+HETATM   23  O10 DPC A 466       1.173  54.943  -9.154  1.00  8.83      dock O  
+HETATM   24  C11 DPC A 466       0.134  52.759  -9.208  1.00  5.01      dock C  
+HETATM   26  NE  DPC A 466       1.072  56.781  -7.667  1.00  7.66      dock N  
+HETATM   30  C1  DPC A 466      -2.376  59.714  -6.183  1.00 12.45      dock C  
+HETATM   31  O1A DPC A 466      -1.612  60.280  -5.411  1.00 13.44      dock O  
+HETATM   32  O1B DPC A 466      -3.445  60.235  -6.470  1.00 11.63      dock O  

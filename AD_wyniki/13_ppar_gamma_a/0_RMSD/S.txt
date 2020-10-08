@@ -1,0 +1,228 @@
+#0, chain A: HIV-1 RT
+#0, chain B: HIV-1 RT
+1rth.pdb opened
+pose4.pdb opened
+Computing secondary structure assignments for model(s) #0, #1
+using ksdssp (Kabsch and Sander Define Secondary Structure
+of Proteins) with the parameters:
+  energy cutoff -0.5
+  minimum helix length 3
+  minimum strand length 3
+
+Matchmaker 1rth.pdb, chain A (#0) with pose4.pdb, chain A (#1), sequence alignment score = 2684.1
+with these parameters:
+	chain pairing: bb
+	Needleman-Wunsch using BLOSUM-62
+	ss fraction: 0.3
+	gap open (HH/SS/other) 18/18/6, extend 1
+	ss matrix:  (H, O): -6 (S, S): 6 (H, H): 6 (O, S): -6 (O, O): 4 (H, S): -9
+	iteration cutoff: 2
+RMSD between 519 pruned atom pairs is 0.790 angstroms; (across all 536 pairs: 0.928)
+
+Executing rmsd ['#1:U05', '#0:U05']
+RMSD between 22 atom pairs is 0.967 angstroms
+The following problems occurred while reading PDB file for 1a4q.pdb
+warning: cannot find LINK/SSBOND residue CYS (86 )
+warning: cannot find LINK/SSBOND residue CYS (121 )
+warning: cannot find LINK/SSBOND residue CYS (181 )
+warning: cannot find LINK/SSBOND residue CYS (230 )
+warning: cannot find LINK/SSBOND residue CYS (276 )
+warning: cannot find LINK/SSBOND residue CYS (278 )
+warning: cannot find LINK/SSBOND residue CYS (317 )
+warning: cannot find LINK/SSBOND residue CYS (423 )
+warning: cannot find LINK/SSBOND residue  CA (2 )
+warning: cannot find LINK/SSBOND residue NAG (1 )
+warning: cannot find LINK/SSBOND residue  CA (2 )
+warning: cannot find LINK/SSBOND residue  CA (2 )
+warning: cannot find LINK/SSBOND residue  CA (2 )
+warning: cannot find LINK/SSBOND residue  CA (2 )
+warning: cannot find LINK/SSBOND residue  CA (2 )
+#0, chain A: sialidase
+1a4q.pdb opened
+pose5.pdb opened
+Computing secondary structure assignments for model(s) #0, #1
+using ksdssp (Kabsch and Sander Define Secondary Structure
+of Proteins) with the parameters:
+  energy cutoff -0.5
+  minimum helix length 3
+  minimum strand length 3
+
+Matchmaker 1a4q.pdb, chain A (#0) with pose5.pdb, chain A (#1), sequence alignment score = 2018.3
+with these parameters:
+	chain pairing: bb
+	Needleman-Wunsch using BLOSUM-62
+	ss fraction: 0.3
+	gap open (HH/SS/other) 18/18/6, extend 1
+	ss matrix:  (H, O): -6 (S, S): 6 (H, H): 6 (O, S): -6 (O, O): 4 (H, S): -9
+	iteration cutoff: 2
+RMSD between 390 pruned atom pairs is 0.224 angstroms; (across all 390 pairs: 0.224)
+
+Executing rmsd ['#1:DPC', '#0:DPC']
+RMSD between 28 atom pairs is 3.032 angstroms
+The following problems occurred while reading PDB file for 1a4q.pdb
+warning: cannot find LINK/SSBOND residue CYS (86 )
+warning: cannot find LINK/SSBOND residue CYS (121 )
+warning: cannot find LINK/SSBOND residue CYS (181 )
+warning: cannot find LINK/SSBOND residue CYS (230 )
+warning: cannot find LINK/SSBOND residue CYS (276 )
+warning: cannot find LINK/SSBOND residue CYS (278 )
+warning: cannot find LINK/SSBOND residue CYS (317 )
+warning: cannot find LINK/SSBOND residue CYS (423 )
+warning: cannot find LINK/SSBOND residue  CA (2 )
+warning: cannot find LINK/SSBOND residue NAG (1 )
+warning: cannot find LINK/SSBOND residue  CA (2 )
+warning: cannot find LINK/SSBOND residue  CA (2 )
+warning: cannot find LINK/SSBOND residue  CA (2 )
+warning: cannot find LINK/SSBOND residue  CA (2 )
+warning: cannot find LINK/SSBOND residue  CA (2 )
+#0, chain A: sialidase
+1a4q.pdb opened
+pose8.pdb opened
+Computing secondary structure assignments for model(s) #0, #1
+using ksdssp (Kabsch and Sander Define Secondary Structure
+of Proteins) with the parameters:
+  energy cutoff -0.5
+  minimum helix length 3
+  minimum strand length 3
+
+Matchmaker 1a4q.pdb, chain A (#0) with pose8.pdb, chain A (#1), sequence alignment score = 2018.3
+with these parameters:
+	chain pairing: bb
+	Needleman-Wunsch using BLOSUM-62
+	ss fraction: 0.3
+	gap open (HH/SS/other) 18/18/6, extend 1
+	ss matrix:  (H, O): -6 (S, S): 6 (H, H): 6 (O, S): -6 (O, O): 4 (H, S): -9
+	iteration cutoff: 2
+RMSD between 390 pruned atom pairs is 0.226 angstroms; (across all 390 pairs: 0.226)
+
+Executing rmsd ['#1:DPC', '#0:DPC']
+RMSD between 28 atom pairs is 6.537 angstroms
+The following problems occurred while reading PDB file for 1nsc.pdb
+warning:  CONECT record to nonexistent atom: (3777, 3799)
+warning:  CONECT record to nonexistent atom: (3777, 3797)
+warning:  CONECT record to nonexistent atom: (3777, 3798)
+warning:  CONECT record to nonexistent atom: (3769, 3788)
+warning:  CONECT record to nonexistent atom: (3769, 3789)
+warning:  CONECT record to nonexistent atom: (3770, 3790)
+warning:  CONECT record to nonexistent atom: (3771, 3791)
+warning:  CONECT record to nonexistent atom: (3772, 3792)
+warning:  CONECT record to nonexistent atom: (3773, 3793)
+warning:  CONECT record to nonexistent atom: (3774, 3794)
+warning:  CONECT record to nonexistent atom: (3775, 3795)
+warning:  CONECT record to nonexistent atom: (3775, 3796)
+warning:  CONECT record for nonexistent atom: 3797
+warning: cannot find LINK/SSBOND residue CYS (86 )
+warning: cannot find LINK/SSBOND residue CYS (121 )
+warning: cannot find LINK/SSBOND residue CYS (181 )
+warning: cannot find LINK/SSBOND residue CYS (230 )
+warning: cannot find LINK/SSBOND residue CYS (276 )
+warning: cannot find LINK/SSBOND residue CYS (278 )
+warning: cannot find LINK/SSBOND residue CYS (317 )
+warning: cannot find LINK/SSBOND residue CYS (423 )
+warning: cannot find LINK/SSBOND residue ASN (283 )
+warning: cannot find LINK/SSBOND residue GLU (167 )
+warning: cannot find LINK/SSBOND residue HOH (539 )
+warning: cannot find LINK/SSBOND residue  CA (469 )
+warning: cannot find LINK/SSBOND residue  CA (469 )
+warning: cannot find LINK/SSBOND residue  CA (469 )
+warning: cannot find LINK/SSBOND residue  CA (469 )
+warning: cannot find LINK/SSBOND residue  CA (469 )
+warning: cannot find LINK/SSBOND residue  CA (469 )
+#0, chain A: neuraminidase
+1nsc.pdb opened
+pose5.pdb opened
+Computing secondary structure assignments for model(s) #0, #1
+using ksdssp (Kabsch and Sander Define Secondary Structure
+of Proteins) with the parameters:
+  energy cutoff -0.5
+  minimum helix length 3
+  minimum strand length 3
+
+Matchmaker 1nsc.pdb, chain A (#0) with pose5.pdb, chain A (#1), sequence alignment score = 2025.5
+with these parameters:
+	chain pairing: bb
+	Needleman-Wunsch using BLOSUM-62
+	ss fraction: 0.3
+	gap open (HH/SS/other) 18/18/6, extend 1
+	ss matrix:  (H, O): -6 (S, S): 6 (H, H): 6 (O, S): -6 (O, O): 4 (H, S): -9
+	iteration cutoff: 2
+RMSD between 390 pruned atom pairs is 0.224 angstroms; (across all 390 pairs: 0.224)
+
+Executing rmsd ['#1:SIA', '#0:SIA']
+RMSD between 21 atom pairs is 1.174 angstroms
+The following problems occurred while reading PDB file for 1nsc.pdb
+warning:  CONECT record to nonexistent atom: (3777, 3799)
+warning:  CONECT record to nonexistent atom: (3777, 3797)
+warning:  CONECT record to nonexistent atom: (3777, 3798)
+warning:  CONECT record to nonexistent atom: (3769, 3788)
+warning:  CONECT record to nonexistent atom: (3769, 3789)
+warning:  CONECT record to nonexistent atom: (3770, 3790)
+warning:  CONECT record to nonexistent atom: (3771, 3791)
+warning:  CONECT record to nonexistent atom: (3772, 3792)
+warning:  CONECT record to nonexistent atom: (3773, 3793)
+warning:  CONECT record to nonexistent atom: (3774, 3794)
+warning:  CONECT record to nonexistent atom: (3775, 3795)
+warning:  CONECT record to nonexistent atom: (3775, 3796)
+warning:  CONECT record for nonexistent atom: 3797
+warning: cannot find LINK/SSBOND residue CYS (86 )
+warning: cannot find LINK/SSBOND residue CYS (121 )
+warning: cannot find LINK/SSBOND residue CYS (181 )
+warning: cannot find LINK/SSBOND residue CYS (230 )
+warning: cannot find LINK/SSBOND residue CYS (276 )
+warning: cannot find LINK/SSBOND residue CYS (278 )
+warning: cannot find LINK/SSBOND residue CYS (317 )
+warning: cannot find LINK/SSBOND residue CYS (423 )
+warning: cannot find LINK/SSBOND residue ASN (283 )
+warning: cannot find LINK/SSBOND residue GLU (167 )
+warning: cannot find LINK/SSBOND residue HOH (539 )
+warning: cannot find LINK/SSBOND residue  CA (469 )
+warning: cannot find LINK/SSBOND residue  CA (469 )
+warning: cannot find LINK/SSBOND residue  CA (469 )
+warning: cannot find LINK/SSBOND residue  CA (469 )
+warning: cannot find LINK/SSBOND residue  CA (469 )
+warning: cannot find LINK/SSBOND residue  CA (469 )
+#0, chain A: neuraminidase
+1nsc.pdb opened
+pose9.pdb opened
+Computing secondary structure assignments for model(s) #0, #1
+using ksdssp (Kabsch and Sander Define Secondary Structure
+of Proteins) with the parameters:
+  energy cutoff -0.5
+  minimum helix length 3
+  minimum strand length 3
+
+Matchmaker 1nsc.pdb, chain A (#0) with pose9.pdb, chain A (#1), sequence alignment score = 2025.5
+with these parameters:
+	chain pairing: bb
+	Needleman-Wunsch using BLOSUM-62
+	ss fraction: 0.3
+	gap open (HH/SS/other) 18/18/6, extend 1
+	ss matrix:  (H, O): -6 (S, S): 6 (H, H): 6 (O, S): -6 (O, O): 4 (H, S): -9
+	iteration cutoff: 2
+RMSD between 390 pruned atom pairs is 0.226 angstroms; (across all 390 pairs: 0.226)
+
+Executing rmsd ['#1:SIA', '#0:SIA']
+RMSD between 21 atom pairs is 6.185 angstroms
+#0, chain A: E domain
+2prg.pdb opened
+pose5.pdb opened
+Computing secondary structure assignments for model(s) #0, #1
+using ksdssp (Kabsch and Sander Define Secondary Structure
+of Proteins) with the parameters:
+  energy cutoff -0.5
+  minimum helix length 3
+  minimum strand length 3
+
+Matchmaker 2prg.pdb, chain A (#0) with pose5.pdb, chain D (#1), sequence alignment score = 1357.6
+with these parameters:
+	chain pairing: bb
+	Needleman-Wunsch using BLOSUM-62
+	ss fraction: 0.3
+	gap open (HH/SS/other) 18/18/6, extend 1
+	ss matrix:  (H, O): -6 (S, S): 6 (H, H): 6 (O, S): -6 (O, O): 4 (H, S): -9
+	iteration cutoff: 2
+RMSD between 268 pruned atom pairs is 0.650 angstroms; (across all 271 pairs: 0.740)
+
+Executing rmsd ['#1:BRL', '#0:BRL']
+RMSD between 25 atom pairs is 8.315 angstroms
+

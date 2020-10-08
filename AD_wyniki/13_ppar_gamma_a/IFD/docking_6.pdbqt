@@ -1,0 +1,53 @@
+REMARK  7 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: O13_4  and  C10_17 
+REMARK    2  A    between atoms: O13_4  and  C14_20 
+REMARK    3  A    between atoms: N16_7  and  C15_21 
+REMARK    4  A    between atoms: N16_7  and  C17_23 
+REMARK    5  A    between atoms: C5_12  and  C6_13 
+REMARK    6  A    between atoms: C6_13  and  C7_14 
+REMARK    7  A    between atoms: C14_20  and  C15_21 
+ROOT
+HETATM    1  C7  BRL A   1      10.236  -4.123  10.298  1.00 49.32    -0.078 A 
+HETATM    2  C8  BRL A   1       9.960  -5.192  11.250  1.00 47.70     0.063 A 
+HETATM    3  C9  BRL A   1      11.039  -5.802  11.958  1.00 48.79     0.010 A 
+HETATM    4  C10 BRL A   1      12.401  -5.362  11.754  1.00 52.03     0.046 A 
+HETATM    5  C11 BRL A   1      12.652  -4.231  10.855  1.00 49.87     0.091 A 
+HETATM    6  C12 BRL A   1      11.581  -3.619  10.131  1.00 46.23    -0.017 A 
+ENDROOT
+BRANCH   4   7
+HETATM    7  O13 BRL A   1      13.304  -6.125  12.513  1.00 55.24    -0.354 OA
+BRANCH   7   8
+HETATM    8  C14 BRL A   1      14.645  -6.658  12.222  1.00 58.92     0.195 C 
+BRANCH   8   9
+HETATM    9  C15 BRL A   1      14.465  -8.183  12.374  1.00 57.91     0.150 C 
+BRANCH   9  10
+HETATM   10  N16 BRL A   1      13.960  -9.018  11.198  1.00 62.73    -0.373 N 
+HETATM   11  C16 BRL A   1      15.130  -9.231  10.226  1.00 66.67     0.150 C 
+BRANCH  10  12
+HETATM   12  C17 BRL A   1      12.459  -9.481  10.926  1.00 58.83     0.082 A 
+HETATM   13  N18 BRL A   1      11.374  -8.771  11.421  1.00 56.96    -0.356 N 
+HETATM   14  C19 BRL A   1      10.072  -9.098  11.204  1.00 58.44     0.089 A 
+ATOM     15  H18 BRL A   1      11.567  -7.944  11.988  1.00  0.00     0.166 HD
+HETATM   16  C20 BRL A   1       9.727 -10.261  10.414  1.00 56.70     0.013 A 
+HETATM   17  C21 BRL A   1      10.783 -11.059   9.868  1.00 56.41    -0.018 A 
+HETATM   18  C22 BRL A   1      12.145 -10.680  10.119  1.00 57.64     0.103 A 
+ENDBRANCH  10  12
+ENDBRANCH   9  10
+ENDBRANCH   8   9
+ENDBRANCH   7   8
+ENDBRANCH   4   7
+BRANCH   1  19
+HETATM   19  C6  BRL A   1       9.163  -3.514   9.418  1.00 49.65     0.059 C 
+BRANCH  19  20
+HETATM   20  C5  BRL A   1       9.432  -3.414   7.857  1.00 51.51     0.153 A 
+HETATM   21  S1  BRL A   1      10.915  -2.393   7.429  1.00 50.57    -0.054 SA
+HETATM   22  C2  BRL A   1       9.806  -1.428   6.366  1.00 50.68     0.287 A 
+HETATM   23  O2  BRL A   1      10.202  -0.441   5.748  1.00 52.47    -0.260 OA
+HETATM   24  N3  BRL A   1       8.540  -1.809   6.290  1.00 50.49    -0.287 N 
+HETATM   25  C4  BRL A   1       8.252  -2.890   7.027  1.00 50.41     0.239 A 
+ATOM     26  H3  BRL A   1       7.847  -1.322   5.720  1.00  0.00     0.172 HD
+HETATM   27  O4  BRL A   1       7.141  -3.446   7.017  1.00 50.76    -0.272 OA
+ENDBRANCH  19  20
+ENDBRANCH   1  19
+TORSDOF 7

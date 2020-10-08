@@ -1,0 +1,1904 @@
+          AutoDock 4.2 Release 4.2.6   
+         (C) 1989-2012 The Scripps Research Institute
+        AutoDock comes with ABSOLUTELY NO WARRANTY.
+        AutoDock is free software, and you are welcome
+        to redistribute it under certain conditions;
+        for details type 'autodock4 -C'
+
+                     main.cc  $Revision: 1.213 $
+
+                   Compiled on Jul 18 2014 at 15:34:58
+
+
+This file was created at:			10:30 59" a.m., 01/10/2020
+                   on host:		"LAPTOP-E94RFAUT"
+Current Working Directory = "C:\Users\pukma\Desktop\DOCKING\10_factor_xa2\IFD"
+
+      ________________________________________________________________
+
+                   SETTING UP DEFAULT PARAMETER LIBRARY
+      ________________________________________________________________
+
+
+Random number generator was seeded with values 1180, 1578648659.
+Docking parameter file (DPF) used for this docking:		ligand_remove.dpf
+DPF> autodock_parameter_version 4.2       # used by autodock to validate parameter set
+
+	Autodock parameter version 4.2.
+DPF> outlev 1                             # diagnostic output level
+
+Output Level = 1  ADT-COMPATIBLE OUTPUT DURING DOCKING.
+DPF> intelec                              # calculate internal electrostatics
+
+Electrostatic energies will be calculated for all non-bonds between moving atoms.
+DPF> seed pid time                        # seeds for random generator
+
+Random number generator was seeded with values 1180, 1578648659.
+DPF> ligand_types A C HD N OA             # atoms types in ligand
+
+DPF> fld ligand_remove.maps.fld           # grid_data_file
+
+Opening Grid Map Dimensions file:		ligand_remove.maps.fld
+Grid Point Spacing =				0.375 Angstroms
+
+Even Number of User-specified Grid Points =	40 x-points
+						40 y-points
+						40 z-points
+
+Coordinates of Central Grid Point of Maps =	(1.374, 20.653, 14.906)
+Macromolecule file used to create Grid Maps =	ligand_remove.pdbqt
+Grid Parameter file used to create Grid Maps =	C:/Users/pukma/Desktop/DOCKING/10_factor_xa2/IFD/grid.gpf
+Minimum coordinates in grid = (-6.126, 13.153, 7.406)
+Maximum coordinates in grid = (8.874, 28.153, 22.406)
+
+DPF> map ligand_remove.A.map              # atom-specific affinity map
+
+DPF> map ligand_remove.C.map              # atom-specific affinity map
+
+DPF> map ligand_remove.HD.map             # atom-specific affinity map
+
+DPF> map ligand_remove.N.map              # atom-specific affinity map
+
+DPF> map ligand_remove.OA.map             # atom-specific affinity map
+
+DPF> elecmap ligand_remove.e.map          # electrostatics map
+
+DPF> desolvmap ligand_remove.d.map        # desolvation map
+
+DPF> move FXV.pdbqt                       # small molecule
+
+1,4-interactions will be _ignored_ in the non-bonded internal energy calculation.
+
+Ligand PDBQT file = "FXV.pdbqt"
+
+INPUT LIGAND PDBQT FILE:
+________________________
+
+INPUT-LIGAND-PDBQT: REMARK  11 active torsions:
+INPUT-LIGAND-PDBQT: REMARK  status: ('A' for Active; 'I' for Inactive)
+INPUT-LIGAND-PDBQT: REMARK    1  A    between atoms: C2_2  and  C11_11 
+INPUT-LIGAND-PDBQT: REMARK    2  A    between atoms: N1_5  and  O1_38 
+INPUT-LIGAND-PDBQT: REMARK    3  A    between atoms: C8_8  and  C13_13 
+INPUT-LIGAND-PDBQT: REMARK       I    between atoms: C13_13  and  N14_14 
+INPUT-LIGAND-PDBQT: REMARK    4  A    between atoms: N14_14  and  C15_16 
+INPUT-LIGAND-PDBQT: REMARK    5  A    between atoms: C15_16  and  C17_18 
+INPUT-LIGAND-PDBQT: REMARK    6  A    between atoms: C17_18  and  C18_19 
+INPUT-LIGAND-PDBQT: REMARK    7  A    between atoms: C17_18  and  C20_21 
+INPUT-LIGAND-PDBQT: REMARK    8  A    between atoms: C18_19  and  O19_20 
+INPUT-LIGAND-PDBQT: REMARK    9  A    between atoms: C20_21  and  C28_27 
+INPUT-LIGAND-PDBQT: REMARK   10  A    between atoms: C24_23  and  C29_28 
+INPUT-LIGAND-PDBQT: REMARK   11  A    between atoms: C29_28  and  N30_29 
+INPUT-LIGAND-PDBQT: ROOT
+INPUT-LIGAND-PDBQT: HETATM    1  C15 FXV A 401       4.484   6.899  23.392  1.00 40.77     0.094 C 
+INPUT-LIGAND-PDBQT: HETATM    2  C16 FXV A 401       3.806   7.874  22.405  1.00 45.08     0.033 C 
+INPUT-LIGAND-PDBQT: ENDROOT
+INPUT-LIGAND-PDBQT: BRANCH   1   3
+INPUT-LIGAND-PDBQT: HETATM    3  N14 FXV A 401       5.099   5.852  22.616  1.00 42.14    -0.352 N 
+INPUT-LIGAND-PDBQT: HETATM    4  C13 FXV A 401       4.622   4.593  22.566  1.00 41.97     0.248 C 
+INPUT-LIGAND-PDBQT: HETATM    5  O33 FXV A 401       3.616   4.231  23.205  1.00 47.23    -0.268 OA
+INPUT-LIGAND-PDBQT: ATOM      6  H14 FXV A 401       5.937   6.075  22.078  1.00  0.00     0.163 HD
+INPUT-LIGAND-PDBQT: BRANCH   4   7
+INPUT-LIGAND-PDBQT: HETATM    7  C8  FXV A 401       5.363   3.697  21.685  1.00 41.70     0.013 A 
+INPUT-LIGAND-PDBQT: HETATM    8  C7  FXV A 401       6.740   3.933  21.257  1.00 39.89     0.072 A 
+INPUT-LIGAND-PDBQT: HETATM    9  C12 FXV A 401       7.370   2.997  20.370  1.00 37.02    -0.010 A 
+INPUT-LIGAND-PDBQT: HETATM   10  C11 FXV A 401       6.695   1.825  19.882  1.00 37.95    -0.029 A 
+INPUT-LIGAND-PDBQT: HETATM   11  C10 FXV A 401       5.345   1.604  20.314  1.00 41.02     0.012 A 
+INPUT-LIGAND-PDBQT: HETATM   12  C9  FXV A 401       4.693   2.519  21.194  1.00 45.36     0.014 A 
+INPUT-LIGAND-PDBQT: BRANCH  10  13
+INPUT-LIGAND-PDBQT: HETATM   13  C2  FXV A 401       7.375   0.876  18.942  1.00 38.25    -0.024 A 
+INPUT-LIGAND-PDBQT: HETATM   14  C1  FXV A 401       6.643   0.247  17.881  1.00 36.59     0.032 A 
+INPUT-LIGAND-PDBQT: HETATM   15  C6  FXV A 401       7.337  -0.642  17.007  1.00 42.03     0.123 A 
+INPUT-LIGAND-PDBQT: HETATM   16  N1  FXV A 401       8.694  -0.928  17.134  1.00 45.76    -0.247 N 
+INPUT-LIGAND-PDBQT: HETATM   17  C4  FXV A 401       9.406  -0.331  18.145  1.00 42.09     0.123 A 
+INPUT-LIGAND-PDBQT: HETATM   18  C3  FXV A 401       8.780   0.574  19.064  1.00 41.91     0.032 A 
+INPUT-LIGAND-PDBQT: BRANCH  16  19
+INPUT-LIGAND-PDBQT: HETATM   19  O1  FXV A 401       9.287  -1.789  16.260  1.00 49.39    -0.284 OA
+INPUT-LIGAND-PDBQT: ATOM     20  H1  FXV A 401       8.794  -2.202  15.561  1.00  0.00     0.245 HD
+INPUT-LIGAND-PDBQT: ENDBRANCH  16  19
+INPUT-LIGAND-PDBQT: ENDBRANCH  10  13
+INPUT-LIGAND-PDBQT: ENDBRANCH   4   7
+INPUT-LIGAND-PDBQT: ENDBRANCH   1   3
+INPUT-LIGAND-PDBQT: BRANCH   1  21
+INPUT-LIGAND-PDBQT: HETATM   21  C17 FXV A 401       5.589   7.556  24.301  1.00 42.56     0.112 C 
+INPUT-LIGAND-PDBQT: BRANCH  21  22
+INPUT-LIGAND-PDBQT: HETATM   22  C18 FXV A 401       4.964   8.689  25.136  1.00 43.81     0.264 C 
+INPUT-LIGAND-PDBQT: HETATM   23  O32 FXV A 401       5.390   9.791  25.172  1.00 48.57    -0.265 OA
+INPUT-LIGAND-PDBQT: BRANCH  22  24
+INPUT-LIGAND-PDBQT: HETATM   24  O19 FXV A 401       3.860   8.264  25.808  1.00 45.98    -0.326 OA
+INPUT-LIGAND-PDBQT: HETATM   25  C34 FXV A 401       3.095   9.132  26.648  1.00 47.93     0.213 C 
+INPUT-LIGAND-PDBQT: ENDBRANCH  22  24
+INPUT-LIGAND-PDBQT: ENDBRANCH  21  22
+INPUT-LIGAND-PDBQT: BRANCH  21  26
+INPUT-LIGAND-PDBQT: HETATM   26  C20 FXV A 401       6.861   8.077  23.491  1.00 33.69     0.051 C 
+INPUT-LIGAND-PDBQT: BRANCH  26  27
+INPUT-LIGAND-PDBQT: HETATM   27  C28 FXV A 401       8.148   8.281  24.306  1.00 32.34    -0.075 A 
+INPUT-LIGAND-PDBQT: HETATM   28  C23 FXV A 401       8.484   7.469  25.477  1.00 30.63     0.072 A 
+INPUT-LIGAND-PDBQT: HETATM   29  C24 FXV A 401       9.717   7.699  26.228  1.00 27.59    -0.030 A 
+INPUT-LIGAND-PDBQT: HETATM   30  C25 FXV A 401      10.609   8.759  25.789  1.00 25.83     0.065 A 
+INPUT-LIGAND-PDBQT: HETATM   31  C26 FXV A 401      10.287   9.557  24.645  1.00 21.52    -0.022 A 
+INPUT-LIGAND-PDBQT: HETATM   32  C27 FXV A 401       9.069   9.322  23.913  1.00 29.50    -0.001 A 
+INPUT-LIGAND-PDBQT: BRANCH  29  33
+INPUT-LIGAND-PDBQT: HETATM   33  C29 FXV A 401      10.058   6.889  27.400  1.00 23.14     0.095 C 
+INPUT-LIGAND-PDBQT: HETATM   34  N31 FXV A 401       9.074   6.275  28.081  1.00 29.79    -0.386 N 
+INPUT-LIGAND-PDBQT: ATOM     35 2H31 FXV A 401       8.110   6.382  27.766  1.00  0.00     0.157 HD
+INPUT-LIGAND-PDBQT: ATOM     36 1H31 FXV A 401       9.311   5.711  28.897  1.00  0.00     0.157 HD
+INPUT-LIGAND-PDBQT: BRANCH  33  37
+INPUT-LIGAND-PDBQT: HETATM   37  N30 FXV A 401      11.321   6.749  27.813  1.00 27.97    -0.386 N 
+INPUT-LIGAND-PDBQT: ATOM     38 2H30 FXV A 401      12.067   7.215  27.297  1.00  0.00     0.157 HD
+INPUT-LIGAND-PDBQT: ATOM     39 1H30 FXV A 401      11.558   6.185  28.629  1.00  0.00     0.157 HD
+INPUT-LIGAND-PDBQT: ENDBRANCH  33  37
+INPUT-LIGAND-PDBQT: ENDBRANCH  29  33
+INPUT-LIGAND-PDBQT: ENDBRANCH  26  27
+INPUT-LIGAND-PDBQT: ENDBRANCH  21  26
+INPUT-LIGAND-PDBQT: ENDBRANCH   1  21
+INPUT-LIGAND-PDBQT: TORSDOF 11
+________________________________________________________________________________
+
+Total charge on ligand                               =	-0.001 e
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C2_2  and  C11_11 
+REMARK    2  A    between atoms: N1_5  and  O1_38 
+REMARK    3  A    between atoms: C8_8  and  C13_13 
+REMARK       I    between atoms: C13_13  and  N14_14 
+REMARK    4  A    between atoms: N14_14  and  C15_16 
+REMARK    5  A    between atoms: C15_16  and  C17_18 
+REMARK    6  A    between atoms: C17_18  and  C18_19 
+REMARK    7  A    between atoms: C17_18  and  C20_21 
+REMARK    8  A    between atoms: C18_19  and  O19_20 
+REMARK    9  A    between atoms: C20_21  and  C28_27 
+REMARK   10  A    between atoms: C24_23  and  C29_28 
+REMARK   11  A    between atoms: C29_28  and  N30_29 
+
+
+Number of Rotatable Bonds in Small Molecule =	11 torsions
+Number of atoms in ligand:  39
+
+Number of non-hydrogen atoms in ligand:  33
+
+Number of vibrational degrees of freedom of ligand:  111
+
+
+Number of torsional degrees of freedom = 11
+Estimated loss of torsional free energy upon binding = +3.2813 kcal/mol
+
+
+DPF> about 7.3758 5.0232 23.0194          # small molecule center
+
+Small molecule center of rotation =	(+7.376, +5.023, +23.019)
+
+DPF> tran0 random                         # initial coordinates/A or random
+
+Initial translation =			(4.312, 23.344, 21.200) Angstroms
+DPF> quaternion0 random                   # initial orientation
+
+Each run will begin with a new, random initial orientation.
+Initial quaternion,  (x,y,z,w) =	( -0.323, -0.121, 0.375, -0.861 ),
+DPF> dihe0 random                         # initial dihedrals (relative) or random
+
+DPF> torsdof 11                            # torsional degrees of freedom
+
+Number of torsional degrees of freedom = 11
+Free energy coefficient for torsional degrees of freedom = 0.2983, the factory default value.
+
+Estimated loss of torsional free energy upon binding = +3.2813 kcal/mol
+
+DPF> rmstol 2.0                           # cluster_tolerance/A
+
+Maximum RMS tolerance for conformational cluster analysis = 2.00 Angstroms
+DPF> extnrg 1000.0                        # external grid energy
+
+External grid energy (beyond grid map walls) = 1000.00
+
+DPF> e0max 0.0 10000                      # max initial energy; max number of retries
+
+Using user-specified maximum number of retries for simanneal initialization, 10000 retries.
+If the simanneal initial energy is greater than e0max, 0.000,
+then a new, random initial state will be created.
+
+DPF> ga_pop_size 150                      # number of individuals in population
+
+A population of 150 individuals will be used
+DPF> ga_num_evals 2500000                 # maximum number of energy evaluations
+
+There will be at most 2500000 function evaluations used.
+DPF> ga_num_generations 27000             # maximum number of generations
+
+The GA will run for at most 27000 generations.
+DPF> ga_elitism 1                         # number of top individuals to survive to next generation
+
+The 1 best will be preserved each GA generation.
+DPF> ga_mutation_rate 0.02                # rate of gene mutation
+
+The mutation rate is 0.020000.
+DPF> ga_crossover_rate 0.8                # rate of crossover
+
+The crossover rate is 0.800000.
+DPF> ga_window_size 10                    # 
+
+The GA's selection window is 10 generations.
+DPF> ga_cauchy_alpha 0.0                  # Alpha parameter of Cauchy distribution
+
+The alpha parameter (for the Cauchy distribution) is being set to 0.000000.
+DPF> ga_cauchy_beta 1.0                   # Beta parameter Cauchy distribution
+
+The beta parameter (for the Cauchy distribution) is being set to 1.000000.
+DPF> set_ga                               # set the above parameters for GA or LGA
+
+DPF> sw_max_its 300                       # iterations of Solis & Wets local search
+
+Solis & Wets algorithms will perform at most 300 iterations.
+DPF> sw_max_succ 4                        # consecutive successes before changing rho
+
+Solis & Wets algorithms expand rho every 4 in a row successes.
+DPF> sw_max_fail 4                        # consecutive failures before changing rho
+
+Solis & Wets algorithms contract rho every 4 in a row failures.
+DPF> sw_rho 1.0                           # size of local search space to sample
+
+rho is set to 1.000000.
+DPF> sw_lb_rho 0.01                       # lower bound on rho
+
+rho will never get smaller than 0.010000.
+DPF> ls_search_freq 0.06                  # probability of performing local search on individual
+
+Local search will be performed with frequency 0.060000.
+DPF> set_psw1                             # set the above pseudo-Solis & Wets parameters
+
+Creating a new Local Search object using the pseudo-Solis-Wets algorithm (pSW1) with the current settings.
+
+DPF> unbound_model bound                  # state of unbound ligand
+
+DPF> ga_run 10                            # do this many hybrid GA-LS runs
+
+centering ligand on specified point: 7.376 5.023 23.019
+Furthest true ligand atom from "about" center is 10.481 Angstroms (maxrad).
+Number of requested GA dockings = 10 runs
+Unbound model to be used is 'same as bound' [AutoDock 4.2 default].
+
+	BEGINNING GENETIC ALGORITHM DOCKING 1 of 10
+Run: 1 Seed: 684923491 1695573358 [ Run 1 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -7.536
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans -0.127 16.914 17.496 quatxyzw -0.410157 0.191977 0.880728 -0.138690 center 7.376 5.023 23.019 ntor 11 177.5415 -2.9505 -44.1861 142.7733 -25.0210 155.7675 24.2161 -176.8080 -135.0949 2.4005 -133.0632
+State:	 -0.127  16.914  17.496  -0.414  0.194  0.889 -164.056    177.54   -2.95  -44.19  142.77  -25.02  155.77   24.22 -176.81 -135.09    2.40 -133.06
+
+DOCKED: MODEL        1
+DOCKED: USER    Run = 1
+DOCKED: USER    DPF = ligand_remove.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -1.72 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   55.10 mM (millimolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.00 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -4.83 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.17 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -2.54 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -2.54 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move FXV.pdbqt
+DOCKED: USER    NEWDPF about 7.375800 5.023200 23.019400
+DOCKED: USER    NEWDPF tran0 -0.126842 16.914220 17.496440
+DOCKED: USER    NEWDPF quaternion0 -0.410157 0.191977 0.880728 -0.138690
+DOCKED: USER    NEWDPF axisangle0 -0.414159 0.193851 0.889322 -164.055864
+DOCKED: USER    NEWDPF quat0 -0.414159 0.193851 0.889322 -164.055864
+DOCKED: USER    NEWDPF dihe0 177.54 -2.95 -44.19 142.77 -25.02 155.77 24.22 -176.81 -135.09 2.40 -133.06 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  11 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C2_2  and  C11_11 
+DOCKED: REMARK    2  A    between atoms: N1_5  and  O1_38 
+DOCKED: REMARK    3  A    between atoms: C8_8  and  C13_13 
+DOCKED: REMARK       I    between atoms: C13_13  and  N14_14 
+DOCKED: REMARK    4  A    between atoms: N14_14  and  C15_16 
+DOCKED: REMARK    5  A    between atoms: C15_16  and  C17_18 
+DOCKED: REMARK    6  A    between atoms: C17_18  and  C18_19 
+DOCKED: REMARK    7  A    between atoms: C17_18  and  C20_21 
+DOCKED: REMARK    8  A    between atoms: C18_19  and  O19_20 
+DOCKED: REMARK    9  A    between atoms: C20_21  and  C28_27 
+DOCKED: REMARK   10  A    between atoms: C24_23  and  C29_28 
+DOCKED: REMARK   11  A    between atoms: C29_28  and  N30_29 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C15 FXV A 401       0.678  15.166  20.380 -0.05 +0.01    +0.094 C 
+DOCKED: ATOM      2  C16 FXV A 401       1.370  13.796  20.543 -0.07 +0.00    +0.033 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   3
+DOCKED: ATOM      3  N14 FXV A 401       1.233  15.798  19.211 -0.01 -0.04    -0.352 N 
+DOCKED: ATOM      4  C13 FXV A 401       2.107  16.822  19.270 -0.07 +0.02    +0.248 C 
+DOCKED: ATOM      5  O33 FXV A 401       2.491  17.315  20.347 -0.33 -0.04    -0.268 OA
+DOCKED: ATOM      6  H14 FXV A 401       0.951  15.454  18.292 +0.05 +0.03    +0.163 HD
+DOCKED: BRANCH   4   7
+DOCKED: ATOM      7  C8  FXV A 401       2.586  17.288  17.973 -0.15 +0.00    +0.013 A 
+DOCKED: ATOM      8  C7  FXV A 401       3.853  17.989  17.778 -0.23 +0.01    +0.072 A 
+DOCKED: ATOM      9  C12 FXV A 401       4.219  18.424  16.460 -0.28 +0.00    -0.010 A 
+DOCKED: ATOM     10  C11 FXV A 401       3.382  18.195  15.313 -0.34 +0.00    -0.029 A 
+DOCKED: ATOM     11  C10 FXV A 401       2.143  17.502  15.519 -0.23 +0.00    +0.012 A 
+DOCKED: ATOM     12  C9  FXV A 401       1.753  17.060  16.819 -0.14 +0.00    +0.014 A 
+DOCKED: BRANCH  10  13
+DOCKED: ATOM     13  C2  FXV A 401       3.785  18.678  13.953 -0.40 +0.01    -0.024 A 
+DOCKED: ATOM     14  C1  FXV A 401       5.124  19.126  13.703 -0.32 -0.01    +0.032 A 
+DOCKED: ATOM     15  C6  FXV A 401       5.462  19.569  12.389 -0.34 -0.06    +0.123 A 
+DOCKED: ATOM     16  N1  FXV A 401       4.551  19.585  11.335 -0.16 +0.17    -0.247 N 
+DOCKED: ATOM     17  C4  FXV A 401       3.266  19.158  11.562 -0.29 -0.07    +0.123 A 
+DOCKED: ATOM     18  C3  FXV A 401       2.850  18.699  12.855 -0.33 -0.01    +0.032 A 
+DOCKED: BRANCH  16  19
+DOCKED: ATOM     19  O1  FXV A 401       4.948  20.023  10.107 -0.26 +0.32    -0.284 OA
+DOCKED: ATOM     20  H1  FXV A 401       4.357  20.012   9.363 +0.10 -0.50    +0.245 HD
+DOCKED: ENDBRANCH  16  19
+DOCKED: ENDBRANCH  10  13
+DOCKED: ENDBRANCH   4   7
+DOCKED: ENDBRANCH   1   3
+DOCKED: BRANCH   1  21
+DOCKED: ATOM     21  C17 FXV A 401      -0.885  15.090  20.207 -0.01 +0.02    +0.112 C 
+DOCKED: BRANCH  21  22
+DOCKED: ATOM     22  C18 FXV A 401      -1.223  14.570  18.797 +0.01 +0.07    +0.264 C 
+DOCKED: ATOM     23  O32 FXV A 401      -0.442  14.036  18.089 -0.02 -0.09    -0.265 OA
+DOCKED: BRANCH  22  24
+DOCKED: ATOM     24  O19 FXV A 401      -2.528  14.791  18.483 +0.01 -0.09    -0.326 OA
+DOCKED: ATOM     25  C34 FXV A 401      -3.076  14.448  17.207 +0.01 +0.09    +0.213 C 
+DOCKED: ENDBRANCH  22  24
+DOCKED: ENDBRANCH  21  22
+DOCKED: BRANCH  21  26
+DOCKED: ATOM     26  C20 FXV A 401      -1.633  16.468  20.503 -0.01 +0.00    +0.051 C 
+DOCKED: BRANCH  26  27
+DOCKED: ATOM     27  C28 FXV A 401      -1.321  17.629  19.546 -0.03 -0.00    -0.075 A 
+DOCKED: ATOM     28  C23 FXV A 401      -1.493  17.531  18.095 -0.02 +0.01    +0.072 A 
+DOCKED: ATOM     29  C24 FXV A 401      -1.180  18.658  17.219 -0.10 -0.00    -0.030 A 
+DOCKED: ATOM     30  C25 FXV A 401      -0.688  19.887  17.819 -0.21 -0.00    +0.065 A 
+DOCKED: ATOM     31  C26 FXV A 401      -0.517  19.990  19.236 -0.21 +0.00    -0.022 A 
+DOCKED: ATOM     32  C27 FXV A 401      -0.828  18.873  20.090 -0.13 +0.00    -0.001 A 
+DOCKED: BRANCH  29  33
+DOCKED: ATOM     33  C29 FXV A 401      -1.350  18.565  15.767 -0.13 +0.00    +0.095 C 
+DOCKED: ATOM     34  N31 FXV A 401      -0.844  17.504  15.114 +0.01 -0.04    -0.386 N 
+DOCKED: ATOM     35 2H31 FXV A 401      -0.355  16.782  15.643 +0.07 +0.02    +0.157 HD
+DOCKED: ATOM     36 1H31 FXV A 401      -0.963  17.439  14.104 +0.08 +0.02    +0.157 HD
+DOCKED: BRANCH  33  37
+DOCKED: ATOM     37  N30 FXV A 401      -1.991  19.511  15.074 +0.02 +0.01    -0.386 N 
+DOCKED: ATOM     38 2H30 FXV A 401      -2.868  19.884  15.436 +0.08 +0.00    +0.157 HD
+DOCKED: ATOM     39 1H30 FXV A 401      -1.626  19.866  14.190 -0.38 -0.03    +0.157 HD
+DOCKED: ENDBRANCH  33  37
+DOCKED: ENDBRANCH  29  33
+DOCKED: ENDBRANCH  26  27
+DOCKED: ENDBRANCH  21  26
+DOCKED: ENDBRANCH   1  21
+DOCKED: TORSDOF 11
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 2 of 10
+Run: 2 Seed: 1494382341 1458967361 [ Run 2 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -6.094
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 0.174 18.462 16.904 quatxyzw -0.390656 0.231659 0.854913 -0.250691 center 7.376 5.023 23.019 ntor 11 135.3778 -159.2784 67.1583 35.8537 140.9243 175.7992 -179.7968 7.1216 57.2830 145.0611 -15.5549
+State:	  0.174  18.462  16.904  -0.404  0.239  0.883 -150.963    135.38 -159.28   67.16   35.85  140.92  175.80 -179.80    7.12   57.28  145.06  -15.55
+
+DOCKED: MODEL        2
+DOCKED: USER    Run = 2
+DOCKED: USER    DPF = ligand_remove.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -1.87 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.35 mM (millimolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.15 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -4.88 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.28 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -0.94 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -0.94 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move FXV.pdbqt
+DOCKED: USER    NEWDPF about 7.375800 5.023200 23.019400
+DOCKED: USER    NEWDPF tran0 0.173703 18.461781 16.903848
+DOCKED: USER    NEWDPF quaternion0 -0.390656 0.231659 0.854913 -0.250691
+DOCKED: USER    NEWDPF axisangle0 -0.403542 0.239300 0.883113 -150.963168
+DOCKED: USER    NEWDPF quat0 -0.403542 0.239300 0.883113 -150.963168
+DOCKED: USER    NEWDPF dihe0 135.38 -159.28 67.16 35.85 140.92 175.80 -179.80 7.12 57.28 145.06 -15.55 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  11 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C2_2  and  C11_11 
+DOCKED: REMARK    2  A    between atoms: N1_5  and  O1_38 
+DOCKED: REMARK    3  A    between atoms: C8_8  and  C13_13 
+DOCKED: REMARK       I    between atoms: C13_13  and  N14_14 
+DOCKED: REMARK    4  A    between atoms: N14_14  and  C15_16 
+DOCKED: REMARK    5  A    between atoms: C15_16  and  C17_18 
+DOCKED: REMARK    6  A    between atoms: C17_18  and  C18_19 
+DOCKED: REMARK    7  A    between atoms: C17_18  and  C20_21 
+DOCKED: REMARK    8  A    between atoms: C18_19  and  O19_20 
+DOCKED: REMARK    9  A    between atoms: C20_21  and  C28_27 
+DOCKED: REMARK   10  A    between atoms: C24_23  and  C29_28 
+DOCKED: REMARK   11  A    between atoms: C29_28  and  N30_29 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C15 FXV A 401       0.470  16.528  19.766 -0.05 +0.01    +0.094 C 
+DOCKED: ATOM      2  C16 FXV A 401       0.806  15.028  19.913 -0.08 +0.00    +0.033 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   3
+DOCKED: ATOM      3  N14 FXV A 401       1.187  17.023  18.618 +0.02 -0.04    -0.352 N 
+DOCKED: ATOM      4  C13 FXV A 401       1.372  16.302  17.495 -0.05 +0.04    +0.248 C 
+DOCKED: ATOM      5  O33 FXV A 401       0.949  15.137  17.369 -0.08 -0.07    -0.268 OA
+DOCKED: ATOM      6  H14 FXV A 401       1.573  17.967  18.658 +0.08 +0.01    +0.163 HD
+DOCKED: BRANCH   4   7
+DOCKED: ATOM      7  C8  FXV A 401       2.083  17.004  16.432 -0.16 +0.00    +0.013 A 
+DOCKED: ATOM      8  C7  FXV A 401       3.054  18.070  16.670 -0.22 +0.00    +0.072 A 
+DOCKED: ATOM      9  C12 FXV A 401       3.682  18.711  15.550 -0.31 +0.00    -0.010 A 
+DOCKED: ATOM     10  C11 FXV A 401       3.393  18.342  14.191 -0.38 +0.00    -0.029 A 
+DOCKED: ATOM     11  C10 FXV A 401       2.441  17.291  13.973 -0.33 -0.00    +0.012 A 
+DOCKED: ATOM     12  C9  FXV A 401       1.799  16.638  15.067 -0.23 +0.00    +0.014 A 
+DOCKED: BRANCH  10  13
+DOCKED: ATOM     13  C2  FXV A 401       4.053  19.043  13.042 -0.43 +0.01    -0.024 A 
+DOCKED: ATOM     14  C1  FXV A 401       5.395  19.534  13.158 -0.42 -0.01    +0.032 A 
+DOCKED: ATOM     15  C6  FXV A 401       5.983  20.187  12.034 -0.24 -0.06    +0.123 A 
+DOCKED: ATOM     16  N1  FXV A 401       5.315  20.369  10.826 -0.27 +0.17    -0.247 N 
+DOCKED: ATOM     17  C4  FXV A 401       4.029  19.902  10.701 -0.26 -0.11    +0.123 A 
+DOCKED: ATOM     18  C3  FXV A 401       3.370  19.236  11.786 -0.35 -0.02    +0.032 A 
+DOCKED: BRANCH  16  19
+DOCKED: ATOM     19  O1  FXV A 401       5.943  21.003   9.796 -0.15 +0.28    -0.284 OA
+DOCKED: ATOM     20  H1  FXV A 401       5.900  20.668   8.909 +0.02 -0.50    +0.245 HD
+DOCKED: ENDBRANCH  16  19
+DOCKED: ENDBRANCH  10  13
+DOCKED: ENDBRANCH   4   7
+DOCKED: ENDBRANCH   1   3
+DOCKED: BRANCH   1  21
+DOCKED: ATOM     21  C17 FXV A 401      -1.061  16.835  19.565 -0.02 +0.01    +0.112 C 
+DOCKED: BRANCH  21  22
+DOCKED: ATOM     22  C18 FXV A 401      -1.891  15.987  20.546 +0.01 +0.03    +0.264 C 
+DOCKED: ATOM     23  O32 FXV A 401      -2.321  14.916  20.288 +0.00 -0.05    -0.265 OA
+DOCKED: BRANCH  22  24
+DOCKED: ATOM     24  O19 FXV A 401      -2.050  16.617  21.741 +0.00 -0.02    -0.326 OA
+DOCKED: ATOM     25  C34 FXV A 401      -1.903  18.032  21.884 -0.04 -0.00    +0.213 C 
+DOCKED: ENDBRANCH  22  24
+DOCKED: ENDBRANCH  21  22
+DOCKED: BRANCH  21  26
+DOCKED: ATOM     26  C20 FXV A 401      -1.565  16.633  18.065 -0.01 +0.01    +0.051 C 
+DOCKED: BRANCH  26  27
+DOCKED: ATOM     27  C28 FXV A 401      -1.765  17.913  17.237 -0.03 -0.01    -0.075 A 
+DOCKED: ATOM     28  C23 FXV A 401      -2.780  18.031  16.189 -0.03 +0.01    +0.072 A 
+DOCKED: ATOM     29  C24 FXV A 401      -2.934  19.265  15.421 -0.16 -0.00    -0.030 A 
+DOCKED: ATOM     30  C25 FXV A 401      -2.051  20.381  15.718 -0.21 -0.01    +0.065 A 
+DOCKED: ATOM     31  C26 FXV A 401      -1.057  20.273  16.741 -0.25 +0.00    -0.022 A 
+DOCKED: ATOM     32  C27 FXV A 401      -0.913  19.052  17.491 -0.14 -0.00    -0.001 A 
+DOCKED: BRANCH  29  33
+DOCKED: ATOM     33  C29 FXV A 401      -3.948  19.389  14.372 -0.21 +0.02    +0.095 C 
+DOCKED: ATOM     34  N31 FXV A 401      -4.929  20.299  14.512 -0.05 -0.05    -0.386 N 
+DOCKED: ATOM     35 2H31 FXV A 401      -4.945  20.888  15.344 +0.07 -0.00    +0.157 HD
+DOCKED: ATOM     36 1H31 FXV A 401      -5.635  20.385  13.781 +0.07 +0.03    +0.157 HD
+DOCKED: BRANCH  33  37
+DOCKED: ATOM     37  N30 FXV A 401      -3.928  18.616  13.281 -0.10 -0.23    -0.386 N 
+DOCKED: ATOM     38 2H30 FXV A 401      -4.097  17.616  13.378 +0.06 +0.12    +0.157 HD
+DOCKED: ATOM     39 1H30 FXV A 401      -3.743  19.002  12.355 +0.06 +0.12    +0.157 HD
+DOCKED: ENDBRANCH  33  37
+DOCKED: ENDBRANCH  29  33
+DOCKED: ENDBRANCH  26  27
+DOCKED: ENDBRANCH  21  26
+DOCKED: ENDBRANCH   1  21
+DOCKED: TORSDOF 11
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 3 of 10
+Run: 3 Seed: 1974876482 1488258043 [ Run 3 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -7.763
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 0.365 19.190 17.322 quatxyzw -0.025667 -0.039490 -0.670551 0.740366 center 7.376 5.023 23.019 ntor 11 -24.9884 -54.0502 -43.5159 110.3310 -168.6413 -35.5152 -141.4150 108.3804 -143.2530 -4.2310 -135.3464
+State:	  0.365  19.190  17.322  -0.038 -0.059 -0.998 84.475    -24.99  -54.05  -43.52  110.33 -168.64  -35.52 -141.41  108.38 -143.25   -4.23 -135.35
+
+DOCKED: MODEL        3
+DOCKED: USER    Run = 3
+DOCKED: USER    DPF = ligand_remove.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -2.20 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   24.45 mM (millimolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.48 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.20 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.28 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -2.28 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -2.28 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move FXV.pdbqt
+DOCKED: USER    NEWDPF about 7.375800 5.023200 23.019400
+DOCKED: USER    NEWDPF tran0 0.365365 19.190173 17.322021
+DOCKED: USER    NEWDPF quaternion0 -0.025667 -0.039490 -0.670551 0.740366
+DOCKED: USER    NEWDPF axisangle0 -0.038184 -0.058747 -0.997542 84.474715
+DOCKED: USER    NEWDPF quat0 -0.038184 -0.058747 -0.997542 84.474715
+DOCKED: USER    NEWDPF dihe0 -24.99 -54.05 -43.52 110.33 -168.64 -35.52 -141.41 108.38 -143.25 -4.23 -135.35 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  11 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C2_2  and  C11_11 
+DOCKED: REMARK    2  A    between atoms: N1_5  and  O1_38 
+DOCKED: REMARK    3  A    between atoms: C8_8  and  C13_13 
+DOCKED: REMARK       I    between atoms: C13_13  and  N14_14 
+DOCKED: REMARK    4  A    between atoms: N14_14  and  C15_16 
+DOCKED: REMARK    5  A    between atoms: C15_16  and  C17_18 
+DOCKED: REMARK    6  A    between atoms: C17_18  and  C18_19 
+DOCKED: REMARK    7  A    between atoms: C17_18  and  C20_21 
+DOCKED: REMARK    8  A    between atoms: C18_19  and  O19_20 
+DOCKED: REMARK    9  A    between atoms: C20_21  and  C28_27 
+DOCKED: REMARK   10  A    between atoms: C24_23  and  C29_28 
+DOCKED: REMARK   11  A    between atoms: C29_28  and  N30_29 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C15 FXV A 401      -1.741  16.505  17.933 -0.01 +0.02    +0.094 C 
+DOCKED: ATOM      2  C16 FXV A 401      -2.865  15.913  17.056 -0.00 +0.01    +0.033 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   3
+DOCKED: ATOM      3  N14 FXV A 401      -0.716  17.001  17.051 +0.03 -0.05    -0.352 N 
+DOCKED: ATOM      4  C13 FXV A 401       0.510  16.449  16.959 -0.02 +0.04    +0.248 C 
+DOCKED: ATOM      5  O33 FXV A 401       0.858  15.472  17.647 -0.06 -0.06    -0.268 OA
+DOCKED: ATOM      6  H14 FXV A 401      -0.928  17.811  16.466 +0.06 +0.01    +0.163 HD
+DOCKED: BRANCH   4   7
+DOCKED: ATOM      7  C8  FXV A 401       1.385  17.072  15.972 -0.15 +0.00    +0.013 A 
+DOCKED: ATOM      8  C7  FXV A 401       2.747  17.516  16.258 -0.18 +0.01    +0.072 A 
+DOCKED: ATOM      9  C12 FXV A 401       3.516  18.137  15.218 -0.36 +0.00    -0.010 A 
+DOCKED: ATOM     10  C11 FXV A 401       2.996  18.342  13.893 -0.37 +0.00    -0.029 A 
+DOCKED: ATOM     11  C10 FXV A 401       1.659  17.898  13.625 -0.18 -0.00    +0.012 A 
+DOCKED: ATOM     12  C9  FXV A 401       0.870  17.278  14.641 -0.20 +0.00    +0.014 A 
+DOCKED: BRANCH  10  13
+DOCKED: ATOM     13  C2  FXV A 401       3.819  19.011  12.834 -0.42 +0.01    -0.024 A 
+DOCKED: ATOM     14  C1  FXV A 401       3.277  19.248  11.527 -0.36 -0.02    +0.032 A 
+DOCKED: ATOM     15  C6  FXV A 401       4.096  19.895  10.555 -0.18 -0.12    +0.123 A 
+DOCKED: ATOM     16  N1  FXV A 401       5.400  20.311  10.815 -0.28 +0.17    -0.247 N 
+DOCKED: ATOM     17  C4  FXV A 401       5.930  20.091  12.063 -0.26 -0.06    +0.123 A 
+DOCKED: ATOM     18  C3  FXV A 401       5.169  19.446  13.093 -0.46 -0.01    +0.032 A 
+DOCKED: BRANCH  16  19
+DOCKED: ATOM     19  O1  FXV A 401       6.122  20.923   9.835 -0.30 +0.27    -0.284 OA
+DOCKED: ATOM     20  H1  FXV A 401       5.931  20.777   8.916 +0.03 -0.48    +0.245 HD
+DOCKED: ENDBRANCH  16  19
+DOCKED: ENDBRANCH  10  13
+DOCKED: ENDBRANCH   4   7
+DOCKED: ENDBRANCH   1   3
+DOCKED: BRANCH   1  21
+DOCKED: ATOM     21  C17 FXV A 401      -2.200  17.683  18.871 -0.02 +0.01    +0.112 C 
+DOCKED: BRANCH  21  22
+DOCKED: ATOM     22  C18 FXV A 401      -2.378  18.967  18.039 -0.03 +0.00    +0.264 C 
+DOCKED: ATOM     23  O32 FXV A 401      -1.929  19.115  16.955 -0.06 -0.00    -0.265 OA
+DOCKED: BRANCH  22  24
+DOCKED: ATOM     24  O19 FXV A 401      -3.123  19.892  18.701 -0.03 +0.03    -0.326 OA
+DOCKED: ATOM     25  C34 FXV A 401      -2.667  21.230  18.915 -0.16 -0.04    +0.213 C 
+DOCKED: ENDBRANCH  22  24
+DOCKED: ENDBRANCH  21  22
+DOCKED: BRANCH  21  26
+DOCKED: ATOM     26  C20 FXV A 401      -1.226  17.935  20.110 -0.07 +0.00    +0.051 C 
+DOCKED: BRANCH  26  27
+DOCKED: ATOM     27  C28 FXV A 401       0.246  18.221  19.769 -0.10 -0.00    -0.075 A 
+DOCKED: ATOM     28  C23 FXV A 401       1.326  17.274  20.053 -0.09 +0.01    +0.072 A 
+DOCKED: ATOM     29  C24 FXV A 401       2.713  17.588  19.717 -0.13 -0.00    -0.030 A 
+DOCKED: ATOM     30  C25 FXV A 401       3.004  18.868  19.094 -0.19 +0.00    +0.065 A 
+DOCKED: ATOM     31  C26 FXV A 401       1.953  19.798  18.813 -0.16 -0.00    -0.022 A 
+DOCKED: ATOM     32  C27 FXV A 401       0.590  19.480  19.149 -0.25 +0.00    -0.001 A 
+DOCKED: BRANCH  29  33
+DOCKED: ATOM     33  C29 FXV A 401       3.798  16.644  19.999 -0.24 +0.00    +0.095 C 
+DOCKED: ATOM     34  N31 FXV A 401       5.009  16.855  19.454 +0.04 -0.04    -0.386 N 
+DOCKED: ATOM     35 2H31 FXV A 401       5.150  17.670  18.858 +0.13 +0.04    +0.157 HD
+DOCKED: ATOM     36 1H31 FXV A 401       5.764  16.198  19.650 +0.11 -0.00    +0.157 HD
+DOCKED: BRANCH  33  37
+DOCKED: ATOM     37  N30 FXV A 401       3.613  15.575  20.780 +0.00 +0.05    -0.386 N 
+DOCKED: ATOM     38 2H30 FXV A 401       3.090  15.680  21.650 +0.07 -0.00    +0.157 HD
+DOCKED: ATOM     39 1H30 FXV A 401       3.983  14.659  20.530 -0.36 -0.07    +0.157 HD
+DOCKED: ENDBRANCH  33  37
+DOCKED: ENDBRANCH  29  33
+DOCKED: ENDBRANCH  26  27
+DOCKED: ENDBRANCH  21  26
+DOCKED: ENDBRANCH   1  21
+DOCKED: TORSDOF 11
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 4 of 10
+Run: 4 Seed: 1892501041 933282781 [ Run 4 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -7.877
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans -0.608 16.936 14.690 quatxyzw -0.546410 0.111991 0.812229 -0.170818 center 7.376 5.023 23.019 ntor 11 -180.0000 -52.9729 62.0191 174.7147 -169.0416 147.1975 -92.8899 176.0759 -163.6083 18.1725 -143.2831
+State:	 -0.608  16.936  14.690  -0.555  0.114  0.824 -160.329   -180.00  -52.97   62.02  174.71 -169.04  147.20  -92.89  176.08 -163.61   18.17 -143.28
+
+DOCKED: MODEL        4
+DOCKED: USER    Run = 4
+DOCKED: USER    DPF = ligand_remove.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -1.80 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   48.16 mM (millimolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.08 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -4.85 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.23 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -2.80 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -2.80 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move FXV.pdbqt
+DOCKED: USER    NEWDPF about 7.375800 5.023200 23.019400
+DOCKED: USER    NEWDPF tran0 -0.608321 16.936209 14.689501
+DOCKED: USER    NEWDPF quaternion0 -0.546410 0.111991 0.812229 -0.170818
+DOCKED: USER    NEWDPF axisangle0 -0.554560 0.113662 0.824345 -160.329239
+DOCKED: USER    NEWDPF quat0 -0.554560 0.113662 0.824345 -160.329239
+DOCKED: USER    NEWDPF dihe0 -180.00 -52.97 62.02 174.71 -169.04 147.20 -92.89 176.08 -163.61 18.17 -143.28 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  11 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C2_2  and  C11_11 
+DOCKED: REMARK    2  A    between atoms: N1_5  and  O1_38 
+DOCKED: REMARK    3  A    between atoms: C8_8  and  C13_13 
+DOCKED: REMARK       I    between atoms: C13_13  and  N14_14 
+DOCKED: REMARK    4  A    between atoms: N14_14  and  C15_16 
+DOCKED: REMARK    5  A    between atoms: C15_16  and  C17_18 
+DOCKED: REMARK    6  A    between atoms: C17_18  and  C18_19 
+DOCKED: REMARK    7  A    between atoms: C17_18  and  C20_21 
+DOCKED: REMARK    8  A    between atoms: C18_19  and  O19_20 
+DOCKED: REMARK    9  A    between atoms: C20_21  and  C28_27 
+DOCKED: REMARK   10  A    between atoms: C24_23  and  C29_28 
+DOCKED: REMARK   11  A    between atoms: C29_28  and  N30_29 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C15 FXV A 401      -0.679  14.906  17.499 -0.02 +0.03    +0.094 C 
+DOCKED: ATOM      2  C16 FXV A 401       0.003  13.543  17.749 -0.12 +0.01    +0.033 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   3
+DOCKED: ATOM      3  N14 FXV A 401       0.187  15.675  16.641 +0.02 -0.08    -0.352 N 
+DOCKED: ATOM      4  C13 FXV A 401       1.153  16.491  17.107 -0.05 +0.04    +0.248 C 
+DOCKED: ATOM      5  O33 FXV A 401       1.360  16.657  18.324 -0.04 -0.03    -0.268 OA
+DOCKED: ATOM      6  H14 FXV A 401       0.063  15.598  15.631 +0.08 +0.04    +0.163 HD
+DOCKED: BRANCH   4   7
+DOCKED: ATOM      7  C8  FXV A 401       1.949  17.142  16.073 -0.18 +0.00    +0.013 A 
+DOCKED: ATOM      8  C7  FXV A 401       3.246  17.769  16.320 -0.22 +0.00    +0.072 A 
+DOCKED: ATOM      9  C12 FXV A 401       3.938  18.402  15.234 -0.38 +0.00    -0.010 A 
+DOCKED: ATOM     10  C11 FXV A 401       3.403  18.444  13.900 -0.39 +0.00    -0.029 A 
+DOCKED: ATOM     11  C10 FXV A 401       2.131  17.821  13.672 -0.33 -0.00    +0.012 A 
+DOCKED: ATOM     12  C9  FXV A 401       1.419  17.186  14.734 -0.22 +0.00    +0.014 A 
+DOCKED: BRANCH  10  13
+DOCKED: ATOM     13  C2  FXV A 401       4.143  19.129  12.791 -0.44 +0.01    -0.024 A 
+DOCKED: ATOM     14  C1  FXV A 401       5.451  19.674  13.012 -0.44 -0.01    +0.032 A 
+DOCKED: ATOM     15  C6  FXV A 401       6.118  20.309  11.922 -0.22 -0.06    +0.123 A 
+DOCKED: ATOM     16  N1  FXV A 401       5.559  20.424  10.652 -0.28 +0.18    -0.247 N 
+DOCKED: ATOM     17  C4  FXV A 401       4.308  19.905  10.428 -0.09 -0.12    +0.123 A 
+DOCKED: ATOM     18  C3  FXV A 401       3.574  19.252  11.472 -0.32 -0.02    +0.032 A 
+DOCKED: BRANCH  16  19
+DOCKED: ATOM     19  O1  FXV A 401       6.259  21.046   9.661 -0.33 +0.29    -0.284 OA
+DOCKED: ATOM     20  H1  FXV A 401       5.901  21.137   8.786 +0.00 -0.48    +0.245 HD
+DOCKED: ENDBRANCH  16  19
+DOCKED: ENDBRANCH  10  13
+DOCKED: ENDBRANCH   4   7
+DOCKED: ENDBRANCH   1   3
+DOCKED: BRANCH   1  21
+DOCKED: ATOM     21  C17 FXV A 401      -2.094  14.810  16.816 +0.00 +0.04    +0.112 C 
+DOCKED: BRANCH  21  22
+DOCKED: ATOM     22  C18 FXV A 401      -1.924  14.694  15.290 +0.01 +0.13    +0.264 C 
+DOCKED: ATOM     23  O32 FXV A 401      -1.172  13.947  14.767 -0.07 -0.14    -0.265 OA
+DOCKED: BRANCH  22  24
+DOCKED: ATOM     24  O19 FXV A 401      -2.756  15.543  14.628 -0.01 -0.16    -0.326 OA
+DOCKED: ATOM     25  C34 FXV A 401      -2.282  16.460  13.639 -0.14 +0.09    +0.213 C 
+DOCKED: ENDBRANCH  22  24
+DOCKED: ENDBRANCH  21  22
+DOCKED: BRANCH  21  26
+DOCKED: ATOM     26  C20 FXV A 401      -3.072  16.013  17.193 +0.00 +0.01    +0.051 C 
+DOCKED: BRANCH  26  27
+DOCKED: ATOM     27  C28 FXV A 401      -2.418  17.395  17.354 -0.01 -0.01    -0.075 A 
+DOCKED: ATOM     28  C23 FXV A 401      -1.397  17.678  18.364 -0.02 +0.01    +0.072 A 
+DOCKED: ATOM     29  C24 FXV A 401      -0.803  19.008  18.487 -0.12 +0.00    -0.030 A 
+DOCKED: ATOM     30  C25 FXV A 401      -1.250  20.053  17.582 -0.19 -0.00    +0.065 A 
+DOCKED: ATOM     31  C26 FXV A 401      -2.248  19.784  16.592 -0.18 +0.00    -0.022 A 
+DOCKED: ATOM     32  C27 FXV A 401      -2.827  18.470  16.480 -0.06 -0.00    -0.001 A 
+DOCKED: BRANCH  29  33
+DOCKED: ATOM     33  C29 FXV A 401       0.219  19.296  19.496 -0.22 -0.01    +0.095 C 
+DOCKED: ATOM     34  N31 FXV A 401       0.921  20.440  19.409 -0.08 +0.03    -0.386 N 
+DOCKED: ATOM     35 2H31 FXV A 401       0.725  21.087  18.645 +0.11 -0.00    +0.157 HD
+DOCKED: ATOM     36 1H31 FXV A 401       1.633  20.641  20.111 +0.07 -0.02    +0.157 HD
+DOCKED: BRANCH  33  37
+DOCKED: ATOM     37  N30 FXV A 401       0.476  18.449  20.496 -0.06 -0.00    -0.386 N 
+DOCKED: ATOM     38 2H30 FXV A 401       0.815  17.511  20.279 +0.05 +0.01    +0.157 HD
+DOCKED: ATOM     39 1H30 FXV A 401       0.339  18.714  21.471 +0.02 -0.00    +0.157 HD
+DOCKED: ENDBRANCH  33  37
+DOCKED: ENDBRANCH  29  33
+DOCKED: ENDBRANCH  26  27
+DOCKED: ENDBRANCH  21  26
+DOCKED: ENDBRANCH   1  21
+DOCKED: TORSDOF 11
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 5 of 10
+Run: 5 Seed: 2103553402 725091452 [ Run 5 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -8.569
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans -1.705 18.899 14.883 quatxyzw -0.363344 0.038462 0.758252 -0.539959 center 7.376 5.023 23.019 ntor 11 154.7000 62.7835 -20.6884 -141.3054 102.5580 164.8221 -120.6706 126.2359 -170.1342 12.3394 -124.7143
+State:	 -1.705  18.899  14.883  -0.432  0.046  0.901 -114.638    154.70   62.78  -20.69 -141.31  102.56  164.82 -120.67  126.24 -170.13   12.34 -124.71
+
+DOCKED: MODEL        5
+DOCKED: USER    Run = 5
+DOCKED: USER    DPF = ligand_remove.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -2.20 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   24.44 mM (millimolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.48 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.21 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.27 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -3.09 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -3.09 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move FXV.pdbqt
+DOCKED: USER    NEWDPF about 7.375800 5.023200 23.019400
+DOCKED: USER    NEWDPF tran0 -1.704878 18.899396 14.883125
+DOCKED: USER    NEWDPF quaternion0 -0.363344 0.038462 0.758252 -0.539959
+DOCKED: USER    NEWDPF axisangle0 -0.431683 0.045696 0.900867 -114.638275
+DOCKED: USER    NEWDPF quat0 -0.431683 0.045696 0.900867 -114.638275
+DOCKED: USER    NEWDPF dihe0 154.70 62.78 -20.69 -141.31 102.56 164.82 -120.67 126.24 -170.13 12.34 -124.71 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  11 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C2_2  and  C11_11 
+DOCKED: REMARK    2  A    between atoms: N1_5  and  O1_38 
+DOCKED: REMARK    3  A    between atoms: C8_8  and  C13_13 
+DOCKED: REMARK       I    between atoms: C13_13  and  N14_14 
+DOCKED: REMARK    4  A    between atoms: N14_14  and  C15_16 
+DOCKED: REMARK    5  A    between atoms: C15_16  and  C17_18 
+DOCKED: REMARK    6  A    between atoms: C17_18  and  C18_19 
+DOCKED: REMARK    7  A    between atoms: C17_18  and  C20_21 
+DOCKED: REMARK    8  A    between atoms: C18_19  and  O19_20 
+DOCKED: REMARK    9  A    between atoms: C20_21  and  C28_27 
+DOCKED: REMARK   10  A    between atoms: C24_23  and  C29_28 
+DOCKED: REMARK   11  A    between atoms: C29_28  and  N30_29 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C15 FXV A 401      -3.041  16.004  16.243 +0.00 +0.03    +0.094 C 
+DOCKED: ATOM      2  C16 FXV A 401      -3.260  14.619  15.596 -0.04 +0.02    +0.033 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   3
+DOCKED: ATOM      3  N14 FXV A 401      -1.853  16.574  15.660 +0.04 -0.09    -0.352 N 
+DOCKED: ATOM      4  C13 FXV A 401      -0.635  16.481  16.227 +0.00 +0.05    +0.248 C 
+DOCKED: ATOM      5  O33 FXV A 401      -0.443  15.906  17.315 -0.01 -0.06    -0.268 OA
+DOCKED: ATOM      6  H14 FXV A 401      -1.939  17.072  14.773 +0.07 +0.04    +0.163 HD
+DOCKED: BRANCH   4   7
+DOCKED: ATOM      7  C8  FXV A 401       0.444  17.085  15.452 -0.13 +0.00    +0.013 A 
+DOCKED: ATOM      8  C7  FXV A 401       1.615  17.723  16.049 -0.15 +0.00    +0.072 A 
+DOCKED: ATOM      9  C12 FXV A 401       2.609  18.306  15.194 -0.31 +0.00    -0.010 A 
+DOCKED: ATOM     10  C11 FXV A 401       2.499  18.286  13.761 -0.31 +0.00    -0.029 A 
+DOCKED: ATOM     11  C10 FXV A 401       1.347  17.652  13.189 -0.23 -0.00    +0.012 A 
+DOCKED: ATOM     12  C9  FXV A 401       0.341  17.066  14.015 -0.21 +0.00    +0.014 A 
+DOCKED: BRANCH  10  13
+DOCKED: ATOM     13  C2  FXV A 401       3.546  18.920  12.896 -0.39 +0.01    -0.024 A 
+DOCKED: ATOM     14  C1  FXV A 401       4.874  19.135  13.393 -0.43 -0.01    +0.032 A 
+DOCKED: ATOM     15  C6  FXV A 401       5.838  19.734  12.528 -0.24 -0.06    +0.123 A 
+DOCKED: ATOM     16  N1  FXV A 401       5.552  20.120  11.221 -0.26 +0.15    -0.247 N 
+DOCKED: ATOM     17  C4  FXV A 401       4.284  19.918  10.733 -0.23 -0.10    +0.123 A 
+DOCKED: ATOM     18  C3  FXV A 401       3.260  19.322  11.540 -0.34 -0.02    +0.032 A 
+DOCKED: BRANCH  16  19
+DOCKED: ATOM     19  O1  FXV A 401       6.526  20.687  10.456 -0.38 +0.18    -0.284 OA
+DOCKED: ATOM     20  H1  FXV A 401       6.501  20.639   9.508 +0.21 -0.27    +0.245 HD
+DOCKED: ENDBRANCH  16  19
+DOCKED: ENDBRANCH  10  13
+DOCKED: ENDBRANCH   4   7
+DOCKED: ENDBRANCH   1   3
+DOCKED: BRANCH   1  21
+DOCKED: ATOM     21  C17 FXV A 401      -4.229  17.015  16.035 -0.00 +0.03    +0.112 C 
+DOCKED: BRANCH  21  22
+DOCKED: ATOM     22  C18 FXV A 401      -4.362  17.356  14.539 -0.03 +0.13    +0.264 C 
+DOCKED: ATOM     23  O32 FXV A 401      -5.059  16.764  13.790 -0.37 -0.25    -0.265 OA
+DOCKED: BRANCH  22  24
+DOCKED: ATOM     24  O19 FXV A 401      -3.592  18.424  14.200 -0.08 -0.12    -0.326 OA
+DOCKED: ATOM     25  C34 FXV A 401      -4.152  19.648  13.716 -0.12 +0.07    +0.213 C 
+DOCKED: ENDBRANCH  22  24
+DOCKED: ENDBRANCH  21  22
+DOCKED: BRANCH  21  26
+DOCKED: ATOM     26  C20 FXV A 401      -4.106  18.341  16.915 -0.04 +0.01    +0.051 C 
+DOCKED: BRANCH  26  27
+DOCKED: ATOM     27  C28 FXV A 401      -2.679  18.808  17.242 -0.05 -0.00    -0.075 A 
+DOCKED: ATOM     28  C23 FXV A 401      -1.950  18.360  18.430 -0.04 +0.00    +0.072 A 
+DOCKED: ATOM     29  C24 FXV A 401      -0.594  18.833  18.708 -0.11 +0.00    -0.030 A 
+DOCKED: ATOM     30  C25 FXV A 401       0.020  19.765  17.777 -0.21 -0.00    +0.065 A 
+DOCKED: ATOM     31  C26 FXV A 401      -0.688  20.207  16.614 -0.23 +0.00    -0.022 A 
+DOCKED: ATOM     32  C27 FXV A 401      -2.023  19.736  16.351 -0.21 +0.00    -0.001 A 
+DOCKED: BRANCH  29  33
+DOCKED: ATOM     33  C29 FXV A 401       0.140  18.387  19.895 -0.14 +0.00    +0.095 C 
+DOCKED: ATOM     34  N31 FXV A 401       0.721  17.174  19.889 +0.01 -0.03    -0.386 N 
+DOCKED: ATOM     35 2H31 FXV A 401       0.642  16.589  19.057 +0.05 +0.02    +0.157 HD
+DOCKED: ATOM     36 1H31 FXV A 401       1.232  16.863  20.715 +0.05 +0.02    +0.157 HD
+DOCKED: BRANCH  33  37
+DOCKED: ATOM     37  N30 FXV A 401       0.243  19.153  20.985 +0.02 +0.04    -0.386 N 
+DOCKED: ATOM     38 2H30 FXV A 401       0.097  20.159  20.901 -0.39 -0.07    +0.157 HD
+DOCKED: ATOM     39 1H30 FXV A 401       0.467  18.757  21.898 +0.02 +0.00    +0.157 HD
+DOCKED: ENDBRANCH  33  37
+DOCKED: ENDBRANCH  29  33
+DOCKED: ENDBRANCH  26  27
+DOCKED: ENDBRANCH  21  26
+DOCKED: ENDBRANCH   1  21
+DOCKED: TORSDOF 11
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 6 of 10
+Run: 6 Seed: 527857441 847037838 [ Run 6 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -7.654
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans -0.177 17.554 18.616 quatxyzw 0.278959 -0.224962 -0.894314 0.267910 center 7.376 5.023 23.019 ntor 11 -62.3806 128.1004 -13.9924 119.7710 45.8372 -13.5614 21.8975 134.4046 -135.5053 0.6489 -113.0695
+State:	 -0.177  17.554  18.616   0.290 -0.233 -0.928 148.920    -62.38  128.10  -13.99  119.77   45.84  -13.56   21.90  134.40 -135.51    0.65 -113.07
+
+DOCKED: MODEL        6
+DOCKED: USER    Run = 6
+DOCKED: USER    DPF = ligand_remove.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -1.77 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   50.70 mM (millimolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.05 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -4.94 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.11 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -2.61 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -2.61 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move FXV.pdbqt
+DOCKED: USER    NEWDPF about 7.375800 5.023200 23.019400
+DOCKED: USER    NEWDPF tran0 -0.176739 17.554332 18.615787
+DOCKED: USER    NEWDPF quaternion0 0.278959 -0.224962 -0.894314 0.267910
+DOCKED: USER    NEWDPF axisangle0 0.289543 -0.233498 -0.928248 148.920078
+DOCKED: USER    NEWDPF quat0 0.289543 -0.233498 -0.928248 148.920078
+DOCKED: USER    NEWDPF dihe0 -62.38 128.10 -13.99 119.77 45.84 -13.56 21.90 134.40 -135.51 0.65 -113.07 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  11 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C2_2  and  C11_11 
+DOCKED: REMARK    2  A    between atoms: N1_5  and  O1_38 
+DOCKED: REMARK    3  A    between atoms: C8_8  and  C13_13 
+DOCKED: REMARK       I    between atoms: C13_13  and  N14_14 
+DOCKED: REMARK    4  A    between atoms: N14_14  and  C15_16 
+DOCKED: REMARK    5  A    between atoms: C15_16  and  C17_18 
+DOCKED: REMARK    6  A    between atoms: C17_18  and  C18_19 
+DOCKED: REMARK    7  A    between atoms: C17_18  and  C20_21 
+DOCKED: REMARK    8  A    between atoms: C18_19  and  O19_20 
+DOCKED: REMARK    9  A    between atoms: C20_21  and  C28_27 
+DOCKED: REMARK   10  A    between atoms: C24_23  and  C29_28 
+DOCKED: REMARK   11  A    between atoms: C29_28  and  N30_29 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C15 FXV A 401       0.575  15.321  21.159 -0.04 +0.01    +0.094 C 
+DOCKED: ATOM      2  C16 FXV A 401       0.834  13.800  21.092 -0.08 +0.00    +0.033 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   3
+DOCKED: ATOM      3  N14 FXV A 401       1.070  15.901  19.936 -0.00 -0.04    -0.352 N 
+DOCKED: ATOM      4  C13 FXV A 401       2.192  16.645  19.874 -0.08 +0.02    +0.248 C 
+DOCKED: ATOM      5  O33 FXV A 401       2.881  16.904  20.878 -0.49 -0.04    -0.268 OA
+DOCKED: ATOM      6  H14 FXV A 401       0.546  15.740  19.075 +0.04 +0.02    +0.163 HD
+DOCKED: BRANCH   4   7
+DOCKED: ATOM      7  C8  FXV A 401       2.546  17.099  18.534 -0.15 +0.00    +0.013 A 
+DOCKED: ATOM      8  C7  FXV A 401       3.356  18.285  18.265 -0.20 +0.00    +0.072 A 
+DOCKED: ATOM      9  C12 FXV A 401       3.629  18.656  16.906 -0.28 -0.00    -0.010 A 
+DOCKED: ATOM     10  C11 FXV A 401       3.133  17.900  15.787 -0.28 -0.00    -0.029 A 
+DOCKED: ATOM     11  C10 FXV A 401       2.342  16.736  16.066 -0.12 +0.00    +0.012 A 
+DOCKED: ATOM     12  C9  FXV A 401       2.054  16.345  17.408 -0.03 +0.00    +0.014 A 
+DOCKED: BRANCH  10  13
+DOCKED: ATOM     13  C2  FXV A 401       3.420  18.325  14.379 -0.38 +0.00    -0.024 A 
+DOCKED: ATOM     14  C1  FXV A 401       2.560  17.924  13.304 -0.38 -0.01    +0.032 A 
+DOCKED: ATOM     15  C6  FXV A 401       2.871  18.360  11.982 -0.32 -0.06    +0.123 A 
+DOCKED: ATOM     16  N1  FXV A 401       3.971  19.160  11.684 -0.18 +0.15    -0.247 N 
+DOCKED: ATOM     17  C4  FXV A 401       4.802  19.552  12.705 -0.38 -0.05    +0.123 A 
+DOCKED: ATOM     18  C3  FXV A 401       4.557  19.154  14.060 -0.27 -0.01    +0.032 A 
+DOCKED: BRANCH  16  19
+DOCKED: ATOM     19  O1  FXV A 401       4.203  19.537  10.395 -0.18 +0.31    -0.284 OA
+DOCKED: ATOM     20  H1  FXV A 401       4.383  18.896   9.717 -0.19 -0.41    +0.245 HD
+DOCKED: ENDBRANCH  16  19
+DOCKED: ENDBRANCH  10  13
+DOCKED: ENDBRANCH   4   7
+DOCKED: ENDBRANCH   1   3
+DOCKED: BRANCH   1  21
+DOCKED: ATOM     21  C17 FXV A 401      -0.941  15.717  21.316 -0.01 +0.01    +0.112 C 
+DOCKED: BRANCH  21  22
+DOCKED: ATOM     22  C18 FXV A 401      -1.768  15.044  20.204 +0.01 +0.04    +0.264 C 
+DOCKED: ATOM     23  O32 FXV A 401      -1.294  14.446  19.302 +0.00 -0.06    -0.265 OA
+DOCKED: BRANCH  22  24
+DOCKED: ATOM     24  O19 FXV A 401      -3.104  15.214  20.403 +0.00 -0.05    -0.326 OA
+DOCKED: ATOM     25  C34 FXV A 401      -3.738  14.899  21.645 +0.00 +0.03    +0.213 C 
+DOCKED: ENDBRANCH  22  24
+DOCKED: ENDBRANCH  21  22
+DOCKED: BRANCH  21  26
+DOCKED: ATOM     26  C20 FXV A 401      -1.194  17.292  21.344 -0.05 +0.00    +0.051 C 
+DOCKED: BRANCH  26  27
+DOCKED: ATOM     27  C28 FXV A 401      -0.848  18.058  20.057 -0.06 -0.00    -0.075 A 
+DOCKED: ATOM     28  C23 FXV A 401      -1.374  17.683  18.743 -0.02 +0.00    +0.072 A 
+DOCKED: ATOM     29  C24 FXV A 401      -1.016  18.436  17.542 -0.08 -0.00    -0.030 A 
+DOCKED: ATOM     30  C25 FXV A 401      -0.118  19.571  17.677 -0.20 -0.00    +0.065 A 
+DOCKED: ATOM     31  C26 FXV A 401       0.400  19.944  18.959 -0.27 +0.00    -0.022 A 
+DOCKED: ATOM     32  C27 FXV A 401       0.041  19.194  20.135 -0.18 +0.00    -0.001 A 
+DOCKED: BRANCH  29  33
+DOCKED: ATOM     33  C29 FXV A 401      -1.539  18.065  16.225 -0.08 +0.01    +0.095 C 
+DOCKED: ATOM     34  N31 FXV A 401      -2.669  17.339  16.150 +0.04 -0.08    -0.386 N 
+DOCKED: ATOM     35 2H31 FXV A 401      -3.142  17.065  17.012 +0.02 +0.03    +0.157 HD
+DOCKED: ATOM     36 1H31 FXV A 401      -3.035  17.081  15.234 +0.05 +0.05    +0.157 HD
+DOCKED: BRANCH  33  37
+DOCKED: ATOM     37  N30 FXV A 401      -0.920  18.424  15.097 +0.09 +0.01    -0.386 N 
+DOCKED: ATOM     38 2H30 FXV A 401      -0.198  19.143  15.134 -0.26 -0.04    +0.157 HD
+DOCKED: ATOM     39 1H30 FXV A 401      -1.155  18.000  14.200 +0.05 +0.02    +0.157 HD
+DOCKED: ENDBRANCH  33  37
+DOCKED: ENDBRANCH  29  33
+DOCKED: ENDBRANCH  26  27
+DOCKED: ENDBRANCH  21  26
+DOCKED: ENDBRANCH   1  21
+DOCKED: TORSDOF 11
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 7 of 10
+Run: 7 Seed: 78762002 1762326483 [ Run 7 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -7.726
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 0.499 17.720 18.404 quatxyzw 0.202509 -0.205626 -0.889647 0.353888 center 7.376 5.023 23.019 ntor 11 -180.0000 -60.0711 -124.5843 101.5205 0.0859 152.7700 0.0508 -179.8693 -122.6601 -29.5394 -113.9784
+State:	  0.499  17.720  18.404   0.217 -0.220 -0.951 138.549   -180.00  -60.07 -124.58  101.52    0.09  152.77    0.05 -179.87 -122.66  -29.54 -113.98
+
+DOCKED: MODEL        7
+DOCKED: USER    Run = 7
+DOCKED: USER    DPF = ligand_remove.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -2.06 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   30.68 mM (millimolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.35 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.16 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.19 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -2.38 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -2.38 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move FXV.pdbqt
+DOCKED: USER    NEWDPF about 7.375800 5.023200 23.019400
+DOCKED: USER    NEWDPF tran0 0.499480 17.719783 18.404109
+DOCKED: USER    NEWDPF quaternion0 0.202509 -0.205626 -0.889647 0.353888
+DOCKED: USER    NEWDPF axisangle0 0.216521 -0.219853 -0.951201 138.549358
+DOCKED: USER    NEWDPF quat0 0.216521 -0.219853 -0.951201 138.549358
+DOCKED: USER    NEWDPF dihe0 -180.00 -60.07 -124.58 101.52 0.09 152.77 0.05 -179.87 -122.66 -29.54 -113.98 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  11 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C2_2  and  C11_11 
+DOCKED: REMARK    2  A    between atoms: N1_5  and  O1_38 
+DOCKED: REMARK    3  A    between atoms: C8_8  and  C13_13 
+DOCKED: REMARK       I    between atoms: C13_13  and  N14_14 
+DOCKED: REMARK    4  A    between atoms: N14_14  and  C15_16 
+DOCKED: REMARK    5  A    between atoms: C15_16  and  C17_18 
+DOCKED: REMARK    6  A    between atoms: C17_18  and  C18_19 
+DOCKED: REMARK    7  A    between atoms: C17_18  and  C20_21 
+DOCKED: REMARK    8  A    between atoms: C18_19  and  O19_20 
+DOCKED: REMARK    9  A    between atoms: C20_21  and  C28_27 
+DOCKED: REMARK   10  A    between atoms: C24_23  and  C29_28 
+DOCKED: REMARK   11  A    between atoms: C29_28  and  N30_29 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C15 FXV A 401       1.012  15.082  20.595 -0.07 +0.01    +0.094 C 
+DOCKED: ATOM      2  C16 FXV A 401       0.982  13.561  20.332 -0.09 +0.01    +0.033 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   3
+DOCKED: ATOM      3  N14 FXV A 401       1.515  15.719  19.404 -0.02 -0.04    -0.352 N 
+DOCKED: ATOM      4  C13 FXV A 401       2.409  16.727  19.427 -0.09 +0.02    +0.248 C 
+DOCKED: ATOM      5  O33 FXV A 401       2.859  17.200  20.488 -0.38 -0.04    -0.268 OA
+DOCKED: ATOM      6  H14 FXV A 401       1.177  15.391  18.499 +0.05 +0.03    +0.163 HD
+DOCKED: BRANCH   4   7
+DOCKED: ATOM      7  C8  FXV A 401       2.825  17.201  18.112 -0.15 +0.00    +0.013 A 
+DOCKED: ATOM      8  C7  FXV A 401       4.062  17.939  17.867 -0.24 +0.01    +0.072 A 
+DOCKED: ATOM      9  C12 FXV A 401       4.366  18.379  16.535 -0.29 +0.00    -0.010 A 
+DOCKED: ATOM     10  C11 FXV A 401       3.494  18.118  15.421 -0.34 +0.00    -0.029 A 
+DOCKED: ATOM     11  C10 FXV A 401       2.286  17.389  15.676 -0.23 +0.00    +0.012 A 
+DOCKED: ATOM     12  C9  FXV A 401       1.957  16.942  16.990 -0.14 +0.00    +0.014 A 
+DOCKED: BRANCH  10  13
+DOCKED: ATOM     13  C2  FXV A 401       3.832  18.607  14.045 -0.39 +0.00    -0.024 A 
+DOCKED: ATOM     14  C1  FXV A 401       5.127  19.153  13.760 -0.31 -0.01    +0.032 A 
+DOCKED: ATOM     15  C6  FXV A 401       5.403  19.596  12.432 -0.35 -0.06    +0.123 A 
+DOCKED: ATOM     16  N1  FXV A 401       4.474  19.523  11.397 -0.17 +0.16    -0.247 N 
+DOCKED: ATOM     17  C4  FXV A 401       3.231  19.001  11.657 -0.27 -0.07    +0.123 A 
+DOCKED: ATOM     18  C3  FXV A 401       2.878  18.534  12.966 -0.38 -0.01    +0.032 A 
+DOCKED: BRANCH  16  19
+DOCKED: ATOM     19  O1  FXV A 401       4.812  19.968  10.154 -0.26 +0.32    -0.284 OA
+DOCKED: ATOM     20  H1  FXV A 401       4.197  19.929   9.431 +0.10 -0.49    +0.245 HD
+DOCKED: ENDBRANCH  16  19
+DOCKED: ENDBRANCH  10  13
+DOCKED: ENDBRANCH   4   7
+DOCKED: ENDBRANCH   1   3
+DOCKED: BRANCH   1  21
+DOCKED: ATOM     21  C17 FXV A 401      -0.389  15.712  20.940 -0.02 +0.01    +0.112 C 
+DOCKED: BRANCH  21  22
+DOCKED: ATOM     22  C18 FXV A 401      -1.399  15.360  19.832 +0.01 +0.04    +0.264 C 
+DOCKED: ATOM     23  O32 FXV A 401      -1.094  15.116  18.717 +0.00 -0.06    -0.265 OA
+DOCKED: BRANCH  22  24
+DOCKED: ATOM     24  O19 FXV A 401      -2.675  15.353  20.304 +0.01 -0.05    -0.326 OA
+DOCKED: ATOM     25  C34 FXV A 401      -3.690  16.212  19.778 +0.01 +0.03    +0.213 C 
+DOCKED: ENDBRANCH  22  24
+DOCKED: ENDBRANCH  21  22
+DOCKED: BRANCH  21  26
+DOCKED: ATOM     26  C20 FXV A 401      -0.341  17.287  21.192 -0.09 +0.00    +0.051 C 
+DOCKED: BRANCH  26  27
+DOCKED: ATOM     27  C28 FXV A 401      -0.249  18.172  19.939 -0.09 -0.00    -0.075 A 
+DOCKED: ATOM     28  C23 FXV A 401      -0.844  17.797  18.655 -0.03 +0.00    +0.072 A 
+DOCKED: ATOM     29  C24 FXV A 401      -0.730  18.666  17.486 -0.10 -0.00    -0.030 A 
+DOCKED: ATOM     30  C25 FXV A 401      -0.006  19.919  17.621 -0.22 -0.00    +0.065 A 
+DOCKED: ATOM     31  C26 FXV A 401       0.579  20.293  18.873 -0.21 +0.00    -0.022 A 
+DOCKED: ATOM     32  C27 FXV A 401       0.460  19.428  20.019 -0.21 +0.00    -0.001 A 
+DOCKED: BRANCH  29  33
+DOCKED: ATOM     33  C29 FXV A 401      -1.324  18.296  16.199 -0.10 +0.01    +0.095 C 
+DOCKED: ATOM     34  N31 FXV A 401      -1.553  16.997  15.933 +0.04 -0.07    -0.386 N 
+DOCKED: ATOM     35 2H31 FXV A 401      -1.312  16.296  16.634 +0.04 +0.03    +0.157 HD
+DOCKED: ATOM     36 1H31 FXV A 401      -1.967  16.739  15.037 +0.06 +0.04    +0.157 HD
+DOCKED: BRANCH  33  37
+DOCKED: ATOM     37  N30 FXV A 401      -1.639  19.214  15.281 +0.03 +0.01    -0.386 N 
+DOCKED: ATOM     38 2H30 FXV A 401      -2.593  19.250  14.921 +0.07 +0.02    +0.157 HD
+DOCKED: ATOM     39 1H30 FXV A 401      -0.950  19.877  14.929 -0.35 -0.06    +0.157 HD
+DOCKED: ENDBRANCH  33  37
+DOCKED: ENDBRANCH  29  33
+DOCKED: ENDBRANCH  26  27
+DOCKED: ENDBRANCH  21  26
+DOCKED: ENDBRANCH   1  21
+DOCKED: TORSDOF 11
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 8 of 10
+Run: 8 Seed: 1822430929 930153717 [ Run 8 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -8.200
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans -0.275 19.371 16.802 quatxyzw -0.100196 0.060430 0.733467 -0.669578 center 7.376 5.023 23.019 ntor 11 163.0018 -84.2400 -65.3804 57.8987 52.6623 -179.9084 -111.5939 74.9884 -154.8253 14.3499 -138.9944
+State:	 -0.275  19.371  16.802  -0.135  0.081  0.988 -95.931    163.00  -84.24  -65.38   57.90   52.66 -179.91 -111.59   74.99 -154.83   14.35 -138.99
+
+DOCKED: MODEL        8
+DOCKED: USER    Run = 8
+DOCKED: USER    DPF = ligand_remove.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -1.90 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   40.27 mM (millimolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.18 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -4.90 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.28 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -3.02 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -3.02 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move FXV.pdbqt
+DOCKED: USER    NEWDPF about 7.375800 5.023200 23.019400
+DOCKED: USER    NEWDPF tran0 -0.274957 19.371490 16.801695
+DOCKED: USER    NEWDPF quaternion0 -0.100196 0.060430 0.733467 -0.669578
+DOCKED: USER    NEWDPF axisangle0 -0.134900 0.081361 0.987513 -95.930990
+DOCKED: USER    NEWDPF quat0 -0.134900 0.081361 0.987513 -95.930990
+DOCKED: USER    NEWDPF dihe0 163.00 -84.24 -65.38 57.90 52.66 -179.91 -111.59 74.99 -154.83 14.35 -138.99 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  11 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C2_2  and  C11_11 
+DOCKED: REMARK    2  A    between atoms: N1_5  and  O1_38 
+DOCKED: REMARK    3  A    between atoms: C8_8  and  C13_13 
+DOCKED: REMARK       I    between atoms: C13_13  and  N14_14 
+DOCKED: REMARK    4  A    between atoms: N14_14  and  C15_16 
+DOCKED: REMARK    5  A    between atoms: C15_16  and  C17_18 
+DOCKED: REMARK    6  A    between atoms: C17_18  and  C18_19 
+DOCKED: REMARK    7  A    between atoms: C17_18  and  C20_21 
+DOCKED: REMARK    8  A    between atoms: C18_19  and  O19_20 
+DOCKED: REMARK    9  A    between atoms: C20_21  and  C28_27 
+DOCKED: REMARK   10  A    between atoms: C24_23  and  C29_28 
+DOCKED: REMARK   11  A    between atoms: C29_28  and  N30_29 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C15 FXV A 401      -1.924  16.469  17.738 -0.00 +0.02    +0.094 C 
+DOCKED: ATOM      2  C16 FXV A 401      -2.772  15.498  16.888 -0.00 +0.01    +0.033 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   3
+DOCKED: ATOM      3  N14 FXV A 401      -0.883  16.993  16.891 +0.03 -0.05    -0.352 N 
+DOCKED: ATOM      4  C13 FXV A 401       0.347  16.450  16.811 -0.02 +0.04    +0.248 C 
+DOCKED: ATOM      5  O33 FXV A 401       0.687  15.456  17.481 -0.05 -0.06    -0.268 OA
+DOCKED: ATOM      6  H14 FXV A 401      -1.087  17.816  16.323 +0.06 +0.01    +0.163 HD
+DOCKED: BRANCH   4   7
+DOCKED: ATOM      7  C8  FXV A 401       1.240  17.103  15.859 -0.15 +0.00    +0.013 A 
+DOCKED: ATOM      8  C7  FXV A 401       2.212  18.129  16.229 -0.19 +0.00    +0.072 A 
+DOCKED: ATOM      9  C12 FXV A 401       3.028  18.723  15.208 -0.30 +0.00    -0.010 A 
+DOCKED: ATOM     10  C11 FXV A 401       2.927  18.345  13.825 -0.37 +0.00    -0.029 A 
+DOCKED: ATOM     11  C10 FXV A 401       1.971  17.334  13.477 -0.23 -0.00    +0.012 A 
+DOCKED: ATOM     12  C9  FXV A 401       1.145  16.727  14.471 -0.19 +0.00    +0.014 A 
+DOCKED: BRANCH  10  13
+DOCKED: ATOM     13  C2  FXV A 401       3.781  18.998  12.780 -0.41 +0.01    -0.024 A 
+DOCKED: ATOM     14  C1  FXV A 401       5.143  19.349  13.063 -0.46 -0.01    +0.032 A 
+DOCKED: ATOM     15  C6  FXV A 401       5.918  19.961  12.034 -0.25 -0.06    +0.123 A 
+DOCKED: ATOM     16  N1  FXV A 401       5.416  20.233  10.764 -0.28 +0.18    -0.247 N 
+DOCKED: ATOM     17  C4  FXV A 401       4.114  19.901  10.480 -0.15 -0.12    +0.123 A 
+DOCKED: ATOM     18  C3  FXV A 401       3.271  19.283  11.462 -0.34 -0.02    +0.032 A 
+DOCKED: BRANCH  16  19
+DOCKED: ATOM     19  O1  FXV A 401       6.218  20.820   9.832 -0.37 +0.27    -0.284 OA
+DOCKED: ATOM     20  H1  FXV A 401       5.998  20.804   8.908 +0.03 -0.47    +0.245 HD
+DOCKED: ENDBRANCH  16  19
+DOCKED: ENDBRANCH  10  13
+DOCKED: ENDBRANCH   4   7
+DOCKED: ENDBRANCH   1   3
+DOCKED: BRANCH   1  21
+DOCKED: ATOM     21  C17 FXV A 401      -2.729  17.680  18.340 -0.01 +0.01    +0.112 C 
+DOCKED: BRANCH  21  22
+DOCKED: ATOM     22  C18 FXV A 401      -2.929  18.757  17.257 -0.02 +0.01    +0.264 C 
+DOCKED: ATOM     23  O32 FXV A 401      -2.053  19.418  16.819 -0.07 +0.00    -0.265 OA
+DOCKED: BRANCH  22  24
+DOCKED: ATOM     24  O19 FXV A 401      -4.229  18.836  16.865 -0.00 -0.03    -0.326 OA
+DOCKED: ATOM     25  C34 FXV A 401      -5.136  19.795  17.415 -0.06 -0.00    +0.213 C 
+DOCKED: ENDBRANCH  22  24
+DOCKED: ENDBRANCH  21  22
+DOCKED: BRANCH  21  26
+DOCKED: ATOM     26  C20 FXV A 401      -2.067  18.303  19.651 -0.06 -0.00    +0.051 C 
+DOCKED: BRANCH  26  27
+DOCKED: ATOM     27  C28 FXV A 401      -0.550  18.539  19.600 -0.09 +0.00    -0.075 A 
+DOCKED: ATOM     28  C23 FXV A 401       0.428  17.470  19.815 -0.06 +0.00    +0.072 A 
+DOCKED: ATOM     29  C24 FXV A 401       1.864  17.737  19.762 -0.12 -0.00    -0.030 A 
+DOCKED: ATOM     30  C25 FXV A 401       2.308  19.094  19.492 -0.09 +0.00    +0.065 A 
+DOCKED: ATOM     31  C26 FXV A 401       1.358  20.144  19.281 -0.24 +0.00    -0.022 A 
+DOCKED: ATOM     32  C27 FXV A 401      -0.055  19.870  19.336 -0.25 +0.00    -0.001 A 
+DOCKED: BRANCH  29  33
+DOCKED: ATOM     33  C29 FXV A 401       2.846  16.671  19.976 -0.17 +0.01    +0.095 C 
+DOCKED: ATOM     34  N31 FXV A 401       2.522  15.407  19.652 +0.04 -0.00    -0.386 N 
+DOCKED: ATOM     35 2H31 FXV A 401       1.601  15.215  19.259 +0.04 +0.02    +0.157 HD
+DOCKED: ATOM     36 1H31 FXV A 401       3.205  14.665  19.801 -0.23 -0.05    +0.157 HD
+DOCKED: BRANCH  33  37
+DOCKED: ATOM     37  N30 FXV A 401       4.053  16.922  20.491 -0.05 -0.01    -0.386 N 
+DOCKED: ATOM     38 2H30 FXV A 401       4.711  17.493  19.960 +0.12 +0.02    +0.157 HD
+DOCKED: ATOM     39 1H30 FXV A 401       4.335  16.555  21.399 +0.08 -0.02    +0.157 HD
+DOCKED: ENDBRANCH  33  37
+DOCKED: ENDBRANCH  29  33
+DOCKED: ENDBRANCH  26  27
+DOCKED: ENDBRANCH  21  26
+DOCKED: ENDBRANCH   1  21
+DOCKED: TORSDOF 11
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 9 of 10
+Run: 9 Seed: 226955952 475996573 [ Run 9 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -6.662
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 0.451 18.248 18.983 quatxyzw -0.276118 0.035124 -0.387365 0.878905 center 7.376 5.023 23.019 ntor 11 135.2312 -72.7041 37.2388 178.1000 64.1828 56.1323 -52.6921 168.4807 87.3667 -23.9830 -24.9110
+State:	  0.451  18.248  18.983  -0.579  0.074 -0.812 56.979    135.23  -72.70   37.24  178.10   64.18   56.13  -52.69  168.48   87.37  -23.98  -24.91
+
+DOCKED: MODEL        9
+DOCKED: USER    Run = 9
+DOCKED: USER    DPF = ligand_remove.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -1.07 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  164.44 mM (millimolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -4.35 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -4.21 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.14 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -2.31 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -2.31 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move FXV.pdbqt
+DOCKED: USER    NEWDPF about 7.375800 5.023200 23.019400
+DOCKED: USER    NEWDPF tran0 0.450875 18.247580 18.983105
+DOCKED: USER    NEWDPF quaternion0 -0.276118 0.035124 -0.387365 0.878905
+DOCKED: USER    NEWDPF axisangle0 -0.578866 0.073637 -0.812091 56.978923
+DOCKED: USER    NEWDPF quat0 -0.578866 0.073637 -0.812091 56.978923
+DOCKED: USER    NEWDPF dihe0 135.23 -72.70 37.24 178.10 64.18 56.13 -52.69 168.48 87.37 -23.98 -24.91 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  11 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C2_2  and  C11_11 
+DOCKED: REMARK    2  A    between atoms: N1_5  and  O1_38 
+DOCKED: REMARK    3  A    between atoms: C8_8  and  C13_13 
+DOCKED: REMARK       I    between atoms: C13_13  and  N14_14 
+DOCKED: REMARK    4  A    between atoms: N14_14  and  C15_16 
+DOCKED: REMARK    5  A    between atoms: C15_16  and  C17_18 
+DOCKED: REMARK    6  A    between atoms: C17_18  and  C18_19 
+DOCKED: REMARK    7  A    between atoms: C17_18  and  C20_21 
+DOCKED: REMARK    8  A    between atoms: C18_19  and  O19_20 
+DOCKED: REMARK    9  A    between atoms: C20_21  and  C28_27 
+DOCKED: REMARK   10  A    between atoms: C24_23  and  C29_28 
+DOCKED: REMARK   11  A    between atoms: C29_28  and  N30_29 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C15 FXV A 401      -2.823  17.170  19.360 -0.01 +0.01    +0.094 C 
+DOCKED: ATOM      2  C16 FXV A 401      -4.129  17.762  18.786 -0.01 +0.00    +0.033 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   3
+DOCKED: ATOM      3  N14 FXV A 401      -1.779  17.402  18.394 +0.02 -0.03    -0.352 N 
+DOCKED: ATOM      4  C13 FXV A 401      -0.922  16.444  17.990 +0.01 +0.04    +0.248 C 
+DOCKED: ATOM      5  O33 FXV A 401      -0.957  15.282  18.435 -0.00 -0.06    -0.268 OA
+DOCKED: ATOM      6  H14 FXV A 401      -1.683  18.337  17.997 +0.05 +0.01    +0.163 HD
+DOCKED: BRANCH   4   7
+DOCKED: ATOM      7  C8  FXV A 401       0.030  16.872  16.971 -0.05 +0.00    +0.013 A 
+DOCKED: ATOM      8  C7  FXV A 401       0.912  15.958  16.248 -0.09 +0.02    +0.072 A 
+DOCKED: ATOM      9  C12 FXV A 401       1.829  16.487  15.278 -0.22 -0.00    -0.010 A 
+DOCKED: ATOM     10  C11 FXV A 401       1.914  17.892  14.985 -0.25 +0.00    -0.029 A 
+DOCKED: ATOM     11  C10 FXV A 401       1.038  18.776  15.699 -0.02 -0.00    +0.012 A 
+DOCKED: ATOM     12  C9  FXV A 401       0.119  18.279  16.671 -0.13 +0.00    +0.014 A 
+DOCKED: BRANCH  10  13
+DOCKED: ATOM     13  C2  FXV A 401       2.894  18.415  13.980 -0.36 +0.00    -0.024 A 
+DOCKED: ATOM     14  C1  FXV A 401       4.239  18.732  14.365 -0.36 -0.01    +0.032 A 
+DOCKED: ATOM     15  C6  FXV A 401       5.137  19.219  13.369 -0.33 -0.05    +0.123 A 
+DOCKED: ATOM     16  N1  FXV A 401       4.772  19.399  12.038 -0.21 +0.13    -0.247 N 
+DOCKED: ATOM     17  C4  FXV A 401       3.488  19.097  11.656 -0.24 -0.07    +0.123 A 
+DOCKED: ATOM     18  C3  FXV A 401       2.526  18.603  12.598 -0.29 -0.01    +0.032 A 
+DOCKED: BRANCH  16  19
+DOCKED: ATOM     19  O1  FXV A 401       5.687  19.868  11.144 -0.27 +0.18    -0.284 OA
+DOCKED: ATOM     20  H1  FXV A 401       5.785  19.476  10.285 +0.17 -0.23    +0.245 HD
+DOCKED: ENDBRANCH  16  19
+DOCKED: ENDBRANCH  10  13
+DOCKED: ENDBRANCH   4   7
+DOCKED: ENDBRANCH   1   3
+DOCKED: BRANCH   1  21
+DOCKED: ATOM     21  C17 FXV A 401      -2.374  17.795  20.734 -0.03 +0.00    +0.112 C 
+DOCKED: BRANCH  21  22
+DOCKED: ATOM     22  C18 FXV A 401      -3.617  18.145  21.573 -0.00 -0.01    +0.264 C 
+DOCKED: ATOM     23  O32 FXV A 401      -4.499  17.388  21.789 +0.00 -0.01    -0.265 OA
+DOCKED: BRANCH  22  24
+DOCKED: ATOM     24  O19 FXV A 401      -3.562  19.422  22.040 -0.02 +0.05    -0.326 OA
+DOCKED: ATOM     25  C34 FXV A 401      -4.391  20.463  21.519 -0.05 -0.06    +0.213 C 
+DOCKED: ENDBRANCH  22  24
+DOCKED: ENDBRANCH  21  22
+DOCKED: BRANCH  21  26
+DOCKED: ATOM     26  C20 FXV A 401      -1.413  19.059  20.581 -0.09 -0.01    +0.051 C 
+DOCKED: BRANCH  26  27
+DOCKED: ATOM     27  C28 FXV A 401       0.026  18.767  20.124 -0.15 +0.00    -0.075 A 
+DOCKED: ATOM     28  C23 FXV A 401       0.654  17.453  20.270 -0.08 +0.01    +0.072 A 
+DOCKED: ATOM     29  C24 FXV A 401       2.027  17.218  19.827 -0.12 -0.00    -0.030 A 
+DOCKED: ATOM     30  C25 FXV A 401       2.764  18.323  19.236 -0.16 +0.00    +0.065 A 
+DOCKED: ATOM     31  C26 FXV A 401       2.155  19.611  19.090 -0.26 -0.00    -0.022 A 
+DOCKED: ATOM     32  C27 FXV A 401       0.802  19.831  19.531 -0.29 +0.00    -0.001 A 
+DOCKED: BRANCH  29  33
+DOCKED: ATOM     33  C29 FXV A 401       2.661  15.905  19.970 -0.13 +0.00    +0.095 C 
+DOCKED: ATOM     34  N31 FXV A 401       1.939  14.798  19.718 +0.11 -0.02    -0.386 N 
+DOCKED: ATOM     35 2H31 FXV A 401       0.966  14.895  19.428 +0.04 +0.02    +0.157 HD
+DOCKED: ATOM     36 1H31 FXV A 401       2.380  13.884  19.818 -0.13 -0.02    +0.157 HD
+DOCKED: BRANCH  33  37
+DOCKED: ATOM     37  N30 FXV A 401       3.935  15.779  20.351 -0.00 +0.05    -0.386 N 
+DOCKED: ATOM     38 2H30 FXV A 401       4.312  16.420  21.048 +0.09 -0.02    +0.157 HD
+DOCKED: ATOM     39 1H30 FXV A 401       4.542  15.059  19.959 -0.33 -0.06    +0.157 HD
+DOCKED: ENDBRANCH  33  37
+DOCKED: ENDBRANCH  29  33
+DOCKED: ENDBRANCH  26  27
+DOCKED: ENDBRANCH  21  26
+DOCKED: ENDBRANCH   1  21
+DOCKED: TORSDOF 11
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 10 of 10
+Run: 10 Seed: 1136833695 566380766 [ Run 10 of 10 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -7.393
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans -0.074 16.801 18.630 quatxyzw 0.329907 -0.217951 -0.904721 0.158550 center 7.376 5.023 23.019 ntor 11 115.8153 -27.5811 -130.5216 143.7386 -36.3938 132.4330 -86.2867 174.7519 -116.9447 4.7970 -144.1784
+State:	 -0.074  16.801  18.630   0.334 -0.221 -0.916 161.755    115.82  -27.58 -130.52  143.74  -36.39  132.43  -86.29  174.75 -116.94    4.80 -144.18
+
+DOCKED: MODEL       10
+DOCKED: USER    Run = 10
+DOCKED: USER    DPF = ligand_remove.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -1.67 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   59.73 mM (millimolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -4.95 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -4.85 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.10 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -2.44 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -2.44 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move FXV.pdbqt
+DOCKED: USER    NEWDPF about 7.375800 5.023200 23.019400
+DOCKED: USER    NEWDPF tran0 -0.074255 16.801081 18.630122
+DOCKED: USER    NEWDPF quaternion0 0.329907 -0.217951 -0.904721 0.158550
+DOCKED: USER    NEWDPF axisangle0 0.334134 -0.220743 -0.916312 161.754557
+DOCKED: USER    NEWDPF quat0 0.334134 -0.220743 -0.916312 161.754557
+DOCKED: USER    NEWDPF dihe0 115.82 -27.58 -130.52 143.74 -36.39 132.43 -86.29 174.75 -116.94 4.80 -144.18 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  11 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C2_2  and  C11_11 
+DOCKED: REMARK    2  A    between atoms: N1_5  and  O1_38 
+DOCKED: REMARK    3  A    between atoms: C8_8  and  C13_13 
+DOCKED: REMARK       I    between atoms: C13_13  and  N14_14 
+DOCKED: REMARK    4  A    between atoms: N14_14  and  C15_16 
+DOCKED: REMARK    5  A    between atoms: C15_16  and  C17_18 
+DOCKED: REMARK    6  A    between atoms: C17_18  and  C18_19 
+DOCKED: REMARK    7  A    between atoms: C17_18  and  C20_21 
+DOCKED: REMARK    8  A    between atoms: C18_19  and  O19_20 
+DOCKED: REMARK    9  A    between atoms: C20_21  and  C28_27 
+DOCKED: REMARK   10  A    between atoms: C24_23  and  C29_28 
+DOCKED: REMARK   11  A    between atoms: C29_28  and  N30_29 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C15 FXV A 401       1.038  14.970  21.356 -0.06 +0.01    +0.094 C 
+DOCKED: ATOM      2  C16 FXV A 401       1.635  13.547  21.412 -0.11 +0.00    +0.033 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   3
+DOCKED: ATOM      3  N14 FXV A 401       1.448  15.566  20.109 -0.02 -0.03    -0.352 N 
+DOCKED: ATOM      4  C13 FXV A 401       2.432  16.482  20.018 -0.10 +0.02    +0.248 C 
+DOCKED: ATOM      5  O33 FXV A 401       3.054  16.900  21.012 -0.47 -0.04    -0.268 OA
+DOCKED: ATOM      6  H14 FXV A 401       0.971  15.280  19.254 +0.04 +0.02    +0.163 HD
+DOCKED: BRANCH   4   7
+DOCKED: ATOM      7  C8  FXV A 401       2.725  16.925  18.659 -0.15 +0.00    +0.013 A 
+DOCKED: ATOM      8  C7  FXV A 401       3.941  17.642  18.282 -0.21 +0.01    +0.072 A 
+DOCKED: ATOM      9  C12 FXV A 401       4.121  18.052  16.919 -0.32 -0.00    -0.010 A 
+DOCKED: ATOM     10  C11 FXV A 401       3.145  17.781  15.899 -0.27 -0.00    -0.029 A 
+DOCKED: ATOM     11  C10 FXV A 401       1.958  17.071  16.282 -0.17 +0.00    +0.012 A 
+DOCKED: ATOM     12  C9  FXV A 401       1.752  16.654  17.631 -0.12 +0.00    +0.014 A 
+DOCKED: BRANCH  10  13
+DOCKED: ATOM     13  C2  FXV A 401       3.354  18.238  14.486 -0.36 +0.00    -0.024 A 
+DOCKED: ATOM     14  C1  FXV A 401       4.422  19.138  14.160 -0.29 -0.01    +0.032 A 
+DOCKED: ATOM     15  C6  FXV A 401       4.586  19.537  12.800 -0.36 -0.05    +0.123 A 
+DOCKED: ATOM     16  N1  FXV A 401       3.758  19.092  11.772 -0.21 +0.14    -0.247 N 
+DOCKED: ATOM     17  C4  FXV A 401       2.733  18.229  12.072 -0.28 -0.05    +0.123 A 
+DOCKED: ATOM     18  C3  FXV A 401       2.504  17.782  13.414 -0.36 -0.00    +0.032 A 
+DOCKED: BRANCH  16  19
+DOCKED: ATOM     19  O1  FXV A 401       3.977  19.519  10.496 -0.25 +0.29    -0.284 OA
+DOCKED: ATOM     20  H1  FXV A 401       4.228  18.914   9.809 -0.12 -0.39    +0.245 HD
+DOCKED: ENDBRANCH  16  19
+DOCKED: ENDBRANCH  10  13
+DOCKED: ENDBRANCH   4   7
+DOCKED: ENDBRANCH   1   3
+DOCKED: BRANCH   1  21
+DOCKED: ATOM     21  C17 FXV A 401      -0.534  15.020  21.435 -0.01 +0.02    +0.112 C 
+DOCKED: BRANCH  21  22
+DOCKED: ATOM     22  C18 FXV A 401      -1.128  14.813  20.030 +0.01 +0.05    +0.264 C 
+DOCKED: ATOM     23  O32 FXV A 401      -0.520  14.372  19.117 -0.01 -0.06    -0.265 OA
+DOCKED: BRANCH  22  24
+DOCKED: ATOM     24  O19 FXV A 401      -2.435  15.187  19.980 +0.01 -0.06    -0.326 OA
+DOCKED: ATOM     25  C34 FXV A 401      -3.056  15.638  18.773 +0.01 +0.04    +0.213 C 
+DOCKED: ENDBRANCH  22  24
+DOCKED: ENDBRANCH  21  22
+DOCKED: BRANCH  21  26
+DOCKED: ATOM     26  C20 FXV A 401      -1.101  16.352  22.106 -0.02 +0.00    +0.051 C 
+DOCKED: BRANCH  26  27
+DOCKED: ATOM     27  C28 FXV A 401      -1.231  17.574  21.184 -0.05 -0.00    -0.075 A 
+DOCKED: ATOM     28  C23 FXV A 401      -0.110  18.106  20.406 -0.11 +0.00    +0.072 A 
+DOCKED: ATOM     29  C24 FXV A 401      -0.275  19.275  19.544 -0.18 +0.00    -0.030 A 
+DOCKED: ATOM     30  C25 FXV A 401      -1.582  19.907  19.474 -0.15 -0.01    +0.065 A 
+DOCKED: ATOM     31  C26 FXV A 401      -2.682  19.393  20.232 -0.09 +0.00    -0.022 A 
+DOCKED: ATOM     32  C27 FXV A 401      -2.508  18.241  21.079 -0.05 +0.00    -0.001 A 
+DOCKED: BRANCH  29  33
+DOCKED: ATOM     33  C29 FXV A 401       0.844  19.810  18.764 -0.25 -0.00    +0.095 C 
+DOCKED: ATOM     34  N31 FXV A 401       1.943  20.242  19.406 -0.12 +0.02    -0.386 N 
+DOCKED: ATOM     35 2H31 FXV A 401       1.979  20.185  20.424 +0.08 -0.03    +0.157 HD
+DOCKED: ATOM     36 1H31 FXV A 401       2.722  20.615  18.864 +0.12 +0.00    +0.157 HD
+DOCKED: BRANCH  33  37
+DOCKED: ATOM     37  N30 FXV A 401       0.797  19.886  17.431 -0.01 -0.02    -0.386 N 
+DOCKED: ATOM     38 2H30 FXV A 401       1.579  19.524  16.885 +0.09 +0.02    +0.157 HD
+DOCKED: ATOM     39 1H30 FXV A 401       0.000  20.298  16.945 +0.08 -0.00    +0.157 HD
+DOCKED: ENDBRANCH  33  37
+DOCKED: ENDBRANCH  29  33
+DOCKED: ENDBRANCH  26  27
+DOCKED: ENDBRANCH  21  26
+DOCKED: ENDBRANCH   1  21
+DOCKED: TORSDOF 11
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+DPF> analysis                             # perform a ranked cluster analysis
+
+
+		CLUSTER ANALYSIS OF CONFORMATIONS
+		_________________________________
+
+Number of conformations = 10
+
+RMSD cluster analysis will be performed using the ligand atoms only (39 / 39 total atoms).
+
+Outputting structurally similar clusters, ranked in order of increasing energy.
+
+
+________________________________________________________________________________
+
+Number of distinct conformational clusters found = 4,  out of 10 runs,
+Using an rmsd-tolerance of 2.0 A
+
+
+	CLUSTERING HISTOGRAM
+	____________________
+
+________________________________________________________________________________
+     |           |     |           |     |                                    
+Clus | Lowest    | Run | Mean      | Num | Histogram                          
+-ter | Binding   |     | Binding   | in  |                                    
+Rank | Energy    |     | Energy    | Clus|    5    10   15   20   25   30   35
+_____|___________|_____|___________|_____|____:____|____:____|____:____|____:___
+   1 |     -2.20 |   5 |     -1.97 |   3 |###
+   2 |     -2.20 |   3 |     -1.63 |   2 |##
+   3 |     -2.06 |   7 |     -1.86 |   4 |####
+   4 |     -1.67 |  10 |     -1.67 |   1 |#
+_____|___________|_____|___________|_____|______________________________________
+
+
+Number of multi-member conformational clusters found = 3, out of 10 runs.
+
+	RMSD TABLE
+	__________
+
+_____________________________________________________________________
+     |      |      |           |         |                 |
+Rank | Sub- | Run  | Binding   | Cluster | Reference       | Grep
+     | Rank |      | Energy    | RMSD    | RMSD            | Pattern
+_____|______|______|___________|_________|_________________|___________
+   1      1      5       -2.20      0.00     15.03           RANKING
+   1      2      8       -1.90      1.91     13.97           RANKING
+   1      3      4       -1.80      1.60     14.53           RANKING
+   2      1      3       -2.20      0.00     13.75           RANKING
+   2      2      9       -1.07      1.75     13.29           RANKING
+   3      1      7       -2.06      0.00     13.60           RANKING
+   3      2      2       -1.87      2.00     15.19           RANKING
+   3      3      6       -1.77      0.91     13.45           RANKING
+   3      4      1       -1.72      0.92     13.82           RANKING
+   4      1     10       -1.67      0.00     13.27           RANKING
+_______________________________________________________________________
+
+
+
+	INFORMATION ENTROPY ANALYSIS FOR THIS CLUSTERING
+	________________________________________________
+
+
+Information entropy for this clustering = 0.56  (rmstol = 2.00 Angstrom)
+
+_______________________________________________________________________
+
+
+	STATISTICAL MECHANICAL ANALYSIS
+	_______________________________
+
+
+Partition function, Q =    10.03            at Temperature, T = 298.15 K
+Free energy,        A ~ -1366.06 kcal/mol   at Temperature, T = 298.15 K
+Internal energy,    U =    -1.83 kcal/mol   at Temperature, T = 298.15 K
+Entropy,            S =     4.58 kcal/mol/K at Temperature, T = 298.15 K
+
+_______________________________________________________________________
+
+
+	LOWEST ENERGY DOCKED CONFORMATION from EACH CLUSTER
+	___________________________________________________
+
+
+
+Keeping original residue number (specified in the input PDBQ file) for outputting.
+
+MODEL        5
+USER    Run = 5
+USER    Cluster Rank = 1
+USER    Number of conformations in this cluster = 3
+USER  
+USER    RMSD from reference structure       = 15.028 A
+USER  
+USER    Estimated Free Energy of Binding    =   -2.20 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =   24.44 mM (millimolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =   -5.48 kcal/mol
+USER        vdW + Hbond + desolv Energy     =   -5.21 kcal/mol
+USER        Electrostatic Energy            =   -0.27 kcal/mol
+USER    (2) Final Total Internal Energy     =   -3.09 kcal/mol
+USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -3.09 kcal/mol
+USER    
+USER    
+USER  
+USER    DPF = ligand_remove.dpf
+USER    NEWDPF move	FXV.pdbqt
+USER    NEWDPF about	7.375800 5.023200 23.019400
+USER    NEWDPF tran0	-1.704878 18.899396 14.883125
+USER    NEWDPF axisangle0	-0.431683 0.045696 0.900867 -114.638275
+USER    NEWDPF quaternion0	-0.363344 0.038462 0.758252 -0.539959
+USER    NEWDPF dihe0	154.70 62.78 -20.69 -141.31 102.56 164.82 -120.67 126.24 -170.13 12.34 -124.71 
+USER  
+USER                              x       y       z    vdW   Elec        q     RMS 
+ATOM      1  C15 FXV A 401      -3.041  16.004  16.243 +0.00 +0.03    +0.094    15.028
+ATOM      2  C16 FXV A 401      -3.260  14.619  15.596 -0.04 +0.02    +0.033    15.028
+ATOM      3  N14 FXV A 401      -1.853  16.574  15.660 +0.04 -0.09    -0.352    15.028
+ATOM      4  C13 FXV A 401      -0.635  16.481  16.227 +0.00 +0.05    +0.248    15.028
+ATOM      5  O33 FXV A 401      -0.443  15.906  17.315 -0.01 -0.06    -0.268    15.028
+ATOM      6  H14 FXV A 401      -1.939  17.072  14.773 +0.07 +0.04    +0.163    15.028
+ATOM      7  C8  FXV A 401       0.444  17.085  15.452 -0.13 +0.00    +0.013    15.028
+ATOM      8  C7  FXV A 401       1.615  17.723  16.049 -0.15 +0.00    +0.072    15.028
+ATOM      9  C12 FXV A 401       2.609  18.306  15.194 -0.31 +0.00    -0.010    15.028
+ATOM     10  C11 FXV A 401       2.499  18.286  13.761 -0.31 +0.00    -0.029    15.028
+ATOM     11  C10 FXV A 401       1.347  17.652  13.189 -0.23 -0.00    +0.012    15.028
+ATOM     12  C9  FXV A 401       0.341  17.066  14.015 -0.21 +0.00    +0.014    15.028
+ATOM     13  C2  FXV A 401       3.546  18.920  12.896 -0.39 +0.01    -0.024    15.028
+ATOM     14  C1  FXV A 401       4.874  19.135  13.393 -0.43 -0.01    +0.032    15.028
+ATOM     15  C6  FXV A 401       5.838  19.734  12.528 -0.24 -0.06    +0.123    15.028
+ATOM     16  N1  FXV A 401       5.552  20.120  11.221 -0.26 +0.15    -0.247    15.028
+ATOM     17  C4  FXV A 401       4.284  19.918  10.733 -0.23 -0.10    +0.123    15.028
+ATOM     18  C3  FXV A 401       3.260  19.322  11.540 -0.34 -0.02    +0.032    15.028
+ATOM     19  O1  FXV A 401       6.526  20.687  10.456 -0.38 +0.18    -0.284    15.028
+ATOM     20  H1  FXV A 401       6.501  20.639   9.508 +0.21 -0.27    +0.245    15.028
+ATOM     21  C17 FXV A 401      -4.229  17.015  16.035 -0.00 +0.03    +0.112    15.028
+ATOM     22  C18 FXV A 401      -4.362  17.356  14.539 -0.03 +0.13    +0.264    15.028
+ATOM     23  O32 FXV A 401      -5.059  16.764  13.790 -0.37 -0.25    -0.265    15.028
+ATOM     24  O19 FXV A 401      -3.592  18.424  14.200 -0.08 -0.12    -0.326    15.028
+ATOM     25  C34 FXV A 401      -4.152  19.648  13.716 -0.12 +0.07    +0.213    15.028
+ATOM     26  C20 FXV A 401      -4.106  18.341  16.915 -0.04 +0.01    +0.051    15.028
+ATOM     27  C28 FXV A 401      -2.679  18.808  17.242 -0.05 -0.00    -0.075    15.028
+ATOM     28  C23 FXV A 401      -1.950  18.360  18.430 -0.04 +0.00    +0.072    15.028
+ATOM     29  C24 FXV A 401      -0.594  18.833  18.708 -0.11 +0.00    -0.030    15.028
+ATOM     30  C25 FXV A 401       0.020  19.765  17.777 -0.21 -0.00    +0.065    15.028
+ATOM     31  C26 FXV A 401      -0.688  20.207  16.614 -0.23 +0.00    -0.022    15.028
+ATOM     32  C27 FXV A 401      -2.023  19.736  16.351 -0.21 +0.00    -0.001    15.028
+ATOM     33  C29 FXV A 401       0.140  18.387  19.895 -0.14 +0.00    +0.095    15.028
+ATOM     34  N31 FXV A 401       0.721  17.174  19.889 +0.01 -0.03    -0.386    15.028
+ATOM     35 2H31 FXV A 401       0.642  16.589  19.057 +0.05 +0.02    +0.157    15.028
+ATOM     36 1H31 FXV A 401       1.232  16.863  20.715 +0.05 +0.02    +0.157    15.028
+ATOM     37  N30 FXV A 401       0.243  19.153  20.985 +0.02 +0.04    -0.386    15.028
+ATOM     38 2H30 FXV A 401       0.097  20.159  20.901 -0.39 -0.07    +0.157    15.028
+ATOM     39 1H30 FXV A 401       0.467  18.757  21.898 +0.02 +0.00    +0.157    15.028
+TER
+ENDMDL
+MODEL        3
+USER    Run = 3
+USER    Cluster Rank = 2
+USER    Number of conformations in this cluster = 2
+USER  
+USER    RMSD from reference structure       = 13.749 A
+USER  
+USER    Estimated Free Energy of Binding    =   -2.20 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =   24.45 mM (millimolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =   -5.48 kcal/mol
+USER        vdW + Hbond + desolv Energy     =   -5.20 kcal/mol
+USER        Electrostatic Energy            =   -0.28 kcal/mol
+USER    (2) Final Total Internal Energy     =   -2.28 kcal/mol
+USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -2.28 kcal/mol
+USER    
+USER    
+USER  
+USER    DPF = ligand_remove.dpf
+USER    NEWDPF move	FXV.pdbqt
+USER    NEWDPF about	7.375800 5.023200 23.019400
+USER    NEWDPF tran0	0.365365 19.190173 17.322021
+USER    NEWDPF axisangle0	-0.038184 -0.058747 -0.997542 84.474715
+USER    NEWDPF quaternion0	-0.025667 -0.039490 -0.670551 0.740366
+USER    NEWDPF dihe0	-24.99 -54.05 -43.52 110.33 -168.64 -35.52 -141.41 108.38 -143.25 -4.23 -135.35 
+USER  
+USER                              x       y       z    vdW   Elec        q     RMS 
+ATOM      1  C15 FXV A 401      -1.741  16.505  17.933 -0.01 +0.02    +0.094    13.749
+ATOM      2  C16 FXV A 401      -2.865  15.913  17.056 -0.00 +0.01    +0.033    13.749
+ATOM      3  N14 FXV A 401      -0.716  17.001  17.051 +0.03 -0.05    -0.352    13.749
+ATOM      4  C13 FXV A 401       0.510  16.449  16.959 -0.02 +0.04    +0.248    13.749
+ATOM      5  O33 FXV A 401       0.858  15.472  17.647 -0.06 -0.06    -0.268    13.749
+ATOM      6  H14 FXV A 401      -0.928  17.811  16.466 +0.06 +0.01    +0.163    13.749
+ATOM      7  C8  FXV A 401       1.385  17.072  15.972 -0.15 +0.00    +0.013    13.749
+ATOM      8  C7  FXV A 401       2.747  17.516  16.258 -0.18 +0.01    +0.072    13.749
+ATOM      9  C12 FXV A 401       3.516  18.137  15.218 -0.36 +0.00    -0.010    13.749
+ATOM     10  C11 FXV A 401       2.996  18.342  13.893 -0.37 +0.00    -0.029    13.749
+ATOM     11  C10 FXV A 401       1.659  17.898  13.625 -0.18 -0.00    +0.012    13.749
+ATOM     12  C9  FXV A 401       0.870  17.278  14.641 -0.20 +0.00    +0.014    13.749
+ATOM     13  C2  FXV A 401       3.819  19.011  12.834 -0.42 +0.01    -0.024    13.749
+ATOM     14  C1  FXV A 401       3.277  19.248  11.527 -0.36 -0.02    +0.032    13.749
+ATOM     15  C6  FXV A 401       4.096  19.895  10.555 -0.18 -0.12    +0.123    13.749
+ATOM     16  N1  FXV A 401       5.400  20.311  10.815 -0.28 +0.17    -0.247    13.749
+ATOM     17  C4  FXV A 401       5.930  20.091  12.063 -0.26 -0.06    +0.123    13.749
+ATOM     18  C3  FXV A 401       5.169  19.446  13.093 -0.46 -0.01    +0.032    13.749
+ATOM     19  O1  FXV A 401       6.122  20.923   9.835 -0.30 +0.27    -0.284    13.749
+ATOM     20  H1  FXV A 401       5.931  20.777   8.916 +0.03 -0.48    +0.245    13.749
+ATOM     21  C17 FXV A 401      -2.200  17.683  18.871 -0.02 +0.01    +0.112    13.749
+ATOM     22  C18 FXV A 401      -2.378  18.967  18.039 -0.03 +0.00    +0.264    13.749
+ATOM     23  O32 FXV A 401      -1.929  19.115  16.955 -0.06 -0.00    -0.265    13.749
+ATOM     24  O19 FXV A 401      -3.123  19.892  18.701 -0.03 +0.03    -0.326    13.749
+ATOM     25  C34 FXV A 401      -2.667  21.230  18.915 -0.16 -0.04    +0.213    13.749
+ATOM     26  C20 FXV A 401      -1.226  17.935  20.110 -0.07 +0.00    +0.051    13.749
+ATOM     27  C28 FXV A 401       0.246  18.221  19.769 -0.10 -0.00    -0.075    13.749
+ATOM     28  C23 FXV A 401       1.326  17.274  20.053 -0.09 +0.01    +0.072    13.749
+ATOM     29  C24 FXV A 401       2.713  17.588  19.717 -0.13 -0.00    -0.030    13.749
+ATOM     30  C25 FXV A 401       3.004  18.868  19.094 -0.19 +0.00    +0.065    13.749
+ATOM     31  C26 FXV A 401       1.953  19.798  18.813 -0.16 -0.00    -0.022    13.749
+ATOM     32  C27 FXV A 401       0.590  19.480  19.149 -0.25 +0.00    -0.001    13.749
+ATOM     33  C29 FXV A 401       3.798  16.644  19.999 -0.24 +0.00    +0.095    13.749
+ATOM     34  N31 FXV A 401       5.009  16.855  19.454 +0.04 -0.04    -0.386    13.749
+ATOM     35 2H31 FXV A 401       5.150  17.670  18.858 +0.13 +0.04    +0.157    13.749
+ATOM     36 1H31 FXV A 401       5.764  16.198  19.650 +0.11 -0.00    +0.157    13.749
+ATOM     37  N30 FXV A 401       3.613  15.575  20.780 +0.00 +0.05    -0.386    13.749
+ATOM     38 2H30 FXV A 401       3.090  15.680  21.650 +0.07 -0.00    +0.157    13.749
+ATOM     39 1H30 FXV A 401       3.983  14.659  20.530 -0.36 -0.07    +0.157    13.749
+TER
+ENDMDL
+MODEL        7
+USER    Run = 7
+USER    Cluster Rank = 3
+USER    Number of conformations in this cluster = 4
+USER  
+USER    RMSD from reference structure       = 13.603 A
+USER  
+USER    Estimated Free Energy of Binding    =   -2.06 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =   30.68 mM (millimolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =   -5.35 kcal/mol
+USER        vdW + Hbond + desolv Energy     =   -5.16 kcal/mol
+USER        Electrostatic Energy            =   -0.19 kcal/mol
+USER    (2) Final Total Internal Energy     =   -2.38 kcal/mol
+USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -2.38 kcal/mol
+USER    
+USER    
+USER  
+USER    DPF = ligand_remove.dpf
+USER    NEWDPF move	FXV.pdbqt
+USER    NEWDPF about	7.375800 5.023200 23.019400
+USER    NEWDPF tran0	0.499480 17.719783 18.404109
+USER    NEWDPF axisangle0	0.216521 -0.219853 -0.951201 138.549358
+USER    NEWDPF quaternion0	0.202509 -0.205626 -0.889647 0.353888
+USER    NEWDPF dihe0	-180.00 -60.07 -124.58 101.52 0.09 152.77 0.05 -179.87 -122.66 -29.54 -113.98 
+USER  
+USER                              x       y       z    vdW   Elec        q     RMS 
+ATOM      1  C15 FXV A 401       1.012  15.082  20.595 -0.07 +0.01    +0.094    13.603
+ATOM      2  C16 FXV A 401       0.982  13.561  20.332 -0.09 +0.01    +0.033    13.603
+ATOM      3  N14 FXV A 401       1.515  15.719  19.404 -0.02 -0.04    -0.352    13.603
+ATOM      4  C13 FXV A 401       2.409  16.727  19.427 -0.09 +0.02    +0.248    13.603
+ATOM      5  O33 FXV A 401       2.859  17.200  20.488 -0.38 -0.04    -0.268    13.603
+ATOM      6  H14 FXV A 401       1.177  15.391  18.499 +0.05 +0.03    +0.163    13.603
+ATOM      7  C8  FXV A 401       2.825  17.201  18.112 -0.15 +0.00    +0.013    13.603
+ATOM      8  C7  FXV A 401       4.062  17.939  17.867 -0.24 +0.01    +0.072    13.603
+ATOM      9  C12 FXV A 401       4.366  18.379  16.535 -0.29 +0.00    -0.010    13.603
+ATOM     10  C11 FXV A 401       3.494  18.118  15.421 -0.34 +0.00    -0.029    13.603
+ATOM     11  C10 FXV A 401       2.286  17.389  15.676 -0.23 +0.00    +0.012    13.603
+ATOM     12  C9  FXV A 401       1.957  16.942  16.990 -0.14 +0.00    +0.014    13.603
+ATOM     13  C2  FXV A 401       3.832  18.607  14.045 -0.39 +0.00    -0.024    13.603
+ATOM     14  C1  FXV A 401       5.127  19.153  13.760 -0.31 -0.01    +0.032    13.603
+ATOM     15  C6  FXV A 401       5.403  19.596  12.432 -0.35 -0.06    +0.123    13.603
+ATOM     16  N1  FXV A 401       4.474  19.523  11.397 -0.17 +0.16    -0.247    13.603
+ATOM     17  C4  FXV A 401       3.231  19.001  11.657 -0.27 -0.07    +0.123    13.603
+ATOM     18  C3  FXV A 401       2.878  18.534  12.966 -0.38 -0.01    +0.032    13.603
+ATOM     19  O1  FXV A 401       4.812  19.968  10.154 -0.26 +0.32    -0.284    13.603
+ATOM     20  H1  FXV A 401       4.197  19.929   9.431 +0.10 -0.49    +0.245    13.603
+ATOM     21  C17 FXV A 401      -0.389  15.712  20.940 -0.02 +0.01    +0.112    13.603
+ATOM     22  C18 FXV A 401      -1.399  15.360  19.832 +0.01 +0.04    +0.264    13.603
+ATOM     23  O32 FXV A 401      -1.094  15.116  18.717 +0.00 -0.06    -0.265    13.603
+ATOM     24  O19 FXV A 401      -2.675  15.353  20.304 +0.01 -0.05    -0.326    13.603
+ATOM     25  C34 FXV A 401      -3.690  16.212  19.778 +0.01 +0.03    +0.213    13.603
+ATOM     26  C20 FXV A 401      -0.341  17.287  21.192 -0.09 +0.00    +0.051    13.603
+ATOM     27  C28 FXV A 401      -0.249  18.172  19.939 -0.09 -0.00    -0.075    13.603
+ATOM     28  C23 FXV A 401      -0.844  17.797  18.655 -0.03 +0.00    +0.072    13.603
+ATOM     29  C24 FXV A 401      -0.730  18.666  17.486 -0.10 -0.00    -0.030    13.603
+ATOM     30  C25 FXV A 401      -0.006  19.919  17.621 -0.22 -0.00    +0.065    13.603
+ATOM     31  C26 FXV A 401       0.579  20.293  18.873 -0.21 +0.00    -0.022    13.603
+ATOM     32  C27 FXV A 401       0.460  19.428  20.019 -0.21 +0.00    -0.001    13.603
+ATOM     33  C29 FXV A 401      -1.324  18.296  16.199 -0.10 +0.01    +0.095    13.603
+ATOM     34  N31 FXV A 401      -1.553  16.997  15.933 +0.04 -0.07    -0.386    13.603
+ATOM     35 2H31 FXV A 401      -1.312  16.296  16.634 +0.04 +0.03    +0.157    13.603
+ATOM     36 1H31 FXV A 401      -1.967  16.739  15.037 +0.06 +0.04    +0.157    13.603
+ATOM     37  N30 FXV A 401      -1.639  19.214  15.281 +0.03 +0.01    -0.386    13.603
+ATOM     38 2H30 FXV A 401      -2.593  19.250  14.921 +0.07 +0.02    +0.157    13.603
+ATOM     39 1H30 FXV A 401      -0.950  19.877  14.929 -0.35 -0.06    +0.157    13.603
+TER
+ENDMDL
+MODEL       10
+USER    Run = 10
+USER    Cluster Rank = 4
+USER    Number of conformations in this cluster = 1
+USER  
+USER    RMSD from reference structure       = 13.271 A
+USER  
+USER    Estimated Free Energy of Binding    =   -1.67 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =   59.73 mM (millimolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =   -4.95 kcal/mol
+USER        vdW + Hbond + desolv Energy     =   -4.85 kcal/mol
+USER        Electrostatic Energy            =   -0.10 kcal/mol
+USER    (2) Final Total Internal Energy     =   -2.44 kcal/mol
+USER    (3) Torsional Free Energy           =   +3.28 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -2.44 kcal/mol
+USER    
+USER    
+USER  
+USER    DPF = ligand_remove.dpf
+USER    NEWDPF move	FXV.pdbqt
+USER    NEWDPF about	7.375800 5.023200 23.019400
+USER    NEWDPF tran0	-0.074255 16.801081 18.630122
+USER    NEWDPF axisangle0	0.334134 -0.220743 -0.916312 161.754557
+USER    NEWDPF quaternion0	0.329907 -0.217951 -0.904721 0.158550
+USER    NEWDPF dihe0	115.82 -27.58 -130.52 143.74 -36.39 132.43 -86.29 174.75 -116.94 4.80 -144.18 
+USER  
+USER                              x       y       z    vdW   Elec        q     RMS 
+ATOM      1  C15 FXV A 401       1.038  14.970  21.356 -0.06 +0.01    +0.094    13.271
+ATOM      2  C16 FXV A 401       1.635  13.547  21.412 -0.11 +0.00    +0.033    13.271
+ATOM      3  N14 FXV A 401       1.448  15.566  20.109 -0.02 -0.03    -0.352    13.271
+ATOM      4  C13 FXV A 401       2.432  16.482  20.018 -0.10 +0.02    +0.248    13.271
+ATOM      5  O33 FXV A 401       3.054  16.900  21.012 -0.47 -0.04    -0.268    13.271
+ATOM      6  H14 FXV A 401       0.971  15.280  19.254 +0.04 +0.02    +0.163    13.271
+ATOM      7  C8  FXV A 401       2.725  16.925  18.659 -0.15 +0.00    +0.013    13.271
+ATOM      8  C7  FXV A 401       3.941  17.642  18.282 -0.21 +0.01    +0.072    13.271
+ATOM      9  C12 FXV A 401       4.121  18.052  16.919 -0.32 -0.00    -0.010    13.271
+ATOM     10  C11 FXV A 401       3.145  17.781  15.899 -0.27 -0.00    -0.029    13.271
+ATOM     11  C10 FXV A 401       1.958  17.071  16.282 -0.17 +0.00    +0.012    13.271
+ATOM     12  C9  FXV A 401       1.752  16.654  17.631 -0.12 +0.00    +0.014    13.271
+ATOM     13  C2  FXV A 401       3.354  18.238  14.486 -0.36 +0.00    -0.024    13.271
+ATOM     14  C1  FXV A 401       4.422  19.138  14.160 -0.29 -0.01    +0.032    13.271
+ATOM     15  C6  FXV A 401       4.586  19.537  12.800 -0.36 -0.05    +0.123    13.271
+ATOM     16  N1  FXV A 401       3.758  19.092  11.772 -0.21 +0.14    -0.247    13.271
+ATOM     17  C4  FXV A 401       2.733  18.229  12.072 -0.28 -0.05    +0.123    13.271
+ATOM     18  C3  FXV A 401       2.504  17.782  13.414 -0.36 -0.00    +0.032    13.271
+ATOM     19  O1  FXV A 401       3.977  19.519  10.496 -0.25 +0.29    -0.284    13.271
+ATOM     20  H1  FXV A 401       4.228  18.914   9.809 -0.12 -0.39    +0.245    13.271
+ATOM     21  C17 FXV A 401      -0.534  15.020  21.435 -0.01 +0.02    +0.112    13.271
+ATOM     22  C18 FXV A 401      -1.128  14.813  20.030 +0.01 +0.05    +0.264    13.271
+ATOM     23  O32 FXV A 401      -0.520  14.372  19.117 -0.01 -0.06    -0.265    13.271
+ATOM     24  O19 FXV A 401      -2.435  15.187  19.980 +0.01 -0.06    -0.326    13.271
+ATOM     25  C34 FXV A 401      -3.056  15.638  18.773 +0.01 +0.04    +0.213    13.271
+ATOM     26  C20 FXV A 401      -1.101  16.352  22.106 -0.02 +0.00    +0.051    13.271
+ATOM     27  C28 FXV A 401      -1.231  17.574  21.184 -0.05 -0.00    -0.075    13.271
+ATOM     28  C23 FXV A 401      -0.110  18.106  20.406 -0.11 +0.00    +0.072    13.271
+ATOM     29  C24 FXV A 401      -0.275  19.275  19.544 -0.18 +0.00    -0.030    13.271
+ATOM     30  C25 FXV A 401      -1.582  19.907  19.474 -0.15 -0.01    +0.065    13.271
+ATOM     31  C26 FXV A 401      -2.682  19.393  20.232 -0.09 +0.00    -0.022    13.271
+ATOM     32  C27 FXV A 401      -2.508  18.241  21.079 -0.05 +0.00    -0.001    13.271
+ATOM     33  C29 FXV A 401       0.844  19.810  18.764 -0.25 -0.00    +0.095    13.271
+ATOM     34  N31 FXV A 401       1.943  20.242  19.406 -0.12 +0.02    -0.386    13.271
+ATOM     35 2H31 FXV A 401       1.979  20.185  20.424 +0.08 -0.03    +0.157    13.271
+ATOM     36 1H31 FXV A 401       2.722  20.615  18.864 +0.12 +0.00    +0.157    13.271
+ATOM     37  N30 FXV A 401       0.797  19.886  17.431 -0.01 -0.02    -0.386    13.271
+ATOM     38 2H30 FXV A 401       1.579  19.524  16.885 +0.09 +0.02    +0.157    13.271
+ATOM     39 1H30 FXV A 401       0.000  20.298  16.945 +0.08 -0.00    +0.157    13.271
+TER
+ENDMDL
+
+
+AVSFLD: # AVS field file
+AVSFLD: #
+AVSFLD: # Created by AutoDock
+AVSFLD: #
+AVSFLD: ndim=2           # number of dimensions in the field
+AVSFLD: nspace=1         # number of physical coordinates
+AVSFLD: veclen=7         # vector size
+AVSFLD: dim1=39          # atoms
+AVSFLD: dim2=4           # conformations
+AVSFLD: data=Real       # data type (byte,integer,Real,double)
+AVSFLD: field=uniform    # field coordinate layout
+AVSFLD: label= x y z vdW Elec q RMS
+AVSFLD: variable 1 file = ligand_remove.dlg.pdb filetype = ascii offset = 5 stride = 12
+AVSFLD: variable 2 file = ligand_remove.dlg.pdb filetype = ascii offset = 6 stride = 12
+AVSFLD: variable 3 file = ligand_remove.dlg.pdb filetype = ascii offset = 7 stride = 12
+AVSFLD: variable 4 file = ligand_remove.dlg.pdb filetype = ascii offset = 8 stride = 12
+AVSFLD: variable 5 file = ligand_remove.dlg.pdb filetype = ascii offset = 9 stride = 12
+AVSFLD: variable 6 file = ligand_remove.dlg.pdb filetype = ascii offset = 10 stride = 12
+AVSFLD: variable 7 file = ligand_remove.dlg.pdb filetype = ascii offset = 11 stride = 12
+AVSFLD: # end of file
+
+>>> Closing the docking parameter file (DPF)...
+This docking finished at:			10:41 46" a.m., 01/10/2020
+
+
+________________________________________________________________________________
+
+C:/Program Files (x86)/The Scripps Research Institute/Autodock/4.2.6/autodock4.exe: Successful Completion on "LAPTOP-E94RFAUT"
+
+Real= 10m 46.81s,  CPU= 3m 31.16s,  System= 0.11s
+________________________________________________________________________________
+

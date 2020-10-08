@@ -1,0 +1,24 @@
+#0, chain C: stuart factor
+#0, chain L: stuart factor
+1xka.pdb opened
+pose3.pdb opened
+Computing secondary structure assignments for model(s) #0, #1
+using ksdssp (Kabsch and Sander Define Secondary Structure
+of Proteins) with the parameters:
+  energy cutoff -0.5
+  minimum helix length 3
+  minimum strand length 3
+
+Matchmaker 1xka.pdb, chain C (#0) with pose3.pdb, chain A (#1), sequence alignment score = 1221.5
+with these parameters:
+	chain pairing: bb
+	Needleman-Wunsch using BLOSUM-62
+	ss fraction: 0.3
+	gap open (HH/SS/other) 18/18/6, extend 1
+	ss matrix:  (H, O): -6 (S, S): 6 (H, H): 6 (O, S): -6 (O, O): 4 (H, S): -9
+	iteration cutoff: 2
+RMSD between 233 pruned atom pairs is 0.409 angstroms; (across all 234 pairs: 0.431)
+
+Executing rmsd ['#1:4PP', '#0:4PP']
+RMSD between 29 atom pairs is 2.521 angstroms
+

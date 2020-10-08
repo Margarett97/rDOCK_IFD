@@ -1,0 +1,29 @@
+REMARK   4 XXXX COMPLIES WITH FORMAT V. 2.0
+ATOM     15  H18 BRL A   1      11.136  -4.730   1.484  1.00  0.00      dock H  
+ATOM     26  H3  BRL A   1      12.309  -8.113  11.103  1.00  0.00      dock H  
+TER      27      BRL A   1 
+HETATM    1  C7  BRL A   1      11.666  -3.652  11.278  1.00 49.32      dock C  
+HETATM    2  C8  BRL A   1      12.283  -3.196  10.038  1.00 47.70      dock C  
+HETATM    3  C9  BRL A   1      11.504  -3.138   8.843  1.00 48.79      dock C  
+HETATM    4  C10 BRL A   1      10.107  -3.510   8.852  1.00 52.03      dock C  
+HETATM    5  C11 BRL A   1       9.482  -3.886  10.123  1.00 49.87      dock C  
+HETATM    6  C12 BRL A   1      10.255  -3.960  11.325  1.00 46.23      dock C  
+HETATM    7  O13 BRL A   1       9.546  -3.421   7.566  1.00 55.24      dock O  
+HETATM    8  C14 BRL A   1       9.507  -4.359   6.432  1.00 58.92      dock C  
+HETATM    9  C15 BRL A   1      10.826  -4.072   5.684  1.00 57.91      dock C  
+HETATM   10  N16 BRL A   1      10.893  -4.214   4.163  1.00 62.73      dock N  
+HETATM   11  C16 BRL A   1      11.223  -2.837   3.569  1.00 66.67      dock C  
+HETATM   12  C17 BRL A   1      10.546  -5.513   3.307  1.00 58.83      dock C  
+HETATM   13  N18 BRL A   1      10.762  -5.565   1.936  1.00 56.96      dock N  
+HETATM   14  C19 BRL A   1      10.511  -6.649   1.156  1.00 58.44      dock C  
+HETATM   16  C20 BRL A   1       9.975  -7.863   1.731  1.00 56.70      dock C  
+HETATM   17  C21 BRL A   1       9.713  -7.900   3.139  1.00 56.41      dock C  
+HETATM   18  C22 BRL A   1       9.992  -6.734   3.929  1.00 57.64      dock C  
+HETATM   19  C6  BRL A   1      12.456  -3.861  12.555  1.00 49.65      dock C  
+HETATM   20  C5  BRL A   1      12.818  -5.346  12.984  1.00 51.51      dock C  
+HETATM   21  S1  BRL A   1      14.605  -5.767  12.746  1.00 50.57      dock S  
+HETATM   22  C2  BRL A   1      14.028  -7.174  11.758  1.00 50.68      dock C  
+HETATM   23  O2  BRL A   1      14.816  -7.933  11.195  1.00 52.47      dock O  
+HETATM   24  N3  BRL A   1      12.721  -7.351  11.642  1.00 50.49      dock N  
+HETATM   25  C4  BRL A   1      11.988  -6.440  12.298  1.00 50.41      dock C  
+HETATM   27  O4  BRL A   1      10.750  -6.491  12.378  1.00 50.76      dock O  

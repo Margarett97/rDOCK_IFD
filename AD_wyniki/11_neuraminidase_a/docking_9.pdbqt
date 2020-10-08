@@ -1,0 +1,66 @@
+REMARK  9 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_1  and  C2_4 
+REMARK    2  A    between atoms: C4_6  and  NE_29 
+REMARK    3  A    between atoms: C5_7  and  N5_8 
+REMARK       I    between atoms: N5_8  and  C10_10 
+REMARK    4  A    between atoms: C6_13  and  C7_15 
+REMARK       I    between atoms: C7_15  and  N8_17 
+REMARK    5  A    between atoms: N8_17  and  C81_18 
+REMARK    6  A    between atoms: N8_17  and  C9_26 
+REMARK    7  A    between atoms: C81_18  and  C82_19 
+REMARK    8  A    between atoms: C82_19  and  CG_20 
+REMARK    9  A    between atoms: C9_26  and  C91_27 
+ROOT
+HETATM    1  C2  DPC A 466      -2.104  58.298  -6.898  1.00  9.12     0.144 C 
+HETATM    2  C3  DPC A 466      -0.887  57.826  -6.609  1.00  7.83     0.051 C 
+HETATM    3  C4  DPC A 466      -0.370  56.577  -7.271  1.00  8.13     0.234 C 
+HETATM    4  C5  DPC A 466      -1.181  56.209  -8.511  1.00  4.13     0.157 C 
+HETATM    5  C6  DPC A 466      -2.666  56.393  -8.207  1.00  9.37     0.246 C 
+HETATM    6  O6  DPC A 466      -2.925  57.696  -7.758  1.00 10.40    -0.328 OA
+ENDROOT
+BRANCH   5   7
+HETATM    7  C7  DPC A 466      -3.465  56.270  -9.486  1.00 10.79     0.251 C 
+HETATM    8  O7  DPC A 466      -4.115  55.552  -9.451  1.00  9.13    -0.270 OA
+HETATM    9  N8  DPC A 466      -3.356  57.196 -10.429  1.00  9.99    -0.350 N 
+BRANCH   9  10
+HETATM   10  C81 DPC A 466      -4.243  57.041 -11.603  1.00  8.72     0.130 C 
+BRANCH  10  11
+HETATM   11  C82 DPC A 466      -3.473  56.678 -12.876  1.00  6.37     0.058 C 
+BRANCH  11  12
+HETATM   12  CG  DPC A 466      -2.664  55.423 -12.617  1.00 13.21    -0.057 A 
+HETATM   13  CD1 DPC A 466      -3.311  54.180 -12.435  1.00 12.56     0.007 A 
+HETATM   14  CE1 DPC A 466      -2.572  53.025 -12.126  1.00 14.24     0.001 A 
+HETATM   15  CZ  DPC A 466      -1.172  53.105 -12.005  1.00 14.76     0.000 A 
+HETATM   16  CE2 DPC A 466      -0.529  54.333 -12.216  1.00 12.57     0.001 A 
+HETATM   17  CD2 DPC A 466      -1.266  55.481 -12.522  1.00 12.80     0.007 A 
+ENDBRANCH  11  12
+ENDBRANCH  10  11
+ENDBRANCH   9  10
+BRANCH   9  18
+HETATM   18  C9  DPC A 466      -2.381  58.284 -10.401  1.00 12.20     0.125 C 
+BRANCH  18  19
+HETATM   19  C91 DPC A 466      -3.012  59.648 -10.729  1.00 11.35     0.015 C 
+HETATM   20  C92 DPC A 466      -2.701  60.191 -12.136  1.00 10.72     0.006 C 
+ENDBRANCH  18  19
+ENDBRANCH   9  18
+ENDBRANCH   5   7
+BRANCH   4  21
+HETATM   21  N5  DPC A 466      -0.934  54.812  -8.850  1.00  8.66    -0.351 N 
+HETATM   22  C10 DPC A 466       0.275  54.292  -9.107  1.00  8.96     0.214 C 
+HETATM   23  O10 DPC A 466       1.276  54.988  -9.117  1.00  8.83    -0.274 OA
+HETATM   24  C11 DPC A 466       0.335  52.771  -9.340  1.00  5.01     0.117 C 
+ATOM     25  H5  DPC A 466      -1.738  54.187  -8.894  1.00  0.00     0.163 HD
+ENDBRANCH   4  21
+BRANCH   3  26
+HETATM   26  NE  DPC A 466       1.010  56.772  -7.629  1.00  7.66    -0.070 N 
+ATOM     27  HE3 DPC A 466       1.616  56.047  -7.245  1.00  0.00     0.275 HD
+ATOM     28  HE2 DPC A 466       1.183  56.595  -8.619  1.00  0.00     0.275 HD
+ATOM     29  HE1 DPC A 466       1.298  57.708  -7.345  1.00  0.00     0.275 HD
+ENDBRANCH   3  26
+BRANCH   1  30
+HETATM   30  C1  DPC A 466      -2.637  59.489  -6.214  1.00 12.45     0.233 C 
+HETATM   31  O1A DPC A 466      -2.191  59.790  -5.112  1.00 13.44    -0.642 OA
+HETATM   32  O1B DPC A 466      -3.436  60.232  -6.767  1.00 11.63    -0.642 OA
+ENDBRANCH   1  30
+TORSDOF 9

@@ -1,0 +1,58 @@
+The following problems occurred while reading PDB file for 1err.pdb
+warning: cannot find LINK/SSBOND residue GLU (380 )
+warning: cannot find LINK/SSBOND residue CCS (381 )
+#0, chain B: estrogen receptor
+1err.pdb opened
+Traceback (most recent call last):
+  File "C:\Program Files\Chimera 1.13.1\share\chimera\tkgui.py", line 354, in openPath
+    mols = chimera.openModels.open(path, type=ftype, ignore_cache=ignore_cache)
+  File "C:\Program Files\Chimera 1.13.1\share\chimera\__init__.py", line 1955, in open
+    models = func(filename, *args, **kw)
+  File "C:\Program Files\Chimera 1.13.1\share\chimera\__init__.py", line 1325, in _openPython
+    loadFunc(sandboxName, fileName, f)
+  File "RMSD.py", line 20, in <module>
+  File "C:\Program Files\Chimera 1.13.1\share\chimera\__init__.py", line 2791, in runCommand
+    makeCommand(*args, **kw)
+  File "C:\Program Files\Chimera 1.13.1\share\Midas\midas_text.py", line 69, in makeCommand
+    f(c, args)
+  File "C:\Program Files\Chimera 1.13.1\share\Midas\midas_text.py", line 1612, in doOpen
+    modelArg, noprefs)
+  File "<string>", line 1, in <module>
+  File "C:\Program Files\Chimera 1.13.1\share\Midas\__init__.py", line 2218, in open
+    raise MidasError('%s' % msg)
+MidasError: No such file or directory
+Error reading RMSD.py:
+MidasError: No such file or directory
+
+  File "C:\Program Files\Chimera 1.13.1\share\Midas\__init__.py", line 2218, in open
+    raise MidasError('%s' % msg)
+
+See reply log for Python traceback.
+
+
+The following problems occurred while reading PDB file for 1err.pdb
+warning: cannot find LINK/SSBOND residue GLU (380 )
+warning: cannot find LINK/SSBOND residue CCS (381 )
+#0, chain B: estrogen receptor
+1err.pdb opened
+pose4.pdb opened
+Computing secondary structure assignments for model(s) #0, #1
+using ksdssp (Kabsch and Sander Define Secondary Structure
+of Proteins) with the parameters:
+  energy cutoff -0.5
+  minimum helix length 3
+  minimum strand length 3
+
+Matchmaker 1err.pdb, chain B (#0) with pose4.pdb, chain A (#1), sequence alignment score = 1221.4
+with these parameters:
+	chain pairing: bb
+	Needleman-Wunsch using BLOSUM-62
+	ss fraction: 0.3
+	gap open (HH/SS/other) 18/18/6, extend 1
+	ss matrix:  (H, O): -6 (S, S): 6 (H, H): 6 (O, S): -6 (O, O): 4 (H, S): -9
+	iteration cutoff: 2
+RMSD between 210 pruned atom pairs is 0.500 angstroms; (across all 223 pairs: 1.226)
+
+Executing rmsd ['#1:RAL', '#0:RAL']
+RMSD between 34 atom pairs is 1.829 angstroms
+
