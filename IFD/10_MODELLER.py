@@ -15,21 +15,22 @@ os.chdir(work_dir)
 
 model_name = 'model'
 
-#DEF-OPTIMIZE:
+# CONJUGATE GRADIENTS MINIMIZATION                                                                                 
 
-def optimize(atmsel, sched):
- #conjugate gradient
+def optimize(atmsel, sched):                                                                                                   
+
      for step in sched:
          step.optimize(atmsel, max_iterations=200, min_atom_shift=0.001)
-    #md
-     refine(atmsel)
+    
+     refine(atmsel)  # MD SUMULATION
      cg = conjugate_gradients()
-     cg.optimize(atmsel, max_iterations=200, min_atom_shift=0.001)
+     cg.optimize(atmsel, max_iterations=200, min_atom_shift=0.001) # CG SIMULATION
 
 
- #molecular dynamics
+# MOLECULAR DYNAMICS WITH SIMULATED ANNEALING
+
 def refine(atmsel):
-     # at T=1000, max_atom_shift for 4fs is cca 0.15 A.
+     
      md = molecular_dynamics(cap_atom_shift=0.39, md_time_step=4.0,
                              md_return='FINAL')
      init_vel = True
@@ -42,7 +43,7 @@ def refine(atmsel):
              init_vel = False
  
 
- #use homologs and dihedral library for dihedral angle restraints
+# DIHEDRAL ANGLE RESTRAINTS - to increase level of accuracy                       
 def make_restraints(mdl1, aln):
      rsr = mdl1.restraints
      rsr.clear()
@@ -56,7 +57,7 @@ def make_restraints(mdl1, aln):
  
 
 
-#ALIGNMENT:
+#PREPARE ALIGNMENT FILE:                                                                              
 
 
 env = environ()
@@ -87,14 +88,20 @@ aln.write(file='myAlignment.ali')
 
 alig='myAlignment.ali'
 
-#OPTIMIZATION:
+
+
+
+# OPTIMIZATION:
 
 
 for i in range(0,int(no_poses)):
 	env = environ(rand_seed=-49837)
 	env.io.hetatm = True
+
+        ## NON-BONDED ENERGY TERMS  
+	
 	#soft sphere potential
-	env.edat.dynamic_sphere=False
+	env.edat.dynamic_sphere=False #turn off the soft-sphere 
 	#lennard-jones potential (more accurate)
 	env.edat.dynamic_lennard=True
 	env.edat.contact_shell = 4.0
@@ -108,47 +115,48 @@ for i in range(0,int(no_poses)):
 	mdl1= complete_pdb(env, './' + model_name + str(i) +'.pdb')
 	mdl=complete_pdb(env, './' + receptor + '.pdb')
 	print(mdl1.residues[0])
-	ali = alignment(env)
-	ali.append(file=alig,align_codes='all')
-	modelname=model_name+'.pdb'
-	ali.append_model(mdl1, atom_files=modelname, align_codes= modelname)
-	#get two copies of the sequence.  A modeller trick to get things set up
-	ali.append_model(mdl1, align_codes=modelname)
 
-	mdl1.env.edat.nonbonded_sel_atoms=1
+	## DIHEDRAL ANGLES PREDICTED BY USE OF KNOWN TEMPLATE STRUCTURE (PREPARE ALIGNMENT FILE) 
+	ali = alignment(env)
+	ali.append(file = alig,align_codes = 'all')
+	modelname = model_name + '.pdb'
+	ali.append_model(mdl1, atom_files = modelname, align_codes = modelname)
+	#get two copies of the sequence.  A modeller trick to get things set up
+	ali.append_model(mdl1, align_codes = modelname)
+
+        ## DIHEDRAL ANGLE RESTRAINTS (USE HOMOLOGS AND DIHEDRAL LIBRARY)  
+	mdl1.env.edat.nonbonded_sel_atoms = 1  # selected region "feels" the rest of system through the non-bonded terms
 	sched = autosched.loop.make_for_model(mdl1)
-	make_restraints(mdl1, ali)
-	sel = selection(mdl)
+	make_restraints(mdl1, ali) #model
+	sel = selection(mdl) #receptor
 	mdl.restraints.make(sel, restraint_type='LJ14', spline_on_site=False)
 
-
-	#residues to optimize:
-
+        ## RESIDUES TO OPTIMIZE
 	select=selection(mdl1)
-	select1=select.only_het_residues()
-	select2=select1.select_sphere(5)
-	select3=select2.only_std_residues()
-	select4=select3.by_residue()
+	select1=select.only_het_residues()  # selection of ligand
+	select2=select1.select_sphere(5)    # selection of all atoms within 5A of ligand
+	select3=select2.only_std_residues() # select only standard residues (ATOM)
+	select4=select3.by_residue()        # select etire residue
 
 	
 
 	mdl1.restraints.unpick_all()
-	mdl1.restraints.pick(select4)
+	mdl1.restraints.pick(select4) # pick restraints for selected atoms
 
 	select4.energy()
 
-	select4.randomize_xyz(deviation=4.0)
+	select4.randomize_xyz(deviation = 4.0) # randomize selected coordinates
 
-	mdl1.env.edat.nonbonded_sel_atoms=2
-	optimize(select4, sched)
+	mdl1.env.edat.nonbonded_sel_atoms = 2  # optimized atoms will not "feel" the rest of system through the non-bonded terms  
+	optimize(select4, sched) 
 
-	mdl1.env.edat.nonbonded_sel_atoms=1
+	mdl1.env.edat.nonbonded_sel_atoms=1   # selected region "feels" the rest of system through the non-bonded terms
 	optimize(select4, sched)
 
 	select4.energy()
 
 	atmsel2=selection(mdl1) 
-	score2=atmsel2.assess_dope()
+	score2=atmsel2.assess_dope() # calculate DOPE
 	
 	mdl1.write(file=model_name+str(i)+'_opt.pdb')
 
