@@ -26,6 +26,7 @@ for i in range(0,int(no_poses)):
         sel3=sel2.only_std_residues()
         sel4=sel3.by_residue()
 
+
        
         sel4.energy()
 

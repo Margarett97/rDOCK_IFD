@@ -1,6 +1,0 @@
-chimera_dir ='/home/malgorzata/chimera/bin'
-ref = '1xka'
-best_score = 'model7'
-best_score2 = 'model0'
-ligand = 'PPP'
-act_chain = 'C'

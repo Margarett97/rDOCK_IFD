@@ -1,6 +1,0 @@
-chimera_dir ='/home/malgorzata/chimera/bin'
-ref = '3ert'
-best_score = 'model3'
-best_score2 = 'model9'
-ligand = 'OHT'
-act_chain = 'A'

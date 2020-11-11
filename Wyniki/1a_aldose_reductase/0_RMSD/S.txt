@@ -1,0 +1,8 @@
+TOL.pdb opened
+The following problems occurred while reading PDB file for pose7s.pdb
+warning:  CONECT record to nonexistent atom: (24, 25)
+warning:  CONECT record for nonexistent atom: 25
+pose7s.pdb opened
+Executing rmsd ['#1:LIG', '#0:TOL']
+RMSD between 24 atom pairs is 51.701 angstroms
+

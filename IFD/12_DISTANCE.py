@@ -39,7 +39,7 @@ with open("DOCK.sd") as f:
     line = f.readlines()
     with open("SOFT_SCORE.txt","w") as n:
         for i,lines in enumerate(line):
-            if lines.startswith(">  <SCORE.INTER>"):
+            if lines.startswith(">  <SCORE>"):
                 n.write(str(num) + "  " + line[i+1])
                 VALUES.append(float(line[i+1].strip()))
                 num += 1

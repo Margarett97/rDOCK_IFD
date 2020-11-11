@@ -82,5 +82,5 @@ reload_module(parameters)
 
 from parameters import *
 
-subprocess.run([chimera_dir + "/chimera", "--gui", "--silent", "--script", "16_visualization.py"])
+#subprocess.run([chimera_dir + "/chimera", "--gui", "--silent", "--script", "16_visualization.py"])
 

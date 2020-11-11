@@ -89,6 +89,34 @@ aln.write(file='myAlignment.ali')
 alig='myAlignment.ali'
 
 
+# LOOP:
+
+### Comparative modeling by the automodel class
+##from modeller import *
+##from modeller.automodel import *    # Load the automodel class
+##
+##log.verbose()
+##env = environ()
+##
+### directories for input atom files
+##env.io.atom_files_directory = ['.', '../atom_files']
+##
+##a = loopmodel(env,
+##              alnfile  = alig,     # alignment filename
+##              knowns   = receptor,              # codes of the templates
+##              sequence = model+str(i))              # code of the target
+##a.starting_model= 1                 # index of the first model
+##a.ending_model  = 1                 # index of the last model
+##                                    # (determines how many models to calculate)
+##a.md_level = None                   # No refinement of model
+##
+##a.loop.starting_model = 1           # First loop model
+##a.loop.ending_model   = 4           # Last loop model
+##a.loop.md_level       = refine.fast # Loop model refinement level
+##
+##a.make()   
+
+
 
 
 # OPTIMIZATION:
@@ -121,8 +149,7 @@ for i in range(0,int(no_poses)):
 	ali.append(file = alig,align_codes = 'all')
 	modelname = model_name + '.pdb'
 	ali.append_model(mdl1, atom_files = modelname, align_codes = modelname)
-	#get two copies of the sequence.  A modeller trick to get things set up
-	ali.append_model(mdl1, align_codes = modelname)
+
 
         ## DIHEDRAL ANGLE RESTRAINTS (USE HOMOLOGS AND DIHEDRAL LIBRARY)  
 	mdl1.env.edat.nonbonded_sel_atoms = 1  # selected region "feels" the rest of system through the non-bonded terms
@@ -137,14 +164,10 @@ for i in range(0,int(no_poses)):
 	select2=select1.select_sphere(5)    # selection of all atoms within 5A of ligand
 	select3=select2.only_std_residues() # select only standard residues (ATOM)
 	select4=select3.by_residue()        # select etire residue
-
-	
-
 	mdl1.restraints.unpick_all()
 	mdl1.restraints.pick(select4) # pick restraints for selected atoms
 
 	select4.energy()
-
 	select4.randomize_xyz(deviation = 4.0) # randomize selected coordinates
 
 	mdl1.env.edat.nonbonded_sel_atoms = 2  # optimized atoms will not "feel" the rest of system through the non-bonded terms  

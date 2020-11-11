@@ -1,0 +1,154 @@
+The following problems occurred while reading PDB file for 1cx2.pdb
+warning:  Ignored bad PDB record found on line 6429
+warning:  CONECT record for nonexistent atom: 5594
+warning: cannot find LINK/SSBOND residue CYS (36 )
+warning: cannot find LINK/SSBOND residue CYS (37 )
+warning: cannot find LINK/SSBOND residue CYS (41 )
+warning: cannot find LINK/SSBOND residue CYS (59 )
+warning: cannot find LINK/SSBOND residue CYS (569 )
+warning: cannot find LINK/SSBOND residue CYS (36 )
+warning: cannot find LINK/SSBOND residue CYS (37 )
+warning: cannot find LINK/SSBOND residue CYS (41 )
+warning: cannot find LINK/SSBOND residue CYS (59 )
+warning: cannot find LINK/SSBOND residue CYS (569 )
+warning: cannot find LINK/SSBOND residue CYS (36 )
+warning: cannot find LINK/SSBOND residue CYS (37 )
+warning: cannot find LINK/SSBOND residue CYS (41 )
+warning: cannot find LINK/SSBOND residue CYS (59 )
+warning: cannot find LINK/SSBOND residue CYS (569 )
+warning: cannot find LINK/SSBOND residue ASN (68 )
+warning: cannot find LINK/SSBOND residue ASN (144 )
+warning: cannot find LINK/SSBOND residue ASN (410 )
+warning: cannot find LINK/SSBOND residue ASN (68 )
+warning: cannot find LINK/SSBOND residue ASN (144 )
+warning: cannot find LINK/SSBOND residue ASN (410 )
+warning: cannot find LINK/SSBOND residue ASN (68 )
+warning: cannot find LINK/SSBOND residue ASN (144 )
+warning: cannot find LINK/SSBOND residue ASN (410 )
+warning: cannot find LINK/SSBOND residue HIS (388 )
+warning: cannot find LINK/SSBOND residue HIS (388 )
+warning: cannot find LINK/SSBOND residue HIS (388 )
+#0, chain A: prostaglandin synthase-2
+1cx2.pdb opened
+The following problems occurred while reading PDB file for pose5.pdb
+warning:  Ignored bad PDB record found on line 3
+warning:  Ignored bad PDB record found on line 4
+warning:  Ignored bad PDB record found on line 5
+pose5.pdb opened
+Error reading 18_RMSD.py:
+Reference and/or match model contains no nucleic or amino acid chains.
+Use the command-line 'match' command to superimpose small molecules/ligands.
+
+HMD.pdb opened
+The following problems occurred while reading PDB file for pose5.pdb
+warning:  Ignored bad PDB record found on line 3
+warning:  Ignored bad PDB record found on line 4
+warning:  Ignored bad PDB record found on line 5
+pose5.pdb opened
+Executing rmsd ['#1:LIG', '#0:HMD']
+Traceback (most recent call last):
+  File "/home/malgorzata/chimera/share/chimera/tkgui.py", line 354, in openPath
+    mols = chimera.openModels.open(path, type=ftype, ignore_cache=ignore_cache)
+  File "/home/malgorzata/chimera/share/chimera/__init__.py", line 1955, in open
+    models = func(filename, *args, **kw)
+  File "/home/malgorzata/chimera/share/chimera/__init__.py", line 1325, in _openPython
+    loadFunc(sandboxName, fileName, f)
+  File "18_RMSD.py", line 18, in <module>
+  File "/home/malgorzata/chimera/share/chimera/__init__.py", line 2791, in runCommand
+    makeCommand(*args, **kw)
+  File "/home/malgorzata/chimera/share/Midas/midas_text.py", line 69, in makeCommand
+    f(c, args)
+  File "/home/malgorzata/chimera/share/Midas/midas_text.py", line 3001, in doRMSD
+    exec 'Midas.rmsd(%s, %s)' % ( repr(getSpecs(spec1)), repr(getSpecs(spec2)))
+  File "<string>", line 1, in <module>
+  File "/home/malgorzata/chimera/share/Midas/__init__.py", line 2839, in rmsd
+    fAtoms, tAtoms = _atomSpecErrorCheck(f, t)
+  File "/home/malgorzata/chimera/share/Midas/__init__.py", line 4437, in _atomSpecErrorCheck
+    raise MidasError, "Unequal numbers of atoms chosen for evaluation"
+MidasError: Unequal numbers of atoms chosen for evaluation
+Error reading 18_RMSD.py:
+MidasError: Unequal numbers of atoms chosen for evaluation
+
+  File "/home/malgorzata/chimera/share/Midas/__init__.py", line 4437, in _atomSpecErrorCheck
+    raise MidasError, "Unequal numbers of atoms chosen for evaluation"
+
+See reply log for Python traceback.
+
+
+S58.pdb opened
+The following problems occurred while reading PDB file for pose5.pdb
+warning:  Ignored bad PDB record found on line 3
+warning:  Ignored bad PDB record found on line 4
+warning:  Ignored bad PDB record found on line 5
+pose5.pdb opened
+Executing rmsd ['#1:LIG', '#0:S58']
+RMSD between 28 atom pairs is 15.594 angstroms
+S58.pdb opened
+MidasError Exception in Tk callback
+  Function: <function <lambda> at 0x7f7b184b7f50> (type: <type 'function'>)
+  Module: <module 'chimera.rapidaccess' from '/home/malgorzata/chimera/share/chimera/rapidaccess.pyc'> (line: 466)
+  Args: (<Tkinter.Event instance at 0x7f7b184e0ab8>,)
+  Event type: ButtonRelease (type num: 5)
+Traceback (innermost last):
+  File "/home/malgorzata/chimera/lib/python2.7/site-packages/Pmw/Pmw_1_3_3/lib/PmwBase.py", line 1747, in __call__
+    return apply(self.func, args)
+  File "/home/malgorzata/chimera/share/chimera/rapidaccess.py", line 467, in <lambda>
+    wt=webType: self._openData(False, dn, ft, wt))
+  File "/home/malgorzata/chimera/share/chimera/rapidaccess.py", line 728, in _openData
+    openModels.open(dataName, dataType)
+  File "/home/malgorzata/chimera/share/chimera/__init__.py", line 1955, in open
+    models = func(filename, *args, **kw)
+  File "/home/malgorzata/chimera/share/chimera/__init__.py", line 1325, in _openPython
+    loadFunc(sandboxName, fileName, f)
+  File "18_RMSD.py", line 16, in <module>
+    None
+  File "/home/malgorzata/chimera/share/chimera/__init__.py", line 2791, in runCommand
+    makeCommand(*args, **kw)
+  File "/home/malgorzata/chimera/share/Midas/midas_text.py", line 69, in makeCommand
+    f(c, args)
+  File "/home/malgorzata/chimera/share/Midas/midas_text.py", line 1612, in doOpen
+    modelArg, noprefs)
+  File "<string>", line 1, in <module>
+    None
+  File "/home/malgorzata/chimera/share/Midas/__init__.py", line 2218, in open
+    raise MidasError('%s' % msg)
+MidasError: No such file or directory
+
+================================================
+  Event contents:
+    char: ??
+    delta: 0
+    height: ??
+    keycode: ??
+    keysym: ??
+    keysym_num: ??
+    num: 1
+    send_event: False
+    serial: 36143
+    state: 256
+    time: 1856679
+    type: 5
+    widget: .140166816271752.140166713024312.140166713031184.140166714381264.140166714501312.140166714503112.140166714142872.140166714143160.140166714143880.140166702635488
+    width: ??
+    x: 203
+    x_root: 1108
+    y: 18
+    y_root: 158
+
+MidasError: No such file or directory
+
+  File "/home/malgorzata/chimera/share/Midas/__init__.py", line 2218, in open
+    raise MidasError('%s' % msg)
+
+See reply log for Python traceback.
+
+
+S58.pdb opened
+The following problems occurred while reading PDB file for pose8.pdb
+warning:  Ignored bad PDB record found on line 3
+warning:  Ignored bad PDB record found on line 4
+warning:  Ignored bad PDB record found on line 5
+pose8.pdb opened
+Executing rmsd ['#1:LIG', '#0:S58']
+RMSD between 28 atom pairs is 15.599 angstroms
+

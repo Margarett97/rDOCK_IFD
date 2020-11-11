@@ -1,0 +1,1800 @@
+U05.pdb
+  rDOCK(R)          3D
+libRbt.so/2013.1/901 2013/11/27
+ 22 24  0  0  0  0  0  0  0  0999 V2000
+   -8.1072  -35.0544   25.1281 N   0  0  0  0  0  0
+   -8.6988  -36.2949   25.0240 C   0  0  0  0  0  0
+   -8.6219  -37.0585   23.8435 C   0  0  0  0  0  0
+   -7.8902  -36.5230   22.7187 C   0  0  0  0  0  0
+   -7.2812  -35.2727   22.8443 C   0  0  0  0  0  0
+   -6.4812  -34.7131   21.6699 C   0  0  0  0  0  0
+   -6.8703  -35.0122   20.5418 O   0  0  0  0  0  0
+   -5.3587  -33.9628   21.8381 N   0  0  0  0  0  0
+   -4.7241  -33.3795   20.6211 C   0  0  0  0  0  0
+   -4.6982  -33.5609   23.0912 C   0  0  0  0  0  0
+   -3.2965  -33.4511   23.1662 C   0  0  0  0  0  0
+   -2.6600  -33.1277   24.4024 C   0  0  0  0  0  0
+   -3.4201  -32.9127   25.5604 C   0  0  0  0  0  0
+   -2.7530  -32.5981   26.9106 N   0  0  0  0  0  0
+   -3.4203  -32.0937   27.8153 O   0  0  0  0  0  0
+   -1.5777  -32.8403   27.0087 O   0  0  0  0  0  0
+   -4.8101  -33.0020   25.4636 C   0  0  0  0  0  0
+   -5.4364  -33.3102   24.2360 C   0  0  0  0  0  0
+   -6.8208  -33.2835   24.0824 N   0  0  0  0  0  0
+   -7.5793  -32.0665   24.6770 C   0  0  0  0  0  0
+   -7.8542  -32.1448   26.1200 C   0  0  0  0  0  0
+   -7.4190  -34.5619   24.0544 C   0  0  0  0  0  0
+  1  2  2  0  0  0
+  1 22  1  0  0  0
+  2  3  1  0  0  0
+  3  4  2  0  0  0
+  4  5  1  0  0  0
+  5  6  1  0  0  0
+  5 22  2  0  0  0
+  6  7  2  0  0  0
+  6  8  1  0  0  0
+  8  9  1  0  0  0
+  8 10  1  0  0  0
+ 10 11  2  0  0  0
+ 10 18  1  0  0  0
+ 11 12  1  0  0  0
+ 12 13  2  0  0  0
+ 13 14  1  0  0  0
+ 13 17  1  0  0  0
+ 14 15  2  0  0  0
+ 14 16  2  0  0  0
+ 17 18  2  0  0  0
+ 18 19  1  0  0  0
+ 19 20  1  0  0  0
+ 19 22  1  0  0  0
+ 20 21  1  0  0  0
+M  END
+>  <CHROM.0>
+-179.64083019,-26.92289851
+
+>  <CHROM.1>
+161.96977498,-81.53583722,-5.67755331,-33.87394679,24.16545412,2.44602515
+-0.38870120,-1.80373204
+
+>  <FORMUL>
+      U05    C15 H14 N4 O3
+
+>  <HET>
+ U05  A 999      22
+
+>  <HETNAM>
+     U05 6,11-DIHYDRO-11-ETHYL-6-METHYL-9-NITRO-5H-PYRIDO[2,3-B]
+   2 U05 [1,5]BENZODIAZEPIN-5-ONE
+
+>  <HETSYN>
+     U05 1051U91
+
+>  <Name>
+U05.pdb
+
+>  <RI>
+0
+
+>  <Rbt.Current_Directory>
+/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/10a_hiv_rt
+
+>  <Rbt.Executable>
+rbdock ($Id: //depot/dev/client3/rdock/2013.1/src/exe/rbdock.cxx#4 $)
+
+>  <Rbt.Library>
+libRbt.so (2013.1, Build901 2013/11/27)
+
+>  <Rbt.Parameter_File>
+/home/malgorzata/Desktop/rDock_2013.1_src/data/scripts/soft_docking.prm
+
+>  <Rbt.Receptor>
+cavity.prm
+
+>  <SCORE>
+-35.4332
+
+>  <SCORE.INTER>
+-29.4613
+
+>  <SCORE.INTER.CONST>
+1
+
+>  <SCORE.INTER.POLAR>
+0
+
+>  <SCORE.INTER.REPUL>
+0
+
+>  <SCORE.INTER.ROT>
+2
+
+>  <SCORE.INTER.VDW>
+-36.8613
+
+>  <SCORE.INTER.norm>
+-1.33915
+
+>  <SCORE.INTRA>
+-0.668215
+
+>  <SCORE.INTRA.DIHEDRAL>
+0.180451
+
+>  <SCORE.INTRA.DIHEDRAL.0>
+1.34757
+
+>  <SCORE.INTRA.POLAR>
+0
+
+>  <SCORE.INTRA.POLAR.0>
+0
+
+>  <SCORE.INTRA.REPUL>
+0
+
+>  <SCORE.INTRA.REPUL.0>
+0
+
+>  <SCORE.INTRA.VDW>
+-0.704305
+
+>  <SCORE.INTRA.VDW.0>
+0.605696
+
+>  <SCORE.INTRA.norm>
+-0.0303734
+
+>  <SCORE.RESTR>
+0
+
+>  <SCORE.RESTR.CAVITY>
+0
+
+>  <SCORE.RESTR.norm>
+0
+
+>  <SCORE.SYSTEM>
+-5.30367
+
+>  <SCORE.SYSTEM.CONST>
+0
+
+>  <SCORE.SYSTEM.DIHEDRAL>
+1.00203
+
+>  <SCORE.SYSTEM.POLAR>
+-1.16522
+
+>  <SCORE.SYSTEM.VDW>
+-1.84296
+
+>  <SCORE.SYSTEM.norm>
+-0.241076
+
+>  <SCORE.heavy>
+22
+
+>  <SCORE.norm>
+-1.6106
+
+$$$$
+U05.pdb
+  rDOCK(R)          3D
+libRbt.so/2013.1/901 2013/11/27
+ 22 24  0  0  0  0  0  0  0  0999 V2000
+   -7.2806  -35.2190   24.0126 N   0  0  0  0  0  0
+   -8.1620  -36.2068   23.6289 C   0  0  0  0  0  0
+   -8.3082  -36.5905   22.2820 C   0  0  0  0  0  0
+   -7.4989  -35.9321   21.2826 C   0  0  0  0  0  0
+   -6.5978  -34.9453   21.6879 C   0  0  0  0  0  0
+   -5.7177  -34.2657   20.6410 C   0  0  0  0  0  0
+   -6.1998  -34.1268   19.5176 O   0  0  0  0  0  0
+   -4.4410  -33.8728   20.8992 N   0  0  0  0  0  0
+   -3.7166  -33.1211   19.8341 C   0  0  0  0  0  0
+   -3.6672  -34.0143   22.1439 C   0  0  0  0  0  0
+   -2.2800  -34.2531   22.1092 C   0  0  0  0  0  0
+   -1.5493  -34.4571   23.3185 C   0  0  0  0  0  0
+   -2.2006  -34.4212   24.5592 C   0  0  0  0  0  0
+   -1.4393  -34.6735   25.8722 N   0  0  0  0  0  0
+   -0.2121  -34.7822   25.8519 O   0  0  0  0  0  0
+   -2.0988  -34.7828   26.8736 O   0  0  0  0  0  0
+   -3.5720  -34.1597   24.5776 C   0  0  0  0  0  0
+   -4.2888  -33.9464   23.3797 C   0  0  0  0  0  0
+   -5.6279  -33.5619   23.3751 N   0  0  0  0  0  0
+   -6.0468  -32.4313   24.3531 C   0  0  0  0  0  0
+   -7.4463  -31.9926   24.2395 C   0  0  0  0  0  0
+   -6.5227  -34.6055   23.0544 C   0  0  0  0  0  0
+  1  2  2  0  0  0
+  1 22  1  0  0  0
+  2  3  1  0  0  0
+  3  4  2  0  0  0
+  4  5  1  0  0  0
+  5  6  1  0  0  0
+  5 22  2  0  0  0
+  6  7  2  0  0  0
+  6  8  1  0  0  0
+  8  9  1  0  0  0
+  8 10  1  0  0  0
+ 10 11  2  0  0  0
+ 10 18  1  0  0  0
+ 11 12  1  0  0  0
+ 12 13  2  0  0  0
+ 13 14  1  0  0  0
+ 13 17  1  0  0  0
+ 14 15  2  0  0  0
+ 14 16  2  0  0  0
+ 17 18  2  0  0  0
+ 18 19  1  0  0  0
+ 19 20  1  0  0  0
+ 19 22  1  0  0  0
+ 20 21  1  0  0  0
+M  END
+>  <CHROM.0>
+-166.18755075,1.17641752
+
+>  <CHROM.1>
+7.09443555,175.62283678,-4.72221991,-34.35399969,23.10486840,2.58549541,-0.12519988
+-1.45570074
+
+>  <FORMUL>
+      U05    C15 H14 N4 O3
+
+>  <HET>
+ U05  A 999      22
+
+>  <HETNAM>
+     U05 6,11-DIHYDRO-11-ETHYL-6-METHYL-9-NITRO-5H-PYRIDO[2,3-B]
+   2 U05 [1,5]BENZODIAZEPIN-5-ONE
+
+>  <HETSYN>
+     U05 1051U91
+
+>  <Name>
+U05.pdb
+
+>  <RI>
+0
+
+>  <Rbt.Current_Directory>
+/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/10a_hiv_rt
+
+>  <Rbt.Executable>
+rbdock ($Id: //depot/dev/client3/rdock/2013.1/src/exe/rbdock.cxx#4 $)
+
+>  <Rbt.Library>
+libRbt.so (2013.1, Build901 2013/11/27)
+
+>  <Rbt.Parameter_File>
+/home/malgorzata/Desktop/rDock_2013.1_src/data/scripts/soft_docking.prm
+
+>  <Rbt.Receptor>
+cavity.prm
+
+>  <SCORE>
+-34.33
+
+>  <SCORE.INTER>
+-28.0388
+
+>  <SCORE.INTER.CONST>
+1
+
+>  <SCORE.INTER.POLAR>
+-0.321557
+
+>  <SCORE.INTER.REPUL>
+0
+
+>  <SCORE.INTER.ROT>
+2
+
+>  <SCORE.INTER.VDW>
+-34.3455
+
+>  <SCORE.INTER.norm>
+-1.27449
+
+>  <SCORE.INTRA>
+-0.791497
+
+>  <SCORE.INTRA.DIHEDRAL>
+-0.735505
+
+>  <SCORE.INTRA.DIHEDRAL.0>
+1.34757
+
+>  <SCORE.INTRA.POLAR>
+0
+
+>  <SCORE.INTRA.POLAR.0>
+0
+
+>  <SCORE.INTRA.REPUL>
+0
+
+>  <SCORE.INTRA.REPUL.0>
+0
+
+>  <SCORE.INTRA.VDW>
+-0.644396
+
+>  <SCORE.INTRA.VDW.0>
+0.605696
+
+>  <SCORE.INTRA.norm>
+-0.0359771
+
+>  <SCORE.RESTR>
+0
+
+>  <SCORE.RESTR.CAVITY>
+0
+
+>  <SCORE.RESTR.norm>
+0
+
+>  <SCORE.SYSTEM>
+-5.4997
+
+>  <SCORE.SYSTEM.CONST>
+0
+
+>  <SCORE.SYSTEM.DIHEDRAL>
+0.257048
+
+>  <SCORE.SYSTEM.POLAR>
+-1.128
+
+>  <SCORE.SYSTEM.VDW>
+-1.79304
+
+>  <SCORE.SYSTEM.norm>
+-0.249986
+
+>  <SCORE.heavy>
+22
+
+>  <SCORE.norm>
+-1.56045
+
+$$$$
+U05.pdb
+  rDOCK(R)          3D
+libRbt.so/2013.1/901 2013/11/27
+ 22 24  0  0  0  0  0  0  0  0999 V2000
+   -7.3376  -35.7800   23.2861 N   0  0  0  0  0  0
+   -8.3296  -36.5927   22.7809 C   0  0  0  0  0  0
+   -8.6368  -36.6245   21.4071 C   0  0  0  0  0  0
+   -7.8774  -35.7864   20.5080 C   0  0  0  0  0  0
+   -6.8638  -34.9812   21.0316 C   0  0  0  0  0  0
+   -6.0371  -34.1148   20.0838 C   0  0  0  0  0  0
+   -6.6130  -33.6773   19.0886 O   0  0  0  0  0  0
+   -4.7136  -33.8689   20.2810 N   0  0  0  0  0  0
+   -4.0372  -32.9196   19.3506 C   0  0  0  0  0  0
+   -3.8366  -34.3549   21.3594 C   0  0  0  0  0  0
+   -2.4835  -34.6543   21.1107 C   0  0  0  0  0  0
+   -1.6579  -35.1897   22.1449 C   0  0  0  0  0  0
+   -2.1805  -35.4241   23.4243 C   0  0  0  0  0  0
+   -1.3183  -36.0335   24.5435 N   0  0  0  0  0  0
+   -0.4931  -36.9061   24.2682 O   0  0  0  0  0  0
+   -1.5175  -35.6380   25.6631 O   0  0  0  0  0  0
+   -3.5177  -35.0996   23.6608 C   0  0  0  0  0  0
+   -4.3277  -34.5588   22.6383 C   0  0  0  0  0  0
+   -5.6250  -34.1113   22.8783 N   0  0  0  0  0  0
+   -5.8534  -33.2346   24.1390 C   0  0  0  0  0  0
+   -5.4195  -31.8346   24.0144 C   0  0  0  0  0  0
+   -6.6289  -34.9927   22.4220 C   0  0  0  0  0  0
+  1  2  2  0  0  0
+  1 22  1  0  0  0
+  2  3  1  0  0  0
+  3  4  2  0  0  0
+  4  5  1  0  0  0
+  5  6  1  0  0  0
+  5 22  2  0  0  0
+  6  7  2  0  0  0
+  6  8  1  0  0  0
+  8  9  1  0  0  0
+  8 10  1  0  0  0
+ 10 11  2  0  0  0
+ 10 18  1  0  0  0
+ 11 12  1  0  0  0
+ 12 13  2  0  0  0
+ 13 14  1  0  0  0
+ 13 17  1  0  0  0
+ 14 15  2  0  0  0
+ 14 16  2  0  0  0
+ 17 18  2  0  0  0
+ 18 19  1  0  0  0
+ 19 20  1  0  0  0
+ 19 22  1  0  0  0
+ 20 21  1  0  0  0
+M  END
+>  <CHROM.0>
+177.59129297,-12.31111099
+
+>  <CHROM.1>
+-37.07518605,77.18057197,-4.72771243,-34.81731756,22.31209297,2.63681099
+-0.11570206,-1.11648310
+
+>  <FORMUL>
+      U05    C15 H14 N4 O3
+
+>  <HET>
+ U05  A 999      22
+
+>  <HETNAM>
+     U05 6,11-DIHYDRO-11-ETHYL-6-METHYL-9-NITRO-5H-PYRIDO[2,3-B]
+   2 U05 [1,5]BENZODIAZEPIN-5-ONE
+
+>  <HETSYN>
+     U05 1051U91
+
+>  <Name>
+U05.pdb
+
+>  <RI>
+0
+
+>  <Rbt.Current_Directory>
+/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/10a_hiv_rt
+
+>  <Rbt.Executable>
+rbdock ($Id: //depot/dev/client3/rdock/2013.1/src/exe/rbdock.cxx#4 $)
+
+>  <Rbt.Library>
+libRbt.so (2013.1, Build901 2013/11/27)
+
+>  <Rbt.Parameter_File>
+/home/malgorzata/Desktop/rDock_2013.1_src/data/scripts/soft_docking.prm
+
+>  <Rbt.Receptor>
+cavity.prm
+
+>  <SCORE>
+-34.3358
+
+>  <SCORE.INTER>
+-28.0563
+
+>  <SCORE.INTER.CONST>
+1
+
+>  <SCORE.INTER.POLAR>
+-0.882101
+
+>  <SCORE.INTER.REPUL>
+0
+
+>  <SCORE.INTER.ROT>
+2
+
+>  <SCORE.INTER.VDW>
+-32.4571
+
+>  <SCORE.INTER.norm>
+-1.27529
+
+>  <SCORE.INTRA>
+-0.564198
+
+>  <SCORE.INTRA.DIHEDRAL>
+4.42508
+
+>  <SCORE.INTRA.DIHEDRAL.0>
+1.34757
+
+>  <SCORE.INTRA.POLAR>
+0
+
+>  <SCORE.INTRA.POLAR.0>
+0
+
+>  <SCORE.INTRA.REPUL>
+0
+
+>  <SCORE.INTRA.REPUL.0>
+0
+
+>  <SCORE.INTRA.VDW>
+-1.44921
+
+>  <SCORE.INTRA.VDW.0>
+0.605696
+
+>  <SCORE.INTRA.norm>
+-0.0256453
+
+>  <SCORE.RESTR>
+0.0297183
+
+>  <SCORE.RESTR.CAVITY>
+0.00594366
+
+>  <SCORE.RESTR.norm>
+0.00135083
+
+>  <SCORE.SYSTEM>
+-5.74504
+
+>  <SCORE.SYSTEM.CONST>
+0
+
+>  <SCORE.SYSTEM.DIHEDRAL>
+0.239894
+
+>  <SCORE.SYSTEM.POLAR>
+-1.17847
+
+>  <SCORE.SYSTEM.VDW>
+-1.85818
+
+>  <SCORE.SYSTEM.norm>
+-0.261138
+
+>  <SCORE.heavy>
+22
+
+>  <SCORE.norm>
+-1.56072
+
+$$$$
+U05.pdb
+  rDOCK(R)          3D
+libRbt.so/2013.1/901 2013/11/27
+ 22 24  0  0  0  0  0  0  0  0999 V2000
+   -0.4377  -28.8254   25.7158 N   0  0  0  0  0  0
+    0.5617  -28.1697   25.0294 C   0  0  0  0  0  0
+    1.8714  -28.6813   24.9550 C   0  0  0  0  0  0
+    2.1634  -29.9355   25.6103 C   0  0  0  0  0  0
+    1.1369  -30.5973   26.2872 C   0  0  0  0  0  0
+    1.4306  -31.9379   26.9572 C   0  0  0  0  0  0
+    2.5635  -32.0944   27.4104 O   0  0  0  0  0  0
+    0.5173  -32.9448   27.0148 N   0  0  0  0  0  0
+    0.8783  -34.1666   27.7902 C   0  0  0  0  0  0
+   -0.8518  -32.9792   26.4742 C   0  0  0  0  0  0
+   -1.3961  -34.1718   25.9604 C   0  0  0  0  0  0
+   -2.6984  -34.1812   25.3758 C   0  0  0  0  0  0
+   -3.4564  -33.0041   25.3054 C   0  0  0  0  0  0
+   -4.8472  -32.9840   24.6479 N   0  0  0  0  0  0
+   -5.6392  -32.0828   24.9286 O   0  0  0  0  0  0
+   -5.1087  -33.8869   23.8954 O   0  0  0  0  0  0
+   -2.9117  -31.8353   25.8408 C   0  0  0  0  0  0
+   -1.6280  -31.8329   26.4291 C   0  0  0  0  0  0
+   -1.1124  -30.7142   27.0800 N   0  0  0  0  0  0
+   -2.0540  -29.9649   28.0608 C   0  0  0  0  0  0
+   -2.1290  -30.5351   29.4147 C   0  0  0  0  0  0
+   -0.1447  -30.0107   26.3308 C   0  0  0  0  0  0
+  1  2  2  0  0  0
+  1 22  1  0  0  0
+  2  3  1  0  0  0
+  3  4  2  0  0  0
+  4  5  1  0  0  0
+  5  6  1  0  0  0
+  5 22  2  0  0  0
+  6  7  2  0  0  0
+  6  8  1  0  0  0
+  8  9  1  0  0  0
+  8 10  1  0  0  0
+ 10 11  2  0  0  0
+ 10 18  1  0  0  0
+ 11 12  1  0  0  0
+ 12 13  2  0  0  0
+ 13 14  1  0  0  0
+ 13 17  1  0  0  0
+ 14 15  2  0  0  0
+ 14 16  2  0  0  0
+ 17 18  2  0  0  0
+ 18 19  1  0  0  0
+ 19 20  1  0  0  0
+ 19 22  1  0  0  0
+ 20 21  1  0  0  0
+M  END
+>  <CHROM.0>
+-176.19085359,157.86105525
+
+>  <CHROM.1>
+159.02409530,83.21474768,-1.12134867,-31.64623593,26.21700000,0.38511021
+-0.32796129,-0.19456672
+
+>  <FORMUL>
+      U05    C15 H14 N4 O3
+
+>  <HET>
+ U05  A 999      22
+
+>  <HETNAM>
+     U05 6,11-DIHYDRO-11-ETHYL-6-METHYL-9-NITRO-5H-PYRIDO[2,3-B]
+   2 U05 [1,5]BENZODIAZEPIN-5-ONE
+
+>  <HETSYN>
+     U05 1051U91
+
+>  <Name>
+U05.pdb
+
+>  <RI>
+0
+
+>  <Rbt.Current_Directory>
+/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/10a_hiv_rt
+
+>  <Rbt.Executable>
+rbdock ($Id: //depot/dev/client3/rdock/2013.1/src/exe/rbdock.cxx#4 $)
+
+>  <Rbt.Library>
+libRbt.so (2013.1, Build901 2013/11/27)
+
+>  <Rbt.Parameter_File>
+/home/malgorzata/Desktop/rDock_2013.1_src/data/scripts/soft_docking.prm
+
+>  <Rbt.Receptor>
+cavity.prm
+
+>  <SCORE>
+-34.5027
+
+>  <SCORE.INTER>
+-28.2967
+
+>  <SCORE.INTER.CONST>
+1
+
+>  <SCORE.INTER.POLAR>
+0
+
+>  <SCORE.INTER.REPUL>
+0
+
+>  <SCORE.INTER.ROT>
+2
+
+>  <SCORE.INTER.VDW>
+-35.6967
+
+>  <SCORE.INTER.norm>
+-1.28621
+
+>  <SCORE.INTRA>
+-1.00584
+
+>  <SCORE.INTRA.DIHEDRAL>
+1.73128
+
+>  <SCORE.INTRA.DIHEDRAL.0>
+1.34757
+
+>  <SCORE.INTRA.POLAR>
+0
+
+>  <SCORE.INTRA.POLAR.0>
+0
+
+>  <SCORE.INTRA.REPUL>
+0
+
+>  <SCORE.INTRA.REPUL.0>
+0
+
+>  <SCORE.INTRA.VDW>
+-1.35209
+
+>  <SCORE.INTRA.VDW.0>
+0.605696
+
+>  <SCORE.INTRA.norm>
+-0.0457198
+
+>  <SCORE.RESTR>
+0
+
+>  <SCORE.RESTR.CAVITY>
+0
+
+>  <SCORE.RESTR.norm>
+0
+
+>  <SCORE.SYSTEM>
+-5.20023
+
+>  <SCORE.SYSTEM.CONST>
+0
+
+>  <SCORE.SYSTEM.DIHEDRAL>
+0.713497
+
+>  <SCORE.SYSTEM.POLAR>
+-1.1481
+
+>  <SCORE.SYSTEM.VDW>
+-1.65345
+
+>  <SCORE.SYSTEM.norm>
+-0.236374
+
+>  <SCORE.heavy>
+22
+
+>  <SCORE.norm>
+-1.56831
+
+$$$$
+U05.pdb
+  rDOCK(R)          3D
+libRbt.so/2013.1/901 2013/11/27
+ 22 24  0  0  0  0  0  0  0  0999 V2000
+   -0.6012  -28.9176   25.9970 N   0  0  0  0  0  0
+    0.2902  -28.0447   25.4113 C   0  0  0  0  0  0
+    1.6407  -28.3871   25.2068 C   0  0  0  0  0  0
+    2.0925  -29.6972   25.6154 C   0  0  0  0  0  0
+    1.1743  -30.5776   26.1915 C   0  0  0  0  0  0
+    1.6375  -31.9746   26.5989 C   0  0  0  0  0  0
+    2.8014  -32.0825   26.9826 O   0  0  0  0  0  0
+    0.8373  -33.0705   26.5005 N   0  0  0  0  0  0
+    1.3602  -34.3626   27.0310 C   0  0  0  0  0  0
+   -0.5458  -33.1600   26.0033 C   0  0  0  0  0  0
+   -0.9883  -34.2958   25.2986 C   0  0  0  0  0  0
+   -2.3097  -34.3456   24.7607 C   0  0  0  0  0  0
+   -3.1879  -33.2658   24.9270 C   0  0  0  0  0  0
+   -4.6038  -33.2837   24.3253 N   0  0  0  0  0  0
+   -4.8095  -33.8910   23.2733 O   0  0  0  0  0  0
+   -5.4542  -32.6650   24.9118 O   0  0  0  0  0  0
+   -2.7415  -32.1570   25.6485 C   0  0  0  0  0  0
+   -1.4377  -32.1168   26.1894 C   0  0  0  0  0  0
+   -1.0093  -31.0806   27.0163 N   0  0  0  0  0  0
+   -1.9742  -30.6250   28.1439 C   0  0  0  0  0  0
+   -1.8253  -31.3393   29.4212 C   0  0  0  0  0  0
+   -0.1574  -30.1532   26.3785 C   0  0  0  0  0  0
+  1  2  2  0  0  0
+  1 22  1  0  0  0
+  2  3  1  0  0  0
+  3  4  2  0  0  0
+  4  5  1  0  0  0
+  5  6  1  0  0  0
+  5 22  2  0  0  0
+  6  7  2  0  0  0
+  6  8  1  0  0  0
+  8  9  1  0  0  0
+  8 10  1  0  0  0
+ 10 11  2  0  0  0
+ 10 18  1  0  0  0
+ 11 12  1  0  0  0
+ 12 13  2  0  0  0
+ 13 14  1  0  0  0
+ 13 17  1  0  0  0
+ 14 15  2  0  0  0
+ 14 16  2  0  0  0
+ 17 18  2  0  0  0
+ 18 19  1  0  0  0
+ 19 20  1  0  0  0
+ 19 22  1  0  0  0
+ 20 21  1  0  0  0
+M  END
+>  <CHROM.0>
+-160.56558732,45.89223467
+
+>  <CHROM.1>
+-31.41765574,89.32369066,-0.95834149,-31.83362208,26.00022317,0.49960902
+-0.30365527,0.02418182
+
+>  <FORMUL>
+      U05    C15 H14 N4 O3
+
+>  <HET>
+ U05  A 999      22
+
+>  <HETNAM>
+     U05 6,11-DIHYDRO-11-ETHYL-6-METHYL-9-NITRO-5H-PYRIDO[2,3-B]
+   2 U05 [1,5]BENZODIAZEPIN-5-ONE
+
+>  <HETSYN>
+     U05 1051U91
+
+>  <Name>
+U05.pdb
+
+>  <RI>
+0
+
+>  <Rbt.Current_Directory>
+/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/10a_hiv_rt
+
+>  <Rbt.Executable>
+rbdock ($Id: //depot/dev/client3/rdock/2013.1/src/exe/rbdock.cxx#4 $)
+
+>  <Rbt.Library>
+libRbt.so (2013.1, Build901 2013/11/27)
+
+>  <Rbt.Parameter_File>
+/home/malgorzata/Desktop/rDock_2013.1_src/data/scripts/soft_docking.prm
+
+>  <Rbt.Receptor>
+cavity.prm
+
+>  <SCORE>
+-29.6579
+
+>  <SCORE.INTER>
+-24.708
+
+>  <SCORE.INTER.CONST>
+1
+
+>  <SCORE.INTER.POLAR>
+0
+
+>  <SCORE.INTER.REPUL>
+0
+
+>  <SCORE.INTER.ROT>
+2
+
+>  <SCORE.INTER.VDW>
+-32.108
+
+>  <SCORE.INTER.norm>
+-1.12309
+
+>  <SCORE.INTRA>
+-0.714272
+
+>  <SCORE.INTRA.DIHEDRAL>
+3.79767
+
+>  <SCORE.INTRA.DIHEDRAL.0>
+1.34757
+
+>  <SCORE.INTRA.POLAR>
+0
+
+>  <SCORE.INTRA.POLAR.0>
+0
+
+>  <SCORE.INTRA.REPUL>
+0
+
+>  <SCORE.INTRA.REPUL.0>
+0
+
+>  <SCORE.INTRA.VDW>
+-1.47381
+
+>  <SCORE.INTRA.VDW.0>
+0.605696
+
+>  <SCORE.INTRA.norm>
+-0.0324669
+
+>  <SCORE.RESTR>
+0
+
+>  <SCORE.RESTR.CAVITY>
+0
+
+>  <SCORE.RESTR.norm>
+0
+
+>  <SCORE.SYSTEM>
+-4.23569
+
+>  <SCORE.SYSTEM.CONST>
+0
+
+>  <SCORE.SYSTEM.DIHEDRAL>
+2.96003
+
+>  <SCORE.SYSTEM.POLAR>
+-1.13645
+
+>  <SCORE.SYSTEM.VDW>
+-1.85178
+
+>  <SCORE.SYSTEM.norm>
+-0.192531
+
+>  <SCORE.heavy>
+22
+
+>  <SCORE.norm>
+-1.34809
+
+$$$$
+U05.pdb
+  rDOCK(R)          3D
+libRbt.so/2013.1/901 2013/11/27
+ 22 24  0  0  0  0  0  0  0  0999 V2000
+   -7.9268  -35.2081   24.3848 N   0  0  0  0  0  0
+   -8.8182  -36.2592   24.4040 C   0  0  0  0  0  0
+   -9.2361  -36.9012   23.2226 C   0  0  0  0  0  0
+   -8.7010  -36.4456   21.9603 C   0  0  0  0  0  0
+   -7.7855  -35.3911   21.9574 C   0  0  0  0  0  0
+   -7.1931  -34.9235   20.6298 C   0  0  0  0  0  0
+   -7.9163  -35.0120   19.6385 O   0  0  0  0  0  0
+   -5.9130  -34.4771   20.5145 N   0  0  0  0  0  0
+   -5.4799  -33.9436   19.1909 C   0  0  0  0  0  0
+   -4.8788  -34.3649   21.5565 C   0  0  0  0  0  0
+   -3.5225  -34.5947   21.2562 C   0  0  0  0  0  0
+   -2.5348  -34.5512   22.2860 C   0  0  0  0  0  0
+   -2.8991  -34.2774   23.6116 C   0  0  0  0  0  0
+   -1.8563  -34.2605   24.7427 N   0  0  0  0  0  0
+   -2.2318  -34.2847   25.9160 O   0  0  0  0  0  0
+   -0.6988  -34.1947   24.4175 O   0  0  0  0  0  0
+   -4.2447  -34.0284   23.8884 C   0  0  0  0  0  0
+   -5.2169  -34.0606   22.8647 C   0  0  0  0  0  0
+   -6.5425  -33.6952   23.0890 N   0  0  0  0  0  0
+   -6.7950  -32.3980   23.9034 C   0  0  0  0  0  0
+   -6.5704  -32.5153   25.3524 C   0  0  0  0  0  0
+   -7.4304  -34.7888   23.1820 C   0  0  0  0  0  0
+  1  2  2  0  0  0
+  1 22  1  0  0  0
+  2  3  1  0  0  0
+  3  4  2  0  0  0
+  4  5  1  0  0  0
+  5  6  1  0  0  0
+  5 22  2  0  0  0
+  6  7  2  0  0  0
+  6  8  1  0  0  0
+  8  9  1  0  0  0
+  8 10  1  0  0  0
+ 10 11  2  0  0  0
+ 10 18  1  0  0  0
+ 11 12  1  0  0  0
+ 12 13  2  0  0  0
+ 13 14  1  0  0  0
+ 13 17  1  0  0  0
+ 14 15  2  0  0  0
+ 14 16  2  0  0  0
+ 17 18  2  0  0  0
+ 18 19  1  0  0  0
+ 19 20  1  0  0  0
+ 19 22  1  0  0  0
+ 20 21  1  0  0  0
+M  END
+>  <CHROM.0>
+-168.50052337,21.20515985
+
+>  <CHROM.1>
+-165.51746913,-75.41773179,-5.59567647,-34.54048991,22.84361148,2.76465883
+-0.19698380,-1.62380569
+
+>  <FORMUL>
+      U05    C15 H14 N4 O3
+
+>  <HET>
+ U05  A 999      22
+
+>  <HETNAM>
+     U05 6,11-DIHYDRO-11-ETHYL-6-METHYL-9-NITRO-5H-PYRIDO[2,3-B]
+   2 U05 [1,5]BENZODIAZEPIN-5-ONE
+
+>  <HETSYN>
+     U05 1051U91
+
+>  <Name>
+U05.pdb
+
+>  <RI>
+0
+
+>  <Rbt.Current_Directory>
+/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/10a_hiv_rt
+
+>  <Rbt.Executable>
+rbdock ($Id: //depot/dev/client3/rdock/2013.1/src/exe/rbdock.cxx#4 $)
+
+>  <Rbt.Library>
+libRbt.so (2013.1, Build901 2013/11/27)
+
+>  <Rbt.Parameter_File>
+/home/malgorzata/Desktop/rDock_2013.1_src/data/scripts/soft_docking.prm
+
+>  <Rbt.Receptor>
+cavity.prm
+
+>  <SCORE>
+-32.7397
+
+>  <SCORE.INTER>
+-26.9176
+
+>  <SCORE.INTER.CONST>
+1
+
+>  <SCORE.INTER.POLAR>
+-0.0834054
+
+>  <SCORE.INTER.REPUL>
+0
+
+>  <SCORE.INTER.ROT>
+2
+
+>  <SCORE.INTER.VDW>
+-34.034
+
+>  <SCORE.INTER.norm>
+-1.22353
+
+>  <SCORE.INTRA>
+-0.604834
+
+>  <SCORE.INTRA.DIHEDRAL>
+-0.199209
+
+>  <SCORE.INTRA.DIHEDRAL.0>
+1.34757
+
+>  <SCORE.INTRA.POLAR>
+0
+
+>  <SCORE.INTRA.POLAR.0>
+0
+
+>  <SCORE.INTRA.REPUL>
+0
+
+>  <SCORE.INTRA.REPUL.0>
+0
+
+>  <SCORE.INTRA.VDW>
+-0.564992
+
+>  <SCORE.INTRA.VDW.0>
+0.605696
+
+>  <SCORE.INTRA.norm>
+-0.0274924
+
+>  <SCORE.RESTR>
+0.0988118
+
+>  <SCORE.RESTR.CAVITY>
+0.0197624
+
+>  <SCORE.RESTR.norm>
+0.00449145
+
+>  <SCORE.SYSTEM>
+-5.31604
+
+>  <SCORE.SYSTEM.CONST>
+0
+
+>  <SCORE.SYSTEM.DIHEDRAL>
+0.789372
+
+>  <SCORE.SYSTEM.POLAR>
+-1.12866
+
+>  <SCORE.SYSTEM.VDW>
+-1.8733
+
+>  <SCORE.SYSTEM.norm>
+-0.241638
+
+>  <SCORE.heavy>
+22
+
+>  <SCORE.norm>
+-1.48817
+
+$$$$
+U05.pdb
+  rDOCK(R)          3D
+libRbt.so/2013.1/901 2013/11/27
+ 22 24  0  0  0  0  0  0  0  0999 V2000
+    0.4040  -32.1542   28.9414 N   0  0  0  0  0  0
+    0.1930  -31.7708   30.2484 C   0  0  0  0  0  0
+   -0.9675  -31.0770   30.6415 C   0  0  0  0  0  0
+   -1.9648  -30.7729   29.6413 C   0  0  0  0  0  0
+   -1.7457  -31.1827   28.3245 C   0  0  0  0  0  0
+   -2.8088  -30.8910   27.2676 C   0  0  0  0  0  0
+   -3.4619  -29.8581   27.4090 O   0  0  0  0  0  0
+   -3.0754  -31.7429   26.2407 N   0  0  0  0  0  0
+   -4.0571  -31.3011   25.2086 C   0  0  0  0  0  0
+   -2.4609  -33.0473   25.9423 C   0  0  0  0  0  0
+   -3.2200  -34.0922   25.3816 C   0  0  0  0  0  0
+   -2.6341  -35.3748   25.1589 C   0  0  0  0  0  0
+   -1.2939  -35.6137   25.4931 C   0  0  0  0  0  0
+   -0.6524  -36.9980   25.2947 N   0  0  0  0  0  0
+   -1.1680  -37.8006   24.5149 O   0  0  0  0  0  0
+    0.3287  -37.2440   25.9479 O   0  0  0  0  0  0
+   -0.5486  -34.5602   26.0261 C   0  0  0  0  0  0
+   -1.1287  -33.2896   26.2335 C   0  0  0  0  0  0
+   -0.3788  -32.1902   26.6458 N   0  0  0  0  0  0
+    0.9805  -31.9495   25.9355 C   0  0  0  0  0  0
+    2.1612  -32.4441   26.6602 C   0  0  0  0  0  0
+   -0.5492  -31.8582   28.0072 C   0  0  0  0  0  0
+  1  2  2  0  0  0
+  1 22  1  0  0  0
+  2  3  1  0  0  0
+  3  4  2  0  0  0
+  4  5  1  0  0  0
+  5  6  1  0  0  0
+  5 22  2  0  0  0
+  6  7  2  0  0  0
+  6  8  1  0  0  0
+  8  9  1  0  0  0
+  8 10  1  0  0  0
+ 10 11  2  0  0  0
+ 10 18  1  0  0  0
+ 11 12  1  0  0  0
+ 12 13  2  0  0  0
+ 13 14  1  0  0  0
+ 13 17  1  0  0  0
+ 14 15  2  0  0  0
+ 14 16  2  0  0  0
+ 17 18  2  0  0  0
+ 18 19  1  0  0  0
+ 19 20  1  0  0  0
+ 19 22  1  0  0  0
+ 20 21  1  0  0  0
+M  END
+>  <CHROM.0>
+-145.61891830,-179.98680870
+
+>  <CHROM.1>
+20.11704136,-98.40464436,-1.25512836,-33.10390405,26.82656637,-1.68549022
+0.48947018,-2.54938444
+
+>  <FORMUL>
+      U05    C15 H14 N4 O3
+
+>  <HET>
+ U05  A 999      22
+
+>  <HETNAM>
+     U05 6,11-DIHYDRO-11-ETHYL-6-METHYL-9-NITRO-5H-PYRIDO[2,3-B]
+   2 U05 [1,5]BENZODIAZEPIN-5-ONE
+
+>  <HETSYN>
+     U05 1051U91
+
+>  <Name>
+U05.pdb
+
+>  <RI>
+0
+
+>  <Rbt.Current_Directory>
+/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/10a_hiv_rt
+
+>  <Rbt.Executable>
+rbdock ($Id: //depot/dev/client3/rdock/2013.1/src/exe/rbdock.cxx#4 $)
+
+>  <Rbt.Library>
+libRbt.so (2013.1, Build901 2013/11/27)
+
+>  <Rbt.Parameter_File>
+/home/malgorzata/Desktop/rDock_2013.1_src/data/scripts/soft_docking.prm
+
+>  <Rbt.Receptor>
+cavity.prm
+
+>  <SCORE>
+-28.3978
+
+>  <SCORE.INTER>
+-23.5945
+
+>  <SCORE.INTER.CONST>
+1
+
+>  <SCORE.INTER.POLAR>
+0
+
+>  <SCORE.INTER.REPUL>
+0
+
+>  <SCORE.INTER.ROT>
+2
+
+>  <SCORE.INTER.VDW>
+-30.9945
+
+>  <SCORE.INTER.norm>
+-1.07248
+
+>  <SCORE.INTRA>
+-0.115544
+
+>  <SCORE.INTRA.DIHEDRAL>
+1.20497
+
+>  <SCORE.INTRA.DIHEDRAL.0>
+1.34757
+
+>  <SCORE.INTRA.POLAR>
+0
+
+>  <SCORE.INTRA.POLAR.0>
+0
+
+>  <SCORE.INTRA.REPUL>
+0
+
+>  <SCORE.INTRA.REPUL.0>
+0
+
+>  <SCORE.INTRA.VDW>
+-0.356539
+
+>  <SCORE.INTRA.VDW.0>
+0.605696
+
+>  <SCORE.INTRA.norm>
+-0.00525201
+
+>  <SCORE.RESTR>
+0.127018
+
+>  <SCORE.RESTR.CAVITY>
+0.0254037
+
+>  <SCORE.RESTR.norm>
+0.00577356
+
+>  <SCORE.SYSTEM>
+-4.81483
+
+>  <SCORE.SYSTEM.CONST>
+0
+
+>  <SCORE.SYSTEM.DIHEDRAL>
+1.49393
+
+>  <SCORE.SYSTEM.POLAR>
+-1.14228
+
+>  <SCORE.SYSTEM.VDW>
+-1.67803
+
+>  <SCORE.SYSTEM.norm>
+-0.218856
+
+>  <SCORE.heavy>
+22
+
+>  <SCORE.norm>
+-1.29081
+
+$$$$
+U05.pdb
+  rDOCK(R)          3D
+libRbt.so/2013.1/901 2013/11/27
+ 22 24  0  0  0  0  0  0  0  0999 V2000
+   -7.7702  -35.5010   23.4793 N   0  0  0  0  0  0
+   -8.5943  -36.5807   23.2451 C   0  0  0  0  0  0
+   -8.9025  -37.0114   21.9404 C   0  0  0  0  0  0
+   -8.3245  -36.3021   20.8222 C   0  0  0  0  0  0
+   -7.4776  -35.2209   21.0748 C   0  0  0  0  0  0
+   -6.8395  -34.4847   19.8988 C   0  0  0  0  0  0
+   -7.4972  -34.4231   18.8609 O   0  0  0  0  0  0
+   -5.5850  -33.9610   19.9548 N   0  0  0  0  0  0
+   -5.1099  -33.1689   18.7838 C   0  0  0  0  0  0
+   -4.6218  -33.9932   21.0680 C   0  0  0  0  0  0
+   -3.2388  -34.0944   20.8242 C   0  0  0  0  0  0
+   -2.3169  -34.1940   21.9097 C   0  0  0  0  0  0
+   -2.7736  -34.1909   23.2350 C   0  0  0  0  0  0
+   -1.8011  -34.3329   24.4187 N   0  0  0  0  0  0
+   -2.2034  -34.1233   25.5643 O   0  0  0  0  0  0
+   -0.6615  -34.6210   24.1577 O   0  0  0  0  0  0
+   -4.1459  -34.0659   23.4599 C   0  0  0  0  0  0
+   -5.0533  -33.9554   22.3836 C   0  0  0  0  0  0
+   -6.4098  -33.7054   22.5797 N   0  0  0  0  0  0
+   -6.7890  -32.5971   23.5984 C   0  0  0  0  0  0
+   -6.8976  -33.0427   24.9961 C   0  0  0  0  0  0
+   -7.2320  -34.8404   22.4103 C   0  0  0  0  0  0
+  1  2  2  0  0  0
+  1 22  1  0  0  0
+  2  3  1  0  0  0
+  3  4  2  0  0  0
+  4  5  1  0  0  0
+  5  6  1  0  0  0
+  5 22  2  0  0  0
+  6  7  2  0  0  0
+  6  8  1  0  0  0
+  8  9  1  0  0  0
+  8 10  1  0  0  0
+ 10 11  2  0  0  0
+ 10 18  1  0  0  0
+ 11 12  1  0  0  0
+ 12 13  2  0  0  0
+ 13 14  1  0  0  0
+ 13 17  1  0  0  0
+ 14 15  2  0  0  0
+ 14 16  2  0  0  0
+ 17 18  2  0  0  0
+ 18 19  1  0  0  0
+ 19 20  1  0  0  0
+ 19 22  1  0  0  0
+ 20 21  1  0  0  0
+M  END
+>  <CHROM.0>
+177.57854542,10.30066715
+
+>  <CHROM.1>
+168.98498832,-86.89244687,-5.41208189,-34.44507141,22.24792600,2.70109686
+-0.23844481,-1.47292713
+
+>  <FORMUL>
+      U05    C15 H14 N4 O3
+
+>  <HET>
+ U05  A 999      22
+
+>  <HETNAM>
+     U05 6,11-DIHYDRO-11-ETHYL-6-METHYL-9-NITRO-5H-PYRIDO[2,3-B]
+   2 U05 [1,5]BENZODIAZEPIN-5-ONE
+
+>  <HETSYN>
+     U05 1051U91
+
+>  <Name>
+U05.pdb
+
+>  <RI>
+0
+
+>  <Rbt.Current_Directory>
+/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/10a_hiv_rt
+
+>  <Rbt.Executable>
+rbdock ($Id: //depot/dev/client3/rdock/2013.1/src/exe/rbdock.cxx#4 $)
+
+>  <Rbt.Library>
+libRbt.so (2013.1, Build901 2013/11/27)
+
+>  <Rbt.Parameter_File>
+/home/malgorzata/Desktop/rDock_2013.1_src/data/scripts/soft_docking.prm
+
+>  <Rbt.Receptor>
+cavity.prm
+
+>  <SCORE>
+-38.2306
+
+>  <SCORE.INTER>
+-32.0683
+
+>  <SCORE.INTER.CONST>
+1
+
+>  <SCORE.INTER.POLAR>
+-0.903198
+
+>  <SCORE.INTER.REPUL>
+0
+
+>  <SCORE.INTER.ROT>
+2
+
+>  <SCORE.INTER.VDW>
+-36.3975
+
+>  <SCORE.INTER.norm>
+-1.45765
+
+>  <SCORE.INTRA>
+-0.729949
+
+>  <SCORE.INTRA.DIHEDRAL>
+-0.416791
+
+>  <SCORE.INTRA.DIHEDRAL.0>
+1.34757
+
+>  <SCORE.INTRA.POLAR>
+0
+
+>  <SCORE.INTRA.POLAR.0>
+0
+
+>  <SCORE.INTRA.REPUL>
+0
+
+>  <SCORE.INTRA.REPUL.0>
+0
+
+>  <SCORE.INTRA.VDW>
+-0.646591
+
+>  <SCORE.INTRA.VDW.0>
+0.605696
+
+>  <SCORE.INTRA.norm>
+-0.0331795
+
+>  <SCORE.RESTR>
+0.460464
+
+>  <SCORE.RESTR.CAVITY>
+0.0920927
+
+>  <SCORE.RESTR.norm>
+0.0209302
+
+>  <SCORE.SYSTEM>
+-5.89275
+
+>  <SCORE.SYSTEM.CONST>
+0
+
+>  <SCORE.SYSTEM.DIHEDRAL>
+0.158634
+
+>  <SCORE.SYSTEM.POLAR>
+-1.17847
+
+>  <SCORE.SYSTEM.VDW>
+-1.96526
+
+>  <SCORE.SYSTEM.norm>
+-0.267852
+
+>  <SCORE.heavy>
+22
+
+>  <SCORE.norm>
+-1.73775
+
+$$$$
+U05.pdb
+  rDOCK(R)          3D
+libRbt.so/2013.1/901 2013/11/27
+ 22 24  0  0  0  0  0  0  0  0999 V2000
+   -0.7033  -28.8461   26.0598 N   0  0  0  0  0  0
+    0.2532  -28.0678   25.4442 C   0  0  0  0  0  0
+    1.5510  -28.5496   25.1871 C   0  0  0  0  0  0
+    1.8762  -29.9035   25.5728 C   0  0  0  0  0  0
+    0.8919  -30.6863   26.1798 C   0  0  0  0  0  0
+    1.2191  -32.1278   26.5635 C   0  0  0  0  0  0
+    2.3785  -32.3615   26.9022 O   0  0  0  0  0  0
+    0.3039  -33.1320   26.4911 N   0  0  0  0  0  0
+    0.7063  -34.4764   26.9960 C   0  0  0  0  0  0
+   -1.0984  -33.0704   26.0466 C   0  0  0  0  0  0
+   -1.6851  -34.1472   25.3546 C   0  0  0  0  0  0
+   -3.0235  -34.0524   24.8672 C   0  0  0  0  0  0
+   -3.7752  -32.8869   25.0711 C   0  0  0  0  0  0
+   -5.2066  -32.7499   24.5238 N   0  0  0  0  0  0
+   -6.0263  -32.0597   25.1319 O   0  0  0  0  0  0
+   -5.4683  -33.3611   23.5199 O   0  0  0  0  0  0
+   -3.1870  -31.8376   25.7798 C   0  0  0  0  0  0
+   -1.8669  -31.9401   26.2707 C   0  0  0  0  0  0
+   -1.3004  -30.9619   27.0851 N   0  0  0  0  0  0
+   -2.1686  -30.4158   28.2504 C   0  0  0  0  0  0
+   -2.2143  -31.2676   29.4488 C   0  0  0  0  0  0
+   -0.3793  -30.1248   26.4190 C   0  0  0  0  0  0
+  1  2  2  0  0  0
+  1 22  1  0  0  0
+  2  3  1  0  0  0
+  3  4  2  0  0  0
+  4  5  1  0  0  0
+  5  6  1  0  0  0
+  5 22  2  0  0  0
+  6  7  2  0  0  0
+  6  8  1  0  0  0
+  8  9  1  0  0  0
+  8 10  1  0  0  0
+ 10 11  2  0  0  0
+ 10 18  1  0  0  0
+ 11 12  1  0  0  0
+ 12 13  2  0  0  0
+ 13 14  1  0  0  0
+ 13 17  1  0  0  0
+ 14 15  2  0  0  0
+ 14 16  2  0  0  0
+ 17 18  2  0  0  0
+ 18 19  1  0  0  0
+ 19 20  1  0  0  0
+ 19 22  1  0  0  0
+ 20 21  1  0  0  0
+M  END
+>  <CHROM.0>
+-165.65007404,-12.39045660
+
+>  <CHROM.1>
+149.13137783,80.12877285,-1.37686565,-31.71616589,26.06273502,0.38751368
+-0.25945646,-0.00633200
+
+>  <FORMUL>
+      U05    C15 H14 N4 O3
+
+>  <HET>
+ U05  A 999      22
+
+>  <HETNAM>
+     U05 6,11-DIHYDRO-11-ETHYL-6-METHYL-9-NITRO-5H-PYRIDO[2,3-B]
+   2 U05 [1,5]BENZODIAZEPIN-5-ONE
+
+>  <HETSYN>
+     U05 1051U91
+
+>  <Name>
+U05.pdb
+
+>  <RI>
+0
+
+>  <Rbt.Current_Directory>
+/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/10a_hiv_rt
+
+>  <Rbt.Executable>
+rbdock ($Id: //depot/dev/client3/rdock/2013.1/src/exe/rbdock.cxx#4 $)
+
+>  <Rbt.Library>
+libRbt.so (2013.1, Build901 2013/11/27)
+
+>  <Rbt.Parameter_File>
+/home/malgorzata/Desktop/rDock_2013.1_src/data/scripts/soft_docking.prm
+
+>  <Rbt.Receptor>
+cavity.prm
+
+>  <SCORE>
+-34.1488
+
+>  <SCORE.INTER>
+-28.0671
+
+>  <SCORE.INTER.CONST>
+1
+
+>  <SCORE.INTER.POLAR>
+0
+
+>  <SCORE.INTER.REPUL>
+0
+
+>  <SCORE.INTER.ROT>
+2
+
+>  <SCORE.INTER.VDW>
+-35.4671
+
+>  <SCORE.INTER.norm>
+-1.27578
+
+>  <SCORE.INTRA>
+-0.773941
+
+>  <SCORE.INTRA.DIHEDRAL>
+3.29282
+
+>  <SCORE.INTRA.DIHEDRAL.0>
+1.34757
+
+>  <SCORE.INTRA.POLAR>
+0
+
+>  <SCORE.INTRA.POLAR.0>
+0
+
+>  <SCORE.INTRA.REPUL>
+0
+
+>  <SCORE.INTRA.REPUL.0>
+0
+
+>  <SCORE.INTRA.VDW>
+-1.43251
+
+>  <SCORE.INTRA.VDW.0>
+0.605696
+
+>  <SCORE.INTRA.norm>
+-0.0351791
+
+>  <SCORE.RESTR>
+0
+
+>  <SCORE.RESTR.CAVITY>
+0
+
+>  <SCORE.RESTR.norm>
+0
+
+>  <SCORE.SYSTEM>
+-5.30775
+
+>  <SCORE.SYSTEM.CONST>
+0
+
+>  <SCORE.SYSTEM.DIHEDRAL>
+0.50655
+
+>  <SCORE.SYSTEM.POLAR>
+-1.12819
+
+>  <SCORE.SYSTEM.VDW>
+-1.72518
+
+>  <SCORE.SYSTEM.norm>
+-0.241261
+
+>  <SCORE.heavy>
+22
+
+>  <SCORE.norm>
+-1.55222
+
+$$$$
+U05.pdb
+  rDOCK(R)          3D
+libRbt.so/2013.1/901 2013/11/27
+ 22 24  0  0  0  0  0  0  0  0999 V2000
+   -8.0288  -34.8151   24.6329 N   0  0  0  0  0  0
+   -8.8611  -35.8280   24.2073 C   0  0  0  0  0  0
+   -8.7645  -36.3753   22.9135 C   0  0  0  0  0  0
+   -7.7537  -35.8618   22.0180 C   0  0  0  0  0  0
+   -6.9062  -34.8476   22.4686 C   0  0  0  0  0  0
+   -5.8161  -34.3203   21.5380 C   0  0  0  0  0  0
+   -6.0699  -34.3153   20.3342 O   0  0  0  0  0  0
+   -4.5966  -33.9201   21.9894 N   0  0  0  0  0  0
+   -3.6528  -33.3208   21.0024 C   0  0  0  0  0  0
+   -4.0798  -33.9174   23.3682 C   0  0  0  0  0  0
+   -2.7223  -34.1826   23.6316 C   0  0  0  0  0  0
+   -2.2436  -34.2456   24.9749 C   0  0  0  0  0  0
+   -3.1166  -34.0428   26.0528 C   0  0  0  0  0  0
+   -2.6295  -34.1413   27.5088 N   0  0  0  0  0  0
+   -1.6443  -33.4929   27.8653 O   0  0  0  0  0  0
+   -3.2328  -34.8863   28.2373 O   0  0  0  0  0  0
+   -4.4545  -33.7574   25.7738 C   0  0  0  0  0  0
+   -4.9215  -33.6840   24.4431 C   0  0  0  0  0  0
+   -6.2183  -33.2800   24.1333 N   0  0  0  0  0  0
+   -6.7684  -32.0285   24.8688 C   0  0  0  0  0  0
+   -7.5965  -32.3114   26.0512 C   0  0  0  0  0  0
+   -7.0781  -34.3401   23.7730 C   0  0  0  0  0  0
+  1  2  2  0  0  0
+  1 22  1  0  0  0
+  2  3  1  0  0  0
+  3  4  2  0  0  0
+  4  5  1  0  0  0
+  5  6  1  0  0  0
+  5 22  2  0  0  0
+  6  7  2  0  0  0
+  6  8  1  0  0  0
+  8  9  1  0  0  0
+  8 10  1  0  0  0
+ 10 11  2  0  0  0
+ 10 18  1  0  0  0
+ 11 12  1  0  0  0
+ 12 13  2  0  0  0
+ 13 14  1  0  0  0
+ 13 17  1  0  0  0
+ 14 15  2  0  0  0
+ 14 16  2  0  0  0
+ 17 18  2  0  0  0
+ 18 19  1  0  0  0
+ 19 20  1  0  0  0
+ 19 22  1  0  0  0
+ 20 21  1  0  0  0
+M  END
+>  <CHROM.0>
+-166.60444359,-173.98111195
+
+>  <CHROM.1>
+52.04515570,-96.75026495,-5.28461328,-34.15174522,24.22159361,2.35591505
+-0.15689951,-1.60871332
+
+>  <FORMUL>
+      U05    C15 H14 N4 O3
+
+>  <HET>
+ U05  A 999      22
+
+>  <HETNAM>
+     U05 6,11-DIHYDRO-11-ETHYL-6-METHYL-9-NITRO-5H-PYRIDO[2,3-B]
+   2 U05 [1,5]BENZODIAZEPIN-5-ONE
+
+>  <HETSYN>
+     U05 1051U91
+
+>  <Name>
+U05.pdb
+
+>  <RI>
+0
+
+>  <Rbt.Current_Directory>
+/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/10a_hiv_rt
+
+>  <Rbt.Executable>
+rbdock ($Id: //depot/dev/client3/rdock/2013.1/src/exe/rbdock.cxx#4 $)
+
+>  <Rbt.Library>
+libRbt.so (2013.1, Build901 2013/11/27)
+
+>  <Rbt.Parameter_File>
+/home/malgorzata/Desktop/rDock_2013.1_src/data/scripts/soft_docking.prm
+
+>  <Rbt.Receptor>
+cavity.prm
+
+>  <SCORE>
+-34.6954
+
+>  <SCORE.INTER>
+-30.1143
+
+>  <SCORE.INTER.CONST>
+1
+
+>  <SCORE.INTER.POLAR>
+0
+
+>  <SCORE.INTER.REPUL>
+0
+
+>  <SCORE.INTER.ROT>
+2
+
+>  <SCORE.INTER.VDW>
+-37.5143
+
+>  <SCORE.INTER.norm>
+-1.36883
+
+>  <SCORE.INTRA>
+0.794416
+
+>  <SCORE.INTRA.DIHEDRAL>
+7.60651
+
+>  <SCORE.INTRA.DIHEDRAL.0>
+1.34757
+
+>  <SCORE.INTRA.POLAR>
+0
+
+>  <SCORE.INTRA.POLAR.0>
+0
+
+>  <SCORE.INTRA.REPUL>
+0
+
+>  <SCORE.INTRA.REPUL.0>
+0
+
+>  <SCORE.INTRA.VDW>
+-0.726886
+
+>  <SCORE.INTRA.VDW.0>
+0.605696
+
+>  <SCORE.INTRA.norm>
+0.0361098
+
+>  <SCORE.RESTR>
+0
+
+>  <SCORE.RESTR.CAVITY>
+0
+
+>  <SCORE.RESTR.norm>
+0
+
+>  <SCORE.SYSTEM>
+-5.3755
+
+>  <SCORE.SYSTEM.CONST>
+0
+
+>  <SCORE.SYSTEM.DIHEDRAL>
+0.288722
+
+>  <SCORE.SYSTEM.POLAR>
+-1.12794
+
+>  <SCORE.SYSTEM.VDW>
+-1.68488
+
+>  <SCORE.SYSTEM.norm>
+-0.244341
+
+>  <SCORE.heavy>
+22
+
+>  <SCORE.norm>
+-1.57706
+
+$$$$

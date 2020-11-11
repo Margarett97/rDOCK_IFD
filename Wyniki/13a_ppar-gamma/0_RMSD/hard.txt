@@ -1,0 +1,60 @@
+Opening 2prg.pdb...
+The following problems occurred while reading PDB file for 2prg.pdb
+warning:  CONECT record for nonexistent atom: 4442
+Start residue of secondary structure  not found: HELIX   14  14 SER B  208  SER B  225  1                                  18
+Start residue of secondary structure  not found: HELIX   15  15 LYS B  230  LEU B  237  1                                   8
+Start residue of secondary structure  not found: HELIX   16  16 MET B  252  LEU B  255  1                                   4
+Start residue of secondary structure  not found: HELIX   17  17 SER B  274  SER B  302  1                                  29
+Start residue of secondary structure  not found: HELIX   18  18 PHE B  306  ASN B  308  5                                   3
+Start residue of secondary structure  not found: HELIX   19  19 LEU B  311  LEU B  333  1                                  23
+Start residue of secondary structure  not found: HELIX   20  20 SER B  342  GLY B  344  5                                   3
+Start residue of secondary structure  not found: HELIX   21  21 ARG B  350  SER B  355  1                                   6
+Start residue of secondary structure  not found: HELIX   22  22 PHE B  360  ASP B  362  5                                   3
+Start residue of secondary structure  not found: HELIX   23  23 GLU B  365  LEU B  377  1                                  13
+Start residue of secondary structure  not found: HELIX   24  24 ASP B  381  ILE B  392  1                                  12
+Start residue of secondary structure  not found: HELIX   25  25 VAL B  403  ASN B  424  1                                  22
+Start residue of secondary structure  not found: HELIX   26  26 LEU B  431  THR B  459  1                                  29
+Start residue of secondary structure  not found: HELIX   27  27 PRO B  467  TYR B  473  1                                   7
+Start residue of secondary structure  not found: HELIX   28  28 HIS C  631  THR C  638  1                                   8
+Start residue of secondary structure  not found: HELIX   29  29 LYS C  688  GLN C  695  1                                   8
+Start residue of secondary structure  not found: SHEET    1   B 2 GLY B 338  ILE B 341  0
+Start residue of secondary structure  not found: SHEET    2   B 2 GLY B 346  THR B 349 -1  N  MET B 348   O  VAL B 339
+
+#0, chain A: E domain
+
+2prg.pdb opened
+Opening model1.pdb...
+model1.pdb opened
+Computing secondary structure assignments for model(s) #0, #1
+using ksdssp (Kabsch and Sander Define Secondary Structure
+of Proteins) with the parameters:
+  energy cutoff -0.5
+  minimum helix length 3
+  minimum strand length 3
+
+
+
+Matchmaker 2prg.pdb, chain A (#0) with model1.pdb, chain D (#1), sequence alignment score = 1348
+with these parameters:
+	chain pairing: bb
+	Needleman-Wunsch using BLOSUM-62
+
+	ss fraction: 0.3
+	gap open (HH/SS/other) 18/18/6, extend 1
+	ss matrix: 
+ (H, O): -6
+ (S, S): 6
+ (H, H): 6
+ (O, S): -6
+ (O, O): 4
+ (H, S): -9
+
+
+	iteration cutoff: 2
+
+RMSD between 268 pruned atom pairs is 0.654 angstroms; (across all 271 pairs: 0.743)
+
+
+Executing rmsd ['#1:LIG', '#0:BRL']
+
+RMSD between 25 atom pairs is 8.109 angstroms

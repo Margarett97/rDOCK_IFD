@@ -1,0 +1,89 @@
+Opening 1nsc.pdb...
+The following problems occurred while reading PDB file for 1nsc.pdb
+warning:  CONECT record for nonexistent atom: 3853
+Start residue of secondary structure  not found: HELIX    3   3 SER B   98  GLY B  103  5                                   6
+Start residue of secondary structure  not found: HELIX    4   4 PRO B  195  ASN B  198  5                                   4
+Start residue of secondary structure  not found: SHEET    1  1B 4 ILE B 113  CYS B 121  0
+Start residue of secondary structure  not found: SHEET    2  1B 4 CYS B 126  THR B 132 -1  N  LEU B 131   O  ARG B 115
+Start residue of secondary structure  not found: SHEET    3  1B 4 HIS B 154  LYS B 159  1  O  VAL B 158   N  HIS B 128
+Start residue of secondary structure  not found: SHEET    4  1B 4 ILE B 170  ALA B 174 -1  O  ILE B 170   N  SER B 157
+Start residue of secondary structure  not found: SHEET    1  2B 4 SER B 177  HIS B 182  0
+Start residue of secondary structure  not found: SHEET    2  2B 4 TRP B 187  ASP B 193 -1  N  VAL B 192   O  SER B 177
+Start residue of secondary structure  not found: SHEET    3  2B 4 LEU B 200  TYR B 205  1  N  LYS B 202   O  GLY B 191
+Start residue of secondary structure  not found: SHEET    4  2B 4 ALA B 208  HIS B 214 -1  N  TYR B 213   O  ILE B 201
+Start residue of secondary structure  not found: SHEET    1 3AB 4 ARG B 222  THR B 223  0
+Start residue of secondary structure  not found: SHEET    2 3AB 4 ASP B 234  GLY B 242 -1  O  THR B 240   N  ARG B 222
+Start residue of secondary structure  not found: SHEET    3 3AB 4 SER B 248  ARG B 256  1  N  LEU B 253   O  LEU B 237
+Start residue of secondary structure  not found: SHEET    4 3AB 4 ARG B 259  ILE B 264 -1  N  ARG B 259   O  ARG B 256
+Start residue of secondary structure  not found: SHEET    1 3BB 4 ASN B 229  ILE B 231  0
+Start residue of secondary structure  not found: SHEET    2 3BB 4 ASP B 234  GLY B 242 -1  O  TYR B 236   N  ASN B 229
+Start residue of secondary structure  not found: SHEET    3 3BB 4 SER B 248  ARG B 256  1  N  LEU B 253   O  LEU B 237
+Start residue of secondary structure  not found: SHEET    4 3BB 4 ARG B 259  ILE B 264 -1  N  ARG B 259   O  ARG B 256
+Start residue of secondary structure  not found: SHEET    1  4B 4 GLU B 274  PHE B 280  0
+Start residue of secondary structure  not found: SHEET    2  4B 4 THR B 285  ARG B 291 -1  O  ARG B 291   N  GLU B 274
+Start residue of secondary structure  not found: SHEET    3  4B 4 PRO B 300  ASN B 305  1  O  PRO B 300   N  CYS B 290
+Start residue of secondary structure  not found: SHEET    4  4B 4 THR B 310  LEU B 315 -1  O  THR B 310   N  ASN B 305
+Start residue of secondary structure  not found: SHEET    1  5B 4 PHE B 351  ARG B 355  0
+Start residue of secondary structure  not found: SHEET    2  5B 4 ILE B 360  ARG B 366 -1  O  TRP B 363   N  VAL B 352
+Start residue of secondary structure  not found: SHEET    3  5B 4 MET B 376  TYR B 382  1  N  GLU B 377   O  ARG B 366
+Start residue of secondary structure  not found: SHEET    4  5B 4 ALA B 394  VAL B 400 -1  N  ALA B 394   O  VAL B 380
+Start residue of secondary structure  not found: SHEET    1  6B 4 SER B 409  LYS B 415  0
+Start residue of secondary structure  not found: SHEET    2  6B 4 ASP B 420  HIS B 430 -1  O  GLY B 425   N  PHE B 410
+Start residue of secondary structure  not found: SHEET    3  6B 4 SER B 439  LEU B 447  1  O  ALA B 443   N  ILE B 426
+Start residue of secondary structure  not found: SHEET    4  6B 4 PHE B  91  ILE B  97 -1  O  ILE B  97   N  THR B 442
+warning: cannot find LINK/SSBOND residue CYS (86 )
+warning: cannot find LINK/SSBOND residue CYS (121 )
+warning: cannot find LINK/SSBOND residue CYS (181 )
+warning: cannot find LINK/SSBOND residue CYS (230 )
+warning: cannot find LINK/SSBOND residue CYS (276 )
+warning: cannot find LINK/SSBOND residue CYS (278 )
+warning: cannot find LINK/SSBOND residue CYS (317 )
+warning: cannot find LINK/SSBOND residue CYS (423 )
+warning: cannot find LINK/SSBOND residue ASN (283 )
+warning: cannot find LINK/SSBOND residue GLU (167 )
+warning: cannot find LINK/SSBOND residue HOH (539 )
+warning: cannot find LINK/SSBOND residue ASP (292 )
+warning: cannot find LINK/SSBOND residue THR (296 )
+warning: cannot find LINK/SSBOND residue ASP (323 )
+warning: cannot find LINK/SSBOND residue GLY (343 )
+warning: cannot find LINK/SSBOND residue GLY (345 )
+warning: cannot find LINK/SSBOND residue  CA (469 )
+
+#0, chain A: neuraminidase
+
+1nsc.pdb opened
+Opening model2h.pdb...
+model2h.pdb opened
+Computing secondary structure assignments for model(s) #0, #1
+using ksdssp (Kabsch and Sander Define Secondary Structure
+of Proteins) with the parameters:
+  energy cutoff -0.5
+  minimum helix length 3
+  minimum strand length 3
+
+
+
+Matchmaker 1nsc.pdb, chain A (#0) with model2h.pdb, chain A (#1), sequence alignment score = 2018.3
+with these parameters:
+	chain pairing: bb
+	Needleman-Wunsch using BLOSUM-62
+
+	ss fraction: 0.3
+	gap open (HH/SS/other) 18/18/6, extend 1
+	ss matrix: 
+ (H, O): -6
+ (S, S): 6
+ (H, H): 6
+ (O, S): -6
+ (O, O): 4
+ (H, S): -9
+
+
+	iteration cutoff: 2
+
+RMSD between 390 pruned atom pairs is 0.224 angstroms; (across all 390 pairs: 0.224)
+
+
+Executing rmsd ['#1:LIG', '#0:SIA']
+
+RMSD between 21 atom pairs is 5.468 angstroms

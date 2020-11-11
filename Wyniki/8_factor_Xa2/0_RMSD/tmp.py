@@ -1,6 +1,0 @@
-chimera_dir ='/home/malgorzata/chimera/bin'
-ref = '1ksn'
-best_score = 'model9'
-best_score2 = 'model1'
-ligand = 'FXV'
-act_chain = 'A'
