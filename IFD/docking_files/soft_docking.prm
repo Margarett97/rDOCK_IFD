@@ -49,4 +49,7 @@ SECTION GA_SLOPE3
 	STEP_SIZE			1.0	# Max torsional mutation
 END_SECTION
 
-
+SECTION FINAL
+	TRANSFORM           		RbtNullTransform
+	WEIGHT@SCORE.RESTR.CAVITY	1.0	# revert to standard cavity penalty
+END_SECTION

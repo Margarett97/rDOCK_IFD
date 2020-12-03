@@ -40,10 +40,13 @@ subprocess.run(["python3", "8_poses_chain.py"])
 
 subprocess.run([chimera_dir + "/chimera",  "--nogui", "--script", "9_write_models.py"])
 
-subprocess.run(["python3", "10_MODELLER.py"])
+#subprocess.run(["python3", "10_MODELLER.py"])
 
 with open(work_dir + "/dope.log", "w") as out:
-    subprocess.run(["python3", "11_DOPE.py"], stdout = out)
+    subprocess.run(["python3", "10_loop_modeling.py"], stdout = out)
+
+#with open(work_dir + "/dope.log", "w") as out:
+#    subprocess.run(["python3", "11_DOPE.py"], stdout = out)
 
 subprocess.run(["python3", "12_DISTANCE.py"])
 
@@ -80,7 +83,7 @@ import parameters
 from six.moves import reload_module
 reload_module(parameters)
 
-from parameters import *
-
-#subprocess.run([chimera_dir + "/chimera", "--gui", "--silent", "--script", "16_visualization.py"])
+##from parameters import *
+##
+##subprocess.run([chimera_dir + "/chimera", "--gui", "--silent", "--script", "16_visualization.py"])
 

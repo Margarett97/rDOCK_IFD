@@ -1,72 +1,16 @@
+Opening TOL.pdb...
 TOL.pdb opened
-The following problems occurred while reading PDB file for pose7s.pdb
-warning:  Ignored bad PDB record found on line 3
-warning:  Ignored bad PDB record found on line 4
-warning:  Ignored bad PDB record found on line 31
-warning:  CONECT record to nonexistent atom: (24, 25)
-warning:  CONECT record for nonexistent atom: 25
-pose7s.pdb opened
-Executing rmsd ['#1:LIG', '#0:TOL']
-RMSD between 24 atom pairs is 51.701 angstroms
-TOL.pdb opened
-The following problems occurred while reading PDB file for pose7s.pdb
-warning:  CONECT record to nonexistent atom: (24, 25)
-warning:  CONECT record for nonexistent atom: 25
-pose7s.pdb opened
-Executing rmsd ['#1:LIG', '#0:TOL']
-RMSD between 24 atom pairs is 51.701 angstroms
-TOL.pdb opened
-The following problems occurred while reading PDB file for pose7.pdb
+Opening pose9.pdb...
+The following problems occurred while reading PDB file for pose9.pdb
 warning:  Ignored bad PDB record found on line 3
 warning:  Ignored bad PDB record found on line 4
 warning:  CONECT record to nonexistent atom: (24, 25)
 warning:  CONECT record for nonexistent atom: 25
-pose7.pdb opened
+
+pose9.pdb opened
+Executing match ['#0', '#1'], no iteration
+
+RMSD between 24 atom pairs is 1.028 angstroms
 Executing rmsd ['#1:LIG', '#0:TOL']
-RMSD between 24 atom pairs is 48.432 angstroms
-Traceback (most recent call last):
-  File "/home/malgorzata/chimera/share/chimera/tkgui.py", line 354, in openPath
-    mols = chimera.openModels.open(path, type=ftype, ignore_cache=ignore_cache)
-  File "/home/malgorzata/chimera/share/chimera/__init__.py", line 1955, in open
-    models = func(filename, *args, **kw)
-  File "/home/malgorzata/chimera/share/chimera/__init__.py", line 1325, in _openPython
-    loadFunc(sandboxName, fileName, f)
-  File "18_RMSD.py", line 15, in <module>
-  File "/home/malgorzata/chimera/share/chimera/__init__.py", line 2791, in runCommand
-    makeCommand(*args, **kw)
-  File "/home/malgorzata/chimera/share/Midas/midas_text.py", line 69, in makeCommand
-    f(c, args)
-  File "/home/malgorzata/chimera/share/Midas/midas_text.py", line 1612, in doOpen
-    modelArg, noprefs)
-  File "<string>", line 1, in <module>
-  File "/home/malgorzata/chimera/share/Midas/__init__.py", line 2218, in open
-    raise MidasError('%s' % msg)
-MidasError: No such file or directory
-Error reading 18_RMSD.py:
-MidasError: No such file or directory
 
-  File "/home/malgorzata/chimera/share/Midas/__init__.py", line 2218, in open
-    raise MidasError('%s' % msg)
-
-See reply log for Python traceback.
-
-
-TOL.pdb opened
-The following problems occurred while reading PDB file for pose7.pdb
-warning:  Ignored bad PDB record found on line 3
-warning:  Ignored bad PDB record found on line 4
-warning:  CONECT record to nonexistent atom: (24, 25)
-warning:  CONECT record for nonexistent atom: 25
-pose7.pdb opened
-Executing rmsd ['#1:LIG', '#0:TOL']
-RMSD between 24 atom pairs is 48.432 angstroms
-TOL.pdb opened
-The following problems occurred while reading PDB file for pose7.pdb
-warning:  Ignored bad PDB record found on line 3
-warning:  Ignored bad PDB record found on line 4
-warning:  CONECT record to nonexistent atom: (24, 25)
-warning:  CONECT record for nonexistent atom: 25
-pose7.pdb opened
-Executing rmsd ['#1:LIG', '#0:TOL']
-RMSD between 24 atom pairs is 48.432 angstroms
-
+RMSD between 24 atom pairs is 1.028 angstroms

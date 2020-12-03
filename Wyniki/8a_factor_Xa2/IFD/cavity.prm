@@ -9,7 +9,7 @@ RECEPTOR_FLEX 3.0
 ##################################################################
 SECTION MAPPER
     SITE_MAPPER RbtLigandSiteMapper
-    REF_MOL FXV.sd
+    REF_MOL 4PP.sd
     RADIUS 6.0
     SMALL_SPHERE 1.0
     MIN_VOLUME 100

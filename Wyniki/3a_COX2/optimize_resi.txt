@@ -1,1 +1,0 @@
-selection(mdl1.residues['72:A'], mdl1.residues['78:A'], mdl1.residues['315:A'], mdl1.residues['319:A'], mdl1.residues['324:A'], mdl1.residues['325:A'], mdl1.residues['326:A'], mdl1.residues['327:A'], mdl1.residues['328:A'], mdl1.residues['329:A'])

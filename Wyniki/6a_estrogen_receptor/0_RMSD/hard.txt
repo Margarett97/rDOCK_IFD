@@ -20,8 +20,8 @@ warning: cannot find LINK/SSBOND residue CCS (381 )
 #0, chain A: estrogen receptor
 
 1err.pdb opened
-Opening model2.pdb...
-model2.pdb opened
+Opening model5.pdb...
+model5.pdb opened
 Computing secondary structure assignments for model(s) #0, #1
 using ksdssp (Kabsch and Sander Define Secondary Structure
 of Proteins) with the parameters:
@@ -31,7 +31,7 @@ of Proteins) with the parameters:
 
 
 
-Matchmaker 1err.pdb, chain A (#0) with model2.pdb, chain A (#1), sequence alignment score = 1213
+Matchmaker 1err.pdb, chain A (#0) with model5.pdb, chain A (#1), sequence alignment score = 1204.6
 with these parameters:
 	chain pairing: bb
 	Needleman-Wunsch using BLOSUM-62
@@ -49,9 +49,9 @@ with these parameters:
 
 	iteration cutoff: 2
 
-RMSD between 208 pruned atom pairs is 0.510 angstroms; (across all 225 pairs: 1.604)
+RMSD between 207 pruned atom pairs is 0.515 angstroms; (across all 225 pairs: 1.611)
 
 
 Executing rmsd ['#1:LIG', '#0:RAL']
 
-RMSD between 34 atom pairs is 5.172 angstroms
+RMSD between 34 atom pairs is 5.796 angstroms

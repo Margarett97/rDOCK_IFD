@@ -1,5 +1,9 @@
 Opening 3pgh.pdb...
 The following problems occurred while reading PDB file for 3pgh.pdb
+warning:  CONECT record to nonexistent atom: (273, 17897)
+warning:  CONECT record to nonexistent atom: (915, 17911)
+warning:  CONECT record to nonexistent atom: (2934, 17981)
+warning:  CONECT record to nonexistent atom: (3127, 17925)
 warning:  CONECT record for nonexistent atom: 4500
 Start residue of secondary structure  not found: HELIX   30  30 PHE B   74  LEU B   80  1                                   7
 Start residue of secondary structure  not found: HELIX   31  31 PRO B   86  THR B   94  1                                   9
@@ -116,6 +120,9 @@ warning: cannot find LINK/SSBOND residue CYS (37 )
 warning: cannot find LINK/SSBOND residue CYS (41 )
 warning: cannot find LINK/SSBOND residue CYS (59 )
 warning: cannot find LINK/SSBOND residue CYS (569 )
+warning: cannot find LINK/SSBOND residue NAG (661 )
+warning: cannot find LINK/SSBOND residue NAG (671 )
+warning: cannot find LINK/SSBOND residue NAG (681 )
 warning: cannot find LINK/SSBOND residue ASN (68 )
 warning: cannot find LINK/SSBOND residue ASN (144 )
 warning: cannot find LINK/SSBOND residue ASN (410 )
@@ -125,6 +132,7 @@ warning: cannot find LINK/SSBOND residue ASN (410 )
 warning: cannot find LINK/SSBOND residue ASN (68 )
 warning: cannot find LINK/SSBOND residue ASN (144 )
 warning: cannot find LINK/SSBOND residue ASN (410 )
+warning: cannot find LINK/SSBOND residue HEM (682 )
 warning: cannot find LINK/SSBOND residue HIS (388 )
 warning: cannot find LINK/SSBOND residue HIS (388 )
 warning: cannot find LINK/SSBOND residue HIS (388 )
@@ -132,8 +140,8 @@ warning: cannot find LINK/SSBOND residue HIS (388 )
 #0, chain A: prostaglandin synthase-2
 
 3pgh.pdb opened
-Opening model6.pdb...
-model6.pdb opened
+Opening model1.pdb...
+model1.pdb opened
 Computing secondary structure assignments for model(s) #0, #1
 using ksdssp (Kabsch and Sander Define Secondary Structure
 of Proteins) with the parameters:
@@ -143,7 +151,7 @@ of Proteins) with the parameters:
 
 
 
-Matchmaker 3pgh.pdb, chain A (#0) with model6.pdb, chain A (#1), sequence alignment score = 2822
+Matchmaker 3pgh.pdb, chain A (#0) with model1.pdb, chain A (#1), sequence alignment score = 2800.4
 with these parameters:
 	chain pairing: bb
 	Needleman-Wunsch using BLOSUM-62
@@ -161,9 +169,9 @@ with these parameters:
 
 	iteration cutoff: 2
 
-RMSD between 551 pruned atom pairs is 0.445 angstroms; (across all 552 pairs: 0.457)
+RMSD between 551 pruned atom pairs is 0.447 angstroms; (across all 552 pairs: 0.459)
 
 
 Executing rmsd ['#1:LIG', '#0:FLP']
 
-RMSD between 18 atom pairs is 5.342 angstroms
+RMSD between 18 atom pairs is 4.432 angstroms

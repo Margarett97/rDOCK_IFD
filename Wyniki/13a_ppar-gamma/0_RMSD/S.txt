@@ -1,7 +1,7 @@
 Opening BRL.pdb...
 BRL.pdb opened
-Opening pose4.pdb...
-The following problems occurred while reading PDB file for pose4.pdb
+Opening pose3.pdb...
+The following problems occurred while reading PDB file for pose3.pdb
 warning:  Ignored bad PDB record found on line 3
 warning:  Ignored bad PDB record found on line 4
 warning:  Ignored bad PDB record found on line 5
@@ -9,7 +9,10 @@ warning:  Ignored bad PDB record found on line 6
 warning:  CONECT record to nonexistent atom: (5, 26)
 warning:  CONECT record for nonexistent atom: 26
 
-pose4.pdb opened
+pose3.pdb opened
+Executing match ['#0', '#1'], no iteration
+
+RMSD between 25 atom pairs is 5.121 angstroms
 Executing rmsd ['#1:LIG', '#0:BRL']
 
-RMSD between 25 atom pairs is 47.774 angstroms
+RMSD between 25 atom pairs is 5.121 angstroms

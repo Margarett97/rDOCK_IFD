@@ -36,8 +36,8 @@ Start residue of secondary structure  not found: SHEET    5   M 5 TRP B 414  PHE
 #0, chain A: hiv-1 reverse transcriptase (A-chain)
 
 1c1c.pdb opened
-Opening model7.pdb...
-model7.pdb opened
+Opening model3.pdb...
+model3.pdb opened
 Computing secondary structure assignments for model(s) #0, #1
 using ksdssp (Kabsch and Sander Define Secondary Structure
 of Proteins) with the parameters:
@@ -47,7 +47,7 @@ of Proteins) with the parameters:
 
 
 
-Matchmaker 1c1c.pdb, chain A (#0) with model7.pdb, chain A (#1), sequence alignment score = 2719
+Matchmaker 1c1c.pdb, chain A (#0) with model3.pdb, chain A (#1), sequence alignment score = 2719
 with these parameters:
 	chain pairing: bb
 	Needleman-Wunsch using BLOSUM-62
@@ -70,4 +70,4 @@ RMSD between 520 pruned atom pairs is 0.795 angstroms; (across all 536 pairs: 0.
 
 Executing rmsd ['#1:LIG', '#0:PPP']
 
-RMSD between 22 atom pairs is 4.908 angstroms
+RMSD between 22 atom pairs is 5.299 angstroms

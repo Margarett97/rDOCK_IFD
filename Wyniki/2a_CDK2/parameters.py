@@ -1,0 +1,13 @@
+dock_dir ='/home/malgorzata/Desktop/rDock_2013.1_src'
+chimera_dir ='/home/malgorzata/chimera/bin'
+work_dir ='/home/malgorzata/Desktop/rDOCK_IFD/test2'
+receptor ='1aq1'
+apo ='1aq1'
+ligand ='HMD'
+rec_ligand ='STU'
+no_poses ='10'
+act_chain ='A'
+
+soft = 'soft_docking.prm' 
+hard = 'hard_docking.prm' 
+rec_chain = 'A'

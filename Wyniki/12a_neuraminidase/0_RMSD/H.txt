@@ -21,8 +21,8 @@ warning:  CONECT record to nonexistent atom: (7522, 7541)
 warning:  CONECT record for nonexistent atom: 7524
 
 SIA.pdb opened
-Opening pose2h.pdb...
-The following problems occurred while reading PDB file for pose2h.pdb
+Opening pose8.pdb...
+The following problems occurred while reading PDB file for pose8.pdb
 warning:  Ignored bad PDB record found on line 3
 warning:  Ignored bad PDB record found on line 4
 warning:  CONECT record to nonexistent atom: (12, 22)
@@ -34,7 +34,10 @@ warning:  CONECT record to nonexistent atom: (19, 26)
 warning:  CONECT record to nonexistent atom: (20, 27)
 warning:  CONECT record for nonexistent atom: 22
 
-pose2h.pdb opened
+pose8.pdb opened
+Executing match ['#0', '#1'], no iteration
+
+RMSD between 21 atom pairs is 2.761 angstroms
 Executing rmsd ['#1:LIG', '#0:SIA']
 
-RMSD between 21 atom pairs is 5.551 angstroms
+RMSD between 21 atom pairs is 2.761 angstroms

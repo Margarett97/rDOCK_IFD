@@ -6,14 +6,13 @@ from chimera import *
 from chimera import runCommand as rc
 from chimera.tkgui import saveReplyLog as rl
 
-ref = '1c1c'
-best_score = 'pose8'
-lig = 'PPP'
+ref = 'PPP'
+best_score = 'pose4'
+ligand = 'PPP'
 
-
-
-rc("open #0 " + lig + ".pdb")
+rc("open #0 " + ref + ".pdb")
 rc("open #1 " + best_score + ".pdb")
 #rc("matchmaker #0 #1 ")
-RMSD = rc("rmsd #1:LIG #0:" + lig) 
+rc('match #0 #1')
+RMSD = rc("rmsd #1:LIG #0:" + ligand) 
 

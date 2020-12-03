@@ -13,7 +13,7 @@ os.chdir(work_dir)
 
 num = 0
 dope_valu = []
-with open("dope.log") as f:
+with open("dope.log",'r') as f:
     line = f.readlines()
     for i,lines in enumerate(line):
         if lines.startswith("DOPE score               :"):
@@ -23,9 +23,8 @@ f.close()
 
 with open("DOPE.txt", "w") as n:
     for i in range(0,len(dope_valu)):
-        if i % 2 == 1:
-            n.write(str(num) + "   " + dope_valu[i])
-            num += 1
+        n.write(str(num) + "   " + dope_valu[i])
+        num += 1
 n.close()
 
 

@@ -14,6 +14,9 @@ warning:  CONECT record to nonexistent atom: (33, 38)
 warning:  CONECT record for nonexistent atom: 34
 
 pose3.pdb opened
+Executing match ['#0', '#1'], no iteration
+
+RMSD between 33 atom pairs is 5.442 angstroms
 Executing rmsd ['#1:LIG', '#0:FXV']
 
-RMSD between 33 atom pairs is 7.842 angstroms
+RMSD between 33 atom pairs is 5.442 angstroms
