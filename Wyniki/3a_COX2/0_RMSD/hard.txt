@@ -33,8 +33,8 @@ warning: cannot find LINK/SSBOND residue HIS (388 )
 #0, chain A: prostaglandin synthase-2
 
 1cx2.pdb opened
-Opening model9h.pdb...
-model9h.pdb opened
+Opening model4.pdb...
+model4.pdb opened
 Computing secondary structure assignments for model(s) #0, #1
 using ksdssp (Kabsch and Sander Define Secondary Structure
 of Proteins) with the parameters:
@@ -44,7 +44,7 @@ of Proteins) with the parameters:
 
 
 
-Matchmaker 1cx2.pdb, chain A (#0) with model9h.pdb, chain A (#1), sequence alignment score = 2814.8
+Matchmaker 1cx2.pdb, chain A (#0) with model4.pdb, chain A (#1), sequence alignment score = 2814.8
 with these parameters:
 	chain pairing: bb
 	Needleman-Wunsch using BLOSUM-62
@@ -62,9 +62,9 @@ with these parameters:
 
 	iteration cutoff: 2
 
-RMSD between 548 pruned atom pairs is 0.450 angstroms; (across all 552 pairs: 0.682)
+RMSD between 548 pruned atom pairs is 0.449 angstroms; (across all 552 pairs: 0.618)
 
 
 Executing rmsd ['#1:LIG', '#0:S58']
 
-RMSD between 26 atom pairs is 15.183 angstroms
+RMSD between 26 atom pairs is 14.552 angstroms

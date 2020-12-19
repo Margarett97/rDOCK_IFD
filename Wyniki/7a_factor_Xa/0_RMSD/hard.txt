@@ -21,8 +21,8 @@ warning: cannot find LINK/SSBOND residue BHD (63 )
 #0, chain C: stuart factor
 
 1xka.pdb opened
-Opening model2.pdb...
-model2.pdb opened
+Opening model7.pdb...
+model7.pdb opened
 Computing secondary structure assignments for model(s) #0, #1
 using ksdssp (Kabsch and Sander Define Secondary Structure
 of Proteins) with the parameters:
@@ -32,7 +32,7 @@ of Proteins) with the parameters:
 
 
 
-Matchmaker 1xka.pdb, chain C (#0) with model2.pdb, chain A (#1), sequence alignment score = 1178.3
+Matchmaker 1xka.pdb, chain C (#0) with model7.pdb, chain A (#1), sequence alignment score = 1214.3
 with these parameters:
 	chain pairing: bb
 	Needleman-Wunsch using BLOSUM-62
@@ -50,9 +50,9 @@ with these parameters:
 
 	iteration cutoff: 2
 
-RMSD between 221 pruned atom pairs is 0.486 angstroms; (across all 234 pairs: 1.340)
+RMSD between 228 pruned atom pairs is 0.460 angstroms; (across all 234 pairs: 0.661)
 
 
 Executing rmsd ['#1:LIG', '#0:PPP']
 
-RMSD between 29 atom pairs is 7.768 angstroms
+RMSD between 29 atom pairs is 8.720 angstroms

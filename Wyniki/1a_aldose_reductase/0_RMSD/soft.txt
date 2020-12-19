@@ -2,8 +2,8 @@ Opening 1ah3.pdb...
 #0, chain A: aldose reductase
 
 1ah3.pdb opened
-Opening model2.pdb...
-model2.pdb opened
+Opening model9.pdb...
+model9.pdb opened
 Computing secondary structure assignments for model(s) #0, #1
 using ksdssp (Kabsch and Sander Define Secondary Structure
 of Proteins) with the parameters:
@@ -13,7 +13,7 @@ of Proteins) with the parameters:
 
 
 
-Matchmaker 1ah3.pdb, chain A (#0) with model2.pdb, chain A (#1), sequence alignment score = 1487.6
+Matchmaker 1ah3.pdb, chain A (#0) with model9.pdb, chain A (#1), sequence alignment score = 1487.6
 with these parameters:
 	chain pairing: bb
 	Needleman-Wunsch using BLOSUM-62
@@ -36,4 +36,4 @@ RMSD between 309 pruned atom pairs is 0.479 angstroms; (across all 315 pairs: 0.
 
 Executing rmsd ['#1:LIG', '#0:TOL']
 
-RMSD between 24 atom pairs is 10.063 angstroms
+RMSD between 24 atom pairs is 13.712 angstroms

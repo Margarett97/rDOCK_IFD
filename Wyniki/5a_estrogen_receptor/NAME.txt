@@ -1,0 +1,10 @@
+model0.BL00050001.pdb
+model1.BL00050001.pdb
+model2.BL00070001.pdb
+model3.BL00040001.pdb
+model4.BL00070001.pdb
+model5.BL00020001.pdb
+model6.BL00080001.pdb
+model7.BL00070001.pdb
+model8.BL00080001.pdb
+model9.BL00030001.pdb

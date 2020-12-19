@@ -1,16 +1,16 @@
 Opening OHT.pdb...
 OHT.pdb opened
-Opening pose9.pdb...
-The following problems occurred while reading PDB file for pose9.pdb
+Opening pose3.pdb...
+The following problems occurred while reading PDB file for pose3.pdb
 warning:  Ignored bad PDB record found on line 3
 warning:  Ignored bad PDB record found on line 4
 warning:  CONECT record to nonexistent atom: (15, 30)
 warning:  CONECT record for nonexistent atom: 30
 
-pose9.pdb opened
+pose3.pdb opened
 Executing match ['#0', '#1'], no iteration
 
-RMSD between 29 atom pairs is 3.824 angstroms
+RMSD between 29 atom pairs is 4.051 angstroms
 Executing rmsd ['#1:LIG', '#0:OHT']
 
-RMSD between 29 atom pairs is 3.824 angstroms
+RMSD between 29 atom pairs is 4.051 angstroms

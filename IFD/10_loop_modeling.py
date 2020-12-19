@@ -22,7 +22,7 @@ class MyLoop(loopmodel):
         select=selection(m)
         select1=select.only_het_residues()  # selection of ligand
         select2=select1.select_sphere(5)    # selection of all atoms within 5A of ligand
-        select3=select2.only_std_residues() # select only standard residues (ATOM)
+        select3=select2.only_std_residues() 
         select4=select3.by_residue()
         
         return select4
@@ -30,13 +30,13 @@ class MyLoop(loopmodel):
 for i in range(0,int(no_poses)):    
     m = MyLoop(env,
            inimodel='model' + str(i) + '.pdb',   # initial model of the target
-           sequence= receptor,                 # code of the target
-           loop_assess_methods=assess.DOPE) # assess loops with DOPE
-#          loop_assess_methods=soap_loop.Scorer()) # assess with SOAP-Loop
+           sequence= 'model' + str(i),      # MODEL NAME : model1.BL000X000Y.pdf X- model number, Y -(starting_model:ending_model)
+           loop_assess_methods=assess.DOPE) 
+
 
     m.loop.starting_model= 1           # index of the first loop model
     m.loop.ending_model  = 1           # index of the last loop model
-    m.loop.md_level = refine.very_fast  # loop refinement method
+    m.loop.md_level = refine.slow  # loop refinement method
 
     m.make()
     m.write(file = 'model' + str(i) + '_opt.pdb')

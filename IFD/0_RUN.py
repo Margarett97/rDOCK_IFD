@@ -45,8 +45,10 @@ subprocess.run([chimera_dir + "/chimera",  "--nogui", "--script", "9_write_model
 with open(work_dir + "/dope.log", "w") as out:
     subprocess.run(["python3", "10_loop_modeling.py"], stdout = out)
 
-#with open(work_dir + "/dope.log", "w") as out:
-#    subprocess.run(["python3", "11_DOPE.py"], stdout = out)
+
+#subprocess.run(["python3", "11_DOPE.py"])
+
+#subprocess.run(["python3", "11a_model_rename.py"])
 
 subprocess.run(["python3", "12_DISTANCE.py"])
 

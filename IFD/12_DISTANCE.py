@@ -20,13 +20,11 @@ with open("dope.log",'r') as f:
             value = lines.split(":")[1] 
             dope_valu.append(value)
 f.close()
-
 with open("DOPE.txt", "w") as n:
     for i in range(0,len(dope_valu)):
         n.write(str(num) + "   " + dope_valu[i])
         num += 1
 n.close()
-
 
     
 

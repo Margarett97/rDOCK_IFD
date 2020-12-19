@@ -10,7 +10,7 @@ warning:  CONECT record for nonexistent atom: 19
 pose1.pdb opened
 Executing match ['#0', '#1'], no iteration
 
-RMSD between 18 atom pairs is 2.002 angstroms
+RMSD between 18 atom pairs is 1.957 angstroms
 Executing rmsd ['#1:LIG', '#0:FLP']
 
-RMSD between 18 atom pairs is 2.002 angstroms
+RMSD between 18 atom pairs is 1.957 angstroms

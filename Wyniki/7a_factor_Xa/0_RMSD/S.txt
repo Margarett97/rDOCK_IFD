@@ -1,7 +1,7 @@
 Opening PPP.pdb...
 PPP.pdb opened
-Opening pose7.pdb...
-The following problems occurred while reading PDB file for pose7.pdb
+Opening pose9.pdb...
+The following problems occurred while reading PDB file for pose9.pdb
 warning:  Ignored bad PDB record found on line 3
 warning:  Ignored bad PDB record found on line 4
 warning:  Ignored bad PDB record found on line 5
@@ -12,10 +12,10 @@ warning:  CONECT record to nonexistent atom: (16, 33)
 warning:  CONECT record to nonexistent atom: (16, 34)
 warning:  CONECT record for nonexistent atom: 30
 
-pose7.pdb opened
+pose9.pdb opened
 Executing match ['#0', '#1'], no iteration
 
-RMSD between 29 atom pairs is 6.332 angstroms
+RMSD between 29 atom pairs is 6.280 angstroms
 Executing rmsd ['#1:LIG', '#0:PPP']
 
-RMSD between 29 atom pairs is 6.332 angstroms
+RMSD between 29 atom pairs is 6.280 angstroms
