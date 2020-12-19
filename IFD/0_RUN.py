@@ -40,17 +40,10 @@ subprocess.run(["python3", "8_poses_chain.py"])
 
 subprocess.run([chimera_dir + "/chimera",  "--nogui", "--script", "9_write_models.py"])
 
-#subprocess.run(["python3", "10_MODELLER.py"])
-
 with open(work_dir + "/dope.log", "w") as out:
     subprocess.run(["python3", "10_loop_modeling.py"], stdout = out)
 
-
-#subprocess.run(["python3", "11_DOPE.py"])
-
-#subprocess.run(["python3", "11a_model_rename.py"])
-
-subprocess.run(["python3", "12_DISTANCE.py"])
+subprocess.run(["python3", "11_DISTANCE.py"])
 
 
 import parameters
@@ -68,7 +61,7 @@ subprocess.run(["python3", "3_extension.py"])
 
 subprocess.run(["python3", "4_cavity_prep.py"])
 
-subprocess.run(["python3", "14_hard_docking.py"])
+subprocess.run(["python3", "13_hard_docking.py"])
 
 subprocess.run(["python3", "6_chain.py"])
 
@@ -78,7 +71,7 @@ subprocess.run(["python3", "8_poses_chain.py"])
 
 subprocess.run([chimera_dir + "/chimera", "--nogui", "--script", "9_write_models.py"])
 
-subprocess.run(["python3", "15_SCORE.py"])
+subprocess.run(["python3", "14_SCORE.py"])
 
 
 import parameters
@@ -87,5 +80,5 @@ reload_module(parameters)
 
 ##from parameters import *
 ##
-##subprocess.run([chimera_dir + "/chimera", "--gui", "--silent", "--script", "16_visualization.py"])
+##subprocess.run([chimera_dir + "/chimera", "--gui", "--silent", "--script", "15_visualization.py"])
 

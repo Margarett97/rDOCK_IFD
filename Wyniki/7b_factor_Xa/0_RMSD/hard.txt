@@ -1,0 +1,58 @@
+Opening 1xka.pdb...
+The following problems occurred while reading PDB file for 1xka.pdb
+warning:  CONECT record for nonexistent atom: 15
+Start residue of secondary structure  not found: HELIX    1   1 ASP L   92  ASP L   95  5                                   4
+Start residue of secondary structure  not found: SHEET    1   A 2 LYS L  60  LYS L  62  0
+Start residue of secondary structure  not found: SHEET    2   A 2 THR L  69  THR L  71 -1  N  THR L  71   O  LYS L  60
+Start residue of secondary structure  not found: SHEET    1   B 2 PHE L  99  GLU L 102  0
+Start residue of secondary structure  not found: SHEET    2   B 2 VAL L 107  SER L 110 -1  N  SER L 110   O  PHE L  99
+Start residue of secondary structure  not found: SHEET    1   C 2 TYR L 115  LEU L 117  0
+Start residue of secondary structure  not found: SHEET    2   C 2 CYS L 124  PRO L 126 -1  N  ILE L 125   O  THR L 116
+warning: cannot find LINK/SSBOND residue CYS (50 )
+warning: cannot find LINK/SSBOND residue CYS (55 )
+warning: cannot find LINK/SSBOND residue CYS (72 )
+warning: cannot find LINK/SSBOND residue CYS (89 )
+warning: cannot find LINK/SSBOND residue CYS (96 )
+warning: cannot find LINK/SSBOND residue CYS (111 )
+warning: cannot find LINK/SSBOND residue CYS (132 )
+warning: cannot find LINK/SSBOND residue LYS (62 )
+warning: cannot find LINK/SSBOND residue BHD (63 )
+
+#0, chain C: stuart factor
+
+1xka.pdb opened
+Opening model7.pdb...
+model7.pdb opened
+Computing secondary structure assignments for model(s) #0, #1
+using ksdssp (Kabsch and Sander Define Secondary Structure
+of Proteins) with the parameters:
+  energy cutoff -0.5
+  minimum helix length 3
+  minimum strand length 3
+
+
+
+Matchmaker 1xka.pdb, chain C (#0) with model7.pdb, chain A (#1), sequence alignment score = 1221.5
+with these parameters:
+	chain pairing: bb
+	Needleman-Wunsch using BLOSUM-62
+
+	ss fraction: 0.3
+	gap open (HH/SS/other) 18/18/6, extend 1
+	ss matrix: 
+ (H, O): -6
+ (S, S): 6
+ (H, H): 6
+ (O, S): -6
+ (O, O): 4
+ (H, S): -9
+
+
+	iteration cutoff: 2
+
+RMSD between 233 pruned atom pairs is 0.409 angstroms; (across all 234 pairs: 0.431)
+
+
+Executing rmsd ['#1:LIG', '#0:PPP']
+
+RMSD between 29 atom pairs is 7.601 angstroms
