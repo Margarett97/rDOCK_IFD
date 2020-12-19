@@ -1,0 +1,16 @@
+Opening FLP.pdb...
+FLP.pdb opened
+Opening pose8.pdb...
+The following problems occurred while reading PDB file for pose8.pdb
+warning:  Ignored bad PDB record found on line 3
+warning:  Ignored bad PDB record found on line 4
+warning:  CONECT record to nonexistent atom: (17, 19)
+warning:  CONECT record for nonexistent atom: 19
+
+pose8.pdb opened
+Executing match ['#0', '#1'], no iteration
+
+RMSD between 18 atom pairs is 1.941 angstroms
+Executing rmsd ['#1:LIG', '#0:FLP']
+
+RMSD between 18 atom pairs is 1.941 angstroms

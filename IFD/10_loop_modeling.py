@@ -36,7 +36,7 @@ for i in range(0,int(no_poses)):
 
     m.loop.starting_model= 1           # index of the first loop model
     m.loop.ending_model  = 1           # index of the last loop model
-    m.loop.md_level = refine.fast  # loop refinement method
+    m.loop.md_level = refine.slow  # loop refinement method
 
     m.make()
     m.write(file = 'model' + str(i) + '_opt.pdb')
