@@ -1,0 +1,22 @@
+Opening FXV.pdb...
+FXV.pdb opened
+Opening pose3.pdb...
+The following problems occurred while reading PDB file for pose3.pdb
+warning:  Ignored bad PDB record found on line 3
+warning:  Ignored bad PDB record found on line 4
+warning:  Ignored bad PDB record found on line 5
+warning:  Ignored bad PDB record found on line 6
+warning:  CONECT record to nonexistent atom: (14, 34)
+warning:  CONECT record to nonexistent atom: (28, 35)
+warning:  CONECT record to nonexistent atom: (29, 36)
+warning:  CONECT record to nonexistent atom: (29, 37)
+warning:  CONECT record to nonexistent atom: (33, 38)
+warning:  CONECT record for nonexistent atom: 34
+
+pose3.pdb opened
+Executing match ['#0', '#1'], no iteration
+
+RMSD between 33 atom pairs is 5.221 angstroms
+Executing rmsd ['#1:LIG', '#0:FXV']
+
+RMSD between 33 atom pairs is 5.221 angstroms

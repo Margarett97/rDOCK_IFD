@@ -4,9 +4,9 @@ import os, subprocess, shutil
 
 with open("parameters.py","a") as f:
     name1 = "soft = '"
-    name2 = "hard = '"
+#    name2 = "hard = '"
     f.write(name1 + "soft_docking.prm' \n")
-    f.write(name2 + "hard_docking.prm' \n")
+#    f.write(name2 + "hard_docking.prm' \n")
 
 f.close()
 
@@ -55,7 +55,7 @@ from parameters import *
 ##HARD DOCKING
 
 
-subprocess.run([chimera_dir + "/chimera", "--nogui", "--script", "13_prep_sec_docking.py"])
+subprocess.run([chimera_dir + "/chimera", "--nogui", "--script", "12_prep_sec_docking.py"])
 
 subprocess.run(["python3", "3_extension.py"])
 

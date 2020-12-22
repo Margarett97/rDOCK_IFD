@@ -1,0 +1,16 @@
+Opening TOL.pdb...
+TOL.pdb opened
+Opening pose3.pdb...
+The following problems occurred while reading PDB file for pose3.pdb
+warning:  Ignored bad PDB record found on line 3
+warning:  Ignored bad PDB record found on line 4
+warning:  CONECT record to nonexistent atom: (24, 25)
+warning:  CONECT record for nonexistent atom: 25
+
+pose3.pdb opened
+Executing match ['#0', '#1'], no iteration
+
+RMSD between 24 atom pairs is 1.781 angstroms
+Executing rmsd ['#1:LIG', '#0:TOL']
+
+RMSD between 24 atom pairs is 1.781 angstroms

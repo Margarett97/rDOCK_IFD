@@ -9,7 +9,7 @@ from parameters import *
 
 
 os.chdir(work_dir)
-rc("open "+ best_pose+".pdb")
+rc("open "+ best_pose + ".pdb")
 rc("select :/isHet " ) 
 rc("delete selected")
 rc("write #0 ligand_remove.pdb")

@@ -1,0 +1,70 @@
+Opening 1cx2.pdb...
+The following problems occurred while reading PDB file for 1cx2.pdb
+warning:  Ignored bad PDB record found on line 6429
+warning:  CONECT record for nonexistent atom: 5594
+warning: cannot find LINK/SSBOND residue CYS (36 )
+warning: cannot find LINK/SSBOND residue CYS (37 )
+warning: cannot find LINK/SSBOND residue CYS (41 )
+warning: cannot find LINK/SSBOND residue CYS (59 )
+warning: cannot find LINK/SSBOND residue CYS (569 )
+warning: cannot find LINK/SSBOND residue CYS (36 )
+warning: cannot find LINK/SSBOND residue CYS (37 )
+warning: cannot find LINK/SSBOND residue CYS (41 )
+warning: cannot find LINK/SSBOND residue CYS (59 )
+warning: cannot find LINK/SSBOND residue CYS (569 )
+warning: cannot find LINK/SSBOND residue CYS (36 )
+warning: cannot find LINK/SSBOND residue CYS (37 )
+warning: cannot find LINK/SSBOND residue CYS (41 )
+warning: cannot find LINK/SSBOND residue CYS (59 )
+warning: cannot find LINK/SSBOND residue CYS (569 )
+warning: cannot find LINK/SSBOND residue ASN (68 )
+warning: cannot find LINK/SSBOND residue ASN (144 )
+warning: cannot find LINK/SSBOND residue ASN (410 )
+warning: cannot find LINK/SSBOND residue ASN (68 )
+warning: cannot find LINK/SSBOND residue ASN (144 )
+warning: cannot find LINK/SSBOND residue ASN (410 )
+warning: cannot find LINK/SSBOND residue ASN (68 )
+warning: cannot find LINK/SSBOND residue ASN (144 )
+warning: cannot find LINK/SSBOND residue ASN (410 )
+warning: cannot find LINK/SSBOND residue HIS (388 )
+warning: cannot find LINK/SSBOND residue HIS (388 )
+warning: cannot find LINK/SSBOND residue HIS (388 )
+
+#0, chain A: prostaglandin synthase-2
+
+1cx2.pdb opened
+Opening model3.pdb...
+model3.pdb opened
+Computing secondary structure assignments for model(s) #0, #1
+using ksdssp (Kabsch and Sander Define Secondary Structure
+of Proteins) with the parameters:
+  energy cutoff -0.5
+  minimum helix length 3
+  minimum strand length 3
+
+
+
+Matchmaker 1cx2.pdb, chain A (#0) with model3.pdb, chain A (#1), sequence alignment score = 2814.8
+with these parameters:
+	chain pairing: bb
+	Needleman-Wunsch using BLOSUM-62
+
+	ss fraction: 0.3
+	gap open (HH/SS/other) 18/18/6, extend 1
+	ss matrix: 
+ (H, O): -6
+ (S, S): 6
+ (H, H): 6
+ (O, S): -6
+ (O, O): 4
+ (H, S): -9
+
+
+	iteration cutoff: 2
+
+RMSD between 547 pruned atom pairs is 0.453 angstroms; (across all 552 pairs: 0.538)
+
+
+Executing rmsd ['#1:LIG', '#0:S58']
+
+RMSD between 26 atom pairs is 16.795 angstroms

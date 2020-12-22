@@ -1,0 +1,23 @@
+Opening S58.pdb...
+The following problems occurred while reading PDB file for S58.pdb
+warning:  CONECT record to nonexistent atom: (22154, 22162)
+warning:  CONECT record to nonexistent atom: (22154, 22163)
+warning:  CONECT record for nonexistent atom: 22162
+
+S58.pdb opened
+Opening pose3.pdb...
+The following problems occurred while reading PDB file for pose3.pdb
+warning:  Ignored bad PDB record found on line 3
+warning:  Ignored bad PDB record found on line 4
+warning:  Ignored bad PDB record found on line 5
+warning:  CONECT record to nonexistent atom: (19, 28)
+warning:  CONECT record to nonexistent atom: (19, 27)
+warning:  CONECT record for nonexistent atom: 27
+
+pose3.pdb opened
+Executing match ['#0', '#1'], no iteration
+
+RMSD between 26 atom pairs is 1.457 angstroms
+Executing rmsd ['#1:LIG', '#0:S58']
+
+RMSD between 26 atom pairs is 1.457 angstroms
