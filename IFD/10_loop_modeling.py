@@ -1,44 +1,159 @@
-# Loop refinement of an existing model
-from modeller import *
-from modeller.automodel import *
-#from modeller import soap_loop
-import os
-from parameters import *
+from pyrosetta import *
+from pyrosetta.toolbox import *
 
-os.chdir(work_dir)
+from pyrosetta.rosetta.protocols.loops import *
+from pyrosetta.rosetta.protocols.jumping import *
 
-log.verbose()
-env = environ()
-env.io.hetatm = True
+from pyrosetta.rosetta.core.fragment import *
+from pyrosetta.rosetta.protocols.simple_moves import *
+from pyrosetta.rosetta.protocols.loops.loop_closure.ccd import *
+from pyrosetta.rosetta.protocols.loops.loop_mover.refine import *
+from pyrosetta.rosetta.core.pack.task import *
+from pyrosetta.rosetta.protocols.minimization_packing import *
+import math
 
-# directories for input atom files
-env.io.atom_files_directory = work_dir
-
-# Create a new class based on 'loopmodel' so that we can redefine
-# select_loop_atoms (necessary)
-class MyLoop(loopmodel):
-    # This routine picks the residues to be refined by loop modeling
-    def select_loop_atoms(self):
-        select=selection(m)
-        select1=select.only_het_residues()  # selection of ligand
-        select2=select1.select_sphere(5)    # selection of all atoms within 5A of ligand
-        select3=select2.only_std_residues() # select only standard residues (ATOM)
-        select4=select3.by_residue()
-        
-        return select4
-
-for i in range(0,int(no_poses)):    
-    m = MyLoop(env,
-           inimodel='model' + str(i) + '.pdb',   # initial model of the target
-           sequence= receptor,                 # code of the target
-           loop_assess_methods=assess.DOPE) # assess loops with DOPE
-#          loop_assess_methods=soap_loop.Scorer()) # assess with SOAP-Loop
-
-    m.loop.starting_model= 1           # index of the first loop model
-    m.loop.ending_model  = 1           # index of the last loop model
-    m.loop.md_level = refine.very_fast  # loop refinement method
-
-    m.make()
-    m.write(file = 'model' + str(i) + '_opt.pdb')
+init()
 
 
+# uwzglednienie ligandu
+
+p = Pose()
+
+
+res_set = generate_nonstandard_residue_set(p,['P3.params'])
+pose = pose_from_file(p, res_set, "model2.pdb")
+
+
+starting_p = Pose()
+starting_p.assign(p)
+
+# score
+
+scorefxn_low = create_score_function('cen_std')
+scorefxn_high = create_score_function('ref2015')  
+
+
+# definiowanie petli
+
+loop1 = Loop(18, 21, 19)
+loop2 = Loop(208, 216, 212)
+loop3 = Loop(260, 262, 261)
+
+loops = Loops()
+loops.add_loop(loop1)
+loops.add_loop(loop2)
+loops.add_loop(loop3)
+
+add_single_cutpoint_variant(p, loop1)
+add_single_cutpoint_variant(p, loop2)
+add_single_cutpoint_variant(p, loop3)
+
+movemap = MoveMap()
+movemap.set_bb_true_range(18, 21)  # set backbone torsions between the residues
+movemap.set_bb_true_range(208, 216)
+movemap.set_bb_true_range(260, 262)
+
+movemap.set_chi(True)
+
+print("setting up movers")
+#backbone movers
+fragset3mer = ConstantLengthFragSet(3, "2acr.frag3")
+mover_3mer = ClassicFragmentMover(fragset3mer, movemap)
+
+ccd_closure1 = CCDLoopClosureMover(loop1, movemap)
+ccd_closure2 = CCDLoopClosureMover(loop2, movemap)
+ccd_closure3 = CCDLoopClosureMover(loop3, movemap)
+
+#centroid/fullatom conversion movers
+to_centroid = SwitchResidueTypeSetMover('centroid')
+to_fullatom = SwitchResidueTypeSetMover('fa_standard')
+recover_sidechains = ReturnSidechainMover(starting_p)
+
+#set up sidechain packer movers
+task_pack = TaskFactory.create_packer_task(starting_p)
+task_pack.restrict_to_repacking()
+task_pack.or_include_current( True )
+pack = PackRotamersMover( scorefxn_high, task_pack )
+
+#convert to centroid mode
+to_centroid.apply(p)
+
+starting_p_centroid = Pose()
+starting_p_centroid.assign(p)
+
+print("set up job distributor")
+jd = PyJobDistributor("loop_output", 1 ,scorefxn_high)
+jd.native_pose = starting_p
+
+while (jd.job_complete == False):
+  p.assign(starting_p_centroid)
+
+  print("randomizing loop")
+  for i in range(18, 21+1):
+    p.set_phi(i, -180)
+    p.set_psi(i, 180)
+    
+  for i in range(208, 216+1):
+    p.set_phi(i, -180)
+    p.set_psi(i, 180)
+    
+  for i in range(260, 262+1):
+    p.set_phi(i, -180)
+    p.set_psi(i, 180)
+    
+  for i in range(18, 21+1):
+    mover_3mer.apply(p)
+    
+  for i in range(268, 216+1):
+    mover_3mer.apply(p)
+    
+  for i in range(260, 262+1):
+    mover_3mer.apply(p)
+    
+  print("low res loop modeling")
+  outer_cycles = 10
+  inner_cycles = 30
+
+  #simulated annealing incrementing kT geometrically from 2.0 to 0.8
+  init_temp = 2.0
+  final_temp = 0.8
+  gamma = math.pow((final_temp/init_temp),(1.0/(outer_cycles*inner_cycles)))
+  kT = init_temp
+
+  mc = MonteCarlo(p, scorefxn_low, kT)
+
+  for i in range(1,outer_cycles+1):
+    mc.recover_low(p)
+    scorefxn_low(p)
+    for j in range(1, inner_cycles+1):
+      kT = kT * gamma
+      mc.set_temperature(kT)
+      mover_3mer.apply(p)
+      ccd_closure1.apply(p)
+      ccd_closure2.apply(p)
+      ccd_closure3.apply(p)
+      mc.boltzmann(p)
+  mc.recover_low(p)
+
+  print("high-res refinement")
+  #no fragment insertions in refinement, only small/shear moves and sidechain packing
+  to_fullatom.apply(p)
+  recover_sidechains.apply(p)
+  pack.apply(p)
+
+
+
+  my_loops = Loops()
+  my_loops.add_loop(loop1)
+  my_loops.add_loop(loop2)
+  my_loops.add_loop(loop3)  
+  add_single_cutpoint_variant(p, loop1)
+  add_single_cutpoint_variant(p, loop2)
+  add_single_cutpoint_variant(p, loop3)
+  loop_refine = LoopMover_Refine_CCD(my_loops)
+  loop_refine.apply(p)
+
+  print("outputting decoy...")
+  Lrms = loop_rmsd(p, starting_p, my_loops, True)
+  jd.additional_decoy_info = " Lrmsd: " + str(Lrms)
+  jd.output_decoy(p)
