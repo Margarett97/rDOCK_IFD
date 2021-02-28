@@ -20,8 +20,8 @@ init()
 p = Pose()
 
 
-res_set = generate_nonstandard_residue_set(p,['P3.params'])
-pose = pose_from_file(p, res_set, "model2.pdb")
+res_set = generate_nonstandard_residue_set(p,['P1.params'])
+pose = pose_from_file(p, res_set, "MODEL1.pdb")
 
 
 starting_p = Pose()
@@ -65,9 +65,9 @@ ccd_closure2 = CCDLoopClosureMover(loop2, movemap)
 ccd_closure3 = CCDLoopClosureMover(loop3, movemap)
 
 #centroid/fullatom conversion movers
-to_centroid = SwitchResidueTypeSetMover('centroid')
-to_fullatom = SwitchResidueTypeSetMover('fa_standard')
-recover_sidechains = ReturnSidechainMover(starting_p)
+# to_centroid = SwitchResidueTypeSetMover('centroid')
+# to_fullatom = SwitchResidueTypeSetMover('fa_standard')
+# recover_sidechains = ReturnSidechainMover(starting_p)
 
 #set up sidechain packer movers
 task_pack = TaskFactory.create_packer_task(starting_p)
@@ -76,72 +76,70 @@ task_pack.or_include_current( True )
 pack = PackRotamersMover( scorefxn_high, task_pack )
 
 #convert to centroid mode
-to_centroid.apply(p)
+# to_centroid.apply(p)
 
-starting_p_centroid = Pose()
-starting_p_centroid.assign(p)
+# starting_p_centroid = Pose()
+# starting_p_centroid.assign(p)
 
 print("set up job distributor")
-jd = PyJobDistributor("loop_output", 1 ,scorefxn_high)
+jd = PyJobDistributor("NEW_output", 1 ,scorefxn_high)
 jd.native_pose = starting_p
 
 while (jd.job_complete == False):
-  p.assign(starting_p_centroid)
+  #p.assign(starting_p_centroid)
 
-  print("randomizing loop")
-  for i in range(18, 21+1):
-    p.set_phi(i, -180)
-    p.set_psi(i, 180)
+  #print("randomizing loop")
+  #for i in range(18, 21+1):
+    #p.set_phi(i, -180)
+    #p.set_psi(i, 180)
     
-  for i in range(208, 216+1):
-    p.set_phi(i, -180)
-    p.set_psi(i, 180)
+  # for i in range(208, 216+1):
+    # p.set_phi(i, -180)
+    # p.set_psi(i, 180)
     
-  for i in range(260, 262+1):
-    p.set_phi(i, -180)
-    p.set_psi(i, 180)
+  # for i in range(260, 262+1):
+    # p.set_phi(i, -180)
+    # p.set_psi(i, 180)
     
-  for i in range(18, 21+1):
-    mover_3mer.apply(p)
+  # for i in range(18, 21+1):
+    # mover_3mer.apply(p)
     
-  for i in range(268, 216+1):
-    mover_3mer.apply(p)
+  # for i in range(268, 216+1):
+    # mover_3mer.apply(p)
     
-  for i in range(260, 262+1):
-    mover_3mer.apply(p)
+  # for i in range(260, 262+1):
+    # mover_3mer.apply(p)
     
-  print("low res loop modeling")
-  outer_cycles = 10
-  inner_cycles = 30
+  # print("low res loop modeling")
+  # outer_cycles = 10
+  # inner_cycles = 30
 
-  #simulated annealing incrementing kT geometrically from 2.0 to 0.8
-  init_temp = 2.0
-  final_temp = 0.8
-  gamma = math.pow((final_temp/init_temp),(1.0/(outer_cycles*inner_cycles)))
-  kT = init_temp
+  # #simulated annealing incrementing kT geometrically from 2.0 to 0.8
+  # init_temp = 2.0
+  # final_temp = 0.8
+  # gamma = math.pow((final_temp/init_temp),(1.0/(outer_cycles*inner_cycles)))
+  # kT = init_temp
 
-  mc = MonteCarlo(p, scorefxn_low, kT)
+  # mc = MonteCarlo(p, scorefxn_low, kT)
 
-  for i in range(1,outer_cycles+1):
-    mc.recover_low(p)
-    scorefxn_low(p)
-    for j in range(1, inner_cycles+1):
-      kT = kT * gamma
-      mc.set_temperature(kT)
-      mover_3mer.apply(p)
-      ccd_closure1.apply(p)
-      ccd_closure2.apply(p)
-      ccd_closure3.apply(p)
-      mc.boltzmann(p)
-  mc.recover_low(p)
+  # for i in range(1,outer_cycles+1):
+    # mc.recover_low(p)
+    # scorefxn_low(p)
+    # for j in range(1, inner_cycles+1):
+      # kT = kT * gamma
+      # mc.set_temperature(kT)
+      # mover_3mer.apply(p)
+      # ccd_closure1.apply(p)
+      # ccd_closure2.apply(p)
+      # ccd_closure3.apply(p)
+      # mc.boltzmann(p)
+  # mc.recover_low(p)
 
   print("high-res refinement")
   #no fragment insertions in refinement, only small/shear moves and sidechain packing
-  to_fullatom.apply(p)
-  recover_sidechains.apply(p)
-  pack.apply(p)
-
-
+  # to_fullatom.apply(p)
+  # recover_sidechains.apply(p)
+  # pack.apply(p)
 
   my_loops = Loops()
   my_loops.add_loop(loop1)

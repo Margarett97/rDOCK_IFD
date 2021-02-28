@@ -1,21 +1,15 @@
 dock_dir ='/home/malgorzata/Desktop/rDock_2013.1_src'
 chimera_dir ='/home/malgorzata/chimera/bin'
-work_dir ='/home/malgorzata/Desktop/rDOCK_IFD/test14'
-receptor ='2prg'
-apo ='2prg'
-ligand ='570'
-rec_ligand ='BRL'
-no_poses ='10'
-act_chain ='A'
-
-
-
-soft = 'soft_docking.prm' 
-hard = 'hard_docking.prm' 
-rec_chain = 'A'
-best_pose= 'model6_opt'
-work_dir='/home/malgorzata/Desktop/rDOCK_IFD/test14/IFD'
+work_dir ='/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/6_estrogen_receptor/IFD/'
 receptor ='ligand_remove'
-best_score ='model6'
-best_score2 ='model3'
-best_pose2 ='pose3'
+apo ='1xka'
+ligand ='RAL'
+rec_ligand ='OHT'
+no_poses ='10'
+rec_chain ='A'
+act_chain = 'A'
+
+
+
+best_score2 ='model2'
+best_pose2 ='pose2'
