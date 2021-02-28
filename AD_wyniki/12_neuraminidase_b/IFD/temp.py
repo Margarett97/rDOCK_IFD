@@ -1,5 +1,0 @@
-chain_del=''
-lig_chain='A'
-best_pose='pose_docked_opt5'
-best='pose9'
-lig_num='9'
