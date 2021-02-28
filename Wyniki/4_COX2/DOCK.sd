@@ -1,0 +1,1730 @@
+FLP.pdb
+  rDOCK(R)          3D
+libRbt.so/2013.1/901 2013/11/27
+ 19 20  0  0  0  0  0  0  0  0999 V2000
+   27.9693   20.8506   16.8564 C   0  0  0  0  0  0
+   26.5614   20.8426   16.7443 C   0  0  0  0  0  0
+   25.7730   20.9345   17.8869 C   0  0  0  0  0  0
+   26.3908   21.0339   19.1348 C   0  0  0  0  0  0
+   27.7950   21.0421   19.2382 C   0  0  0  0  0  0
+   28.5807   20.9498   18.0940 C   0  0  0  0  0  0
+   24.2629   20.8937   17.7896 C   0  0  0  0  0  0
+   23.5115   19.8661   18.4097 C   0  0  0  0  0  0
+   22.0863   19.8710   18.3151 C   0  0  0  0  0  0
+   21.4327   20.9246   17.5877 C   0  0  0  0  0  0
+   22.1853   21.9291   16.9912 C   0  0  0  0  0  0
+   23.5809   21.9227   17.0796 C   0  0  0  0  0  0
+   19.9331   20.9202   17.3726 C   0  0  0  0  0  0
+   19.5915   20.3959   15.9799 C   0  0  0  0  0  0
+   19.4287   22.3533   17.5380 C   0  0  0  0  0  0
+   18.7440   22.8598   16.6838 O   0  0  0  0  0  0
+   19.7566   23.0581   18.5885 O   0  0  0  0  0  0
+   24.2842   22.9090   16.4623 F   0  0  0  0  0  0
+   20.3278   22.6952   19.2366 H   0  0  0  0  0  0
+  1  2  2  0  0  0
+  2  3  1  0  0  0
+  3  7  1  0  0  0
+  4  3  2  0  0  0
+  5  4  1  0  0  0
+  6  5  2  0  0  0
+  6  1  1  0  0  0
+  7  8  2  0  0  0
+  7 12  1  0  0  0
+  8  9  1  0  0  0
+  9 10  2  0  0  0
+ 10 13  1  0  0  0
+ 11 10  1  0  0  0
+ 12 11  2  0  0  0
+ 13 14  1  0  0  0
+ 15 17  1  0  0  0
+ 15 13  1  0  0  0
+ 16 15  2  0  0  0
+ 17 19  1  0  0  0
+ 18 12  1  0  0  0
+M  END
+>  <CHROM.0>
+3.86470753,62.05617345,14.46876555,-32.74955878,145.24957636,-66.65409830
+61.17359112
+
+>  <CHROM.1>
+118.16871830,-99.26260272,1.90807750,127.98723579,23.32225486,21.38434928
+17.56437664,-0.14906986,-0.01839057,-0.54396023
+
+>  <FORMUL>
+      FLP    C15 H13 F1 O2
+
+>  <HET>
+ FLP  A 701      18
+
+>  <HETNAM>
+     FLP FLURBIPROFEN
+
+>  <Name>
+FLP.pdb
+
+>  <RI>
+0
+
+>  <Rbt.Current_Directory>
+/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/4_COX2
+
+>  <Rbt.Executable>
+rbdock ($Id: //depot/dev/client3/rdock/2013.1/src/exe/rbdock.cxx#4 $)
+
+>  <Rbt.Library>
+libRbt.so (2013.1, Build901 2013/11/27)
+
+>  <Rbt.Parameter_File>
+/home/malgorzata/Desktop/rDock_2013.1_src/data/scripts/soft_docking.prm
+
+>  <Rbt.Receptor>
+cavity.prm
+
+>  <SCORE>
+-33.2965
+
+>  <SCORE.INTER>
+-21.7018
+
+>  <SCORE.INTER.CONST>
+1
+
+>  <SCORE.INTER.POLAR>
+-0.662322
+
+>  <SCORE.INTER.REPUL>
+0
+
+>  <SCORE.INTER.ROT>
+3
+
+>  <SCORE.INTER.VDW>
+-27.8499
+
+>  <SCORE.INTER.norm>
+-1.20566
+
+>  <SCORE.INTRA>
+-0.236763
+
+>  <SCORE.INTRA.DIHEDRAL>
+-0.0619788
+
+>  <SCORE.INTRA.DIHEDRAL.0>
+5.47211
+
+>  <SCORE.INTRA.POLAR>
+0
+
+>  <SCORE.INTRA.POLAR.0>
+0
+
+>  <SCORE.INTRA.REPUL>
+0
+
+>  <SCORE.INTRA.REPUL.0>
+0
+
+>  <SCORE.INTRA.VDW>
+-0.224368
+
+>  <SCORE.INTRA.VDW.0>
+0.722234
+
+>  <SCORE.INTRA.norm>
+-0.0131535
+
+>  <SCORE.RESTR>
+0
+
+>  <SCORE.RESTR.CAVITY>
+0
+
+>  <SCORE.RESTR.norm>
+0
+
+>  <SCORE.SYSTEM>
+-11.3579
+
+>  <SCORE.SYSTEM.CONST>
+0
+
+>  <SCORE.SYSTEM.DIHEDRAL>
+2.48536
+
+>  <SCORE.SYSTEM.POLAR>
+-3.34514
+
+>  <SCORE.SYSTEM.REPUL>
+0.840055
+
+>  <SCORE.SYSTEM.VDW>
+-5.42742
+
+>  <SCORE.SYSTEM.norm>
+-0.630996
+
+>  <SCORE.heavy>
+18
+
+>  <SCORE.norm>
+-1.84981
+
+$$$$
+FLP.pdb
+  rDOCK(R)          3D
+libRbt.so/2013.1/901 2013/11/27
+ 19 20  0  0  0  0  0  0  0  0999 V2000
+   18.1779   21.2844   18.0400 C   0  0  0  0  0  0
+   19.3688   20.5250   18.0444 C   0  0  0  0  0  0
+   20.5631   21.1033   17.6264 C   0  0  0  0  0  0
+   20.5651   22.4346   17.2063 C   0  0  0  0  0  0
+   19.3739   23.1854   17.2057 C   0  0  0  0  0  0
+   18.1812   22.6043   17.6239 C   0  0  0  0  0  0
+   21.8429   20.2956   17.5923 C   0  0  0  0  0  0
+   23.1056   20.9062   17.7866 C   0  0  0  0  0  0
+   24.2912   20.1097   17.7692 C   0  0  0  0  0  0
+   24.1840   18.6926   17.5532 C   0  0  0  0  0  0
+   22.9361   18.1089   17.3712 C   0  0  0  0  0  0
+   21.7752   18.8885   17.3838 C   0  0  0  0  0  0
+   25.4159   17.8202   17.4252 C   0  0  0  0  0  0
+   25.9072   17.7929   15.9798 C   0  0  0  0  0  0
+   25.0458   16.4109   17.8860 C   0  0  0  0  0  0
+   25.5060   15.9642   18.9076 O   0  0  0  0  0  0
+   24.2532   15.6612   17.1666 O   0  0  0  0  0  0
+   20.5745   18.2849   17.1777 F   0  0  0  0  0  0
+   24.0562   15.9011   16.2825 H   0  0  0  0  0  0
+  1  2  2  0  0  0
+  2  3  1  0  0  0
+  3  7  1  0  0  0
+  4  3  2  0  0  0
+  5  4  1  0  0  0
+  6  5  2  0  0  0
+  6  1  1  0  0  0
+  7  8  2  0  0  0
+  7 12  1  0  0  0
+  8  9  1  0  0  0
+  9 10  2  0  0  0
+ 10 13  1  0  0  0
+ 11 10  1  0  0  0
+ 12 11  2  0  0  0
+ 13 14  1  0  0  0
+ 15 17  1  0  0  0
+ 15 13  1  0  0  0
+ 16 15  2  0  0  0
+ 17 19  1  0  0  0
+ 18 12  1  0  0  0
+M  END
+>  <CHROM.0>
+-49.68772460,60.37152688,19.78189527,-159.02443133,-56.08341496,-74.13605575
+73.47431429
+
+>  <CHROM.1>
+-150.30149343,-86.62994118,13.39818260,-111.14377611,22.33213917,19.31060173
+17.52516205,2.43279912,0.08309456,-0.08314667
+
+>  <FORMUL>
+      FLP    C15 H13 F1 O2
+
+>  <HET>
+ FLP  A 701      18
+
+>  <HETNAM>
+     FLP FLURBIPROFEN
+
+>  <Name>
+FLP.pdb
+
+>  <RI>
+0
+
+>  <Rbt.Current_Directory>
+/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/4_COX2
+
+>  <Rbt.Executable>
+rbdock ($Id: //depot/dev/client3/rdock/2013.1/src/exe/rbdock.cxx#4 $)
+
+>  <Rbt.Library>
+libRbt.so (2013.1, Build901 2013/11/27)
+
+>  <Rbt.Parameter_File>
+/home/malgorzata/Desktop/rDock_2013.1_src/data/scripts/soft_docking.prm
+
+>  <Rbt.Receptor>
+cavity.prm
+
+>  <SCORE>
+-32.9848
+
+>  <SCORE.INTER>
+-26.0373
+
+>  <SCORE.INTER.CONST>
+1
+
+>  <SCORE.INTER.POLAR>
+-2.88612
+
+>  <SCORE.INTER.REPUL>
+0
+
+>  <SCORE.INTER.ROT>
+3
+
+>  <SCORE.INTER.VDW>
+-24.6245
+
+>  <SCORE.INTER.norm>
+-1.44652
+
+>  <SCORE.INTRA>
+0.139505
+
+>  <SCORE.INTRA.DIHEDRAL>
+-1.21551
+
+>  <SCORE.INTRA.DIHEDRAL.0>
+5.47211
+
+>  <SCORE.INTRA.POLAR>
+0
+
+>  <SCORE.INTRA.POLAR.0>
+0
+
+>  <SCORE.INTRA.REPUL>
+0
+
+>  <SCORE.INTRA.REPUL.0>
+0
+
+>  <SCORE.INTRA.VDW>
+0.382607
+
+>  <SCORE.INTRA.VDW.0>
+0.722234
+
+>  <SCORE.INTRA.norm>
+0.00775028
+
+>  <SCORE.RESTR>
+0
+
+>  <SCORE.RESTR.CAVITY>
+0
+
+>  <SCORE.RESTR.norm>
+0
+
+>  <SCORE.SYSTEM>
+-7.08699
+
+>  <SCORE.SYSTEM.CONST>
+0
+
+>  <SCORE.SYSTEM.DIHEDRAL>
+8.84082
+
+>  <SCORE.SYSTEM.POLAR>
+-2.67888
+
+>  <SCORE.SYSTEM.REPUL>
+0.64611
+
+>  <SCORE.SYSTEM.VDW>
+-5.62977
+
+>  <SCORE.SYSTEM.norm>
+-0.393722
+
+>  <SCORE.heavy>
+18
+
+>  <SCORE.norm>
+-1.83249
+
+$$$$
+FLP.pdb
+  rDOCK(R)          3D
+libRbt.so/2013.1/901 2013/11/27
+ 19 20  0  0  0  0  0  0  0  0999 V2000
+   27.3023   20.0085   17.2016 C   0  0  0  0  0  0
+   25.9161   20.2603   17.1013 C   0  0  0  0  0  0
+   25.3782   21.4170   17.6563 C   0  0  0  0  0  0
+   26.2234   22.3168   18.3081 C   0  0  0  0  0  0
+   27.6044   22.0591   18.4031 C   0  0  0  0  0  0
+   28.1394   20.9015   17.8475 C   0  0  0  0  0  0
+   23.8903   21.6876   17.5882 C   0  0  0  0  0  0
+   23.3835   22.8842   17.0257 C   0  0  0  0  0  0
+   21.9727   23.0969   16.9586 C   0  0  0  0  0  0
+   21.0838   22.0875   17.4661 C   0  0  0  0  0  0
+   21.5982   20.9161   18.0084 C   0  0  0  0  0  0
+   22.9794   20.7089   18.0785 C   0  0  0  0  0  0
+   19.5856   22.3079   17.5105 C   0  0  0  0  0  0
+   19.0558   22.1145   18.9293 C   0  0  0  0  0  0
+   18.9330   21.3051   16.5597 C   0  0  0  0  0  0
+   18.9110   20.1309   16.8351 O   0  0  0  0  0  0
+   18.4193   21.6998   15.4247 O   0  0  0  0  0  0
+   23.4454   19.5609   18.6383 F   0  0  0  0  0  0
+   18.2559   21.0781   14.7430 H   0  0  0  0  0  0
+  1  2  2  0  0  0
+  2  3  1  0  0  0
+  3  7  1  0  0  0
+  4  3  2  0  0  0
+  5  4  1  0  0  0
+  6  5  2  0  0  0
+  6  1  1  0  0  0
+  7  8  2  0  0  0
+  7 12  1  0  0  0
+  8  9  1  0  0  0
+  9 10  2  0  0  0
+ 10 13  1  0  0  0
+ 11 10  1  0  0  0
+ 12 11  2  0  0  0
+ 13 14  1  0  0  0
+ 15 17  1  0  0  0
+ 15 13  1  0  0  0
+ 16 15  2  0  0  0
+ 17 19  1  0  0  0
+ 18 12  1  0  0  0
+M  END
+>  <CHROM.0>
+-17.85461197,45.80897462,54.24981553,-129.06721228,174.27925756,-55.65268022
+43.27360162
+
+>  <CHROM.1>
+-124.57787270,-124.12765110,161.75981851,70.62048052,22.85475201,21.36090757
+17.52430142,0.06547399,0.10753005,3.06461237
+
+>  <FORMUL>
+      FLP    C15 H13 F1 O2
+
+>  <HET>
+ FLP  A 701      18
+
+>  <HETNAM>
+     FLP FLURBIPROFEN
+
+>  <Name>
+FLP.pdb
+
+>  <RI>
+0
+
+>  <Rbt.Current_Directory>
+/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/4_COX2
+
+>  <Rbt.Executable>
+rbdock ($Id: //depot/dev/client3/rdock/2013.1/src/exe/rbdock.cxx#4 $)
+
+>  <Rbt.Library>
+libRbt.so (2013.1, Build901 2013/11/27)
+
+>  <Rbt.Parameter_File>
+/home/malgorzata/Desktop/rDock_2013.1_src/data/scripts/soft_docking.prm
+
+>  <Rbt.Receptor>
+cavity.prm
+
+>  <SCORE>
+-31.2627
+
+>  <SCORE.INTER>
+-21.5003
+
+>  <SCORE.INTER.CONST>
+1
+
+>  <SCORE.INTER.POLAR>
+-0.815243
+
+>  <SCORE.INTER.REPUL>
+0.008225
+
+>  <SCORE.INTER.ROT>
+3
+
+>  <SCORE.INTER.VDW>
+-27.1696
+
+>  <SCORE.INTER.norm>
+-1.19446
+
+>  <SCORE.INTRA>
+-0.258849
+
+>  <SCORE.INTRA.DIHEDRAL>
+2.90488
+
+>  <SCORE.INTRA.DIHEDRAL.0>
+5.47211
+
+>  <SCORE.INTRA.POLAR>
+0
+
+>  <SCORE.INTRA.POLAR.0>
+0
+
+>  <SCORE.INTRA.REPUL>
+0
+
+>  <SCORE.INTRA.REPUL.0>
+0
+
+>  <SCORE.INTRA.VDW>
+-0.839826
+
+>  <SCORE.INTRA.VDW.0>
+0.722234
+
+>  <SCORE.INTRA.norm>
+-0.0143805
+
+>  <SCORE.RESTR>
+0.00822041
+
+>  <SCORE.RESTR.CAVITY>
+0.00822041
+
+>  <SCORE.RESTR.norm>
+0.000456689
+
+>  <SCORE.SYSTEM>
+-9.51176
+
+>  <SCORE.SYSTEM.CONST>
+0
+
+>  <SCORE.SYSTEM.DIHEDRAL>
+6.30159
+
+>  <SCORE.SYSTEM.POLAR>
+-3.06751
+
+>  <SCORE.SYSTEM.REPUL>
+0.64611
+
+>  <SCORE.SYSTEM.VDW>
+-5.46359
+
+>  <SCORE.SYSTEM.norm>
+-0.528431
+
+>  <SCORE.heavy>
+18
+
+>  <SCORE.norm>
+-1.73682
+
+$$$$
+FLP.pdb
+  rDOCK(R)          3D
+libRbt.so/2013.1/901 2013/11/27
+ 19 20  0  0  0  0  0  0  0  0999 V2000
+   18.5040   22.4742   18.6031 C   0  0  0  0  0  0
+   19.5169   21.4969   18.7203 C   0  0  0  0  0  0
+   20.0283   20.8861   17.5798 C   0  0  0  0  0  0
+   19.5285   21.2519   16.3288 C   0  0  0  0  0  0
+   18.5193   22.2277   16.2200 C   0  0  0  0  0  0
+   18.0096   22.8365   17.3623 C   0  0  0  0  0  0
+   21.0902   19.8126   17.6878 C   0  0  0  0  0  0
+   20.8950   18.5240   17.1342 C   0  0  0  0  0  0
+   21.9273   17.5421   17.2362 C   0  0  0  0  0  0
+   23.1554   17.8787   17.9032 C   0  0  0  0  0  0
+   23.3328   19.1504   18.4346 C   0  0  0  0  0  0
+   22.3210   20.1110   18.3390 C   0  0  0  0  0  0
+   24.2392   16.8441   18.1264 C   0  0  0  0  0  0
+   25.3160   16.9527   17.0493 C   0  0  0  0  0  0
+   23.5876   15.4623   18.0870 C   0  0  0  0  0  0
+   22.8402   15.1166   18.9685 O   0  0  0  0  0  0
+   23.8540   14.6272   17.1178 O   0  0  0  0  0  0
+   22.5221   21.3364   18.8926 F   0  0  0  0  0  0
+   23.5550   13.7406   17.1678 H   0  0  0  0  0  0
+  1  2  2  0  0  0
+  2  3  1  0  0  0
+  3  7  1  0  0  0
+  4  3  2  0  0  0
+  5  4  1  0  0  0
+  6  5  2  0  0  0
+  6  1  1  0  0  0
+  7  8  2  0  0  0
+  7 12  1  0  0  0
+  8  9  1  0  0  0
+  9 10  2  0  0  0
+ 10 13  1  0  0  0
+ 11 10  1  0  0  0
+ 12 11  2  0  0  0
+ 13 14  1  0  0  0
+ 15 17  1  0  0  0
+ 15 13  1  0  0  0
+ 16 15  2  0  0  0
+ 17 19  1  0  0  0
+ 18 12  1  0  0  0
+M  END
+>  <CHROM.0>
+-22.49095331,33.93434235,5.55734696,112.47176216,162.62186520,-66.37152394
+36.40530292
+
+>  <CHROM.1>
+123.33976470,97.82362333,170.73855458,-68.91219796,21.71558103,19.05625968
+17.78894839,2.28160832,-0.35953430,0.25688449
+
+>  <FORMUL>
+      FLP    C15 H13 F1 O2
+
+>  <HET>
+ FLP  A 701      18
+
+>  <HETNAM>
+     FLP FLURBIPROFEN
+
+>  <Name>
+FLP.pdb
+
+>  <RI>
+0
+
+>  <Rbt.Current_Directory>
+/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/4_COX2
+
+>  <Rbt.Executable>
+rbdock ($Id: //depot/dev/client3/rdock/2013.1/src/exe/rbdock.cxx#4 $)
+
+>  <Rbt.Library>
+libRbt.so (2013.1, Build901 2013/11/27)
+
+>  <Rbt.Parameter_File>
+/home/malgorzata/Desktop/rDock_2013.1_src/data/scripts/soft_docking.prm
+
+>  <Rbt.Receptor>
+cavity.prm
+
+>  <SCORE>
+-32.0945
+
+>  <SCORE.INTER>
+-22.8409
+
+>  <SCORE.INTER.CONST>
+1
+
+>  <SCORE.INTER.POLAR>
+-1.64183
+
+>  <SCORE.INTER.REPUL>
+0
+
+>  <SCORE.INTER.ROT>
+3
+
+>  <SCORE.INTER.VDW>
+-25.6586
+
+>  <SCORE.INTER.norm>
+-1.26894
+
+>  <SCORE.INTRA>
+-0.247627
+
+>  <SCORE.INTRA.DIHEDRAL>
+1.35789
+
+>  <SCORE.INTRA.DIHEDRAL.0>
+5.47211
+
+>  <SCORE.INTRA.POLAR>
+0
+
+>  <SCORE.INTRA.POLAR.0>
+0
+
+>  <SCORE.INTRA.REPUL>
+0
+
+>  <SCORE.INTRA.REPUL.0>
+0
+
+>  <SCORE.INTRA.VDW>
+-0.519205
+
+>  <SCORE.INTRA.VDW.0>
+0.722234
+
+>  <SCORE.INTRA.norm>
+-0.0137571
+
+>  <SCORE.RESTR>
+0.380388
+
+>  <SCORE.RESTR.CAVITY>
+0.380388
+
+>  <SCORE.RESTR.norm>
+0.0211327
+
+>  <SCORE.SYSTEM>
+-9.38636
+
+>  <SCORE.SYSTEM.CONST>
+0
+
+>  <SCORE.SYSTEM.DIHEDRAL>
+7.09001
+
+>  <SCORE.SYSTEM.POLAR>
+-3.63291
+
+>  <SCORE.SYSTEM.REPUL>
+0.818389
+
+>  <SCORE.SYSTEM.VDW>
+-4.6714
+
+>  <SCORE.SYSTEM.norm>
+-0.521464
+
+>  <SCORE.heavy>
+18
+
+>  <SCORE.norm>
+-1.78303
+
+$$$$
+FLP.pdb
+  rDOCK(R)          3D
+libRbt.so/2013.1/901 2013/11/27
+ 19 20  0  0  0  0  0  0  0  0999 V2000
+   24.3198   23.0752    9.8502 C   0  0  0  0  0  0
+   24.5915   22.7039   11.1855 C   0  0  0  0  0  0
+   25.4023   23.5089   11.9792 C   0  0  0  0  0  0
+   25.9379   24.6794   11.4391 C   0  0  0  0  0  0
+   25.6616   25.0434   10.1073 C   0  0  0  0  0  0
+   24.8509   24.2362    9.3159 C   0  0  0  0  0  0
+   25.7320   23.1103   13.4019 C   0  0  0  0  0  0
+   26.7675   23.7499   14.1257 C   0  0  0  0  0  0
+   27.0371   23.3625   15.4738 C   0  0  0  0  0  0
+   26.2491   22.3235   16.0787 C   0  0  0  0  0  0
+   25.2321   21.7114   15.3561 C   0  0  0  0  0  0
+   24.9703   22.0870   14.0347 C   0  0  0  0  0  0
+   26.5604   21.8071   17.4684 C   0  0  0  0  0  0
+   26.6832   22.9645   18.4568 C   0  0  0  0  0  0
+   27.8732   21.0278   17.3989 C   0  0  0  0  0  0
+   28.7755   21.2869   18.1564 O   0  0  0  0  0  0
+   28.0474   20.0945   16.5009 O   0  0  0  0  0  0
+   23.9832   21.4481   13.3519 F   0  0  0  0  0  0
+   27.4864   20.0549   15.7514 H   0  0  0  0  0  0
+  1  2  2  0  0  0
+  2  3  1  0  0  0
+  3  7  1  0  0  0
+  4  3  2  0  0  0
+  5  4  1  0  0  0
+  6  5  2  0  0  0
+  6  1  1  0  0  0
+  7  8  2  0  0  0
+  7 12  1  0  0  0
+  8  9  1  0  0  0
+  9 10  2  0  0  0
+ 10 13  1  0  0  0
+ 11 10  1  0  0  0
+ 12 11  2  0  0  0
+ 13 14  1  0  0  0
+ 15 17  1  0  0  0
+ 15 13  1  0  0  0
+ 16 15  2  0  0  0
+ 17 19  1  0  0  0
+ 18 12  1  0  0  0
+M  END
+>  <CHROM.0>
+-5.81353437,165.52039015,20.77635509,-9.61666131,176.26407101,-57.06225042
+52.41390750
+
+>  <CHROM.1>
+166.33009341,51.06404239,17.28336332,127.58104096,26.05630434,22.59731730
+14.18707114,2.06453692,-0.79405771,-0.89118258
+
+>  <FORMUL>
+      FLP    C15 H13 F1 O2
+
+>  <HET>
+ FLP  A 701      18
+
+>  <HETNAM>
+     FLP FLURBIPROFEN
+
+>  <Name>
+FLP.pdb
+
+>  <RI>
+0
+
+>  <Rbt.Current_Directory>
+/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/4_COX2
+
+>  <Rbt.Executable>
+rbdock ($Id: //depot/dev/client3/rdock/2013.1/src/exe/rbdock.cxx#4 $)
+
+>  <Rbt.Library>
+libRbt.so (2013.1, Build901 2013/11/27)
+
+>  <Rbt.Parameter_File>
+/home/malgorzata/Desktop/rDock_2013.1_src/data/scripts/soft_docking.prm
+
+>  <Rbt.Receptor>
+cavity.prm
+
+>  <SCORE>
+-27.4237
+
+>  <SCORE.INTER>
+-16.0961
+
+>  <SCORE.INTER.CONST>
+1
+
+>  <SCORE.INTER.POLAR>
+-0.0146116
+
+>  <SCORE.INTER.REPUL>
+0
+
+>  <SCORE.INTER.ROT>
+3
+
+>  <SCORE.INTER.VDW>
+-24.4464
+
+>  <SCORE.INTER.norm>
+-0.894227
+
+>  <SCORE.INTRA>
+1.12831
+
+>  <SCORE.INTRA.DIHEDRAL>
+-1.36435
+
+>  <SCORE.INTRA.DIHEDRAL.0>
+5.47211
+
+>  <SCORE.INTRA.POLAR>
+0
+
+>  <SCORE.INTRA.POLAR.0>
+0
+
+>  <SCORE.INTRA.REPUL>
+0
+
+>  <SCORE.INTRA.REPUL.0>
+0
+
+>  <SCORE.INTRA.VDW>
+1.40118
+
+>  <SCORE.INTRA.VDW.0>
+0.722234
+
+>  <SCORE.INTRA.norm>
+0.062684
+
+>  <SCORE.RESTR>
+0
+
+>  <SCORE.RESTR.CAVITY>
+0
+
+>  <SCORE.RESTR.norm>
+0
+
+>  <SCORE.SYSTEM>
+-12.4559
+
+>  <SCORE.SYSTEM.CONST>
+0
+
+>  <SCORE.SYSTEM.DIHEDRAL>
+2.31152
+
+>  <SCORE.SYSTEM.POLAR>
+-3.41208
+
+>  <SCORE.SYSTEM.REPUL>
+0.64615
+
+>  <SCORE.SYSTEM.VDW>
+-5.24133
+
+>  <SCORE.SYSTEM.norm>
+-0.691995
+
+>  <SCORE.heavy>
+18
+
+>  <SCORE.norm>
+-1.52354
+
+$$$$
+FLP.pdb
+  rDOCK(R)          3D
+libRbt.so/2013.1/901 2013/11/27
+ 19 20  0  0  0  0  0  0  0  0999 V2000
+   25.5259   23.6528   10.3451 C   0  0  0  0  0  0
+   25.3817   23.4955   11.7413 C   0  0  0  0  0  0
+   24.7555   22.3630   12.2519 C   0  0  0  0  0  0
+   24.2763   21.3932   11.3695 C   0  0  0  0  0  0
+   24.4246   21.5568    9.9789 C   0  0  0  0  0  0
+   25.0509   22.6904    9.4712 C   0  0  0  0  0  0
+   24.5619   22.1928   13.7436 C   0  0  0  0  0  0
+   23.5983   22.9497   14.4532 C   0  0  0  0  0  0
+   23.4281   22.7477   15.8569 C   0  0  0  0  0  0
+   24.2421   21.7738   16.5317 C   0  0  0  0  0  0
+   25.1780   21.0347   15.8184 C   0  0  0  0  0  0
+   25.3485   21.2349   14.4449 C   0  0  0  0  0  0
+   24.1713   21.5935   18.0342 C   0  0  0  0  0  0
+   25.5712   21.6062   18.6436 C   0  0  0  0  0  0
+   23.4821   20.2591   18.3172 C   0  0  0  0  0  0
+   22.4733   20.2232   18.9775 O   0  0  0  0  0  0
+   23.9912   19.1394   17.8757 O   0  0  0  0  0  0
+   26.2913   20.5101   13.7859 F   0  0  0  0  0  0
+   24.9087   19.0811   17.6947 H   0  0  0  0  0  0
+  1  2  2  0  0  0
+  2  3  1  0  0  0
+  3  7  1  0  0  0
+  4  3  2  0  0  0
+  5  4  1  0  0  0
+  6  5  2  0  0  0
+  6  1  1  0  0  0
+  7  8  2  0  0  0
+  7 12  1  0  0  0
+  8  9  1  0  0  0
+  9 10  2  0  0  0
+ 10 13  1  0  0  0
+ 11 10  1  0  0  0
+ 12 11  2  0  0  0
+ 13 14  1  0  0  0
+ 15 17  1  0  0  0
+ 15 13  1  0  0  0
+ 16 15  2  0  0  0
+ 17 19  1  0  0  0
+ 18 12  1  0  0  0
+M  END
+>  <CHROM.0>
+-174.40588033,-73.06900446,-18.07252919,6.26971448,167.90535229,-66.65956298
+-58.18657872
+
+>  <CHROM.1>
+73.30171894,-130.37167512,24.48402372,-121.55986589,24.56397670,21.60304731
+14.64837870,1.24085122,1.11351641,-1.02413309
+
+>  <FORMUL>
+      FLP    C15 H13 F1 O2
+
+>  <HET>
+ FLP  A 701      18
+
+>  <HETNAM>
+     FLP FLURBIPROFEN
+
+>  <Name>
+FLP.pdb
+
+>  <RI>
+0
+
+>  <Rbt.Current_Directory>
+/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/4_COX2
+
+>  <Rbt.Executable>
+rbdock ($Id: //depot/dev/client3/rdock/2013.1/src/exe/rbdock.cxx#4 $)
+
+>  <Rbt.Library>
+libRbt.so (2013.1, Build901 2013/11/27)
+
+>  <Rbt.Parameter_File>
+/home/malgorzata/Desktop/rDock_2013.1_src/data/scripts/soft_docking.prm
+
+>  <Rbt.Receptor>
+cavity.prm
+
+>  <SCORE>
+-26.0616
+
+>  <SCORE.INTER>
+-17.7746
+
+>  <SCORE.INTER.CONST>
+1
+
+>  <SCORE.INTER.POLAR>
+-0.218498
+
+>  <SCORE.INTER.REPUL>
+0
+
+>  <SCORE.INTER.ROT>
+3
+
+>  <SCORE.INTER.VDW>
+-25.4317
+
+>  <SCORE.INTER.norm>
+-0.987476
+
+>  <SCORE.INTRA>
+-0.104512
+
+>  <SCORE.INTRA.DIHEDRAL>
+4.63917
+
+>  <SCORE.INTRA.DIHEDRAL.0>
+5.47211
+
+>  <SCORE.INTRA.POLAR>
+0
+
+>  <SCORE.INTRA.POLAR.0>
+0
+
+>  <SCORE.INTRA.REPUL>
+0
+
+>  <SCORE.INTRA.REPUL.0>
+0
+
+>  <SCORE.INTRA.VDW>
+-1.03235
+
+>  <SCORE.INTRA.VDW.0>
+0.722234
+
+>  <SCORE.INTRA.norm>
+-0.00580624
+
+>  <SCORE.RESTR>
+0.0247465
+
+>  <SCORE.RESTR.CAVITY>
+0.0247465
+
+>  <SCORE.RESTR.norm>
+0.0013748
+
+>  <SCORE.SYSTEM>
+-8.20725
+
+>  <SCORE.SYSTEM.CONST>
+0
+
+>  <SCORE.SYSTEM.DIHEDRAL>
+2.27016
+
+>  <SCORE.SYSTEM.POLAR>
+-2.18905
+
+>  <SCORE.SYSTEM.REPUL>
+0.694609
+
+>  <SCORE.SYSTEM.VDW>
+-5.37261
+
+>  <SCORE.SYSTEM.norm>
+-0.455958
+
+>  <SCORE.heavy>
+18
+
+>  <SCORE.norm>
+-1.44787
+
+$$$$
+FLP.pdb
+  rDOCK(R)          3D
+libRbt.so/2013.1/901 2013/11/27
+ 19 20  0  0  0  0  0  0  0  0999 V2000
+   26.4296   23.7804   11.6268 C   0  0  0  0  0  0
+   26.0569   23.3404   12.9162 C   0  0  0  0  0  0
+   24.7237   23.0580   13.1954 C   0  0  0  0  0  0
+   23.7687   23.2151   12.1894 C   0  0  0  0  0  0
+   24.1482   23.6533   10.9062 C   0  0  0  0  0  0
+   25.4821   23.9353   10.6300 C   0  0  0  0  0  0
+   24.3003   22.6176   14.5805 C   0  0  0  0  0  0
+   23.2996   23.3131   15.3017 C   0  0  0  0  0  0
+   22.9100   22.8566   16.5978 C   0  0  0  0  0  0
+   23.5432   21.6920   17.1538 C   0  0  0  0  0  0
+   24.5185   21.0175   16.4292 C   0  0  0  0  0  0
+   24.9037   21.4662   15.1619 C   0  0  0  0  0  0
+   23.2387   21.2273   18.5631 C   0  0  0  0  0  0
+   24.5096   20.7394   19.2546 C   0  0  0  0  0  0
+   22.2150   20.0959   18.4759 C   0  0  0  0  0  0
+   22.1305   19.4275   17.4753 O   0  0  0  0  0  0
+   21.3988   19.8577   19.4683 O   0  0  0  0  0  0
+   25.8787   20.7942   14.4939 F   0  0  0  0  0  0
+   21.2468   20.5154   20.1181 H   0  0  0  0  0  0
+  1  2  2  0  0  0
+  2  3  1  0  0  0
+  3  7  1  0  0  0
+  4  3  2  0  0  0
+  5  4  1  0  0  0
+  6  5  2  0  0  0
+  6  1  1  0  0  0
+  7  8  2  0  0  0
+  7 12  1  0  0  0
+  8  9  1  0  0  0
+  9 10  2  0  0  0
+ 10 13  1  0  0  0
+ 11 10  1  0  0  0
+ 12 11  2  0  0  0
+ 13 14  1  0  0  0
+ 15 17  1  0  0  0
+ 15 13  1  0  0  0
+ 16 15  2  0  0  0
+ 17 19  1  0  0  0
+ 18 12  1  0  0  0
+M  END
+>  <CHROM.0>
+5.26520755,-54.82318999,-64.11019972,-66.25620775,174.20075338,-57.09068728
+-73.48215364
+
+>  <CHROM.1>
+124.32417548,-140.58010894,18.71355595,25.16026581,24.06315864,21.90551077
+15.34944286,-1.22786477,-0.22588014,2.07755414
+
+>  <FORMUL>
+      FLP    C15 H13 F1 O2
+
+>  <HET>
+ FLP  A 701      18
+
+>  <HETNAM>
+     FLP FLURBIPROFEN
+
+>  <Name>
+FLP.pdb
+
+>  <RI>
+0
+
+>  <Rbt.Current_Directory>
+/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/4_COX2
+
+>  <Rbt.Executable>
+rbdock ($Id: //depot/dev/client3/rdock/2013.1/src/exe/rbdock.cxx#4 $)
+
+>  <Rbt.Library>
+libRbt.so (2013.1, Build901 2013/11/27)
+
+>  <Rbt.Parameter_File>
+/home/malgorzata/Desktop/rDock_2013.1_src/data/scripts/soft_docking.prm
+
+>  <Rbt.Receptor>
+cavity.prm
+
+>  <SCORE>
+-32.9945
+
+>  <SCORE.INTER>
+-25.0644
+
+>  <SCORE.INTER.CONST>
+1
+
+>  <SCORE.INTER.POLAR>
+-1.87937
+
+>  <SCORE.INTER.REPUL>
+0.0446402
+
+>  <SCORE.INTER.ROT>
+3
+
+>  <SCORE.INTER.VDW>
+-27.2978
+
+>  <SCORE.INTER.norm>
+-1.39247
+
+>  <SCORE.INTRA>
+0.515485
+
+>  <SCORE.INTRA.DIHEDRAL>
+2.41391
+
+>  <SCORE.INTRA.DIHEDRAL.0>
+5.47211
+
+>  <SCORE.INTRA.POLAR>
+0
+
+>  <SCORE.INTRA.POLAR.0>
+0
+
+>  <SCORE.INTRA.REPUL>
+0
+
+>  <SCORE.INTRA.REPUL.0>
+0
+
+>  <SCORE.INTRA.VDW>
+0.0327019
+
+>  <SCORE.INTRA.VDW.0>
+0.722234
+
+>  <SCORE.INTRA.norm>
+0.028638
+
+>  <SCORE.RESTR>
+0.138647
+
+>  <SCORE.RESTR.CAVITY>
+0.138647
+
+>  <SCORE.RESTR.norm>
+0.00770261
+
+>  <SCORE.SYSTEM>
+-8.58424
+
+>  <SCORE.SYSTEM.CONST>
+0
+
+>  <SCORE.SYSTEM.DIHEDRAL>
+5.51881
+
+>  <SCORE.SYSTEM.POLAR>
+-2.88392
+
+>  <SCORE.SYSTEM.REPUL>
+0.64611
+
+>  <SCORE.SYSTEM.VDW>
+-4.76887
+
+>  <SCORE.SYSTEM.norm>
+-0.476902
+
+>  <SCORE.heavy>
+18
+
+>  <SCORE.norm>
+-1.83303
+
+$$$$
+FLP.pdb
+  rDOCK(R)          3D
+libRbt.so/2013.1/901 2013/11/27
+ 19 20  0  0  0  0  0  0  0  0999 V2000
+   23.8510   22.8479   10.7682 C   0  0  0  0  0  0
+   23.6975   22.3657   12.0868 C   0  0  0  0  0  0
+   24.2225   23.0856   13.1553 C   0  0  0  0  0  0
+   24.8974   24.2817   12.9050 C   0  0  0  0  0  0
+   25.0454   24.7563   11.5877 C   0  0  0  0  0  0
+   24.5197   24.0342   10.5212 C   0  0  0  0  0  0
+   24.0972   22.5679   14.5723 C   0  0  0  0  0  0
+   23.2507   23.1990   15.5158 C   0  0  0  0  0  0
+   23.1407   22.6705   16.8382 C   0  0  0  0  0  0
+   23.8954   21.4997   17.1933 C   0  0  0  0  0  0
+   24.7159   20.8889   16.2527 C   0  0  0  0  0  0
+   24.8276   21.4081   14.9591 C   0  0  0  0  0  0
+   23.8918   20.9600   18.6088 C   0  0  0  0  0  0
+   25.3087   20.6023   19.0512 C   0  0  0  0  0  0
+   22.9983   19.7205   18.6388 C   0  0  0  0  0  0
+   23.1679   18.8288   17.8444 O   0  0  0  0  0  0
+   22.0220   19.6235   19.5020 O   0  0  0  0  0  0
+   25.6593   20.7972   14.0739 F   0  0  0  0  0  0
+   21.9299   18.8480   20.0199 H   0  0  0  0  0  0
+  1  2  2  0  0  0
+  2  3  1  0  0  0
+  3  7  1  0  0  0
+  4  3  2  0  0  0
+  5  4  1  0  0  0
+  6  5  2  0  0  0
+  6  1  1  0  0  0
+  7  8  2  0  0  0
+  7 12  1  0  0  0
+  8  9  1  0  0  0
+  9 10  2  0  0  0
+ 10 13  1  0  0  0
+ 11 10  1  0  0  0
+ 12 11  2  0  0  0
+ 13 14  1  0  0  0
+ 15 17  1  0  0  0
+ 15 13  1  0  0  0
+ 16 15  2  0  0  0
+ 17 19  1  0  0  0
+ 18 12  1  0  0  0
+M  END
+>  <CHROM.0>
+-176.36795433,89.16576511,-19.31659297,-24.82074342,-156.20491876,-57.17683361
+64.04648322
+
+>  <CHROM.1>
+-109.97871374,-135.12033281,-130.57457765,51.78200670,24.07284863,21.78614874
+15.32378174,-1.23614196,-1.12999016,2.34532677
+
+>  <FORMUL>
+      FLP    C15 H13 F1 O2
+
+>  <HET>
+ FLP  A 701      18
+
+>  <HETNAM>
+     FLP FLURBIPROFEN
+
+>  <Name>
+FLP.pdb
+
+>  <RI>
+0
+
+>  <Rbt.Current_Directory>
+/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/4_COX2
+
+>  <Rbt.Executable>
+rbdock ($Id: //depot/dev/client3/rdock/2013.1/src/exe/rbdock.cxx#4 $)
+
+>  <Rbt.Library>
+libRbt.so (2013.1, Build901 2013/11/27)
+
+>  <Rbt.Parameter_File>
+/home/malgorzata/Desktop/rDock_2013.1_src/data/scripts/soft_docking.prm
+
+>  <Rbt.Receptor>
+cavity.prm
+
+>  <SCORE>
+-29.2242
+
+>  <SCORE.INTER>
+-22.8542
+
+>  <SCORE.INTER.CONST>
+1
+
+>  <SCORE.INTER.POLAR>
+-0.931882
+
+>  <SCORE.INTER.REPUL>
+0
+
+>  <SCORE.INTER.ROT>
+3
+
+>  <SCORE.INTER.VDW>
+-28.0858
+
+>  <SCORE.INTER.norm>
+-1.26968
+
+>  <SCORE.INTRA>
+2.39726
+
+>  <SCORE.INTRA.DIHEDRAL>
+15.4903
+
+>  <SCORE.INTRA.DIHEDRAL.0>
+5.47211
+
+>  <SCORE.INTRA.POLAR>
+0
+
+>  <SCORE.INTRA.POLAR.0>
+0
+
+>  <SCORE.INTRA.REPUL>
+0
+
+>  <SCORE.INTRA.REPUL.0>
+0
+
+>  <SCORE.INTRA.VDW>
+-0.700788
+
+>  <SCORE.INTRA.VDW.0>
+0.722234
+
+>  <SCORE.INTRA.norm>
+0.133181
+
+>  <SCORE.RESTR>
+0.0927139
+
+>  <SCORE.RESTR.CAVITY>
+0.0927139
+
+>  <SCORE.RESTR.norm>
+0.00515077
+
+>  <SCORE.SYSTEM>
+-8.85998
+
+>  <SCORE.SYSTEM.CONST>
+0
+
+>  <SCORE.SYSTEM.DIHEDRAL>
+5.3186
+
+>  <SCORE.SYSTEM.POLAR>
+-2.55515
+
+>  <SCORE.SYSTEM.REPUL>
+0.658954
+
+>  <SCORE.SYSTEM.VDW>
+-6.12655
+
+>  <SCORE.SYSTEM.norm>
+-0.492221
+
+>  <SCORE.heavy>
+18
+
+>  <SCORE.norm>
+-1.62357
+
+$$$$
+FLP.pdb
+  rDOCK(R)          3D
+libRbt.so/2013.1/901 2013/11/27
+ 19 20  0  0  0  0  0  0  0  0999 V2000
+   27.0147   21.3193   18.5979 C   0  0  0  0  0  0
+   25.6033   21.3726   18.5860 C   0  0  0  0  0  0
+   24.9059   21.0542   17.4251 C   0  0  0  0  0  0
+   25.6174   20.6844   16.2825 C   0  0  0  0  0  0
+   27.0244   20.6328   16.3025 C   0  0  0  0  0  0
+   27.7191   20.9521   17.4646 C   0  0  0  0  0  0
+   23.3949   21.1379   17.3834 C   0  0  0  0  0  0
+   22.6026   20.7171   18.4789 C   0  0  0  0  0  0
+   21.1802   20.8303   18.4131 C   0  0  0  0  0  0
+   20.5713   21.3725   17.2291 C   0  0  0  0  0  0
+   21.3646   21.7871   16.1662 C   0  0  0  0  0  0
+   22.7569   21.6726   16.2280 C   0  0  0  0  0  0
+   19.0656   21.4200   17.0693 C   0  0  0  0  0  0
+   18.4188   22.1042   18.2713 C   0  0  0  0  0  0
+   18.5594   19.9837   16.9412 C   0  0  0  0  0  0
+   17.3931   19.7667   16.7232 O   0  0  0  0  0  0
+   19.3740   18.9736   17.0964 O   0  0  0  0  0  0
+   23.4981   22.0663   15.1583 F   0  0  0  0  0  0
+   19.0330   18.1043   17.1736 H   0  0  0  0  0  0
+  1  2  2  0  0  0
+  2  3  1  0  0  0
+  3  7  1  0  0  0
+  4  3  2  0  0  0
+  5  4  1  0  0  0
+  6  5  2  0  0  0
+  6  1  1  0  0  0
+  7  8  2  0  0  0
+  7 12  1  0  0  0
+  8  9  1  0  0  0
+  9 10  2  0  0  0
+ 10 13  1  0  0  0
+ 11 10  1  0  0  0
+ 12 11  2  0  0  0
+ 13 14  1  0  0  0
+ 15 17  1  0  0  0
+ 15 13  1  0  0  0
+ 16 15  2  0  0  0
+ 17 19  1  0  0  0
+ 18 12  1  0  0  0
+M  END
+>  <CHROM.0>
+126.97049892,64.04513770,-5.29930104,-31.92244703,16.23096646,173.63011556
+70.82316742
+
+>  <CHROM.1>
+-39.91281231,52.85691563,168.73843100,-175.56134064,22.44224436,20.97443482
+17.16650529,-0.00390711,0.07628794,1.75694591
+
+>  <FORMUL>
+      FLP    C15 H13 F1 O2
+
+>  <HET>
+ FLP  A 701      18
+
+>  <HETNAM>
+     FLP FLURBIPROFEN
+
+>  <Name>
+FLP.pdb
+
+>  <RI>
+0
+
+>  <Rbt.Current_Directory>
+/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/4_COX2
+
+>  <Rbt.Executable>
+rbdock ($Id: //depot/dev/client3/rdock/2013.1/src/exe/rbdock.cxx#4 $)
+
+>  <Rbt.Library>
+libRbt.so (2013.1, Build901 2013/11/27)
+
+>  <Rbt.Parameter_File>
+/home/malgorzata/Desktop/rDock_2013.1_src/data/scripts/soft_docking.prm
+
+>  <Rbt.Receptor>
+cavity.prm
+
+>  <SCORE>
+-27.0467
+
+>  <SCORE.INTER>
+-19.7304
+
+>  <SCORE.INTER.CONST>
+1
+
+>  <SCORE.INTER.POLAR>
+-0.439709
+
+>  <SCORE.INTER.REPUL>
+0
+
+>  <SCORE.INTER.ROT>
+3
+
+>  <SCORE.INTER.VDW>
+-26.6354
+
+>  <SCORE.INTER.norm>
+-1.09613
+
+>  <SCORE.INTRA>
+-0.657404
+
+>  <SCORE.INTRA.DIHEDRAL>
+0.434052
+
+>  <SCORE.INTRA.DIHEDRAL.0>
+5.47211
+
+>  <SCORE.INTRA.POLAR>
+0
+
+>  <SCORE.INTRA.POLAR.0>
+0
+
+>  <SCORE.INTRA.REPUL>
+0
+
+>  <SCORE.INTRA.REPUL.0>
+0
+
+>  <SCORE.INTRA.VDW>
+-0.744214
+
+>  <SCORE.INTRA.VDW.0>
+0.722234
+
+>  <SCORE.INTRA.norm>
+-0.0365224
+
+>  <SCORE.RESTR>
+0.240198
+
+>  <SCORE.RESTR.CAVITY>
+0.240198
+
+>  <SCORE.RESTR.norm>
+0.0133443
+
+>  <SCORE.SYSTEM>
+-6.89909
+
+>  <SCORE.SYSTEM.CONST>
+0
+
+>  <SCORE.SYSTEM.DIHEDRAL>
+4.75411
+
+>  <SCORE.SYSTEM.POLAR>
+-2.02035
+
+>  <SCORE.SYSTEM.REPUL>
+0.64611
+
+>  <SCORE.SYSTEM.VDW>
+-5.6375
+
+>  <SCORE.SYSTEM.norm>
+-0.383283
+
+>  <SCORE.heavy>
+18
+
+>  <SCORE.norm>
+-1.50259
+
+$$$$
+FLP.pdb
+  rDOCK(R)          3D
+libRbt.so/2013.1/901 2013/11/27
+ 19 20  0  0  0  0  0  0  0  0999 V2000
+   18.8382   22.7629   16.5115 C   0  0  0  0  0  0
+   20.1409   22.2565   16.3086 C   0  0  0  0  0  0
+   20.8447   21.7028   17.3733 C   0  0  0  0  0  0
+   20.2475   21.6564   18.6342 C   0  0  0  0  0  0
+   18.9480   22.1625   18.8283 C   0  0  0  0  0  0
+   18.2468   22.7159   17.7619 C   0  0  0  0  0  0
+   22.2546   21.1855   17.1826 C   0  0  0  0  0  0
+   23.2821   22.0160   16.6731 C   0  0  0  0  0  0
+   24.6061   21.5006   16.5264 C   0  0  0  0  0  0
+   24.8769   20.1391   16.9000 C   0  0  0  0  0  0
+   23.8581   19.3403   17.4049 C   0  0  0  0  0  0
+   22.5606   19.8427   17.5448 C   0  0  0  0  0  0
+   26.2381   19.5153   16.6696 C   0  0  0  0  0  0
+   26.8242   19.9806   15.3387 C   0  0  0  0  0  0
+   26.0673   17.9966   16.6715 C   0  0  0  0  0  0
+   26.0310   17.3897   17.7133 O   0  0  0  0  0  0
+   25.9899   17.3333   15.5483 O   0  0  0  0  0  0
+   21.5849   19.0234   18.0195 F   0  0  0  0  0  0
+   25.5273   16.5190   15.5160 H   0  0  0  0  0  0
+  1  2  2  0  0  0
+  2  3  1  0  0  0
+  3  7  1  0  0  0
+  4  3  2  0  0  0
+  5  4  1  0  0  0
+  6  5  2  0  0  0
+  6  1  1  0  0  0
+  7  8  2  0  0  0
+  7 12  1  0  0  0
+  8  9  1  0  0  0
+  9 10  2  0  0  0
+ 10 13  1  0  0  0
+ 11 10  1  0  0  0
+ 12 11  2  0  0  0
+ 13 14  1  0  0  0
+ 15 17  1  0  0  0
+ 15 13  1  0  0  0
+ 16 15  2  0  0  0
+ 17 19  1  0  0  0
+ 18 12  1  0  0  0
+M  END
+>  <CHROM.0>
+-25.94903151,55.64870851,48.42002679,-71.01479154,-140.57928930,-161.42153624
+53.80333899
+
+>  <CHROM.1>
+56.26229463,-38.50675679,-152.98501582,-82.52153422,22.93775385,20.34768368
+17.07917633,-2.76895720,-0.38164870,2.69583419
+
+>  <FORMUL>
+      FLP    C15 H13 F1 O2
+
+>  <HET>
+ FLP  A 701      18
+
+>  <HETNAM>
+     FLP FLURBIPROFEN
+
+>  <Name>
+FLP.pdb
+
+>  <RI>
+0
+
+>  <Rbt.Current_Directory>
+/home/malgorzata/Desktop/rDOCK_IFD/Wyniki/4_COX2
+
+>  <Rbt.Executable>
+rbdock ($Id: //depot/dev/client3/rdock/2013.1/src/exe/rbdock.cxx#4 $)
+
+>  <Rbt.Library>
+libRbt.so (2013.1, Build901 2013/11/27)
+
+>  <Rbt.Parameter_File>
+/home/malgorzata/Desktop/rDock_2013.1_src/data/scripts/soft_docking.prm
+
+>  <Rbt.Receptor>
+cavity.prm
+
+>  <SCORE>
+-31.6937
+
+>  <SCORE.INTER>
+-26.8723
+
+>  <SCORE.INTER.CONST>
+1
+
+>  <SCORE.INTER.POLAR>
+-2.40699
+
+>  <SCORE.INTER.REPUL>
+0.0952203
+
+>  <SCORE.INTER.ROT>
+3
+
+>  <SCORE.INTER.VDW>
+-27.5647
+
+>  <SCORE.INTER.norm>
+-1.49291
+
+>  <SCORE.INTRA>
+2.2545
+
+>  <SCORE.INTRA.DIHEDRAL>
+5.47757
+
+>  <SCORE.INTRA.DIHEDRAL.0>
+5.47211
+
+>  <SCORE.INTRA.POLAR>
+0
+
+>  <SCORE.INTRA.POLAR.0>
+0
+
+>  <SCORE.INTRA.REPUL>
+0
+
+>  <SCORE.INTRA.REPUL.0>
+0
+
+>  <SCORE.INTRA.VDW>
+1.15899
+
+>  <SCORE.INTRA.VDW.0>
+0.722234
+
+>  <SCORE.INTRA.norm>
+0.12525
+
+>  <SCORE.RESTR>
+0.236277
+
+>  <SCORE.RESTR.CAVITY>
+0.236277
+
+>  <SCORE.RESTR.norm>
+0.0131265
+
+>  <SCORE.SYSTEM>
+-7.31217
+
+>  <SCORE.SYSTEM.CONST>
+0
+
+>  <SCORE.SYSTEM.DIHEDRAL>
+7.67259
+
+>  <SCORE.SYSTEM.POLAR>
+-2.47747
+
+>  <SCORE.SYSTEM.REPUL>
+0.682494
+
+>  <SCORE.SYSTEM.VDW>
+-6.13755
+
+>  <SCORE.SYSTEM.norm>
+-0.406232
+
+>  <SCORE.heavy>
+18
+
+>  <SCORE.norm>
+-1.76076
+
+$$$$
