@@ -1,0 +1,58 @@
+Opening 1fm9.pdb...
+The following problems occurred while reading PDB file for 1fm9.pdb
+warning:  CONECT record for nonexistent atom: 4153
+Start residue of secondary structure  not found: HELIX    1   1 PRO A  231  VAL A  242  1                                  12
+Start residue of secondary structure  not found: HELIX    2   2 ASP A  263  ARG A  285  1                                  23
+Start residue of secondary structure  not found: HELIX    3   3 PRO A  293  SER A  317  1                                  25
+Start residue of secondary structure  not found: HELIX    4   4 ILE A  318  VAL A  320  5                                   3
+Start residue of secondary structure  not found: HELIX    5   5 ARG A  334  ALA A  340  1                                   7
+Start residue of secondary structure  not found: HELIX    6   6 ALA A  344  LEU A  353  1                                  10
+Start residue of secondary structure  not found: HELIX    7   7 LEU A  353  GLN A  361  1                                   9
+Start residue of secondary structure  not found: HELIX    8   8 ASP A  363  PHE A  376  1                                  14
+Start residue of secondary structure  not found: HELIX    9   9 ASN A  385  TYR A  408  1                                  24
+Start residue of secondary structure  not found: HELIX   10  10 GLY A  413  LEU A  420  1                                   8
+Start residue of secondary structure  not found: HELIX   11  11 ARG A  421  PHE A  437  1                                  17
+Start residue of secondary structure  not found: HELIX   12  12 PHE A  450  LEU A  455  1                                   6
+Start residue of secondary structure  not found: HELIX   26  26 HIS B  630  GLN B  638  1                                   9
+Start residue of secondary structure  not found: HELIX   27  27 HIS E  687  GLU E  696  1                                  10
+Start residue of secondary structure  not found: SHEET    1   A 2 GLY A 323  LEU A 325  0
+Start residue of secondary structure  not found: SHEET    2   A 2 HIS A 331  HIS A 333 -1  N  VAL A 332   O  ILE A 324
+
+#0, chain D: peroxisome proliferator activated receptor γ
+
+1fm9.pdb opened
+Opening model1.pdb...
+model1.pdb opened
+Computing secondary structure assignments for model(s) #0, #1
+using ksdssp (Kabsch and Sander Define Secondary Structure
+of Proteins) with the parameters:
+  energy cutoff -0.5
+  minimum helix length 3
+  minimum strand length 3
+
+
+
+Matchmaker 1fm9.pdb, chain D (#0) with model1.pdb, chain A (#1), sequence alignment score = 1357.6
+with these parameters:
+	chain pairing: bb
+	Needleman-Wunsch using BLOSUM-62
+
+	ss fraction: 0.3
+	gap open (HH/SS/other) 18/18/6, extend 1
+	ss matrix: 
+ (H, O): -6
+ (S, S): 6
+ (H, H): 6
+ (O, S): -6
+ (O, O): 4
+ (H, S): -9
+
+
+	iteration cutoff: 2
+
+RMSD between 268 pruned atom pairs is 0.650 angstroms; (across all 271 pairs: 0.740)
+
+
+Executing rmsd ['#1:LIG', '#0:PPP']
+
+RMSD between 41 atom pairs is 6.482 angstroms

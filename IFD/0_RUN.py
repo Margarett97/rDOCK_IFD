@@ -3,10 +3,10 @@ import os, subprocess, shutil
 
 
 # with open("parameters.py","a") as f:
-    # name1 = "soft = '"
-    # name2 = "hard = '"
-    # f.write(name1 + "soft_docking.prm' \n")
-    # f.write(name2 + "hard_docking.prm' \n")
+     # name1 = "soft = '"
+     # name2 = "hard = '"
+     # f.write(name1 + "soft_docking.prm' \n")
+     # f.write(name2 + "hard_docking.prm' \n")
 
 # f.close()
 

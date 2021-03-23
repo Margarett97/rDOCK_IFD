@@ -1,0 +1,11 @@
+PyRosetta-4 2020 [Rosetta PyRosetta4.Release.python36.linux 2020.50+release.1295438cd4bd2be39c9dbbfab8db669ab62415ab 2020-12-12T00:30:01] retrieved from: http://www.pyrosetta.org
+(C) Copyright Rosetta Commons Member Institutions. Created in JHU by Sergey Lyskov and PyRosetta Team.
+core.init: Checking for fconfig files in pwd and ./rosetta/flags 
+core.init: Rosetta version: PyRosetta4.Release.python36.linux r274 2020.50+release.1295438 1295438cd4bd2be39c9dbbfab8db669ab62415ab http://www.pyrosetta.org 2020-12-12T00:30:01
+core.init: command: PyRosetta -ex1 -ex2aro -database /usr/local/lib/python3.6/site-packages/pyrosetta-2020.50+release.1295438-py3.6-linux-x86_64.egg/pyrosetta/database
+basic.random.init_random_generator: 'RNG device' seed mode, using '/dev/urandom', seed=2031134211 seed_offset=0 real_seed=2031134211
+basic.random.init_random_generator: RandomGenerator:init: Normal mode, seed=2031134211 RG_type=mt19937
+core.chemical.GlobalResidueTypeSet: Finished initializing fa_standard residue type set.  Created 985 residue types
+core.chemical.GlobalResidueTypeSet: Total time to initialize 2.38 seconds.
+core.import_pose.import_pose: File '2ACR.clean.pdb' automatically determined to be of type PDB
+protocols.DsspMover: LLEEELLLLLEEELELEELLLLLHHHHHHHHHHHHHHLLLEEELLHHHLLHHHHHHHHHHHHHLLLLLHHHLEEEEEELHHHLLHHHHHHHHHHHHHHHLLLLEEEEEELLLLLELLLLLLLLELLLLLELELLLLHHHHHHHHHHHHHHLLEEEEEEELLLHHHHHHHHLLLLLLLLLLEEEEELELLELLHHHHHHHHHHLLEEEEELLLLLLLLLLLLLLLLLLLLLHHHHHHHHHLLLLHHHHHHHHHHHHLLEELLELLLHHHHHHHHLLLLLLLLHHHHHHHHHHLLLLLLLLLHHHLLLLLLLLLLLL
