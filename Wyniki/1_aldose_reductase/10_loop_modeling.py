@@ -14,77 +14,129 @@ import math
 
 from pyrosetta.rosetta.protocols.loops.loop_closure.kinematic_closure import *
 
+kT = 1.0
+smallmoves = 3 
+shearmoves = 5
+backbone_angle_max = 7
+cycles = 9
+jobs = 1
+
 init()
 
 
-# uwzglednienie ligandu
+for i in range(0,10): 
 
-p = Pose()
-
-
-res_set = generate_nonstandard_residue_set(p,['P9.params'])
-pose = pose_from_file(p, res_set, "MODEL9.pdb")
+    p = Pose()
 
 
-starting_p = Pose()
-starting_p.assign(p)
+    res_set = generate_nonstandard_residue_set(p,['P'+str(i)+'.params'])
+    pose = pose_from_file(p, res_set, 'MODEL'+str(i)+'.pdb')
 
-# score
+    # create a reference copy of the pose in fullatom
 
-scorefxn_high = create_score_function('ref2015')  
+    starting_p = Pose()
+    starting_p.assign(p)
+
+    # score
+
+    scorefxn = create_score_function('ref2015')  # or 'standard'
 
 
 # fold tree
 
-ft = FoldTree()
-ft.add_edge(1,16,-1)
-ft.add_edge(16,19,-1)
-ft.add_edge(16,23,1)
-ft.add_edge(23,20,-1)
-ft.add_edge(23,206,-1)
-ft.add_edge(206,211,-1)
-ft.add_edge(206,218,2)
-ft.add_edge(218,212,-1)
-ft.add_edge(218,258,-1)
-ft.add_edge(258,261,-1)
-ft.add_edge(258,264,3)
-ft.add_edge(264,262,-1)
-ft.add_edge(264,316,-1)
+    ft = FoldTree()
+    ft.add_edge(1,16,-1)
+    ft.add_edge(16,19,-1)
+    ft.add_edge(16,23,1)
+    ft.add_edge(23,20,-1)
+    ft.add_edge(23,206,-1)
+    ft.add_edge(206,211,-1)
+    ft.add_edge(206,218,2)
+    ft.add_edge(218,212,-1)
+    ft.add_edge(218,258,-1)
+    ft.add_edge(258,261,-1)
+    ft.add_edge(258,264,3)
+    ft.add_edge(264,262,-1)
+    ft.add_edge(264,316,-1)
 
-print(ft)
-
-
-ft.check_fold_tree()
-p.fold_tree(ft)
+    print(ft)
 
 
-# definiowanie petli
-
-loop1 = Loop(18, 21, 19)
-loop2 = Loop(208, 216, 212)
-loop3 = Loop(260, 262, 261)
+    ft.check_fold_tree()
+    p.fold_tree(ft)
 
 
-loops = Loops()
-loops.add_loop(loop1)
-loops.add_loop(loop2)
-loops.add_loop(loop3)
+    # definiowanie petli
 
-kic_mover = KinematicMover()
-kic_mover.set_pivots(18,19,21)
-kic_mover.set_pivots(208,212,216) 
-kic_mover.set_pivots(260,261,262)  
-kic_mover.apply(p)
+    loop1 = Loop(18, 21, 19)
+    loop2 = Loop(208, 216, 212)
+    loop3 = Loop(260, 262, 261)
 
 
-print("set up job distributor")
-jd = PyJobDistributor("model9_opt", 1 ,scorefxn_high)
-jd.native_pose = starting_p
+    loops = Loops()
+    loops.add_loop(loop1)
+    loops.add_loop(loop2)
+    loops.add_loop(loop3)
 
-while (jd.job_complete == False):
 
-  loop_refine = LoopMover_Refine_KIC(loops)
-  loop_refine.apply(p)
+    ##create a MoveMap, all backbone torsions free
 
-  jd.output_decoy(p)
+    movemap = MoveMap()
+    movemap.set_bb(True)
+
+    ## create a SmallMover
+
+    smallmover = SmallMover(movemap, kT, smallmoves)
+    smallmover.angle_max(backbone_angle_max)
+
+    ## create a ShearMover
+
+    shearmover = ShearMover(movemap, kT, shearmoves)
+    shearmover.angle_max(backbone_angle_max)
+
+    ## create a MinMover, for backbone torsion minimization
+
+    minmover = MinMover()
+    minmover.movemap(movemap)
+    minmover.score_function(scorefxn)
+
+    ##setup a PackRotamersMover
+    to_pack = standard_packer_task(starting_p)
+    to_pack.restrict_to_repacking()    # prevents design, packing only
+    to_pack.or_include_current(True)    # considers the original sidechains
+    packmover = PackRotamersMover(scorefxn, to_pack)
+
+    ##setup a RepeatMover on a TrialMover of a SequenceMover
+
+    combined_mover = SequenceMover()
+    combined_mover.add_mover(smallmover)
+    combined_mover.add_mover(shearmover)
+    combined_mover.add_mover(minmover)
+    combined_mover.add_mover(packmover)
+
+    mc = MonteCarlo(p, scorefxn, kT)
+
+    trial = TrialMover(combined_mover, mc)
+
+    refinement = RepeatMover(trial, cycles)
+
+
+    kic_mover = KinematicMover()
+    kic_mover.set_pivots(18,19,21)
+    kic_mover.set_pivots(208,212,216) 
+    kic_mover.set_pivots(260,261,262)  
+    kic_mover.apply(p)
+
+
+    print("set up job distributor")
+    jd = PyJobDistributor("model"+str(i)+"_opt", 1 ,scorefxn)
+    jd.native_pose = starting_p
+
+    while (jd.job_complete == False):
+
+        refinement.apply(p)
+        loop_refine = LoopMover_Refine_KIC(loops)
+        loop_refine.apply(p)
+
+        jd.output_decoy(p)
 

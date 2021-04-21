@@ -21,8 +21,8 @@ Start residue of secondary structure  not found: SHEET    2   A 2 HIS A 331  HIS
 #0, chain D: peroxisome proliferator activated receptor γ
 
 1fm9.pdb opened
-Opening model4.pdb...
-model4.pdb opened
+Opening model7.pdb...
+model7.pdb opened
 Computing secondary structure assignments for model(s) #0, #1
 using ksdssp (Kabsch and Sander Define Secondary Structure
 of Proteins) with the parameters:
@@ -32,7 +32,7 @@ of Proteins) with the parameters:
 
 
 
-Matchmaker 1fm9.pdb, chain D (#0) with model4.pdb, chain A (#1), sequence alignment score = 1368.4
+Matchmaker 1fm9.pdb, chain D (#0) with model7.pdb, chain A (#1), sequence alignment score = 1355.8
 with these parameters:
 	chain pairing: bb
 	Needleman-Wunsch using BLOSUM-62
@@ -50,9 +50,9 @@ with these parameters:
 
 	iteration cutoff: 2
 
-RMSD between 268 pruned atom pairs is 0.653 angstroms; (across all 271 pairs: 0.742)
+RMSD between 51 pruned atom pairs is 0.803 angstroms; (across all 271 pairs: 19.230)
 
 
 Executing rmsd ['#1:LIG', '#0:PPP']
 
-RMSD between 41 atom pairs is 9.637 angstroms
+RMSD between 41 atom pairs is 21.668 angstroms

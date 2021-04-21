@@ -30,8 +30,8 @@ Start residue of secondary structure  not found: SHEET    5   J 5 ASN B 348  ALA
 #0, chain A: HIV-1 RT
 
 1rth.pdb opened
-Opening model7.pdb...
-model7.pdb opened
+Opening model0.pdb...
+model0.pdb opened
 Computing secondary structure assignments for model(s) #0, #1
 using ksdssp (Kabsch and Sander Define Secondary Structure
 of Proteins) with the parameters:
@@ -41,7 +41,7 @@ of Proteins) with the parameters:
 
 
 
-Matchmaker 1rth.pdb, chain A (#0) with model7.pdb, chain A (#1), sequence alignment score = 2696.5
+Matchmaker 1rth.pdb, chain A (#0) with model0.pdb, chain A (#1), sequence alignment score = 2689.3
 with these parameters:
 	chain pairing: bb
 	Needleman-Wunsch using BLOSUM-62
@@ -59,9 +59,9 @@ with these parameters:
 
 	iteration cutoff: 2
 
-RMSD between 518 pruned atom pairs is 0.791 angstroms; (across all 536 pairs: 0.947)
+RMSD between 491 pruned atom pairs is 0.942 angstroms; (across all 536 pairs: 1.244)
 
 
 Executing rmsd ['#1:LIG', '#0:U05']
 
-RMSD between 22 atom pairs is 5.983 angstroms
+RMSD between 22 atom pairs is 6.052 angstroms

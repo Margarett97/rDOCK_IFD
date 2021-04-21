@@ -2,8 +2,8 @@ Opening 3ert.pdb...
 #0, chain A: estrogen receptor α
 
 3ert.pdb opened
-Opening model2h.pdb...
-model2h.pdb opened
+Opening model5.pdb...
+model5.pdb opened
 Computing secondary structure assignments for model(s) #0, #1
 using ksdssp (Kabsch and Sander Define Secondary Structure
 of Proteins) with the parameters:
@@ -13,7 +13,7 @@ of Proteins) with the parameters:
 
 
 
-Matchmaker 3ert.pdb, chain A (#0) with model2h.pdb, chain A (#1), sequence alignment score = 1084.1
+Matchmaker 3ert.pdb, chain A (#0) with model5.pdb, chain A (#1), sequence alignment score = 1082.3
 with these parameters:
 	chain pairing: bb
 	Needleman-Wunsch using BLOSUM-62
@@ -31,9 +31,9 @@ with these parameters:
 
 	iteration cutoff: 2
 
-RMSD between 207 pruned atom pairs is 0.511 angstroms; (across all 224 pairs: 1.982)
+RMSD between 68 pruned atom pairs is 0.802 angstroms; (across all 224 pairs: 23.530)
 
 
 Executing rmsd ['#1:LIG', '#0:OHT']
 
-RMSD between 29 atom pairs is 4.096 angstroms
+RMSD between 29 atom pairs is 8.306 angstroms

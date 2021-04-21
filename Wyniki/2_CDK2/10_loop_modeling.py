@@ -14,73 +14,124 @@ import math
 
 from pyrosetta.rosetta.protocols.loops.loop_closure.kinematic_closure import *
 
+
+kT = 1.0
+smallmoves = 3 
+shearmoves = 5
+backbone_angle_max = 7
+cycles = 9
+jobs = 1
+
 init()
 
 
-# uwzglednienie ligandu
+for i in range(0,10): 
 
-p = Pose()
-
-
-res_set = generate_nonstandard_residue_set(p,['P9.params'])
-pose = pose_from_file(p, res_set, "MODEL9.pdb")
+    p = Pose()
 
 
-starting_p = Pose()
-starting_p.assign(p)
+    res_set = generate_nonstandard_residue_set(p,['P'+str(i)+'.params'])
+    pose = pose_from_file(p, res_set, 'MODEL'+str(i)+'.pdb')
 
-# score
+    # create a reference copy of the pose in fullatom
 
-scorefxn_high = create_score_function('ref2015')  
+    starting_p = Pose()
+    starting_p.assign(p)
 
+    # score
 
-# fold tree
+    scorefxn = create_score_function('ref2015')  # or 'standard'
 
-ft = FoldTree()
-ft.add_edge(1,70,-1)
-ft.add_edge(70,73,-1)
-ft.add_edge(70,78,1)
-ft.add_edge(78,74,-1)
-ft.add_edge(78,133,-1)
-ft.add_edge(133,136,-1)
-ft.add_edge(133,140,2)
-ft.add_edge(140,137,-1)
-ft.add_edge(140,278,-1)
+    # fold tree
 
-
-print(ft)
-
-
-ft.check_fold_tree()
-p.fold_tree(ft)
+    ft = FoldTree()
+    ft.add_edge(1,70,-1)
+    ft.add_edge(70,73,-1)
+    ft.add_edge(70,78,1)
+    ft.add_edge(78,74,-1)
+    ft.add_edge(78,133,-1)
+    ft.add_edge(133,136,-1)
+    ft.add_edge(133,140,2)
+    ft.add_edge(140,137,-1)
+    ft.add_edge(140,278,-1)
 
 
-# definiowanie petli
-
-loop1 = Loop(72, 75, 73)
-loop2 = Loop(135, 138, 136)
+    print(ft)
 
 
-
-loops = Loops()
-loops.add_loop(loop1)
-loops.add_loop(loop2)
+    ft.check_fold_tree()
+    p.fold_tree(ft)
 
 
-kic_mover = KinematicMover()
-kic_mover.set_pivots(72,73,75)
-kic_mover.set_pivots(135,136,138) 
-kic_mover.apply(p)
+    # definiowanie petli
+
+    loop1 = Loop(72, 75, 73)
+    loop2 = Loop(135, 138, 136)
 
 
-print("set up job distributor")
-jd = PyJobDistributor("model9_opt", 1 ,scorefxn_high)
-jd.native_pose = starting_p
+    loops = Loops()
+    loops.add_loop(loop1)
+    loops.add_loop(loop2)
 
-while (jd.job_complete == False):
+    ##create a MoveMap, all backbone torsions free
 
-  loop_refine = LoopMover_Refine_KIC(loops)
-  loop_refine.apply(p)
+    movemap = MoveMap()
+    movemap.set_bb(True)
 
-  jd.output_decoy(p)
+    ## create a SmallMover
+
+    smallmover = SmallMover(movemap, kT, smallmoves)
+    smallmover.angle_max(backbone_angle_max)
+
+    ## create a ShearMover
+
+    shearmover = ShearMover(movemap, kT, shearmoves)
+    shearmover.angle_max(backbone_angle_max)
+
+    ## create a MinMover, for backbone torsion minimization
+
+    minmover = MinMover()
+    minmover.movemap(movemap)
+    minmover.score_function(scorefxn)
+
+    ##setup a PackRotamersMover
+    to_pack = standard_packer_task(starting_p)
+    to_pack.restrict_to_repacking()    # prevents design, packing only
+    to_pack.or_include_current(True)    # considers the original sidechains
+    packmover = PackRotamersMover(scorefxn, to_pack)
+
+    ##setup a RepeatMover on a TrialMover of a SequenceMover
+
+    combined_mover = SequenceMover()
+    combined_mover.add_mover(smallmover)
+    combined_mover.add_mover(shearmover)
+    combined_mover.add_mover(minmover)
+    combined_mover.add_mover(packmover)
+
+    mc = MonteCarlo(p, scorefxn, kT)
+
+    trial = TrialMover(combined_mover, mc)
+
+    refinement = RepeatMover(trial, cycles)
+
+
+
+    kic_mover = KinematicMover()
+    kic_mover.set_pivots(72,73,75)
+    kic_mover.set_pivots(135,136,138) 
+    kic_mover.apply(p)
+
+
+    print("set up job distributor")
+    jd = PyJobDistributor("model"+str(i)+"_opt", 1 ,scorefxn)
+    jd.native_pose = starting_p
+
+    while (jd.job_complete == False):
+
+        refinement.apply(p)
+        loop_refine = LoopMover_Refine_KIC(loops)
+        loop_refine.apply(p)
+
+        jd.output_decoy(p)
+
 

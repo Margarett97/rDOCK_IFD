@@ -9,11 +9,11 @@ from chimera import runCommand as rc
 #os.chdir("C:/Users/.../")
 
 # gather the names of .pdb files in the folder
-name="model0"
+name="model1"
 
 #replyobj.status("Processing " + name+str(f)+"merged.pdb")  # show what file we're working on
 rc("open " + name+".pdb")
 rc("select #"+":LIG zr<5")  # put ligand in front of remainder of molecule
-rc("writesel " + "resi5.txt")
+rc("writesel " + "resi55.txt")
 rc("close all")
 rc("stop now")

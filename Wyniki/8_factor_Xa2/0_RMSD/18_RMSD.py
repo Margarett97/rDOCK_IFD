@@ -7,7 +7,7 @@ from chimera import runCommand as rc
 from chimera.tkgui import saveReplyLog as rl
 
 ref = '1ksn'
-best_score = 'model2'
+best_score = 'model1'
 ligand = 'FXV'
 
 rc("open #0 " + ref + ".pdb")
