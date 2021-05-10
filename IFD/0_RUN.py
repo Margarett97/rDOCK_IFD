@@ -13,7 +13,7 @@ import os, subprocess, shutil
 from parameters import *
    
 
-# # CREATE NEW FOLDER:
+# CREATE NEW FOLDER:
 
 # new_dir = work_dir + "/IFD"
 # if not os.path.exists(new_dir):
