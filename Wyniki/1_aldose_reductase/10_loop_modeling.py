@@ -45,19 +45,20 @@ for i in range(0,10):
 # fold tree
 
     ft = FoldTree()
-    ft.add_edge(1,16,-1)
-    ft.add_edge(16,19,-1)
-    ft.add_edge(16,23,1)
+    ft.add_edge(1,17,-1)
+    ft.add_edge(17,19,-1)
+    ft.add_edge(17,23,1)
     ft.add_edge(23,20,-1)
-    ft.add_edge(23,206,-1)
-    ft.add_edge(206,211,-1)
-    ft.add_edge(206,218,2)
-    ft.add_edge(218,212,-1)
-    ft.add_edge(218,258,-1)
-    ft.add_edge(258,261,-1)
+    ft.add_edge(23,207,-1)
+    ft.add_edge(207,209,-1)
+    ft.add_edge(207,213,2)
+    ft.add_edge(213,210,-1)
+    ft.add_edge(213,258,-1)
+    ft.add_edge(258,260,-1)
     ft.add_edge(258,264,3)
-    ft.add_edge(264,262,-1)
+    ft.add_edge(264,261,-1)
     ft.add_edge(264,316,-1)
+
 
     print(ft)
 
@@ -68,15 +69,17 @@ for i in range(0,10):
 
     # definiowanie petli
 
-    loop1 = Loop(18, 21, 19)
-    loop2 = Loop(208, 216, 212)
+    loop1 = Loop(19, 21, 20)
+    loop2 = Loop(209, 211, 210)
     loop3 = Loop(260, 262, 261)
+
 
 
     loops = Loops()
     loops.add_loop(loop1)
     loops.add_loop(loop2)
     loops.add_loop(loop3)
+
 
 
     ##create a MoveMap, all backbone torsions free
@@ -120,11 +123,10 @@ for i in range(0,10):
 
     refinement = RepeatMover(trial, cycles)
 
-
     kic_mover = KinematicMover()
-    kic_mover.set_pivots(18,19,21)
-    kic_mover.set_pivots(208,212,216) 
-    kic_mover.set_pivots(260,261,262)  
+    kic_mover.set_pivots(19, 20, 21)
+    kic_mover.set_pivots(209, 210, 211) 
+    kic_mover.set_pivots(260, 261, 262)    
     kic_mover.apply(p)
 
 

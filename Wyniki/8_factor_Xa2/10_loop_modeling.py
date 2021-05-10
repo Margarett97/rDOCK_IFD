@@ -46,13 +46,13 @@ for i in range(0,10):
 
     ft = FoldTree()
     ft.add_edge(1,81,-1)
-    ft.add_edge(81,84,-1)
+    ft.add_edge(81,83,-1)
     ft.add_edge(81,87,1)
-    ft.add_edge(87,85,-1)
-    ft.add_edge(87,201,-1)
-    ft.add_edge(201,205,-1)
-    ft.add_edge(201,210,2)
-    ft.add_edge(210,206,-1)
+    ft.add_edge(87,84,-1)
+    ft.add_edge(87,204,-1)
+    ft.add_edge(204,206,-1)
+    ft.add_edge(204,210,2)
+    ft.add_edge(210,207,-1)
     ft.add_edge(210,236,-1)
 
 
@@ -66,7 +66,7 @@ for i in range(0,10):
     # definiowanie petli
 
     loop1 = Loop(83, 85, 84)
-    loop2 = Loop(203, 208, 205)
+    loop2 = Loop(206, 208, 207)
 
 
 
@@ -115,7 +115,7 @@ for i in range(0,10):
 
     kic_mover = KinematicMover()
     kic_mover.set_pivots(83,84,85)
-    kic_mover.set_pivots(203,205,208) 
+    kic_mover.set_pivots(206,207,210) 
     kic_mover.apply(p)
 
     print("set up job distributor")

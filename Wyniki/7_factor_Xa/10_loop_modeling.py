@@ -24,7 +24,7 @@ jobs = 1
 init()
 
 
-for i in range(2,10): 
+for i in range(0,10): 
 
     p = Pose()
 
@@ -46,18 +46,19 @@ for i in range(2,10):
 
     ft = FoldTree()
     ft.add_edge(1,81,-1)
-    ft.add_edge(81,84,-1)
+    ft.add_edge(81,83,-1)
     ft.add_edge(81,87,1)
-    ft.add_edge(87,85,-1)
-    ft.add_edge(87,169,-1)
-    ft.add_edge(169,180,-1)
-    ft.add_edge(169,184,2)
+    ft.add_edge(87,84,-1)
+    ft.add_edge(87,178,-1)
+    ft.add_edge(178,180,-1)
+    ft.add_edge(178,184,2)
     ft.add_edge(184,181,-1)
-    ft.add_edge(184,201,-1)
-    ft.add_edge(201,206,-1)
-    ft.add_edge(201,211,3)
-    ft.add_edge(211,207,-1)
+    ft.add_edge(184,205,-1)
+    ft.add_edge(205,207,-1)
+    ft.add_edge(205,211,3)
+    ft.add_edge(211,208,-1)
     ft.add_edge(211,235,-1)
+
 
     print(ft)
 
@@ -69,14 +70,15 @@ for i in range(2,10):
     # definiowanie petli
 
     loop1 = Loop(83, 85, 84)
-    loop2 = Loop(179, 182, 180)
-    loop3 = Loop(203, 209, 206)
+    loop2 = Loop(180, 182, 181)
+    loop3 = Loop(207, 209, 208)
 
 
     loops = Loops()
     loops.add_loop(loop1)
     loops.add_loop(loop2)
     loops.add_loop(loop3)
+
     
     movemap = MoveMap()
     movemap.set_bb(True)
@@ -118,9 +120,9 @@ for i in range(2,10):
     refinement = RepeatMover(trial, cycles)
 
     kic_mover = KinematicMover()
-    kic_mover.set_pivots(83,84,85)
-    kic_mover.set_pivots(179,180,182) 
-    kic_mover.set_pivots(203,206,209)  
+    kic_mover.set_pivots(83, 84, 85)
+    kic_mover.set_pivots(180, 181, 182) 
+    kic_mover.set_pivots(207, 208, 209)     
     kic_mover.apply(p)
 
 

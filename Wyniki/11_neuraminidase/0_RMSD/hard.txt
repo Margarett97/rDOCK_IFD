@@ -50,8 +50,8 @@ warning: cannot find LINK/SSBOND residue  CA (2 )
 #0, chain A: sialidase
 
 1a4q.pdb opened
-Opening model0.pdb...
-model0.pdb opened
+Opening model3.pdb...
+model3.pdb opened
 Computing secondary structure assignments for model(s) #0, #1
 using ksdssp (Kabsch and Sander Define Secondary Structure
 of Proteins) with the parameters:
@@ -61,7 +61,7 @@ of Proteins) with the parameters:
 
 
 
-Matchmaker 1a4q.pdb, chain A (#0) with model0.pdb, chain A (#1), sequence alignment score = 2029.1
+Matchmaker 1a4q.pdb, chain A (#0) with model3.pdb, chain A (#1), sequence alignment score = 2018.3
 with these parameters:
 	chain pairing: bb
 	Needleman-Wunsch using BLOSUM-62
@@ -79,9 +79,9 @@ with these parameters:
 
 	iteration cutoff: 2
 
-RMSD between 390 pruned atom pairs is 0.527 angstroms; (across all 390 pairs: 0.527)
+RMSD between 390 pruned atom pairs is 0.635 angstroms; (across all 390 pairs: 0.635)
 
 
 Executing rmsd ['#1:LIG', '#0:DPC']
 
-RMSD between 28 atom pairs is 7.411 angstroms
+RMSD between 28 atom pairs is 6.240 angstroms

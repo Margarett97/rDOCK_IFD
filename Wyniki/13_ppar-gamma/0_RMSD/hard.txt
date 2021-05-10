@@ -23,8 +23,8 @@ Start residue of secondary structure  not found: SHEET    2   B 2 GLY B 346  THR
 #0, chain A: E domain
 
 2prg.pdb opened
-Opening model9.pdb...
-model9.pdb opened
+Opening model2.pdb...
+model2.pdb opened
 Computing secondary structure assignments for model(s) #0, #1
 using ksdssp (Kabsch and Sander Define Secondary Structure
 of Proteins) with the parameters:
@@ -34,7 +34,7 @@ of Proteins) with the parameters:
 
 
 
-Matchmaker 2prg.pdb, chain A (#0) with model9.pdb, chain D (#1), sequence alignment score = 1357.6
+Matchmaker 2prg.pdb, chain A (#0) with model2.pdb, chain D (#1), sequence alignment score = 1366.6
 with these parameters:
 	chain pairing: bb
 	Needleman-Wunsch using BLOSUM-62
@@ -52,9 +52,9 @@ with these parameters:
 
 	iteration cutoff: 2
 
-RMSD between 262 pruned atom pairs is 0.937 angstroms; (across all 271 pairs: 1.044)
+RMSD between 266 pruned atom pairs is 0.901 angstroms; (across all 271 pairs: 0.979)
 
 
 Executing rmsd ['#1:LIG', '#0:BRL']
 
-RMSD between 25 atom pairs is 8.581 angstroms
+RMSD between 25 atom pairs is 8.011 angstroms

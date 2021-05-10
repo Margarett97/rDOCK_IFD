@@ -52,8 +52,8 @@ warning: cannot find LINK/SSBOND residue  CA (469 )
 #0, chain A: neuraminidase
 
 1nsc.pdb opened
-Opening model2.pdb...
-model2.pdb opened
+Opening model9.pdb...
+model9.pdb opened
 Computing secondary structure assignments for model(s) #0, #1
 using ksdssp (Kabsch and Sander Define Secondary Structure
 of Proteins) with the parameters:
@@ -63,7 +63,7 @@ of Proteins) with the parameters:
 
 
 
-Matchmaker 1nsc.pdb, chain A (#0) with model2.pdb, chain A (#1), sequence alignment score = 2018.3
+Matchmaker 1nsc.pdb, chain A (#0) with model9.pdb, chain A (#1), sequence alignment score = 2018.3
 with these parameters:
 	chain pairing: bb
 	Needleman-Wunsch using BLOSUM-62
@@ -86,4 +86,4 @@ RMSD between 390 pruned atom pairs is 0.224 angstroms; (across all 390 pairs: 0.
 
 Executing rmsd ['#1:LIG', '#0:SIA']
 
-RMSD between 21 atom pairs is 3.169 angstroms
+RMSD between 21 atom pairs is 6.696 angstroms

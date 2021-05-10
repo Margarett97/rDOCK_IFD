@@ -24,7 +24,7 @@ jobs = 1
 init()
 
 
-for i in range(6,10): 
+for i in range(0,10): 
 
     p = Pose()
 
@@ -44,14 +44,12 @@ for i in range(6,10):
         # fold tree
 
     ft = FoldTree()
-    ft.add_edge(1,313,-1)
-    ft.add_edge(313,317,-1)
-    ft.add_edge(313,322,1)
-    ft.add_edge(322,318,-1)
+    ft.add_edge(1,322,-1)
     ft.add_edge(322,326,-1)
-    ft.add_edge(322,331,2)
+    ft.add_edge(322,331,1)
     ft.add_edge(331,327,-1)
     ft.add_edge(331,553,-1)
+
 
 
     print(ft)
@@ -63,16 +61,13 @@ for i in range(6,10):
 
     # definiowanie petli
 
-    loop1 = Loop(315, 320, 317)
-    loop2 = Loop(324, 329, 326)
-
-
+    loop1 = Loop(324, 329, 326)
 
     loops = Loops()
     loops.add_loop(loop1)
-    loops.add_loop(loop2)
+
     
-        ##create a MoveMap, all backbone torsions free
+   ##create a MoveMap, all backbone torsions free
 
     movemap = MoveMap()
     movemap.set_bb(True)
@@ -115,8 +110,7 @@ for i in range(6,10):
 
 
     kic_mover = KinematicMover()
-    kic_mover.set_pivots(315,317,320)
-    kic_mover.set_pivots(324,326,329) 
+    kic_mover.set_pivots(324, 326, 329)
     kic_mover.apply(p)
 
 

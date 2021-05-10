@@ -17,8 +17,8 @@ warning: cannot find LINK/SSBOND residue HOH (442 )
 #0, chain A: coagulation factor xa
 
 1ksn.pdb opened
-Opening model1.pdb...
-model1.pdb opened
+Opening model2.pdb...
+model2.pdb opened
 Computing secondary structure assignments for model(s) #0, #1
 using ksdssp (Kabsch and Sander Define Secondary Structure
 of Proteins) with the parameters:
@@ -28,7 +28,7 @@ of Proteins) with the parameters:
 
 
 
-Matchmaker 1ksn.pdb, chain A (#0) with model1.pdb, chain C (#1), sequence alignment score = 1217.8
+Matchmaker 1ksn.pdb, chain A (#0) with model2.pdb, chain C (#1), sequence alignment score = 1217.8
 with these parameters:
 	chain pairing: bb
 	Needleman-Wunsch using BLOSUM-62
@@ -46,9 +46,9 @@ with these parameters:
 
 	iteration cutoff: 2
 
-RMSD between 234 pruned atom pairs is 0.551 angstroms; (across all 234 pairs: 0.551)
+RMSD between 233 pruned atom pairs is 0.559 angstroms; (across all 234 pairs: 0.582)
 
 
 Executing rmsd ['#1:LIG', '#0:FXV']
 
-RMSD between 33 atom pairs is 6.131 angstroms
+RMSD between 33 atom pairs is 6.036 angstroms

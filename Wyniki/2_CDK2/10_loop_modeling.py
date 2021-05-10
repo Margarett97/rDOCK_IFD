@@ -45,14 +45,14 @@ for i in range(0,10):
     # fold tree
 
     ft = FoldTree()
-    ft.add_edge(1,70,-1)
-    ft.add_edge(70,73,-1)
-    ft.add_edge(70,78,1)
-    ft.add_edge(78,74,-1)
-    ft.add_edge(78,133,-1)
-    ft.add_edge(133,136,-1)
-    ft.add_edge(133,140,2)
-    ft.add_edge(140,137,-1)
+    ft.add_edge(1,71,-1)
+    ft.add_edge(71,74,-1)
+    ft.add_edge(71,77,1)
+    ft.add_edge(77,75,-1)
+    ft.add_edge(77,134,-1)
+    ft.add_edge(134,137,-1)
+    ft.add_edge(134,140,2)
+    ft.add_edge(140,138,-1)
     ft.add_edge(140,278,-1)
 
 
@@ -65,8 +65,8 @@ for i in range(0,10):
 
     # definiowanie petli
 
-    loop1 = Loop(72, 75, 73)
-    loop2 = Loop(135, 138, 136)
+    loop1 = Loop(73, 75, 74)
+    loop2 = Loop(136, 138,137 )
 
 
     loops = Loops()
@@ -117,8 +117,8 @@ for i in range(0,10):
 
 
     kic_mover = KinematicMover()
-    kic_mover.set_pivots(72,73,75)
-    kic_mover.set_pivots(135,136,138) 
+    kic_mover.set_pivots(73, 74, 75)
+    kic_mover.set_pivots(136, 138, 140) 
     kic_mover.apply(p)
 
 

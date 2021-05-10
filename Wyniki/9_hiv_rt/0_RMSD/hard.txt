@@ -47,7 +47,7 @@ of Proteins) with the parameters:
 
 
 
-Matchmaker 1c1c.pdb, chain A (#0) with model6.pdb, chain A (#1), sequence alignment score = 2706.4
+Matchmaker 1c1c.pdb, chain A (#0) with model6.pdb, chain A (#1), sequence alignment score = 2719
 with these parameters:
 	chain pairing: bb
 	Needleman-Wunsch using BLOSUM-62
@@ -65,9 +65,9 @@ with these parameters:
 
 	iteration cutoff: 2
 
-RMSD between 450 pruned atom pairs is 1.251 angstroms; (across all 536 pairs: 1.551)
+RMSD between 505 pruned atom pairs is 1.121 angstroms; (across all 536 pairs: 1.302)
 
 
 Executing rmsd ['#1:LIG', '#0:PPP']
 
-RMSD between 22 atom pairs is 5.024 angstroms
+RMSD between 22 atom pairs is 4.827 angstroms
