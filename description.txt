@@ -1,0 +1,1 @@
+Induced fit docking protocol - rDock + pyRosetta (loop optimization at a distance of 5A with refinement)
